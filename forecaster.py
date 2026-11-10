@@ -282,7 +282,9 @@ def _forecast_naive(hist, future_dates):
 MIN_MONTHS_FOR_ML = 48
 
 
-def _forecast_damped(hist, future_dates, phi=0.8):
+# phi chosen by backtest (3/6/9/12-month holdouts on antimony and gallium):
+# 0.3 beat 0.5 and 0.8 - with ~2.5 years of data, recent trends rarely persist.
+def _forecast_damped(hist, future_dates, phi=0.3):
     """Start at the latest price, follow the last 6 months' average monthly
     change, but let that trend fade (each month counts phi x the previous).
     Band = recent month-to-month volatility, growing with time."""
@@ -319,26 +321,80 @@ def run_forecast(commodity="Pet Coke", horizon_days=30, use_proxies=True):
     end = max(pd.Timestamp.today().normalize(), last_date) + pd.Timedelta(days=horizon_days)
     future_dates = pd.date_range(last_date + pd.Timedelta(days=1), end, freq="D")
 
+    proxies = pd.DataFrame()
+    if use_proxies and len(hist) >= MIN_MONTHS_FOR_ML:
+        start = (hist["ds"].min() - pd.DateOffset(months=1)).strftime("%Y-%m-%d")
+        proxies = load_proxies(cfg["proxies"], start)
+
+    fc, name = _fit_predict(hist, proxies, future_dates)
+    return hist, fc, name
+
+
+def _fit_predict(hist, proxies, future_dates):
+    """Pick the model and forecast future_dates. Returns (forecast_df, model_name)."""
     # Too little history for Prophet/LightGBM to learn anything reliable
     # (one-off events get mistaken for patterns) -> transparent damped trend.
     if len(hist) < MIN_MONTHS_FOR_ML:
         print(f"  Only {len(hist)} months of data - using damped trend instead of Prophet")
-        return hist, _forecast_damped(hist, future_dates), "Damped trend (short history)"
-
-    proxies = pd.DataFrame()
-    if use_proxies:
-        start = (hist["ds"].min() - pd.DateOffset(months=1)).strftime("%Y-%m-%d")
-        proxies = load_proxies(cfg["proxies"], start)
+        return _forecast_damped(hist, future_dates), "Damped trend (short history)"
 
     for name, fn in [("Prophet", lambda: _forecast_prophet(hist, proxies, future_dates)),
                      ("LightGBM", lambda: _forecast_lightgbm(hist, proxies, future_dates))]:
         try:
-            fc = fn()
-            return hist, fc, name
+            return fn(), name
         except Exception as e:
             print(f"  {name} failed: {type(e).__name__}: {e}")
+    return _forecast_naive(hist, future_dates), "Naive trend"
 
-    return hist, _forecast_naive(hist, future_dates), "Naive trend"
+
+# --------------------------------------------------------------------------
+# 5. Backtest: how accurate would the model have been?
+# --------------------------------------------------------------------------
+def backtest(commodity="Pet Coke", holdout_months=6, use_proxies=True):
+    """
+    Hide the last `holdout_months` of real prices, forecast them using only the
+    earlier data, and compare with what actually happened.
+
+    Benchmark = "no-change" forecast (last known price carried forward). A model
+    is only useful if it beats this simple guess.
+
+    Returns (table, summary)
+      table  : ds, actual, model, naive
+      summary: dict with model_mape, naive_mape, model_name, beats_naive
+    """
+    cfg = COMMODITIES[commodity]
+    full = load_history(DATA_DIR / cfg["file"])
+    if len(full) < holdout_months + 12:
+        raise ValueError("Not enough history for a backtest.")
+
+    train, test = full.iloc[:-holdout_months], full.iloc[-holdout_months:]
+    proxies = pd.DataFrame()
+    if use_proxies and len(train) >= MIN_MONTHS_FOR_ML:
+        start = (full["ds"].min() - pd.DateOffset(months=1)).strftime("%Y-%m-%d")
+        proxies = load_proxies(cfg["proxies"], start)
+
+    test_dates = pd.DatetimeIndex(test["ds"])
+    fc, name = _fit_predict(train, proxies, test_dates)
+
+    table = pd.DataFrame({
+        "ds": test_dates,
+        "actual": test["y"].values,
+        "model": fc["yhat"].values,
+        "naive": float(train["y"].iloc[-1]),
+    })
+
+    def mape(pred):
+        return float((abs(pred - table["actual"]) / table["actual"].abs()).mean() * 100)
+
+    summary = {
+        "model_name": name,
+        "holdout_months": holdout_months,
+        "train_end": train["ds"].max(),
+        "model_mape": mape(table["model"]),
+        "naive_mape": mape(table["naive"]),
+    }
+    summary["beats_naive"] = summary["model_mape"] < summary["naive_mape"]
+    return table, summary
 
 
 if __name__ == "__main__":

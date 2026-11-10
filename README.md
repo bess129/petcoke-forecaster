@@ -13,6 +13,7 @@ Claude, and bends the forecast when high-urgency signals appear.
 | `signal_detector.py` | Sends headlines to Claude (`claude-sonnet-5-5`) to get category, price direction (-1..+1), urgency (1–5) and a one-line reason. Caches results in `data/signals.csv` so headlines are never scored twice. |
 | `shock.py` | Regime-shift overlay: urgency-weighted direction of urgency ≥ 4 signals from the last 7 days. If the net score exceeds 0.2, the forecast is shifted by up to 15% over 30 days and the cone widened. The manual slider adds on top. |
 | `comtrade_to_csv.py` | Converts UN Comtrade downloads into `antimony.csv` and `gallium.csv` (unit-value method). |
+| Backtest | In the app, open **"How accurate is this forecast?"**: the last 6 months are hidden, forecast from earlier data, and compared with reality and with a no-change guess (error shown as MAPE). |
 | `app.py` | Streamlit dashboard: KPI cards, forecast chart with adjusted cone, Weak Signal Radar table. |
 | `refresh.bat` | Runs scraper → signal detector → forecaster (for the daily scheduled task). |
 
@@ -64,6 +65,18 @@ Never put the key in code files or share it.
 
 Cost: scoring ~100 headlines is roughly US$0.10–0.15; reruns only pay for new headlines.
 
+### Online (Streamlit Community Cloud) secrets
+
+In the app's **Settings → Secrets**:
+
+```
+ANTHROPIC_API_KEY = "sk-ant-..."
+ADMIN_PASSWORD = "choose-a-password"
+```
+
+`ADMIN_PASSWORD` locks the "Refresh news & Claude signals" button online, because each
+refresh spends API credit. Locally (no secrets file) the button needs no password.
+
 ## 4. Run
 
 ```
@@ -108,5 +121,9 @@ To check: open **Task Scheduler** → Task Scheduler Library → PetCokeForecast
 - Commodities with less than 4 years of data (antimony, gallium/germanium) use a damped
   trend instead of Prophet: with ~2.5 years, Prophet mistook the 2025 China export-ban
   spike for a yearly pattern and predicted it would repeat.
+- News is matched to each metal by name (cobalt/Congo, antimony, gallium/germanium/indium);
+  headlines naming no specific metal (e.g. "critical minerals export controls") apply to all metals.
+- Backtests (6-month holdout) show the forecast does not always beat a no-change guess.
+  Illiquid metals move on one-off policy events that past prices cannot predict.
 - HS 811292 mixes several metals, so the "Gallium/Germanium" price is noisy and its
   forecast range is very wide.

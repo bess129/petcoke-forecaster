@@ -21,8 +21,8 @@ try:
 except Exception:
     pass
 
-from forecaster import run_forecast, COMMODITIES, DATA_DIR
-from shock import apply_signal_shock, LOOKBACK_DAYS, MIN_URGENCY
+from forecaster import run_forecast, backtest, COMMODITIES, DATA_DIR
+from shock import apply_signal_shock, signals_for, LOOKBACK_DAYS, MIN_URGENCY
 
 SIGNALS_CSV = DATA_DIR / "signals.csv"
 UNITS = {"Pet Coke": "PPI index (Dec 1984 = 100)", "Cobalt": "USD per metric ton (LME, 99.8%)",
@@ -36,6 +36,20 @@ st.set_page_config(page_title="Early-Warning Forecaster", layout="wide")
 @st.cache_data(ttl=3600, show_spinner="Running forecast...")
 def get_forecast(commodity):
     return run_forecast(commodity)
+
+
+@st.cache_data(ttl=86400, show_spinner="Running backtest...")
+def get_backtest(commodity):
+    return backtest(commodity)
+
+
+def _admin_password():
+    """Set ADMIN_PASSWORD in Streamlit Secrets to protect the Refresh button
+    online (it spends Claude API credit). Locally there is no password."""
+    try:
+        return st.secrets.get("ADMIN_PASSWORD")
+    except Exception:
+        return None
 
 
 @st.cache_data(ttl=600)
@@ -58,13 +72,16 @@ def refresh_news_and_signals():
 # ---------------------------------------------------------------- sidebar
 st.sidebar.title("Controls")
 commodity = st.sidebar.selectbox("Commodity", list(COMMODITIES))
-group = "Pet Coke" if commodity == "Pet Coke" else "Minor Metals"
 
 shock = st.sidebar.slider("Simulate Supply Shock (%)", -20, 20, 0, step=1,
                           help="Manually bend the forecast up or down over the next 30 days.")
 
 st.sidebar.markdown("---")
-if st.sidebar.button("Refresh news & Claude signals"):
+required_pw = _admin_password()
+entered_pw = (st.sidebar.text_input("Admin password (to refresh)", type="password")
+              if required_pw else None)
+can_refresh = (not required_pw) or entered_pw == required_pw
+if st.sidebar.button("Refresh news & Claude signals", disabled=not can_refresh):
     with st.spinner("Fetching Google News and scoring with Claude..."):
         try:
             refresh_news_and_signals()
@@ -88,26 +105,30 @@ mtime = SIGNALS_CSV.stat().st_mtime if SIGNALS_CSV.exists() else 0
 signals = get_signals(mtime)
 
 adj, info = apply_signal_shock(fc, signals, manual_shock_pct=shock / 100,
-                               commodity_group=group)
+                               commodity=commodity)
 
 today = pd.Timestamp.today().normalize()
 target = today + pd.Timedelta(days=30)
 row30 = adj.iloc[(adj["ds"] - target).abs().argmin()]
 current = hist["y"].iloc[-1]
+last_data = hist["ds"].iloc[-1]
 
 # KPI cards
 c1, c2, c3, c4 = st.columns(4)
-c1.metric("Current Price", f"{current:,.1f}",
-          help=f"Last actual value ({hist['ds'].iloc[-1]:%b %Y}). Units: "
-               f"{UNITS.get(commodity, 'as in your CSV')}")
-c2.metric("30-Day Baseline Forecast", f"{row30['yhat']:,.1f}",
-          f"{(row30['yhat'] / current - 1):+.1%}")
+c1.metric(f"Latest Price ({last_data:%b %Y})", f"{current:,.1f}",
+          help=f"Most recent published value. Units: {UNITS.get(commodity, 'as in your CSV')}")
+c2.metric(f"Baseline Forecast ({target:%d %b %Y})", f"{row30['yhat']:,.1f}",
+          f"{(row30['yhat'] / current - 1):+.1%} vs latest",
+          help="Forecast for today + 30 days, before any weak-signal adjustment.")
 c3.metric("Active Weak Signal Score", f"{info['net_score']:+.2f}")
 c3.caption(f"{info['n_signals']} high-urgency signal(s) in the last {LOOKBACK_DAYS} days")
 alert = info["regime"] != "Normal"
 c4.metric("Regime Status", "High Alert" if alert else "Normal",
           f"{info['total_shift_pct']:+.1%} adjustment" if alert else None,
           delta_color="inverse" if info["total_shift_pct"] > 0 else "normal")
+st.caption(f"Price data is published with a delay: the latest available month is "
+           f"**{last_data:%B %Y}**. The forecast runs from there to **{target:%d %B %Y}** "
+           f"(today + 30 days).")
 if alert:
     st.error(f"**Regime Shift:** forecast adjusted {info['total_shift_pct']:+.1%} over 30 days "
              f"(signals {info['signal_shift_pct']:+.1%}, manual {info['manual_shift_pct']:+.1%}).")
@@ -126,6 +147,9 @@ fig.add_trace(go.Scatter(x=adj["ds"], y=adj["yhat"], name="Baseline forecast",
                          line=dict(color="#7f7f7f", dash="dash")))
 fig.add_trace(go.Scatter(x=adj["ds"], y=adj["yhat_signal_adjusted"],
                          name="Signal-adjusted forecast", line=dict(color="#d6604d", width=2)))
+fig.add_vline(x=last_data, line_dash="dot", line_color="#1f3b57")
+fig.add_annotation(x=last_data, y=0.98, yref="paper", text="Last data", showarrow=False,
+                   xanchor="right", xshift=-4, font=dict(color="gray"))
 fig.add_vline(x=today, line_dash="dot", line_color="gray")
 fig.add_annotation(x=today, y=0.02, yref="paper", text="Today", showarrow=False,
                    xanchor="right", xshift=-4, font=dict(color="gray"))
@@ -138,28 +162,68 @@ fig.update_layout(height=480, margin=dict(l=10, r=10, t=50, b=10), hovermode="x 
 st.plotly_chart(fig, width="stretch")
 st.caption(f"Model: {model_used}. Shaded cone = 80% interval after weak-signal adjustment.")
 
+# Backtest
+with st.expander("How accurate is this forecast? (backtest)"):
+    try:
+        bt_table, bt = get_backtest(commodity)
+    except Exception as e:
+        st.info(f"Backtest not available: {e}")
+    else:
+        st.markdown(
+            f"We hid the last **{bt['holdout_months']} months** of real prices, forecast them "
+            f"using only data up to **{bt['train_end']:%b %Y}**, and compared with what "
+            f"actually happened. Benchmark: a *no-change* guess (last known price stays flat).")
+        b1, b2, b3 = st.columns(3)
+        b1.metric(f"{bt['model_name']} error", f"{bt['model_mape']:.1f}%",
+                  help="Mean absolute percentage error (MAPE): average % miss per month.")
+        b2.metric("No-change guess error", f"{bt['naive_mape']:.1f}%")
+        b3.metric("Beats the simple guess?", "Yes" if bt["beats_naive"] else "No")
+        bfig = go.Figure()
+        ctx = hist[(hist["ds"] > bt["train_end"] - pd.DateOffset(months=12))
+                   & (hist["ds"] <= bt["train_end"])]
+        bfig.add_trace(go.Scatter(x=ctx["ds"], y=ctx["y"], name="Training data",
+                                  line=dict(color="#1f3b57")))
+        bfig.add_trace(go.Scatter(x=bt_table["ds"], y=bt_table["actual"], name="What happened",
+                                  line=dict(color="#1f3b57", width=3), mode="lines+markers"))
+        bfig.add_trace(go.Scatter(x=bt_table["ds"], y=bt_table["model"], name="Model forecast",
+                                  line=dict(color="#d6604d", width=2)))
+        bfig.add_trace(go.Scatter(x=bt_table["ds"], y=bt_table["naive"], name="No-change guess",
+                                  line=dict(color="#7f7f7f", dash="dash")))
+        bfig.update_layout(height=320, margin=dict(l=10, r=10, t=10, b=10),
+                           hovermode="x unified", legend=dict(orientation="h", y=-0.2))
+        st.plotly_chart(bfig, width="stretch")
+        if not bt["beats_naive"]:
+            st.caption("The model did not beat the no-change guess over this period. This is "
+                       "common for illiquid commodities driven by one-off policy events, which "
+                       "is exactly why the weak-signal overlay exists.")
+
 # Weak Signal Radar
 st.subheader("Weak Signal Radar")
 if signals.empty:
     st.info("No scored signals yet. Run `py scraper.py` then `py signal_detector.py`, "
             "or click **Refresh news & Claude signals** in the sidebar.")
 else:
-    radar = (signals[signals["commodity"] == group]
+    radar = (signals_for(signals, commodity)
              .sort_values(["urgency_score", "published_date"], ascending=False))
     hide_noise = st.checkbox("Hide 'Noise'", value=True)
     if hide_noise:
         radar = radar[radar["signal_category"] != "Noise"]
 
-    view = radar[["urgency_score", "published_date", "signal_category",
-                  "price_direction", "title", "reasoning", "source", "link"]].rename(columns={
+    cols = ["urgency_score", "published_date", "signal_category", "price_direction",
+            "title", "reasoning", "source", "link"]
+    if commodity != "Pet Coke":
+        cols.insert(4, "applies_to")
+    view = radar[cols].rename(columns={"applies_to": "Applies to",
         "urgency_score": "Urgency", "published_date": "Date", "signal_category": "Category",
         "price_direction": "Direction", "title": "Headline", "reasoning": "Why it matters",
         "source": "Source", "link": "Link"})
 
     colors = {5: "#f4a3a3", 4: "#f8c99b", 3: "#fbe7a1", 2: "#e8f0d8", 1: "#f2f2f2"}
     styled = (view.style
-              .apply(lambda r: [f"background-color: {colors.get(r['Urgency'], '')}"] * len(r), axis=1)
+              .apply(lambda r: [f"background-color: {colors.get(r['Urgency'], '')}; color: #111"] * len(r), axis=1)
               .format({"Direction": "{:+.1f}", "Date": lambda d: f"{d:%Y-%m-%d}" if pd.notna(d) else ""}))
     st.dataframe(styled, width="stretch", hide_index=True, height=420,
                  column_config={"Link": st.column_config.LinkColumn(display_text="open")})
-    st.caption(f"{len(view)} signals shown for {group}. Colour = urgency (red = 5).")
+    st.caption(f"{len(view)} signals shown for {commodity}. Colour = urgency (red = 5). "
+               + ("Metals get headlines that name them plus general critical-minerals news."
+                  if commodity != "Pet Coke" else ""))

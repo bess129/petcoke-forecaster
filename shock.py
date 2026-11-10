@@ -16,16 +16,49 @@ MAX_SIGNAL_SHIFT = 0.15  # strongest possible signal moves price 15% over 30 day
 RAMP_DAYS = 30
 
 
-def signal_score(signals_df, commodity_group, today=None):
-    """Urgency-weighted average price_direction of recent high-urgency signals.
-    Returns (net_score between -1 and +1, the signals used)."""
+# Which headlines belong to which metal (matched on whole words in the title).
+METAL_KEYWORDS = {
+    "Cobalt": r"cobalt|congo|drc|katanga",
+    "Antimony": r"antimony",
+    "Gallium/Germanium (HS 811292)": r"gallium|germanium|indium|gan",
+}
+ALL_METALS = "|".join(METAL_KEYWORDS.values())
+
+
+def signals_for(signals_df, commodity):
+    """Headlines relevant to one commodity.
+
+    Pet Coke -> all Pet Coke headlines.
+    A metal  -> Minor Metals headlines that name THIS metal, plus general ones
+                that name no specific metal (e.g. 'China tightens critical
+                minerals exports'). Antimony news no longer moves cobalt.
+    Adds an 'applies_to' column: 'This metal' or 'All metals (general)'."""
+    if signals_df is None or signals_df.empty:
+        return pd.DataFrame(columns=getattr(signals_df, "columns", []))
+    s = signals_df.copy()
+    if commodity == "Pet Coke" or commodity not in METAL_KEYWORDS:
+        out = s[s["commodity"] == "Pet Coke"].copy()
+        out["applies_to"] = "Pet Coke"
+        return out
+    s = s[s["commodity"] == "Minor Metals"]
+    title = s["title"].fillna("").str.lower()
+    mine = title.str.contains(rf"\b(?:{METAL_KEYWORDS[commodity]})\b", regex=True)
+    any_metal = title.str.contains(rf"\b(?:{ALL_METALS})\b", regex=True)
+    out = s[mine | ~any_metal].copy()
+    out["applies_to"] = mine[mine | ~any_metal].map({True: "This metal",
+                                                    False: "All metals (general)"})
+    return out
+
+
+def signal_score(signals_df, commodity, today=None):
+    """Urgency-weighted average price_direction of recent high-urgency signals
+    relevant to `commodity`. Returns (net_score between -1 and +1, signals used)."""
     if signals_df is None or signals_df.empty:
         return 0.0, pd.DataFrame()
     today = pd.Timestamp(today or pd.Timestamp.today()).normalize()
-    s = signals_df.copy()
+    s = signals_for(signals_df, commodity)
     s["published_date"] = pd.to_datetime(s["published_date"], errors="coerce")
-    recent = s[(s["commodity"] == commodity_group)
-               & (s["urgency_score"] >= MIN_URGENCY)
+    recent = s[(s["urgency_score"] >= MIN_URGENCY)
                & (s["published_date"] >= today - pd.Timedelta(days=LOOKBACK_DAYS))]
     if recent.empty:
         return 0.0, recent
@@ -35,7 +68,7 @@ def signal_score(signals_df, commodity_group, today=None):
 
 
 def apply_signal_shock(forecast_df, signals_df, manual_shock_pct=0.0,
-                       commodity_group="Pet Coke", today=None):
+                       commodity="Pet Coke", today=None):
     """
     Returns (adjusted_df, info)
 
@@ -45,7 +78,7 @@ def apply_signal_shock(forecast_df, signals_df, manual_shock_pct=0.0,
     manual_shock_pct: e.g. 0.10 for +10% (from the dashboard slider).
     """
     today = pd.Timestamp(today or pd.Timestamp.today()).normalize()
-    net, used = signal_score(signals_df, commodity_group, today)
+    net, used = signal_score(signals_df, commodity, today)
 
     signal_shift = net * MAX_SIGNAL_SHIFT if abs(net) > THRESHOLD else 0.0
     total_shift = float(np.clip(signal_shift + manual_shock_pct, -0.30, 0.30))
