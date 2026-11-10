@@ -9,3 +9,4 @@ anthropic
 streamlit
 plotly
 xlrd
+openpyxl

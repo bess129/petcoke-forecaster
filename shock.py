@@ -21,6 +21,10 @@ METAL_KEYWORDS = {
     "Cobalt": r"cobalt|congo|drc|katanga",
     "Antimony": r"antimony",
     "Gallium/Germanium (HS 811292)": r"gallium|germanium|indium|gan",
+    "Molybdenum": r"molybdenum|moly",
+    "Lithium": r"lithium|spodumene",
+    "Rare Earths": r"rare[- ]earths?|neodymium|ndpr|praseodymium|dysprosium|terbium|lynas|mp materials",
+    "Tin": r"tin|cassiterite|bisie|wa state",
 }
 ALL_METALS = "|".join(METAL_KEYWORDS.values())
 
@@ -106,3 +110,68 @@ def apply_signal_shock(forecast_df, signals_df, manual_shock_pct=0.0,
         "signals_used": used,
     }
     return df, info
+
+
+# --------------------------------------------------------------------------
+# Supply Risk Outlook: which commodities face upside price risk from shortages?
+# --------------------------------------------------------------------------
+SUPPLY_CATEGORIES = {"Supply Outage", "Export Policy", "Host Metal Cut",
+                     "Refinery Turnaround", "Logistics"}
+OUTLOOK_DAYS = 30
+GENERAL_WEIGHT = 0.4   # weight of headlines that name no specific metal
+
+
+def supply_outlook(signals_df, histories, today=None, days=OUTLOOK_DAYS):
+    """
+    One row per commodity, ranked by supply-shortage pressure.
+
+    histories: {commodity: history DataFrame with ds, y}
+
+    supply_pressure = urgency-weighted average price_direction of SUPPLY-type
+                      signals (outages, export rules, host-metal cuts, refinery
+                      turnarounds, logistics) in the last `days` days, -1..+1.
+    risk_score      = supply_pressure x confidence, where confidence grows with
+                      the number of supply signals (full at 5). Used for ranking.
+    """
+    today = pd.Timestamp(today or pd.Timestamp.today()).normalize()
+    rows = []
+    for commodity, hist in histories.items():
+        s = signals_for(signals_df, commodity) if signals_df is not None else pd.DataFrame()
+        if not s.empty:
+            s = s.copy()
+            s["published_date"] = pd.to_datetime(s["published_date"], errors="coerce")
+            s = s[s["published_date"] >= today - pd.Timedelta(days=days)]
+        sup = s[s["signal_category"].isin(SUPPLY_CATEGORIES)] if not s.empty else s
+        if not sup.empty:
+            # metal-specific news counts fully, general critical-minerals news 40%
+            relevance = np.where(sup["applies_to"] == "All metals (general)", GENERAL_WEIGHT, 1.0)
+            w = sup["urgency_score"].astype(float).values * relevance
+            pressure = float((w * sup["price_direction"].astype(float).values).sum() / w.sum())
+            top = (sup.assign(k=w * sup["price_direction"].abs().values, specific=relevance == 1.0)
+                      .sort_values(["specific", "k"], ascending=False).iloc[0])
+            driver = f"[{int(top['urgency_score'])}] {top['title']}"
+            n_specific = int((relevance == 1.0).sum())
+            effective_n = float(relevance.sum())
+        else:
+            pressure, driver, n_specific, effective_n = 0.0, "", 0, 0.0
+        n_sup = len(sup)
+        confidence = min(1.0, effective_n / 5)
+        risk = pressure * confidence
+
+        y = hist["y"].astype(float).values
+        mom3 = (y[-1] / y[-4] - 1) if len(y) >= 4 else np.nan
+        mom12 = (y[-1] / y[-13] - 1) if len(y) >= 13 else np.nan
+
+        if risk > 0.10:
+            label = "Upside risk (supply)"
+        elif risk < -0.10:
+            label = "Downside risk"
+        else:
+            label = "Neutral"
+        rows.append({"commodity": commodity, "outlook": label, "risk_score": round(risk, 2),
+                     "supply_pressure": round(pressure, 2), "supply_signals": n_sup,
+                     "specific_signals": n_specific,
+                     "all_signals": len(s), "price_3m": mom3, "price_12m": mom12,
+                     "top_driver": driver})
+    out = pd.DataFrame(rows)
+    return out.sort_values(["risk_score", "price_3m"], ascending=False).reset_index(drop=True)

@@ -35,7 +35,8 @@ CATEGORIES = ["Supply Outage", "Export Policy", "Host Metal Cut",
               "Refinery Turnaround", "Demand Shift", "Logistics", "Noise"]
 
 SYSTEM_PROMPT = """You are a senior commodities supply-chain analyst covering minor metals \
-(gallium, germanium, antimony, cobalt, indium) and petroleum coke.
+(gallium, germanium, antimony, cobalt, indium, molybdenum, lithium, rare earths, tin) \
+and petroleum coke.
 
 Your job is to spot WEAK SIGNALS: early supply-chain, refinery, or policy triggers \
 that could move spot prices BEFORE the move shows up in price data. Examples:

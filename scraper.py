@@ -29,7 +29,8 @@ socket.setdefaulttimeout(15)   # don't hang forever if Google is slow
 # Subjects x weak-signal keywords, from the brief's weak-signal taxonomy.
 SEARCHES = {
     "Minor Metals": {
-        "subjects": "(gallium OR germanium OR antimony OR cobalt OR indium)",
+        "subjects": ["(gallium OR germanium OR antimony OR cobalt OR indium)",
+                     '(molybdenum OR lithium OR "rare earth" OR tin)'],
         "keywords": [
             "smelter outage",
             "export quota",
@@ -39,6 +40,7 @@ SEARCHES = {
             "byproduct",
             "zinc smelter cut",
             "semiconductor subsidy",
+            "supply shortage",
         ],
     },
     "Pet Coke": {
@@ -52,6 +54,7 @@ SEARCHES = {
             "freight rates",
             "refinery outage",
             "anode",
+            "supply shortage",
         ],
     },
 }
@@ -81,8 +84,9 @@ def fetch_news(categories=None, max_per_query=20) -> pd.DataFrame:
     rows = []
     for commodity in categories:
         cfg = SEARCHES[commodity]
-        for kw in cfg["keywords"]:
-            query = f'{cfg["subjects"]} {kw}'
+        subjects = cfg["subjects"] if isinstance(cfg["subjects"], list) else [cfg["subjects"]]
+        for subj, kw in [(s, k) for s in subjects for k in cfg["keywords"]]:
+            query = f"{subj} {kw}"
             try:
                 feed = feedparser.parse(_rss_url(query),
                                         agent="Mozilla/5.0 (commodity-forecaster)")

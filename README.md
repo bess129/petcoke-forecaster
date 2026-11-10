@@ -14,6 +14,9 @@ Claude, and bends the forecast when high-urgency signals appear.
 | `shock.py` | Regime-shift overlay: urgency-weighted direction of urgency ≥ 4 signals from the last 7 days. If the net score exceeds 0.2, the forecast is shifted by up to 15% over 30 days and the cone widened. The manual slider adds on top. |
 | `comtrade_to_csv.py` | Converts UN Comtrade downloads into `antimony.csv` and `gallium.csv` (unit-value method). |
 | Backtest | In the app, open **"How accurate is this forecast?"**: the last 6 months are hidden, forecast from earlier data, and compared with reality and with a no-change guess (error shown as MAPE). |
+| `forecaster.py` model selection | Each commodity: 3–5 candidate models (no-change, damped trend, momentum/ridge, Prophet, LightGBM) plus a blend of the best two are tested 8 times on past data (walk-forward). The lowest average % error wins. The shaded 80% range comes from that model's real past misses. |
+| `outlook.py` | Daily Claude "supply-shortage outlook" per commodity (upside / neutral / downside risk, drivers, what to watch) saved to `data/outlook.json`. |
+| `imf_to_csv.py` | Extracts cobalt, molybdenum, lithium, rare earths and tin from the IMF Excel file. |
 | `app.py` | Streamlit dashboard: KPI cards, forecast chart with adjusted cone, Weak Signal Radar table. |
 | `refresh.bat` | Runs scraper → signal detector → forecaster (for the daily scheduled task). |
 
@@ -36,7 +39,7 @@ Each commodity reads one CSV with two columns, **date** and **price**
 | Pet Coke (fuel-grade) | `data/petcoke_fuel.csv` | UN Comtrade, HS 271311, US exports to World, USD/tonne |
 | Pet Coke (calcined) | `data/petcoke_calcined.csv` | UN Comtrade, HS 271312, US exports to World, USD/tonne |
 | Pet Coke (PPI index) | `data/petcoke.csv` | FRED series WPU058103 → Download → CSV (broad index, longer history) |
-| Cobalt | `data/cobalt.csv` | IMF Primary Commodity Prices Excel (column `PCOBA`, USD/ton) |
+| Cobalt, Molybdenum, Lithium, Rare Earths, Tin | `data/cobalt.csv`, `molybdenum.csv`, `lithium.csv`, `rare_earths.csv`, `tin.csv` | IMF Primary Commodity Prices Excel: save as `data/external-data.xlsx`, run `py imf_to_csv.py` |
 | Antimony | `data/antimony.csv` | UN Comtrade, HS 811010, USD/kg (see below) |
 | Gallium/Germanium | `data/gallium.csv` | UN Comtrade, HS 811292, USD/kg (mixed group: gallium, germanium, indium, niobium, vanadium) |
 
@@ -78,6 +81,16 @@ ADMIN_PASSWORD = "choose-a-password"
 
 `ADMIN_PASSWORD` locks the "Refresh news & Claude signals" button online, because each
 refresh spends API credit. Locally (no secrets file) the button needs no password.
+
+## Supply Risk Outlook tab
+
+Ranks every commodity by supply-shortage pressure in the last 30 days of news:
+urgency-weighted price direction of supply-type headlines (outages, export rules,
+host-metal cuts, refinery turnarounds, logistics) × a confidence factor that grows
+with the number of headlines. Metal-specific headlines count fully; general
+critical-minerals headlines count 40%. Shown with 3- and 12-month price change and
+Claude's written outlook. On the Forecast tab, news headlines appear as triangles on
+the price chart.
 
 ## 4. Run
 
@@ -125,7 +138,7 @@ To check: open **Task Scheduler** → Task Scheduler Library → PetCokeForecast
   spike for a yearly pattern and predicted it would repeat.
 - News is matched to each metal by name (cobalt/Congo, antimony, gallium/germanium/indium);
   headlines naming no specific metal (e.g. "critical minerals export controls") apply to all metals.
-- Backtests (6-month holdout) show the forecast does not always beat a no-change guess.
+- Walk-forward tests show the models often do not beat a no-change guess; the app then uses no-change.
   Illiquid metals move on one-off policy events that past prices cannot predict.
 - HS 811292 mixes several metals, so the "Gallium/Germanium" price is noisy and its
   forecast range is very wide.
