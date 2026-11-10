@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-11-10T08:18+00:00",
+  "model": "claude-sonnet-5-5",
+  "outlooks": [
+    {
+      "commodity": "Pet Coke (fuel-grade)",
+      "outlook": "Neutral",
+      "confidence": "low",
+      "drivers": [
+        "Petcoke rally above US$100 on energy complex strength",
+        "Mixed refinery outages and restarts",
+        "Freight rates squeezing US exports"
+      ],
+      "summary": "Headlines are mixed: some outages and high freight, but several coker restarts. Price is down 16% over 3 months, and the rally looks demand/energy-led rather than a clear shortage.",
+      "watch_next": "Watch whether freight rates ease and whether Deer Park and other US Gulf coker outages last."
+    },
+    {
+      "commodity": "Pet Coke (calcined)",
+      "outlook": "Neutral",
+      "confidence": "low",
+      "drivers": [
+        "Chinese prebaked anode above RMB 6,000 on feedstock rally",
+        "Rising carbon anode costs",
+        "Mixed refinery restarts and outages"
+      ],
+      "summary": "Feedstock strength and higher anode costs add some support, and the price is up 15% already. Supply headlines are mixed and mostly refinery-related, so there is no clear shortage signal.",
+      "watch_next": "Watch green coke feedstock prices and whether anode cost pressure keeps rising."
+    },
+    {
+      "commodity": "Pet Coke (PPI index)",
+      "outlook": "Neutral",
+      "confidence": "low",
+      "drivers": [
+        "Petcoke rally above US$100",
+        "Freight-driven supply dislocation",
+        "Coker restarts offsetting outages"
+      ],
+      "summary": "The index is up 46% over 12 months, so much of the tightness looks priced in. Recent news is a mix of outages and restarts, with a supply-pressure score near zero.",
+      "watch_next": "Watch US Gulf Coast coker run rates and freight rates for heavy oil and petcoke."
+    },
+    {
+      "commodity": "Cobalt",
+      "outlook": "Upside risk",
+      "confidence": "medium",
+      "drivers": [
+        "DRC export quotas cutting output (Glencore down 52%)",
+        "China critical mineral export controls nearing deadline",
+        "Quota reset affecting battery supply"
+      ],
+      "summary": "DRC quotas are clearly cutting supply and Glencore's output has roughly halved. Price is down 24% over 3 months, so there is room to rebound if quotas keep biting.",
+      "watch_next": "Watch DRC quota allocations and export volumes, plus China's export-control deadline decisions."
+    },
+    {
+      "commodity": "Molybdenum",
+      "outlook": "Upside risk",
+      "confidence": "low",
+      "drivers": [
+        "A copper-moly major slowing molybdenum output growth",
+        "China export-control deadlines",
+        "Price already up 18% in 3 months"
+      ],
+      "summary": "Slower moly output growth and export-policy uncertainty are mildly bullish. Price is already up sharply, so part of the move looks priced in, and the headlines are mostly generic critical-mineral news.",
+      "watch_next": "Watch China's export-control deadline decisions and moly output guidance from copper miners."
+    },
+    {
+      "commodity": "Lithium",
+      "outlook": "Neutral",
+      "confidence": "low",
+      "drivers": [
+        "Generic China export-control deadlines",
+        "CATL investing in upstream lithium capacity",
+        "Price down 13% in 3 months"
+      ],
+      "summary": "Headlines are mostly broad critical-mineral policy news with nothing lithium-specific on supply cuts. New upstream investment is mildly bearish, and the price is up 71% over 12 months.",
+      "watch_next": "Watch China's export-control decisions and any lithium mine or conversion supply disruptions."
+    },
+    {
+      "commodity": "Rare Earths",
+      "outlook": "Upside risk",
+      "confidence": "medium",
+      "drivers": [
+        "Yttrium supply 'stalled', Japan months from running out",
+        "China export controls on Japan",
+        "Controls pause extended to January, but only for some buyers"
+      ],
+      "summary": "Yttrium shortages and targeted controls on Japan point to real physical tightness. The two-month extension for the US, India and Europe eases pressure somewhat, and the price is up 36% over 12 months, so some of this is priced in.",
+      "watch_next": "Watch for any change in China's export licensing for Japan and the January suspension deadline."
+    },
+    {
+      "commodity": "Tin",
+      "outlook": "Upside risk",
+      "confidence": "medium",
+      "drivers": [
+        "Congo conflict and Indonesia cuts squeezing supply",
+        "Chip demand outrunning supply",
+        "China export-control deadlines"
+      ],
+      "summary": "Supply disruptions in Congo and Indonesia are the most direct bullish factor. Price is up 56% over 12 months but only 1% over 3 months, so more upside is possible if the disruptions persist.",
+      "watch_next": "Watch Congo conflict developments and Indonesian export and output data."
+    },
+    {
+      "commodity": "Antimony",
+      "outlook": "Neutral",
+      "confidence": "low",
+      "drivers": [
+        "Antimony export deadline nearing",
+        "China export-control deadlines",
+        "Price down 56% over 12 months"
+      ],
+      "summary": "An export deadline is approaching, which is mildly bullish. Prices have fallen sharply and the headlines are mostly generic, so there is no clear shortage signal yet.",
+      "watch_next": "Watch the antimony export deadline outcome and any new Chinese licensing rules."
+    },
+    {
+      "commodity": "Gallium/Germanium (HS 811292)",
+      "outlook": "Upside risk",
+      "confidence": "medium",
+      "drivers": [
+        "China export deadline for gallium on November 27",
+        "Rising indium prices and tight minor-metal supply",
+        "Price up 67% in 3 months"
+      ],
+      "summary": "Export-control deadlines and tight minor-metal markets support further upside, and demand from AI power and chips is growing. Price is already up 67% in 3 months, so part of the shortage is priced in.",
+      "watch_next": "Watch China's November 27 gallium deadline and any new export licensing decisions."
+    }
+  ]
+}
