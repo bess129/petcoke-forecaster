@@ -87,8 +87,9 @@ refresh spends API credit. Locally (no secrets file) the button needs no passwor
 Ranks every commodity by supply-shortage pressure in the last 30 days of news:
 urgency-weighted price direction of supply-type headlines (outages, export rules,
 host-metal cuts, refinery turnarounds, logistics) × a confidence factor that grows
-with the number of headlines. Metal-specific headlines count fully; general
-critical-minerals headlines count 40%. Shown with 3- and 12-month price change and
+with the number of headlines naming the metal. Only metal-specific headlines can
+mark a metal as upside risk; general critical-minerals headlines add a small
+background amount (at most ~0.06). Shown with 3- and 12-month price change and
 Claude's written outlook. On the Forecast tab, news headlines appear as triangles on
 the price chart.
 

@@ -284,7 +284,7 @@ with tab_fc:
                      column_config={"Link": st.column_config.LinkColumn(display_text="open")})
         st.caption(f"{len(view)} signals shown for {commodity}. Colour = urgency (red = 5)."
                    + (" Metals get headlines that name them, plus general critical-minerals "
-                      "news (weighted 40%)." if not commodity.startswith("Pet Coke") else ""))
+                      "news (marked 'All metals (general)')." if not commodity.startswith("Pet Coke") else ""))
 
 # ======================================================================
 # TAB 2: which commodities could rise because of supply shortages?
@@ -294,8 +294,8 @@ with tab_risk:
         f"**Which commodities could see prices rise because of supply shortages?** "
         f"Ranked by supply pressure in the last **{OUTLOOK_DAYS} days** of news: outages, "
         f"export rules, host-metal cuts, refinery turnarounds and logistics. Each headline is "
-        f"weighted by its urgency; headlines naming the metal count fully, general "
-        f"critical-minerals news counts 40%.")
+        f"weighted by its urgency. **Only headlines that name the metal** can mark it as upside "
+        f"risk; general critical-minerals news adds a small background amount.")
     if signals.empty:
         st.info("No scored news yet.")
     else:
@@ -312,6 +312,8 @@ with tab_risk:
             hovertemplate="%{y}: %{x:+.2f}<extra></extra>"))
         rfig.add_vline(x=0.10, line_dash="dot", line_color="#1a9850")
         rfig.add_vline(x=-0.10, line_dash="dot", line_color="#b2182b")
+        lim = max(0.15, float(bar["risk_score"].abs().max()) * 1.25)
+        rfig.update_xaxes(range=[-lim, lim])
         rfig.update_layout(height=40 * len(bar) + 80, margin=dict(l=10, r=40, t=30, b=10),
                            xaxis_title="Supply-shortage risk score (−1 bearish … +1 strong shortage)",
                            title="Supply-shortage risk score")
@@ -324,7 +326,7 @@ with tab_risk:
             "Claude outlook": [f"{claude[c]['outlook']} ({claude[c]['confidence']})"
                                if c in claude else "–" for c in rank["commodity"]],
             "Risk score": rank["risk_score"],
-            "Supply headlines (metal-specific)": [f"{a} ({b})" for a, b in
+            "Supply headlines: total (naming this metal)": [f"{a} ({b})" for a, b in
                                                   zip(rank["supply_signals"], rank["specific_signals"])],
             "Price 3m": rank["price_3m"],
             "Price 12m": rank["price_12m"],
@@ -358,9 +360,11 @@ with tab_risk:
                 f"- **Supply pressure** = urgency-weighted average of Claude's price direction "
                 f"(−1 to +1) over supply-type headlines ({', '.join(sorted(SUPPLY_CATEGORIES))}) "
                 f"from the last {OUTLOOK_DAYS} days.\n"
-                f"- **Confidence** grows with the number of headlines (full at 5 metal-specific "
-                f"headlines; general news counts 0.4 each).\n"
-                f"- **Risk score** = supply pressure × confidence. Above +0.10 = upside risk.\n"
+                f"- **Confidence** grows with the number of headlines **naming the metal** "
+                f"(full at 5).\n"
+                f"- **Risk score** = metal-specific pressure × confidence, plus a small background "
+                f"from general critical-minerals news (at most about +0.06, so general news alone "
+                f"can never reach the +0.10 upside-risk line).\n"
                 f"- **Price 3m / 12m** show whether the price has already moved (a shortage may "
                 f"already be priced in).\n"
                 f"- The **Claude outlook** reads the same headlines plus price moves and gives a "

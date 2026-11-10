@@ -17,40 +17,55 @@ RAMP_DAYS = 30
 
 
 # Which headlines belong to which metal (matched on whole words in the title).
-METAL_KEYWORDS = {
-    "Cobalt": r"cobalt|congo|drc|katanga",
-    "Antimony": r"antimony",
-    "Gallium/Germanium (HS 811292)": r"gallium|germanium|indium|gan",
-    "Molybdenum": r"molybdenum|moly",
-    "Lithium": r"lithium|spodumene",
-    "Rare Earths": r"rare[- ]earths?|neodymium|ndpr|praseodymium|dysprosium|terbium|lynas|mp materials",
-    "Tin": r"tin|cassiterite|bisie|wa state",
+# "names": the metal itself - always counts.
+# "hints": places/companies strongly linked to the metal - only count when the
+#          headline does not name a DIFFERENT metal (e.g. "Tin prices surge as
+#          Congo..." is tin news, not cobalt news, even though it mentions Congo).
+METALS = {
+    "Cobalt":      {"names": r"cobalt",                             "hints": r"congo|drc|katanga"},
+    "Antimony":    {"names": r"antimony",                           "hints": r"stibnite"},
+    "Gallium/Germanium (HS 811292)": {"names": r"gallium|germanium|indium", "hints": r"gan"},
+    "Molybdenum":  {"names": r"molybdenum",                         "hints": r"moly"},
+    "Lithium":     {"names": r"lithium",                            "hints": r"spodumene"},
+    "Rare Earths": {"names": r"rare[- ]earths?|neodymium|ndpr|praseodymium|dysprosium|terbium|yttrium",
+                    "hints": r"lynas|mp materials"},
+    "Tin":         {"names": r"tin|cassiterite",                    "hints": r"bisie|wa state"},
 }
-ALL_METALS = "|".join(METAL_KEYWORDS.values())
+METAL_KEYWORDS = {m: f"{v['names']}|{v['hints']}" for m, v in METALS.items()}  # kept for reference
+ALL_NAMES = "|".join(v["names"] for v in METALS.values())
+ALL_TERMS = "|".join(METAL_KEYWORDS.values())
+
+
+def _has(title, pattern):
+    return title.str.contains(rf"\b(?:{pattern})\b", regex=True)
 
 
 def signals_for(signals_df, commodity):
     """Headlines relevant to one commodity.
 
     Pet Coke -> all Pet Coke headlines.
-    A metal  -> Minor Metals headlines that name THIS metal, plus general ones
-                that name no specific metal (e.g. 'China tightens critical
-                minerals exports'). Antimony news no longer moves cobalt.
+    A metal  -> Minor Metals headlines about THIS metal, plus general ones that
+                name no specific metal (e.g. 'China tightens critical minerals
+                exports'). Antimony news no longer moves cobalt.
     Adds an 'applies_to' column: 'This metal' or 'All metals (general)'."""
     if signals_df is None or signals_df.empty:
         return pd.DataFrame(columns=getattr(signals_df, "columns", []))
     s = signals_df.copy()
-    if commodity.startswith("Pet Coke") or commodity not in METAL_KEYWORDS:
+    if commodity.startswith("Pet Coke") or commodity not in METALS:
         out = s[s["commodity"] == "Pet Coke"].copy()
         out["applies_to"] = "Pet Coke"
         return out
     s = s[s["commodity"] == "Minor Metals"]
     title = s["title"].fillna("").str.lower()
-    mine = title.str.contains(rf"\b(?:{METAL_KEYWORDS[commodity]})\b", regex=True)
-    any_metal = title.str.contains(rf"\b(?:{ALL_METALS})\b", regex=True)
-    out = s[mine | ~any_metal].copy()
-    out["applies_to"] = mine[mine | ~any_metal].map({True: "This metal",
-                                                    False: "All metals (general)"})
+    cfg = METALS[commodity]
+    other_names = "|".join(v["names"] for m, v in METALS.items() if m != commodity)
+    names_me = _has(title, cfg["names"])
+    hints_me = _has(title, cfg["hints"]) & ~_has(title, other_names)
+    mine = names_me | hints_me
+    general = ~_has(title, ALL_TERMS)
+    keep = mine | general
+    out = s[keep].copy()
+    out["applies_to"] = np.where(mine[keep], "This metal", "All metals (general)")
     return out
 
 
@@ -118,7 +133,8 @@ def apply_signal_shock(forecast_df, signals_df, manual_shock_pct=0.0,
 SUPPLY_CATEGORIES = {"Supply Outage", "Export Policy", "Host Metal Cut",
                      "Refinery Turnaround", "Logistics"}
 OUTLOOK_DAYS = 30
-GENERAL_WEIGHT = 0.4   # weight of headlines that name no specific metal
+GENERAL_WEIGHT = 0.25          # max share of risk that general headlines can add
+SPECIFIC_FULL_CONFIDENCE = 5   # metal-specific supply headlines needed for full confidence
 
 
 def supply_outlook(signals_df, histories, today=None, days=OUTLOOK_DAYS):
@@ -130,8 +146,11 @@ def supply_outlook(signals_df, histories, today=None, days=OUTLOOK_DAYS):
     supply_pressure = urgency-weighted average price_direction of SUPPLY-type
                       signals (outages, export rules, host-metal cuts, refinery
                       turnarounds, logistics) in the last `days` days, -1..+1.
-    risk_score      = supply_pressure x confidence, where confidence grows with
-                      the number of supply signals (full at 5). Used for ranking.
+    risk_score      = specific_pressure x min(1, specific headlines / 5)
+                      + 0.25 x general_pressure x (general confidence)
+                          x (1 - specific confidence)
+                      Only headlines naming the metal can push it to "Upside risk";
+                      general critical-minerals news adds at most ~0.06. Used for ranking.
     """
     today = pd.Timestamp(today or pd.Timestamp.today()).normalize()
     rows = []
@@ -142,22 +161,35 @@ def supply_outlook(signals_df, histories, today=None, days=OUTLOOK_DAYS):
             s["published_date"] = pd.to_datetime(s["published_date"], errors="coerce")
             s = s[s["published_date"] >= today - pd.Timedelta(days=days)]
         sup = s[s["signal_category"].isin(SUPPLY_CATEGORIES)] if not s.empty else s
-        if not sup.empty:
-            # metal-specific news counts fully, general critical-minerals news 40%
-            relevance = np.where(sup["applies_to"] == "All metals (general)", GENERAL_WEIGHT, 1.0)
-            w = sup["urgency_score"].astype(float).values * relevance
-            pressure = float((w * sup["price_direction"].astype(float).values).sum() / w.sum())
-            top = (sup.assign(k=w * sup["price_direction"].abs().values, specific=relevance == 1.0)
-                      .sort_values(["specific", "k"], ascending=False).iloc[0])
-            driver = f"[{int(top['urgency_score'])}] {top['title']}"
-            n_specific = int((relevance == 1.0).sum())
-            effective_n = float(relevance.sum())
-        else:
-            pressure, driver, n_specific, effective_n = 0.0, "", 0, 0.0
-        n_sup = len(sup)
-        confidence = min(1.0, effective_n / 5)
-        risk = pressure * confidence
+        # Split metal-specific vs general (critical-minerals) supply headlines.
+        # Only specific news can drive a metal into "Upside risk"; general news
+        # adds a small background score (at most ~0.06).
+        def _pressure(df):
+            if df.empty:
+                return 0.0
+            w = df["urgency_score"].astype(float)
+            return float((w * df["price_direction"].astype(float)).sum() / w.sum())
 
+        if not sup.empty:
+            is_general = sup["applies_to"] == "All metals (general)"
+            spec, gen = sup[~is_general], sup[is_general]
+        else:
+            spec = gen = sup
+        p_spec, p_gen = _pressure(spec), _pressure(gen)
+        n_specific, n_general = len(spec), len(gen)
+        conf_spec = min(1.0, n_specific / SPECIFIC_FULL_CONFIDENCE)
+        conf_gen = min(1.0, n_general / 5)
+        risk = p_spec * conf_spec + GENERAL_WEIGHT * p_gen * conf_gen * (1 - conf_spec)
+        risk = float(np.clip(risk, -1, 1))
+        pressure = p_spec if n_specific else p_gen
+        pick = spec if n_specific else gen
+        if not pick.empty:
+            k = pick["urgency_score"].astype(float) * pick["price_direction"].abs()
+            top = pick.loc[k.idxmax()]
+            driver = f"[{int(top['urgency_score'])}] {top['title']}"
+        else:
+            driver = ""
+        n_sup = len(sup)
         y = hist["y"].astype(float).values
         mom3 = (y[-1] / y[-4] - 1) if len(y) >= 4 else np.nan
         mom12 = (y[-1] / y[-13] - 1) if len(y) >= 13 else np.nan
