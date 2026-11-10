@@ -25,7 +25,9 @@ from forecaster import run_forecast, backtest, COMMODITIES, DATA_DIR
 from shock import apply_signal_shock, signals_for, LOOKBACK_DAYS, MIN_URGENCY
 
 SIGNALS_CSV = DATA_DIR / "signals.csv"
-UNITS = {"Pet Coke": "PPI index (Dec 1984 = 100)", "Cobalt": "USD per metric ton (LME, 99.8%)",
+UNITS = {"Pet Coke (fuel-grade)": "USD per tonne (US export unit value, UN Comtrade)",
+         "Pet Coke (calcined)": "USD per tonne (US export unit value, UN Comtrade)",
+         "Pet Coke (PPI index)": "PPI index (Dec 1984 = 100)", "Cobalt": "USD per metric ton (LME, 99.8%)",
          "Antimony": "USD per kg (US import unit value, UN Comtrade)",
          "Gallium/Germanium (HS 811292)": "USD per kg (US import unit value, UN Comtrade)"}   # others: whatever unit your CSV is in
 
@@ -211,7 +213,7 @@ else:
 
     cols = ["urgency_score", "published_date", "signal_category", "price_direction",
             "title", "reasoning", "source", "link"]
-    if commodity != "Pet Coke":
+    if not commodity.startswith("Pet Coke"):
         cols.insert(4, "applies_to")
     view = radar[cols].rename(columns={"applies_to": "Applies to",
         "urgency_score": "Urgency", "published_date": "Date", "signal_category": "Category",
@@ -226,4 +228,4 @@ else:
                  column_config={"Link": st.column_config.LinkColumn(display_text="open")})
     st.caption(f"{len(view)} signals shown for {commodity}. Colour = urgency (red = 5). "
                + ("Metals get headlines that name them plus general critical-minerals news."
-                  if commodity != "Pet Coke" else ""))
+                  if not commodity.startswith("Pet Coke") else ""))

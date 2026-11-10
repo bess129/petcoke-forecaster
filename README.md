@@ -33,13 +33,15 @@ Each commodity reads one CSV with two columns, **date** and **price**
 
 | Commodity | File | Suggested source |
 |---|---|---|
-| Pet Coke | `data/petcoke.csv` | FRED series WPU058103 → Download → CSV |
+| Pet Coke (fuel-grade) | `data/petcoke_fuel.csv` | UN Comtrade, HS 271311, US exports to World, USD/tonne |
+| Pet Coke (calcined) | `data/petcoke_calcined.csv` | UN Comtrade, HS 271312, US exports to World, USD/tonne |
+| Pet Coke (PPI index) | `data/petcoke.csv` | FRED series WPU058103 → Download → CSV (broad index, longer history) |
 | Cobalt | `data/cobalt.csv` | IMF Primary Commodity Prices Excel (column `PCOBA`, USD/ton) |
 | Antimony | `data/antimony.csv` | UN Comtrade, HS 811010, USD/kg (see below) |
 | Gallium/Germanium | `data/gallium.csv` | UN Comtrade, HS 811292, USD/kg (mixed group: gallium, germanium, indium, niobium, vanadium) |
 
 **UN Comtrade (antimony, gallium/germanium):** on comtradeplus.un.org → Trade statistics, set
-Monthly, commodity codes 811010 + 811292, Reporter **USA**, Partner **World**, Flow **Import**,
+Monthly, commodity codes 811010 + 811292 (Flow **Import**) or 271311 + 271312 (Flow **Export**), Reporter **USA**, Partner **World**,
 Breakdown **Classic**, and 12 months per download (larger requests are refused on free accounts).
 Save each `UNComtrade-*.csv` into `/data`, then run `py comtrade_to_csv.py`. It computes
 price = value / net weight per month and skips months under 1,000 kg.
@@ -115,7 +117,7 @@ To check: open **Task Scheduler** → Task Scheduler Library → PetCokeForecast
 
 ## Limitations
 
-- Pet Coke uses a broad BLS producer price index as a proxy, not a true pet coke spot price (those are behind Platts/Argus paywalls).
+- Pet coke prices are US export unit values (value ÷ weight), a monthly average clearing price, not a daily spot quote (those are behind Platts/Argus paywalls). The FRED PPI index is kept for its longer history.
 - Price data lags by 1–3 months; the forecast is extended to today + 30 days.
 - The shock overlay is a transparent rule, not a trained model.
 - Commodities with less than 4 years of data (antimony, gallium/germanium) use a damped

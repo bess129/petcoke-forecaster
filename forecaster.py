@@ -33,7 +33,11 @@ DATA_DIR = Path(__file__).parent / "data"
 
 # Which CSV file and which live proxy tickers belong to each commodity.
 COMMODITIES = {
-    "Pet Coke":  {"file": "petcoke.csv",   "proxies": ["CL=F"]},
+    # Real physical prices: US export unit values from UN Comtrade (USD/tonne)
+    "Pet Coke (fuel-grade)": {"file": "petcoke_fuel.csv",     "proxies": ["CL=F"]},
+    "Pet Coke (calcined)":   {"file": "petcoke_calcined.csv", "proxies": ["CL=F"]},
+    # Broad BLS producer price index (FRED WPU058103) - longer history, but a proxy
+    "Pet Coke (PPI index)":  {"file": "petcoke.csv",          "proxies": ["CL=F"]},
     "Cobalt":    {"file": "cobalt.csv",    "proxies": ["HG=F", "ALI=F"]},
     "Antimony":  {"file": "antimony.csv",  "proxies": ["HG=F", "ALI=F"]},
     # UN Comtrade groups gallium, germanium, indium etc. under one HS code (811292)
@@ -304,7 +308,7 @@ def _forecast_damped(hist, future_dates, phi=0.3):
 # --------------------------------------------------------------------------
 # 4. Main entry point
 # --------------------------------------------------------------------------
-def run_forecast(commodity="Pet Coke", horizon_days=30, use_proxies=True):
+def run_forecast(commodity="Pet Coke (fuel-grade)", horizon_days=30, use_proxies=True):
     """
     Returns (history_df, forecast_df, model_used)
       history_df : ds, y               (monthly historical prices)
@@ -350,7 +354,7 @@ def _fit_predict(hist, proxies, future_dates):
 # --------------------------------------------------------------------------
 # 5. Backtest: how accurate would the model have been?
 # --------------------------------------------------------------------------
-def backtest(commodity="Pet Coke", holdout_months=6, use_proxies=True):
+def backtest(commodity="Pet Coke (fuel-grade)", holdout_months=6, use_proxies=True):
     """
     Hide the last `holdout_months` of real prices, forecast them using only the
     earlier data, and compare with what actually happened.
@@ -398,7 +402,7 @@ def backtest(commodity="Pet Coke", holdout_months=6, use_proxies=True):
 
 
 if __name__ == "__main__":
-    commodity = "Pet Coke"
+    commodity = "Pet Coke (PPI index)"
     print(f"Running forecast for {commodity}...")
     hist, fc, model = run_forecast(commodity)
 
