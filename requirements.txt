@@ -1,0 +1,11 @@
+pandas>=2.0
+numpy
+yfinance
+prophet
+scikit-learn
+lightgbm
+feedparser
+anthropic
+streamlit
+plotly
+xlrd
