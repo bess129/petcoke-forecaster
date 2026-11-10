@@ -1,5 +1,7 @@
 # Minor Metals & Pet Coke Early-Warning Forecaster
 
+Main pet coke focus: **green petroleum coke (GPC)**, the un-calcined coke (HS 271311) used as kiln/boiler fuel and as calciner feed.
+
 A Streamlit app that forecasts Pet Coke and minor-metal prices 30 days ahead,
 scans Google News for early supply-chain "weak signals", scores them with
 Claude, and bends the forecast when high-urgency signals appear.
@@ -36,9 +38,9 @@ Each commodity reads one CSV with two columns, **date** and **price**
 
 | Commodity | File | Suggested source |
 |---|---|---|
-| Pet Coke (fuel-grade) | `data/petcoke_fuel.csv` | UN Comtrade, HS 271311, US exports to World, USD/tonne |
-| Pet Coke (calcined) | `data/petcoke_calcined.csv` | UN Comtrade, HS 271312, US exports to World, USD/tonne |
-| Pet Coke (PPI index) | `data/petcoke.csv` | FRED series WPU058103 → Download → CSV (broad index, longer history) |
+| **Green Pet Coke (GPC)** (main focus) | `data/petcoke_fuel.csv` | UN Comtrade, HS 271311 (petroleum coke, not calcined), US exports to World, USD/tonne |
+| Calcined Pet Coke (CPC) (reference) | `data/petcoke_calcined.csv` | UN Comtrade, HS 271312, US exports to World, USD/tonne |
+| Pet Coke PPI index (broad) (reference) | `data/petcoke.csv` | FRED series WPU058103 → Download → CSV (broad index, longer history) |
 | Cobalt, Molybdenum, Lithium, Rare Earths, Tin | `data/cobalt.csv`, `molybdenum.csv`, `lithium.csv`, `rare_earths.csv`, `tin.csv` | IMF Primary Commodity Prices Excel: save as `data/external-data.xlsx`, run `py imf_to_csv.py` |
 | Antimony | `data/antimony.csv` | UN Comtrade, HS 811010, USD/kg (see below) |
 | Gallium/Germanium | `data/gallium.csv` | UN Comtrade, HS 811292, USD/kg (mixed group: gallium, germanium, indium, niobium, vanadium) |

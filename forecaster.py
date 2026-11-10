@@ -33,11 +33,8 @@ DATA_DIR = Path(__file__).parent / "data"
 
 # Which CSV file and which live proxy tickers belong to each commodity.
 COMMODITIES = {
-    # Real physical prices: US export unit values from UN Comtrade (USD/tonne)
-    "Pet Coke (fuel-grade)": {"file": "petcoke_fuel.csv",     "proxies": ["CL=F"]},
-    "Pet Coke (calcined)":   {"file": "petcoke_calcined.csv", "proxies": ["CL=F"]},
-    # Broad BLS producer price index (FRED WPU058103) - longer history, but a proxy
-    "Pet Coke (PPI index)":  {"file": "petcoke.csv",          "proxies": ["CL=F"]},
+    # MAIN FOCUS: green (un-calcined) petroleum coke = HS 271311, US export unit value, USD/t
+    "Green Pet Coke (GPC)":       {"file": "petcoke_fuel.csv",     "proxies": ["CL=F"]},
     "Cobalt":    {"file": "cobalt.csv",    "proxies": ["HG=F", "ALI=F"]},
     "Molybdenum":  {"file": "molybdenum.csv",  "proxies": ["HG=F"]},     # by-product of copper mining
     "Lithium":     {"file": "lithium.csv",     "proxies": ["HG=F"]},
@@ -46,6 +43,9 @@ COMMODITIES = {
     "Antimony":  {"file": "antimony.csv",  "proxies": ["HG=F", "ALI=F"]},
     # UN Comtrade groups gallium, germanium, indium etc. under one HS code (811292)
     "Gallium/Germanium (HS 811292)": {"file": "gallium.csv", "proxies": ["HG=F", "ALI=F"]},
+    # Reference series for pet coke
+    "Calcined Pet Coke (CPC)":    {"file": "petcoke_calcined.csv", "proxies": ["CL=F"]},   # HS 271312
+    "Pet Coke PPI index (broad)": {"file": "petcoke.csv",          "proxies": ["CL=F"]},   # FRED WPU058103
 }
 
 HISTORY_YEARS = 10   # only train on the most recent N years (old regimes add noise)
@@ -433,7 +433,7 @@ def _bands_from_errors(cv, name, yhat, months_ahead, horizon):
     return yhat * (1 - width), yhat * (1 + width)
 
 
-def forecast_and_evaluate(commodity="Pet Coke (fuel-grade)", horizon_days=30, use_proxies=True):
+def forecast_and_evaluate(commodity="Green Pet Coke (GPC)", horizon_days=30, use_proxies=True):
     """
     Full pipeline used by the dashboard.
     Returns (history_df, forecast_df, info)
@@ -476,14 +476,14 @@ def forecast_and_evaluate(commodity="Pet Coke (fuel-grade)", horizon_days=30, us
     return hist, fc, info
 
 
-def run_forecast(commodity="Pet Coke (fuel-grade)", horizon_days=30, use_proxies=True):
+def run_forecast(commodity="Green Pet Coke (GPC)", horizon_days=30, use_proxies=True):
     """Backwards-compatible wrapper: (history, forecast, model_name)."""
     hist, fc, info = forecast_and_evaluate(commodity, horizon_days, use_proxies)
     return hist, fc, info["model"]
 
 
 if __name__ == "__main__":
-    commodity = "Pet Coke (PPI index)"
+    commodity = "Green Pet Coke (GPC)"
     print(f"Running forecast for {commodity}...")
     hist, fc, model = run_forecast(commodity)
 

@@ -28,9 +28,9 @@ from outlook import load_outlook, OUTLOOK_JSON
 
 SIGNALS_CSV = DATA_DIR / "signals.csv"
 UNITS = {
-    "Pet Coke (fuel-grade)": "USD per tonne (US export unit value, UN Comtrade)",
-    "Pet Coke (calcined)": "USD per tonne (US export unit value, UN Comtrade)",
-    "Pet Coke (PPI index)": "PPI index (Dec 1984 = 100)",
+    "Green Pet Coke (GPC)": "USD per tonne (US export unit value, HS 271311, UN Comtrade)",
+    "Calcined Pet Coke (CPC)": "USD per tonne (US export unit value, HS 271312, UN Comtrade)",
+    "Pet Coke PPI index (broad)": "PPI index (Dec 1984 = 100)",
     "Cobalt": "USD per tonne (IMF, LME 99.8%)",
     "Molybdenum": "USD per tonne (IMF, roasted concentrate)",
     "Lithium": "USD per tonne (IMF, battery-grade metal)",
@@ -268,7 +268,7 @@ with tab_fc:
             radar = radar[radar["signal_category"] != "Noise"]
         cols = ["urgency_score", "published_date", "signal_category", "price_direction",
                 "title", "reasoning", "source", "link"]
-        if not commodity.startswith("Pet Coke"):
+        if not "Pet Coke" in commodity:
             cols.insert(4, "applies_to")
         view = radar[cols].rename(columns={
             "applies_to": "Applies to", "urgency_score": "Urgency", "published_date": "Date",
@@ -284,7 +284,7 @@ with tab_fc:
                      column_config={"Link": st.column_config.LinkColumn(display_text="open")})
         st.caption(f"{len(view)} signals shown for {commodity}. Colour = urgency (red = 5)."
                    + (" Metals get headlines that name them, plus general critical-minerals "
-                      "news (marked 'All metals (general)')." if not commodity.startswith("Pet Coke") else ""))
+                      "news (marked 'All metals (general)')." if not "Pet Coke" in commodity else ""))
 
 # ======================================================================
 # TAB 2: which commodities could rise because of supply shortages?
@@ -302,6 +302,12 @@ with tab_risk:
         rank = supply_outlook(signals, histories, today)
         ol = get_outlook(_mtime(OUTLOOK_JSON))
         claude = {o["commodity"]: o for o in (ol or {}).get("outlooks", [])}
+        # outlooks written before the GPC rename used the old names
+        for new, old in {"Green Pet Coke (GPC)": "Pet Coke (fuel-grade)",
+                         "Calcined Pet Coke (CPC)": "Pet Coke (calcined)",
+                         "Pet Coke PPI index (broad)": "Pet Coke (PPI index)"}.items():
+            if new not in claude and old in claude:
+                claude[new] = claude[old]
 
         bar = rank.sort_values("risk_score")
         rfig = go.Figure(go.Bar(

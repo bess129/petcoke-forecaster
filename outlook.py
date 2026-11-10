@@ -29,7 +29,7 @@ OUTLOOK_JSON = DATA_DIR / "outlook.json"
 MAX_HEADLINES = 15   # per commodity, most urgent first
 
 SYSTEM = """You are a senior commodities analyst specialising in supply chains for \
-minor metals, rare earths and petroleum coke. You judge whether a commodity faces \
+minor metals, rare earths and petroleum coke (main focus: green petroleum coke, GPC). You judge whether a commodity faces \
 UPSIDE price risk because of a supply shortage in the next 1-3 months.
 
 Rules:

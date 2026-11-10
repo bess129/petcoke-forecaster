@@ -36,7 +36,7 @@ CATEGORIES = ["Supply Outage", "Export Policy", "Host Metal Cut",
 
 SYSTEM_PROMPT = """You are a senior commodities supply-chain analyst covering minor metals \
 (gallium, germanium, antimony, cobalt, indium, molybdenum, lithium, rare earths, tin) \
-and petroleum coke.
+and petroleum coke - above all GREEN (un-calcined, fuel-grade and anode-grade) petroleum coke (GPC).
 
 Your job is to spot WEAK SIGNALS: early supply-chain, refinery, or policy triggers \
 that could move spot prices BEFORE the move shows up in price data. Examples:

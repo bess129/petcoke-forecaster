@@ -56,6 +56,14 @@ SEARCHES = {
             "anode",
             "supply shortage",
         ],
+        # Extra searches focused on GREEN (un-calcined) petroleum coke - the main focus
+        "extra": [
+            ('("green petroleum coke" OR "green petcoke" OR "fuel grade petcoke" OR "fuel-grade petcoke")',
+             ["price", "import", "export", "cement", "supply"]),
+            ('(petcoke OR "petroleum coke")',
+             ["India import", "China import", "high sulphur", "sulfur limit", "Venezuela",
+              "Canada oil sands", "coker startup"]),
+        ],
     },
 }
 
@@ -85,7 +93,9 @@ def fetch_news(categories=None, max_per_query=20) -> pd.DataFrame:
     for commodity in categories:
         cfg = SEARCHES[commodity]
         subjects = cfg["subjects"] if isinstance(cfg["subjects"], list) else [cfg["subjects"]]
-        for subj, kw in [(s, k) for s in subjects for k in cfg["keywords"]]:
+        pairs = [(s, k) for s in subjects for k in cfg["keywords"]]
+        pairs += [(s, k) for s, kws in cfg.get("extra", []) for k in kws]
+        for subj, kw in pairs:
             query = f"{subj} {kw}"
             try:
                 feed = feedparser.parse(_rss_url(query),

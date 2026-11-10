@@ -51,7 +51,7 @@ def signals_for(signals_df, commodity):
     if signals_df is None or signals_df.empty:
         return pd.DataFrame(columns=getattr(signals_df, "columns", []))
     s = signals_df.copy()
-    if commodity.startswith("Pet Coke") or commodity not in METALS:
+    if "Pet Coke" in commodity or commodity not in METALS:
         out = s[s["commodity"] == "Pet Coke"].copy()
         out["applies_to"] = "Pet Coke"
         return out
@@ -87,7 +87,7 @@ def signal_score(signals_df, commodity, today=None):
 
 
 def apply_signal_shock(forecast_df, signals_df, manual_shock_pct=0.0,
-                       commodity="Pet Coke (fuel-grade)", today=None):
+                       commodity="Green Pet Coke (GPC)", today=None):
     """
     Returns (adjusted_df, info)
 
