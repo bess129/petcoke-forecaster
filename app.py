@@ -117,7 +117,7 @@ last_data = hist["ds"].iloc[-1]
 c1, c2, c3, c4 = st.columns(4)
 c1.metric(f"Latest Price ({last_data:%b %Y})", f"{current:,.1f}",
           help=f"Most recent published value. Units: {UNITS.get(commodity, 'as in your CSV')}")
-c2.metric(f"Baseline Forecast ({target:%d %b %Y})", f"{row30['yhat']:,.1f}",
+c2.metric(f"Forecast, {target:%d %b}", f"{row30['yhat']:,.1f}",
           f"{(row30['yhat'] / current - 1):+.1%} vs latest",
           help="Forecast for today + 30 days, before any weak-signal adjustment.")
 c3.metric("Active Weak Signal Score", f"{info['net_score']:+.2f}")
