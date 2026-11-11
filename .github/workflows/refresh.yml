@@ -1,6 +1,6 @@
-# Daily refresh: fetch Google News, score new headlines with Claude, write the
-# supply-shortage outlook, and save
-# data/news.csv, data/signals.csv and data/outlook.json back to this repository. Streamlit Cloud
+# Daily refresh: fetch Google News, score new headlines with Claude (English +
+# Chinese), write the supply-shortage outlook, pre-calculate all forecasts, and save
+# news, signals, outlook and forecast cache back to this repository. Streamlit Cloud
 # notices the change and the online dashboard shows the new signals.
 name: Daily news & Claude signal refresh
 
@@ -15,7 +15,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -23,8 +23,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install the few packages the scraper and detector need
-        run: pip install pandas feedparser anthropic
+      - name: Install packages (incl. Prophet and LightGBM for the forecasts)
+        run: pip install -r requirements.txt
 
       - name: Fetch news
         run: python scraper.py
@@ -39,11 +39,14 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python outlook.py
 
+      - name: Pre-calculate all forecasts (so the dashboard opens instantly)
+        run: python build_forecasts.py
+
       - name: Save updated data back to the repository
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.csv data/signals.csv data/outlook.json
+          git add data/news.csv data/signals.csv data/outlook.json data/forecast_cache.pkl
           if git diff --cached --quiet; then
             echo "No new headlines today."
           else
