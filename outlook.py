@@ -23,7 +23,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 from forecaster import COMMODITIES, DATA_DIR, load_history
 from shock import signals_for, supply_outlook, OUTLOOK_DAYS
-from signal_detector import MODEL, SIGNALS_CSV
+from signal_detector import MODEL, SIGNALS_CSV, as_list
 
 OUTLOOK_JSON = DATA_DIR / "outlook.json"
 MAX_HEADLINES = 15   # per commodity, most urgent first
@@ -127,8 +127,16 @@ def generate_outlook():
         text = "".join(b.text for b in msg.content if b.type == "text")
         data = json.loads(text[text.find("{"): text.rfind("}") + 1])
 
+    outlooks = as_list(data.get("outlooks", []) if isinstance(data, dict) else data)
+    for o in outlooks:   # list fields can also arrive as text
+        for k in ("drivers", "drivers_zh"):
+            if isinstance(o.get(k), str):
+                try:
+                    o[k] = json.loads(o[k])
+                except Exception:
+                    o[k] = [o[k]]
     result = {"generated_at": datetime.now(timezone.utc).isoformat(timespec="minutes"),
-              "model": MODEL, "outlooks": data.get("outlooks", [])}
+              "model": MODEL, "outlooks": outlooks}
     OUTLOOK_JSON.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
     return result
 

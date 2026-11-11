@@ -26,6 +26,24 @@ import os
 import pandas as pd
 
 DATA_DIR = Path(__file__).parent / "data"
+
+
+def as_list(value):
+    """Claude sometimes returns a tool list as a JSON *string* instead of a
+    real list. Accept both, and keep only dict entries."""
+    if isinstance(value, str):
+        import json
+        try:
+            value = json.loads(value)
+        except Exception:
+            start, end = value.find("["), value.rfind("]")
+            try:
+                value = json.loads(value[start:end + 1]) if start != -1 else []
+            except Exception:
+                value = []
+    if isinstance(value, dict):
+        value = [value]
+    return [v for v in (value or []) if isinstance(v, dict)]
 SIGNALS_CSV = DATA_DIR / "signals.csv"
 
 MODEL = "claude-sonnet-5-5"   # older names in the brief (claude-3-5-...) are retired
@@ -111,7 +129,7 @@ def _score_batch(client, batch: pd.DataFrame) -> list:
     text = ""
     for block in msg.content:
         if block.type == "tool_use":
-            return block.input.get("signals", [])
+            return as_list(block.input.get("signals", []))
         if block.type == "text":
             text += block.text
     return _parse_json_signals(text)
@@ -176,7 +194,10 @@ def analyze_headlines(news: pd.DataFrame, use_cache=True) -> pd.DataFrame:
     out["published_date"] = pd.to_datetime(out["published_date"], errors="coerce")
     out = out.sort_values(["urgency_score", "published_date"], ascending=False)
     out.to_csv(SIGNALS_CSV, index=False)
-    out = translate_missing(client, out)
+    try:
+        out = translate_missing(client, out)
+    except Exception as e:      # translation is a nice-to-have: never stop the refresh
+        print(f"  Translation skipped: {type(e).__name__}: {e}")
     return out.reset_index(drop=True)
 
 
@@ -219,7 +240,7 @@ def translate_missing(client, df, limit=TRANSLATE_PER_RUN):
             break
         for block in msg.content:
             if block.type == "tool_use":
-                for it in block.input.get("items", []):
+                for it in as_list(block.input.get("items", [])):
                     if it.get("id") in part.index:
                         df.loc[it["id"], "headline_zh"] = it.get("headline_zh")
                         df.loc[it["id"], "reasoning_zh"] = it.get("reasoning_zh")
