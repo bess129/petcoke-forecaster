@@ -171,7 +171,10 @@ TEXT = {
     "light_red":        ("短缺风险", "Shortage risk"),
     "light_yellow":     ("需关注", "Watch"),
     "light_green":      ("平稳", "Stable"),
-    "light_red_why":    ("新闻显示供应趋紧，价格有上涨风险", "News points to tightening supply, upside price risk"),
+    "light_red_why":    ("新闻与 AI 分析均显示供应趋紧，价格有上涨风险", "News and AI analyst both point to tightening supply, upside price risk"),
+    "light_yellow_why_news_only": ("新闻显示供应趋紧，但 AI 分析师尚未确认", "News points to tighter supply, not yet confirmed by the AI analyst"),
+    "light_yellow_why_ai_only":   ("AI 分析师认为有上涨风险，但直接相关新闻较少", "AI analyst sees upside risk, but few headlines name this commodity"),
+    "alert_detail":     ("评分 {score}，{n} 条直接相关供应新闻。主要新闻：", "score {score}, {n} supply headlines naming it. Top headline: "),
     "light_yellow_why_up":   ("预测价格明显上升，建议关注", "Forecast shows a notable rise, worth watching"),
     "light_yellow_why_down": ("预测价格明显下跌或新闻偏空，建议关注", "Forecast shows a notable fall or bearish news, worth watching"),
     "light_yellow_why_news": ("有部分供应相关新闻，但证据尚不充分", "Some supply news, but evidence is not yet strong"),
@@ -315,8 +318,8 @@ TEXT = {
 ### 如何阅读本系统
 
 **1. 总览** —— 每个品种一张卡片：
-- 🔴 **短缺风险**：新闻显示供应趋紧，价格有上涨风险，建议重点关注采购/库存安排。
-- 🟡 **需关注**：预测价格变化较大，或有部分供应新闻但证据不足。
+- 🔴 **短缺风险**：**两个独立信号同时确认**——至少3条直接相关的供应新闻显示趋紧，且 AI 分析师也判断为上涨风险。建议重点关注采购/库存安排。
+- 🟡 **需关注**：只有一个信号指向风险（新闻或 AI 其一），或预测价格变化较大（±8%以上）。
 - 🟢 **平稳**：暂无明显风险信号。
 
 **2. 价格预测** —— 单个品种的详细图表：
@@ -342,8 +345,8 @@ TEXT = {
 ### How to read this dashboard
 
 **1. Overview**: one card per commodity:
-- 🔴 **Shortage risk**: news points to tightening supply and upside price risk; review purchasing/inventory plans.
-- 🟡 **Watch**: the forecast moves notably, or there is some supply news but the evidence is not yet strong.
+- 🔴 **Shortage risk**: **two independent signals agree**: at least 3 supply headlines naming the commodity point to tightening, AND the AI analyst also sees upside risk. Review purchasing/inventory plans.
+- 🟡 **Watch**: only one signal points to risk (news or AI), or the forecast moves notably (more than ±8%).
 - 🟢 **Stable**: no significant risk signal.
 
 **2. Price Forecast**: detailed chart for one commodity:

@@ -135,10 +135,16 @@ def status_of(c, fc, hist):
     specific = int(rank.loc[c, "specific_signals"]) if c in rank.index else 0
     o = claude.get(c, {})
     ai_up = o.get("outlook") == "Upside risk" and o.get("confidence") in ("medium", "high")
+    news_strong = risk > 0.10 and specific >= 3
     row = fc.iloc[(fc["ds"] - target).abs().argmin()]
     chg = row["yhat"] / hist["y"].iloc[-1] - 1
-    if risk > 0.10 or ai_up:
+    # RED only when two independent signals agree; one alone = YELLOW
+    if news_strong and ai_up:
         return "red", t("light_red"), t("light_red_why")
+    if news_strong or (risk > 0.10 and specific >= 1):
+        return "yellow", t("light_yellow"), t("light_yellow_why_news_only")
+    if ai_up:
+        return "yellow", t("light_yellow"), t("light_yellow_why_ai_only")
     if risk < -0.10 or chg <= -0.08:
         return "yellow", t("light_yellow"), t("light_yellow_why_down")
     if chg >= 0.08:
@@ -184,8 +190,25 @@ with tab_ov:
     st.subheader(t("overview_alerts"))
     if not [r for r in rows if r["light"] == "red"]:
         st.success(t("overview_no_alerts"))
-    for r in sorted(alerts, key=lambda r: r["light"] != "red"):
-        msg = f"{ICONS[r['light']]} **{name_of(r['c'])}**: {r['why']}"
+    def _driver_text(c):
+        if c not in rank.index or not rank.loc[c, "top_driver"]:
+            return ""
+        link = rank.loc[c, "top_driver_link"]
+        title = rank.loc[c, "top_driver"].split("] ", 1)[-1]
+        if not signals.empty:
+            m = signals[signals["link"] == link]
+            if not m.empty:
+                title = pick(m["headline_zh"].iloc[0], title)
+        score = f"{rank.loc[c, 'risk_score']:+.2f}"
+        n = int(rank.loc[c, "specific_signals"])
+        return t("alert_detail", score=score, n=n) + f"[{title}]({link})"
+
+    colon = "：" if is_zh() else ": "
+    risk_of = lambda r: float(rank.loc[r["c"], "risk_score"]) if r["c"] in rank.index else 0.0
+    for r in sorted(alerts, key=lambda r: (r["light"] != "red", -risk_of(r))):
+        detail = _driver_text(r["c"])
+        msg = (f"{ICONS[r['light']]} **{name_of(r['c'])}**{colon}{r['why']}"
+               + (f"  \n{detail}" if detail else ""))
         (st.error if r["light"] == "red" else st.warning)(msg)
 
     st.markdown("---")

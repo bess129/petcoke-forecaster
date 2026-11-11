@@ -187,8 +187,9 @@ def supply_outlook(signals_df, histories, today=None, days=OUTLOOK_DAYS):
             k = pick["urgency_score"].astype(float) * pick["price_direction"].abs()
             top = pick.loc[k.idxmax()]
             driver = f"[{int(top['urgency_score'])}] {top['title']}"
+            driver_link = top.get("link", "")
         else:
-            driver = ""
+            driver, driver_link = "", ""
         n_sup = len(sup)
         y = hist["y"].astype(float).values
         mom3 = (y[-1] / y[-4] - 1) if len(y) >= 4 else np.nan
@@ -204,6 +205,6 @@ def supply_outlook(signals_df, histories, today=None, days=OUTLOOK_DAYS):
                      "supply_pressure": round(pressure, 2), "supply_signals": n_sup,
                      "specific_signals": n_specific,
                      "all_signals": len(s), "price_3m": mom3, "price_12m": mom12,
-                     "top_driver": driver})
+                     "top_driver": driver, "top_driver_link": driver_link})
     out = pd.DataFrame(rows)
     return out.sort_values(["risk_score", "price_3m"], ascending=False).reset_index(drop=True)
