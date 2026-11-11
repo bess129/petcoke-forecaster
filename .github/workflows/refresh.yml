@@ -1,7 +1,8 @@
 # Daily refresh: fetch Google News, score new headlines with Claude (English +
-# Chinese), write the supply-shortage outlook, pre-calculate all forecasts, and save
-# news, signals, outlook and forecast cache back to this repository. Streamlit Cloud
-# notices the change and the online dashboard shows the new signals.
+# Chinese), write the supply-shortage outlook, import Argus/company price files,
+# search for newly published pet coke prices (every 3 days), pre-calculate all
+# forecasts, and save everything back to this repository. Streamlit Cloud
+# notices the change and the online dashboard shows the new data.
 name: Daily news & Claude signal refresh
 
 on:
@@ -39,6 +40,16 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python outlook.py
 
+      - name: Import Argus / company price files from data/argus
+        continue-on-error: true
+        run: python import_argus.py
+
+      - name: Search for newly published pet coke prices (every 3 days)
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python price_watch.py
+
       - name: Pre-calculate all forecasts (so the dashboard opens instantly)
         run: python build_forecasts.py
 
@@ -46,10 +57,11 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.csv data/signals.csv data/outlook.json data/forecast_cache.pkl
+          git add data/news.csv data/signals.csv data/outlook.json data/forecast_cache.pkl data/gpc_prices.csv
+          git add data/price_watch_state.json 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No new headlines today."
+            echo "No new data today."
           else
-            git commit -m "Daily news & signal refresh"
+            git commit -m "Daily news, signal and price refresh"
             git push
           fi
