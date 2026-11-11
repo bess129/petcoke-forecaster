@@ -42,6 +42,12 @@ def build():
             print(f"  {c}: FAILED ({type(e).__name__}: {e})")
             continue
         out["items"][c] = {"hash": file_hash(path), "result": (hist, fc, info)}
+        try:                                 # live track record (forecast_log.csv)
+            from accuracy import log_forecast
+            if log_forecast(c, hist, fc, info):
+                print(f"  {c}: next-month forecast saved to the track record")
+        except Exception as e:
+            print(f"  {c}: track record not saved ({type(e).__name__})")
         print(f"  {c}: {info['model']} ({time.time() - t0:.0f}s)")
     with open(CACHE, "wb") as f:
         pickle.dump(out, f)

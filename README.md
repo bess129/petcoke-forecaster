@@ -164,3 +164,12 @@ To check: open **Task Scheduler** → Task Scheduler Library → PetCokeForecast
 Public sources used: Argus free sample report and free news, SMM (China customs import averages by origin),
 Energy Transit Intelligence weekly, UN Comtrade. Limitations: full daily Argus/Platts prices need a subscription;
 no free source prices coke by vanadium; no free verifiable Saudi FOB price was found; customs averages are 1–2 months late.
+
+## Forecast Accuracy page (预测准确度)
+
+`accuracy.py` turns the walk-forward back-test (8 past test dates per commodity) into plain numbers:
+average error overall / 1 month / 3 months ahead, comparison with the no-change benchmark, direction hit
+rate (moves > 2% only), and 80%-range coverage (each test date judged with a range built from the other
+dates). It also keeps a **live track record**: `build_forecasts.py` saves each next-month forecast to
+`data/forecast_log.csv` when new data arrives, and the page compares it once the real price is published.
+`accuracy_tab.py` is the page.

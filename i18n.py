@@ -350,7 +350,9 @@ TEXT = {
 - **预测可靠性**：系统会用历史数据反复模拟测试多种预测方法，自动选择过去最准确的方法，并告诉您平均偏差有多大。
 - 三角形标记是相关新闻，绿色代表利多（供应趋紧），红色代表利空。
 
-**4. 供应风险** —— 所有品种按“供应短缺风险”排序，并附 AI 分析师的文字观点。
+**4. 预测准确度** —— 用历史数据检验每个品种的预测：提前 1 个月、3 个月平均偏差多少，是否比“价格不变”更准，涨跌方向猜对多少，以及上线后真实预测的追踪记录。
+
+**5. 供应风险** —— 所有品种按“供应短缺风险”排序，并附 AI 分析师的文字观点。
 
 ### 数据来源
 - **生石油焦（GPC）/煅烧石油焦**：联合国 Comtrade 美国出口单价（月度，用于模型预测）；分产地/分硫含量价格来自 Argus 公开报告、SMM（上海有色网）中国海关进口均价、ETI 能源周报等公开来源。
@@ -382,7 +384,9 @@ TEXT = {
 - **Reliability**: the system repeatedly tests several forecasting methods on past data, picks the most accurate automatically, and shows its average error.
 - Triangles are related headlines: green = bullish (tighter supply), red = bearish.
 
-**4. Supply Risk**: all commodities ranked by shortage risk, with a written AI analyst view.
+**4. Forecast Accuracy**: each commodity's forecast tested on past data: average error 1 and 3 months ahead, whether it beats 'price stays the same', how often the direction was right, and a live track record since launch.
+
+**5. Supply Risk**: all commodities ranked by shortage risk, with a written AI analyst view.
 
 ### Data sources
 - **Green / calcined pet coke**: UN Comtrade US export unit values (monthly, used for the model forecast); prices by origin/sulphur from Argus public reports, SMM China customs import averages, ETI weekly and other public sources.
@@ -532,4 +536,102 @@ TEXT.update({
 4. At the next morning update the system reads it and recognises sulphur, HGI, basis and market from the price name (e.g. "6.5% sulphur HGI 40-45 fob US Gulf coast"). Duplicates are skipped."""),
     "pc_template_btn":  ("下载报价模板（CSV）", "Download quote template (CSV)"),
     "pc_all_btn":       ("下载全部石油焦价格数据（CSV）", "Download all pet coke price data (CSV)"),
+})
+
+TEXT.update({
+    "tab_accuracy":     ("预测准确度", "Forecast Accuracy"),
+    "acc_intro":        ("**这些预测过去有多准？** 系统“假装回到过去”的 8 个月份，只用当时已有的数据做预测，"
+                         "再与后来真实的价格对比。下表是每个品种的测试成绩。",
+                         "**How accurate have these forecasts been?** The system 'goes back in time' to 8 past months, "
+                         "forecasts using only the data known then, and compares with the prices that really followed. "
+                         "The table shows each commodity's test results."),
+    "acc_none":         ("暂无测试结果。", "No test results yet."),
+    "acc_table_title":  ("各品种预测成绩", "Test results by commodity"),
+    "acc_c_rating":     ("可靠性", "Reliability"),
+    "acc_c_all":        ("平均偏差（全部测试）", "Avg error (all tests)"),
+    "acc_c_1m":         ("提前1个月平均偏差", "Avg error, 1 month ahead"),
+    "acc_c_3m":         ("提前3个月平均偏差", "Avg error, 3 months ahead"),
+    "acc_c_vs":         ("与“价格不变”相比", "vs 'price stays the same'"),
+    "acc_c_dir":        ("涨跌方向猜对", "Direction right"),
+    "acc_c_cov":        ("实际价格落在区间内", "Actual inside range"),
+    "acc_c_worst":      ("最大一次偏差", "Largest miss"),
+    "acc_c_method":     ("采用的方法", "Method used"),
+    "acc_vs_is_nc":     ("本身即“不变”方法", "Is the no-change method"),
+    "acc_vs_better":    ("更准 {p}", "{p} more accurate"),
+    "acc_vs_worse":     ("略差 {p}", "{p} less accurate"),
+    "acc_vs_same":      ("差不多", "About the same"),
+    "acc_dir_none":     ("不预测方向", "No direction call"),
+    "acc_table_note":   ("可靠性按“全部测试”的平均偏差评定（与其他页面一致）。偏差越小越好。“价格不变”是最简单的对照方法（直接用最新价格当预测）——好的模型应该比它更准。"
+                         "“落在区间内”的目标约为 80%。涨跌方向只统计实际变动超过 2% 的情况。",
+                         "Reliability is rated on the average error over all tests (as on the other pages). Lower error is better. 'Price stays the same' is the simplest benchmark (latest price used as the "
+                         "forecast); a good model should beat it. The range should contain about 80% of actual prices. "
+                         "Direction is only counted when the price really moved by more than 2%."),
+    "acc_detail_title": ("单个品种详情", "One commodity in detail"),
+    "acc_pick":         ("选择品种", "Choose commodity"),
+    "acc_plain_1":      ("**通俗地说：** 在过去 {n} 次测试中，提前 1 个月的预测平均偏差为 **{err}**——"
+                         "如果预测价格是 100，实际价格通常在 **{lo}–{hi}** 之间。最大一次偏差为 {worst}（{when}）。",
+                         "**In plain terms:** over {n} past tests, the 1-month-ahead forecast was off by **{err}** on "
+                         "average: if the forecast is 100, the real price was usually between **{lo} and {hi}**. "
+                         "The largest miss was {worst} ({when})."),
+    "acc_plain_nc":     ("测试显示，复杂模型**没有比“保持最新价格”更准**，所以系统以最新价格为基础预测；"
+                         "短期涨跌主要依靠“供应风险”页的新闻信号提前预警。",
+                         "Tests show complex models were **not more accurate than holding the latest price**, so the "
+                         "forecast is based on the latest price; early warning of moves relies on the news signals on "
+                         "the Supply Risk page."),
+    "acc_plain_better": ("所选方法比“保持最新价格”**更准约 {p}**。",
+                         "The chosen method was **about {p} more accurate** than holding the latest price."),
+    "acc_plain_cov_ok": ("过去测试中 {cov} 的实际价格落在预测区间内（目标约 80%），区间宽度基本合理。",
+                         "{cov} of actual prices fell inside the forecast range in past tests (target about 80%), so the "
+                         "range width is reasonable."),
+    "acc_plain_cov_low":("⚠️ 过去测试中只有 {cov} 的实际价格落在预测区间内（目标约 80%），说明价格波动有时比区间更大，"
+                         "请把区间当作“通常情况”，而不是最坏情况。",
+                         "⚠️ Only {cov} of actual prices fell inside the forecast range in past tests (target about 80%): "
+                         "prices sometimes move more than the range. Treat it as the usual case, not the worst case."),
+    "acc_gpc_news":     ("另外的测试：在生石油焦预测中加入新闻信号后，平均偏差从 12.0% 降到 11.6%，有改善迹象，"
+                         "但还不够确定（统计上尚不显著）。系统会继续积累数据再检验。",
+                         "Separate test: adding news signals to the GPC forecast lowered the average error from 12.0% to "
+                         "11.6%, a promising sign but not yet certain (not statistically significant). It will be "
+                         "re-tested as more data builds up."),
+    "acc_actual":       ("实际价格", "Actual price"),
+    "acc_past_fc":      ("当时的预测", "Forecast made at the time"),
+    "acc_hover":        ("{when} 做的预测", "Forecast made {when}"),
+    "acc_chart_title":  ("如果过去用本系统预测：橙色虚线是每次测试的预测，蓝线是实际价格",
+                         "Had the system been used in the past: orange dotted = each test forecast, blue = actual"),
+    "acc_months_ahead": ("提前 {n} 个月", "{n} month(s) ahead"),
+    "acc_by_h_title":   ("预测越远，偏差越大（平均偏差）", "The further ahead, the larger the error (average)"),
+    "acc_live_title":   ("实际追踪记录（上线后的真实预测）", "Live track record (real forecasts since launch)"),
+    "acc_live_none":    ("系统从现在开始记录每次新数据后的预测，等到真实价格公布后再对比。",
+                         "From now on the system records its forecast whenever new data arrives, and compares once the "
+                         "real price is published."),
+    "acc_live_waiting": ("已记录 {n} 个预测，正在等待真实价格公布后对比。",
+                         "{n} forecasts recorded, waiting for the real prices to be published."),
+    "acc_live_summary": ("已有 {n} 个预测可以对比：平均偏差 **{err}**（“价格不变”方法为 {nc}），"
+                         "{cov} 落在预测区间内。",
+                         "{n} forecasts can be checked so far: average error **{err}** (no-change method: {nc}), "
+                         "{cov} inside the forecast range."),
+    "acc_l_made":       ("预测日期", "Made on"),
+    "acc_l_target":     ("预测月份", "For month"),
+    "acc_l_fc":         ("预测价格", "Forecast"),
+    "acc_l_range":      ("预测区间", "Range"),
+    "acc_l_actual":     ("实际价格", "Actual"),
+    "acc_l_wait":       ("等待公布", "Waiting"),
+    "acc_l_err":        ("偏差", "Error"),
+    "acc_l_in":         ("在区间内", "Inside range"),
+    "acc_live_note":    ("这是最严格的检验：预测是在真实价格出现之前做出并保存的，之后不会修改。"
+                         "官方月度价格通常晚 1–3 个月公布，因此需要一段时间才会出现对比结果。",
+                         "This is the strictest test: forecasts are saved before the real price exists and never changed. "
+                         "Official monthly prices are published 1–3 months late, so results take time to appear."),
+    "acc_how_title":    ("测试方法说明", "How the test works"),
+    "acc_how_md":       ("""- **回测（过去测试）**：选取最近的 {n} 个历史月份作为“当时”，只用那之前的数据预测后面 3–6 个月，与实际价格比较。不使用任何“未来”信息。
+- **系统会同时测试多种方法**（保持不变、减弱趋势、动量模型、Prophet、LightGBM，以及最好两种的组合），自动选用平均偏差最小的方法。
+- **平均偏差**：|预测 − 实际| ÷ 实际，再求平均。
+- **可靠性**：平均偏差 < 6% 为“高”，6–12% 为“中等”，> 12% 为“较低”。
+- **预测区间**：根据过去测试的偏差计算，目标是约 80% 的实际价格落在其中；本页的覆盖率是用“其他测试月份”的偏差来检验每一个月份，避免自己给自己打分。
+- 数据为月度价格（Comtrade / IMF），所以测试也按月进行。""",
+                         """- **Back-test**: take the {n} most recent historical months as 'now', forecast the next 3–6 months using only earlier data, and compare with actual prices. No future information is used.
+- **Several methods are tested** (no-change, damped trend, momentum, Prophet, LightGBM, and a blend of the best two); the one with the lowest average error is used automatically.
+- **Average error**: |forecast − actual| ÷ actual, averaged.
+- **Reliability**: average error < 6% = high, 6–12% = medium, > 12% = low.
+- **Forecast range**: built from past test errors, aiming to contain about 80% of actual prices; the coverage on this page checks each test month using a range built from the *other* test months, so the test does not grade itself.
+- Prices are monthly (Comtrade / IMF), so tests are monthly too."""),
 })

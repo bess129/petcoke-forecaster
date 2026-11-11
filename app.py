@@ -208,8 +208,8 @@ def summary_row(c):
 
 
 st.title(t("app_title"))
-tab_ov, tab_pc, tab_fc, tab_risk, tab_help = st.tabs(
-    [t("tab_overview"), t("tab_petcoke"), t("tab_forecast"), t("tab_risk"), t("tab_help")])
+tab_ov, tab_pc, tab_fc, tab_acc, tab_risk, tab_help = st.tabs(
+    [t("tab_overview"), t("tab_petcoke"), t("tab_forecast"), t("tab_accuracy"), t("tab_risk"), t("tab_help")])
 
 # ======================================================================
 # OVERVIEW
@@ -478,6 +478,16 @@ with tab_pc:
     try:
         import petcoke_tab
         petcoke_tab.render(forecast_for)
+    except Exception as e:
+        st.error(t("refresh_fail", err=e))
+
+# ======================================================================
+# FORECAST ACCURACY (supervisor point 1)
+# ======================================================================
+with tab_acc:
+    try:
+        import accuracy_tab
+        accuracy_tab.render(available, forecast_for, histories)
     except Exception as e:
         st.error(t("refresh_fail", err=e))
 
