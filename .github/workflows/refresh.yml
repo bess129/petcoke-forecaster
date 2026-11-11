@@ -16,7 +16,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -40,6 +40,12 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python outlook.py
 
+      - name: Explain major past price shifts with news (only new shifts)
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python explain_shifts.py
+
       - name: Import Argus / company price files from data/argus
         continue-on-error: true
         run: python import_argus.py
@@ -60,6 +66,7 @@ jobs:
           git add data/news.csv data/signals.csv data/outlook.json data/forecast_cache.pkl data/gpc_prices.csv
           git add data/price_watch_state.json 2>/dev/null || true
           git add data/forecast_log.csv 2>/dev/null || true
+          git add data/shift_events.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No new data today."
           else
