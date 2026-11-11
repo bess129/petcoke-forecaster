@@ -30,6 +30,7 @@ SIGNALS_CSV = DATA_DIR / "signals.csv"
 
 MODEL = "claude-sonnet-5-5"   # older names in the brief (claude-3-5-...) are retired
 BATCH_SIZE = 25
+TRANSLATE_PER_RUN = 120   # older headlines translated into Chinese per run
 
 CATEGORIES = ["Supply Outage", "Export Policy", "Host Metal Cut",
               "Refinery Turnaround", "Demand Shift", "Logistics", "Noise"]
@@ -73,9 +74,14 @@ TOOL = {
                         "price_direction": {"type": "number", "minimum": -1, "maximum": 1},
                         "urgency_score": {"type": "integer", "minimum": 1, "maximum": 5},
                         "reasoning": {"type": "string", "description": "One short sentence"},
+                        "headline_zh": {"type": "string",
+                                        "description": "The headline translated into Simplified Chinese"},
+                        "reasoning_zh": {"type": "string",
+                                         "description": "The reasoning sentence in Simplified Chinese"},
                     },
                     "required": ["id", "headline", "commodity", "signal_category",
-                                 "price_direction", "urgency_score", "reasoning"],
+                                 "price_direction", "urgency_score", "reasoning",
+                                 "headline_zh", "reasoning_zh"],
                 },
             }
         },
@@ -97,7 +103,8 @@ def _score_batch(client, batch: pd.DataFrame) -> list:
         tool_choice={"type": "auto"},
         messages=[{"role": "user", "content":
                    "Assess each headline below and call the record_signals tool "
-                   "ONCE with one entry per headline, using its id number. "
+                   "ONCE with one entry per headline, using its id number. Also give "
+                   "headline_zh and reasoning_zh in Simplified Chinese. "
                    "If you cannot use the tool, reply with ONLY a JSON array of "
                    "those entries.\n\n" + "\n".join(lines)}],
     )
@@ -156,7 +163,8 @@ def analyze_headlines(news: pd.DataFrame, use_cache=True) -> pd.DataFrame:
             if i in batch.index:
                 row = batch.loc[i].to_dict()
                 row.update({k: s[k] for k in ["signal_category", "price_direction",
-                                              "urgency_score", "reasoning"] if k in s})
+                                              "urgency_score", "reasoning",
+                                              "headline_zh", "reasoning_zh"] if k in s})
                 results.append(row)
         print(f"  Batch {start // BATCH_SIZE + 1}: scored {len(scored)} of {len(batch)} headlines")
 
@@ -168,7 +176,55 @@ def analyze_headlines(news: pd.DataFrame, use_cache=True) -> pd.DataFrame:
     out["published_date"] = pd.to_datetime(out["published_date"], errors="coerce")
     out = out.sort_values(["urgency_score", "published_date"], ascending=False)
     out.to_csv(SIGNALS_CSV, index=False)
+    out = translate_missing(client, out)
     return out.reset_index(drop=True)
+
+
+TRANSLATE_TOOL = {
+    "name": "record_translations",
+    "description": "Record Simplified Chinese translations.",
+    "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {
+        "type": "object",
+        "properties": {"id": {"type": "integer"},
+                       "headline_zh": {"type": "string"},
+                       "reasoning_zh": {"type": "string"}},
+        "required": ["id", "headline_zh", "reasoning_zh"]}}},
+        "required": ["items"]},
+}
+
+
+def translate_missing(client, df, limit=TRANSLATE_PER_RUN):
+    """Add Chinese translations to older signals that don't have them yet
+    (a few batches per run, most important first). Saves signals.csv."""
+    for c in ["headline_zh", "reasoning_zh"]:
+        if c not in df:
+            df[c] = pd.NA
+    need = df[df["headline_zh"].isna() & (df["signal_category"] != "Noise")].head(limit)
+    if need.empty:
+        return df
+    print(f"  Translating {len(need)} older headlines into Chinese...")
+    for start in range(0, len(need), 40):
+        part = need.iloc[start:start + 40]
+        lines = [f"{i}. HEADLINE: {r.title}\n   REASONING: {r.reasoning}"
+                 for i, r in zip(part.index, part.itertuples())]
+        try:
+            msg = client.messages.create(
+                model=MODEL, max_tokens=8000, tools=[TRANSLATE_TOOL], tool_choice={"type": "auto"},
+                system="You translate commodity-market news into concise, professional Simplified Chinese.",
+                messages=[{"role": "user", "content":
+                           "Translate each HEADLINE and REASONING into Simplified Chinese and call "
+                           "record_translations once, keeping each id.\n\n" + "\n".join(lines)}])
+        except Exception as e:
+            print(f"  Translation failed: {type(e).__name__}: {e}")
+            break
+        for block in msg.content:
+            if block.type == "tool_use":
+                for it in block.input.get("items", []):
+                    if it.get("id") in part.index:
+                        df.loc[it["id"], "headline_zh"] = it.get("headline_zh")
+                        df.loc[it["id"], "reasoning_zh"] = it.get("reasoning_zh")
+    df.to_csv(SIGNALS_CSV, index=False)
+    return df
 
 
 if __name__ == "__main__":

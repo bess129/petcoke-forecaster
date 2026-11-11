@@ -39,7 +39,8 @@ turnarounds, logistics blockages) are bullish; new supply, restarts and weak dem
 - If the price has ALREADY risen sharply, say whether the news suggests further upside \
 or that the shortage is priced in.
 - Be calibrated: with few or vague headlines, say 'Neutral' with 'low' confidence.
-- Plain English, short. No investment advice."""
+- Plain, short language for business readers. No investment advice.
+- The Chinese fields must say the same as the English ones, in natural professional Simplified Chinese."""
 
 TOOL = {
     "name": "record_outlook",
@@ -57,8 +58,13 @@ TOOL = {
                             "description": "1-3 short drivers taken from the headlines"},
                 "summary": {"type": "string", "description": "1-2 sentences"},
                 "watch_next": {"type": "string", "description": "1 sentence: what event to watch"},
+                "summary_zh": {"type": "string", "description": "summary in Simplified Chinese"},
+                "drivers_zh": {"type": "array", "items": {"type": "string"},
+                               "description": "drivers in Simplified Chinese"},
+                "watch_next_zh": {"type": "string", "description": "watch_next in Simplified Chinese"},
             },
-            "required": ["commodity", "outlook", "confidence", "drivers", "summary", "watch_next"],
+            "required": ["commodity", "outlook", "confidence", "drivers", "summary", "watch_next",
+                         "summary_zh", "drivers_zh", "watch_next_zh"],
         }}},
         "required": ["outlooks"],
     },
@@ -109,7 +115,8 @@ def generate_outlook():
         tools=[TOOL], tool_choice={"type": "auto"},
         messages=[{"role": "user", "content":
                    "Give the supply-shortage outlook for EVERY commodity below by calling "
-                   "record_outlook once. If you cannot use the tool, reply with only the "
+                   "record_outlook once, in English plus Simplified Chinese (summary_zh, "
+                   "drivers_zh, watch_next_zh), keeping commodity names exactly as written. If you cannot use the tool, reply with only the "
                    "JSON object {\"outlooks\": [...]}.\n\n" + brief}],
     )
     data = None

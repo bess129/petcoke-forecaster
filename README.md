@@ -1,5 +1,7 @@
 # Minor Metals & Pet Coke Early-Warning Forecaster
 
+Interface: **Simplified Chinese by default**, switch to English in the sidebar (`i18n.py` holds all text).
+
 Main pet coke focus: **green petroleum coke (GPC)**, the un-calcined coke (HS 271311) used as kiln/boiler fuel and as calciner feed.
 
 A Streamlit app that forecasts Pet Coke and minor-metal prices 30 days ahead,
@@ -19,6 +21,8 @@ Claude, and bends the forecast when high-urgency signals appear.
 | `forecaster.py` model selection | Each commodity: 3–5 candidate models (no-change, damped trend, momentum/ridge, Prophet, LightGBM) plus a blend of the best two are tested 8 times on past data (walk-forward). The lowest average % error wins. The shaded 80% range comes from that model's real past misses. |
 | `outlook.py` | Daily Claude "supply-shortage outlook" per commodity (upside / neutral / downside risk, drivers, what to watch) saved to `data/outlook.json`. |
 | `imf_to_csv.py` | Extracts cobalt, molybdenum, lithium, rare earths and tin from the IMF Excel file. |
+| `build_forecasts.py` | Pre-calculates every forecast daily (`data/forecast_cache.pkl`) so the dashboard opens instantly; the app falls back to calculating live if the cache is old or the price file changed. |
+| `i18n.py` | All dashboard text in Chinese and English, commodity names, units. |
 | `app.py` | Streamlit dashboard: KPI cards, forecast chart with adjusted cone, Weak Signal Radar table. |
 | `refresh.bat` | Runs scraper → signal detector → forecaster (for the daily scheduled task). |
 
