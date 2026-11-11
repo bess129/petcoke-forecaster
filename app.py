@@ -208,8 +208,9 @@ def summary_row(c):
 
 
 st.title(t("app_title"))
-tab_ov, tab_pc, tab_fc, tab_acc, tab_risk, tab_help = st.tabs(
-    [t("tab_overview"), t("tab_petcoke"), t("tab_forecast"), t("tab_accuracy"), t("tab_risk"), t("tab_help")])
+tab_ov, tab_pc, tab_fc, tab_acc, tab_sh, tab_risk, tab_help = st.tabs(
+    [t("tab_overview"), t("tab_petcoke"), t("tab_forecast"), t("tab_accuracy"), t("tab_shifts"),
+     t("tab_risk"), t("tab_help")])
 
 # ======================================================================
 # OVERVIEW
@@ -488,6 +489,16 @@ with tab_acc:
     try:
         import accuracy_tab
         accuracy_tab.render(available, forecast_for, histories)
+    except Exception as e:
+        st.error(t("refresh_fail", err=e))
+
+# ======================================================================
+# PRICE SHIFTS & EVENTS (supervisor point 2)
+# ======================================================================
+with tab_sh:
+    try:
+        import shifts_tab
+        shifts_tab.render(available, histories, signals)
     except Exception as e:
         st.error(t("refresh_fail", err=e))
 

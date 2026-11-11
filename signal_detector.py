@@ -59,7 +59,7 @@ BATCH_SIZE = 25
 TRANSLATE_PER_RUN = 200   # older headlines translated into Chinese per run
 
 CATEGORIES = ["Supply Outage", "Export Policy", "Host Metal Cut",
-              "Refinery Turnaround", "Demand Shift", "Logistics", "Noise"]
+              "Refinery Turnaround", "Environment & Weather", "Demand Shift", "Logistics", "Noise"]
 
 SYSTEM_PROMPT = """You are a senior commodities supply-chain analyst covering minor metals \
 (gallium, germanium, antimony, cobalt, indium, molybdenum, lithium, rare earths, tin) \
@@ -72,6 +72,11 @@ China MOFCOM), cuts at host-metal producers (zinc, aluminum, copper) that yield 
 minor metals as byproducts, new semiconductor/defense subsidies.
 - Pet coke: refinery coker turnarounds, heavy/sour crude supply shifts, calciner \
 outages, cement/steel kiln fuel-switching rules, freight or barge bottlenecks.
+- Environment & Weather (use this category): environmental inspections or pollution \
+controls that shut mines, smelters, calciners or kilns (e.g. China environmental \
+inspections, India petcoke import limits for air quality), emission/carbon rules, \
+environmental permit suspensions, and weather/climate events - hurricanes at US Gulf \
+refineries, floods, droughts, typhoons at ports, heatwave power rationing.
 
 Scoring rules:
 - price_direction: -1.0 (strong bearish, price drop) to +1.0 (strong bullish, price spike). \

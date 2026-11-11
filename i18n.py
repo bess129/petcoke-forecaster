@@ -157,6 +157,8 @@ CATEGORY_NAMES = {
     "Export Policy":       ("出口政策", "Export Policy"),
     "Host Metal Cut":      ("主金属减产", "Host Metal Cut"),
     "Refinery Turnaround": ("炼厂检修/停产", "Refinery Turnaround"),
+    "Environment & Weather": ("环保政策与天气", "Environment & Weather"),
+    "Macro & Financial":   ("宏观与金融", "Macro & Financial"),
     "Demand Shift":        ("需求变化", "Demand Shift"),
     "Logistics":           ("物流运输", "Logistics"),
     "Noise":               ("无关/噪音", "Noise"),
@@ -352,7 +354,9 @@ TEXT = {
 
 **4. 预测准确度** —— 用历史数据检验每个品种的预测：提前 1 个月、3 个月平均偏差多少，是否比“价格不变”更准，涨跌方向猜对多少，以及上线后真实预测的追踪记录。
 
-**5. 供应风险** —— 所有品种按“供应短缺风险”排序，并附 AI 分析师的文字观点。
+**5. 价格大变动与事件** —— 历史上的价格大涨大跌是什么引起的（包括环保政策与天气），事前出现过哪些预警新闻，以及现在是否出现了类似的信号。
+
+**6. 供应风险** —— 所有品种按“供应短缺风险”排序，并附 AI 分析师的文字观点。
 
 ### 数据来源
 - **生石油焦（GPC）/煅烧石油焦**：联合国 Comtrade 美国出口单价（月度，用于模型预测）；分产地/分硫含量价格来自 Argus 公开报告、SMM（上海有色网）中国海关进口均价、ETI 能源周报等公开来源。
@@ -386,7 +390,9 @@ TEXT = {
 
 **4. Forecast Accuracy**: each commodity's forecast tested on past data: average error 1 and 3 months ahead, whether it beats 'price stays the same', how often the direction was right, and a live track record since launch.
 
-**5. Supply Risk**: all commodities ranked by shortage risk, with a written AI analyst view.
+**5. Price Shifts & Events**: what caused past big rises and falls (including environmental policy and weather), which warning headlines came first, and whether similar signs are appearing now.
+
+**6. Supply Risk**: all commodities ranked by shortage risk, with a written AI analyst view.
 
 ### Data sources
 - **Green / calcined pet coke**: UN Comtrade US export unit values (monthly, used for the model forecast); prices by origin/sulphur from Argus public reports, SMM China customs import averages, ETI weekly and other public sources.
@@ -634,4 +640,66 @@ TEXT.update({
 - **Reliability**: average error < 6% = high, 6–12% = medium, > 12% = low.
 - **Forecast range**: built from past test errors, aiming to contain about 80% of actual prices; the coverage on this page checks each test month using a range built from the *other* test months, so the test does not grade itself.
 - Prices are monthly (Comtrade / IMF), so tests are monthly too."""),
+})
+
+TEXT.update({
+    "tab_shifts":       ("价格大变动与事件", "Price Shifts & Events"),
+    "sh_intro":         ("**过去的价格大涨大跌是什么引起的？事先有没有预警信号？** 系统找出每个品种历史上最大的几次价格变动"
+                         "（3 个月内变动至少 15%，且远大于该品种平常的波动），收集当时的新闻，由 AI 找出最可能的原因，"
+                         "以及在价格变动**之前**就出现的预警新闻。所有原因都附有原始新闻链接。",
+                         "**What caused past big price rises and falls, and were there warning signs?** The system finds "
+                         "each commodity's largest price moves (at least 15% within 3 months and well above its usual "
+                         "swings), collects the news from that time, and has AI identify the most likely cause and the "
+                         "warning headlines that appeared **before** the move. Every cause links to the original news."),
+    "sh_none":          ("尚未生成价格大变动分析。下次自动更新（或在 GitHub 手动运行 Run workflow）后会出现。",
+                         "No price-shift analysis yet. It appears after the next automatic update (or a manual Run workflow on GitHub)."),
+    "sh_watch_title":   ("现在是否出现了类似的预警信号？", "Are similar warning signs appearing now?"),
+    "sh_watch_caption": ("把过去“大涨之前”常见的新闻类型，与最近 30 天直接提到该品种的利多新闻比较。",
+                         "Compares the kinds of news that came before past big RISES with bullish news naming the "
+                         "commodity in the last 30 days."),
+    "sh_watch_none":    ("暂无可比较的数据。", "Nothing to compare yet."),
+    "sh_c_past":        ("过去大涨前常见的新闻类型（次数）", "News types before past rises (count)"),
+    "sh_c_lead":        ("通常提前多久", "Typical lead time"),
+    "sh_c_now":         ("最近30天同类新闻", "Similar news, last 30 days"),
+    "sh_c_status":      ("状态", "Status"),
+    "sh_alert":         ("⚠️ 出现类似信号", "⚠️ Similar signs now"),
+    "sh_some":          ("👀 少量类似新闻", "👀 A few similar headlines"),
+    "sh_quiet":         ("暂无", "None"),
+    "sh_pat_title":     ("预警规律（所有品种）", "Warning patterns (all commodities)"),
+    "sh_c_cat":         ("新闻类型", "News type"),
+    "sh_c_dir":         ("价格方向", "Price move"),
+    "sh_up":            ("大涨", "Big rise"),
+    "sh_down":          ("大跌", "Big fall"),
+    "sh_c_moves":       ("涉及的大变动次数", "Moves involved"),
+    "sh_c_warned":      ("事前有预警新闻的比例", "Share with early warning"),
+    "sh_pat_note":      ("“环保政策与天气”包括环保督查、污染与排放限制、环保许可暂停，以及飓风、洪水、干旱、台风、"
+                         "限电等天气与气候事件。",
+                         "'Environment & Weather' covers environmental inspections, pollution and emission limits, "
+                         "permit suspensions, and weather/climate events such as hurricanes, floods, drought, typhoons "
+                         "and power rationing."),
+    "sh_tl_title":      ("单个品种：价格大变动时间线", "One commodity: timeline of big moves"),
+    "sh_chart_title":   ("阴影 = 价格大变动期间（橙色上涨，灰色下跌）；菱形 = 事前预警新闻",
+                         "Shaded = big move (orange rise, grey fall); diamonds = early-warning headlines"),
+    "sh_warn_marker":   ("预警新闻", "Warning headline"),
+    "sh_price":         ("价格", "Price"),
+    "sh_types":         ("原因类型", "Cause type"),
+    "sh_warnings":      ("🔔 事前预警新闻（价格变动之前出现）：", "🔔 Early warnings (before the move):"),
+    "sh_no_warn":       ("没有找到明显的事前预警新闻。", "No clear early warning found."),
+    "sh_drivers":       ("📰 主要原因相关新闻：", "📰 News showing the cause:"),
+    "sh_lesson":        ("下次要留意", "Watch for next time"),
+    "sh_conf":          ("AI 判断：{conf}（基于当时 {n} 条新闻）", "AI judgement: {conf} (based on {n} headlines from the time)"),
+    "sh_lead_d":        ("提前 {d} 天", "{d} days ahead"),
+    "sh_lead_m":        ("提前约 {m} 个月", "~{m} months ahead"),
+    "sh_lead_same":     ("变动开始时", "as the move began"),
+    "sh_how_title":     ("分析方法与限制", "Method and limitations"),
+    "sh_how_md":        ("""- **大变动的定义**：3 个月内价格变动 ≥ 15%，并且 ≥ 该品种平常 3 个月变动幅度的 2.5 倍；海关单价数据先做 3 个月中位数平滑，避免单月异常。每个品种最多取 6 次、相隔至少 5 个月，从 2018 年起。
+- **新闻**：Google 新闻中变动开始前 2 个月到结束后约 3 周的新闻（包括价格/供应、以及环保与天气相关的搜索）。
+- **AI 分析**：Claude 只能引用提供给它的新闻（系统会核对编号），因此每个原因都能点开原文核对；新闻不足时会标为“把握较低”。
+- **预警新闻**：只统计在价格变动开始前（或开始后 1 个月内）发布的新闻；“提前多久” = 价格开始变动的月份 − 新闻日期。
+- **限制**：这是事后分析，AI 知道价格已经变动，可能会高估预警的清晰程度；较早年份新闻较少；月度价格只能精确到月。请把它当作“经验规律”，结合“供应风险”页的实时信号使用。""",
+                         """- **A big move**: price change ≥ 15% within 3 months and ≥ 2.5× the commodity's usual 3-month move; customs unit values are smoothed with a 3-month median first. At most 6 per commodity, at least 5 months apart, from 2018.
+- **News**: Google News from 2 months before the move to about 3 weeks after (price/supply searches plus environment and weather searches).
+- **AI analysis**: Claude may only cite the headlines it was given (ids are checked), so every cause can be opened and checked; thin news is marked low confidence.
+- **Warning headlines**: only those published before the move began (or within its first month); lead time = month the move began − headline date.
+- **Limitations**: this is hindsight analysis; the AI knows the move happened and may overstate how clear the warnings were; older years have less news; monthly prices are only precise to the month. Use it as experience-based patterns together with the live signals on the Supply Risk page."""),
 })

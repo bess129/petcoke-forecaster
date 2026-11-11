@@ -131,7 +131,7 @@ def apply_signal_shock(forecast_df, signals_df, manual_shock_pct=0.0,
 # Supply Risk Outlook: which commodities face upside price risk from shortages?
 # --------------------------------------------------------------------------
 SUPPLY_CATEGORIES = {"Supply Outage", "Export Policy", "Host Metal Cut",
-                     "Refinery Turnaround", "Logistics"}
+                     "Refinery Turnaround", "Logistics", "Environment & Weather"}
 OUTLOOK_DAYS = 30
 GENERAL_WEIGHT = 0.25          # max share of risk that general headlines can add
 SPECIFIC_FULL_CONFIDENCE = 5   # metal-specific supply headlines needed for full confidence

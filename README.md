@@ -173,3 +173,15 @@ rate (moves > 2% only), and 80%-range coverage (each test date judged with a ran
 dates). It also keeps a **live track record**: `build_forecasts.py` saves each next-month forecast to
 `data/forecast_log.csv` when new data arrives, and the page compares it once the real price is published.
 `accuracy_tab.py` is the page.
+
+## Price Shifts & Events page (价格大变动与事件)
+
+| File | What it does |
+|---|---|
+| `shifts.py` | Finds each commodity's biggest 3-month moves since 2018 (≥15% and ≥2.5× its usual move; customs series smoothed), summarises warning patterns, and checks whether similar news is appearing now |
+| `explain_shifts.py` | For each new shift: Google News from 2 months before to 3 weeks after (incl. environment/weather searches); Claude names the cause and the early-warning headlines, citing only given headline ids (checked). Cached in `data/shift_events.json` (first run ~US$1-3, then only new shifts) |
+| `shifts_tab.py` | The dashboard page |
+
+New news category **Environment & Weather (环保政策与天气)**: environmental inspections, pollution/emission
+limits, permit suspensions, hurricanes, floods, drought, typhoons, power rationing. Used in daily scoring
+(`signal_detector.py`), supply risk (`shock.py`), daily searches (`scraper.py`) and the shift analysis.

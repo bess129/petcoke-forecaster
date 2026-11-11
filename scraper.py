@@ -41,6 +41,9 @@ SEARCHES = {
             "zinc smelter cut",
             "semiconductor subsidy",
             "supply shortage",
+            "environmental inspection",
+            "pollution",
+            "(flood OR drought)",
         ],
     },
     "Pet Coke": {
@@ -63,6 +66,9 @@ SEARCHES = {
             ('(petcoke OR "petroleum coke")',
              ["India import", "China import", "high sulphur", "sulfur limit", "Venezuela",
               "Canada oil sands", "coker startup"]),
+            # environment & weather
+            ('(petcoke OR "petroleum coke" OR refinery OR calciner)',
+             ["hurricane Gulf Coast refinery", "pollution ban", "emission norms", "environmental inspection"]),
         ],
     },
 }
