@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T01:48+00:00",
+  "generated_at": "2026-11-11T02:02+00:00",
   "model": "claude-sonnet-5-5",
   "outlooks": [
     {
@@ -8,151 +8,151 @@
       "confidence": "low",
       "drivers": [
         "Mixed refinery outages and restarts (Deer Park outage vs Flint Hills, Valero restarts)",
-        "Petcoke rally above US$100 and higher freight rates",
-        "Price down 16% over 3 months"
+        "Petcoke rally above US$100 on energy complex strength",
+        "Freight rates squeezing US exports"
       ],
-      "summary": "Refinery news is mixed: some outages, but several units have restarted. The rally above US$100 and higher freight add some support, but the price is down 16% in 3 months and the supply score is near zero.",
-      "watch_next": "Watch how long the Deer Park outage lasts and whether freight rates keep limiting US Gulf coke exports.",
-      "summary_zh": "炼厂消息好坏参半:有停产,但多套装置已重启。石油焦突破100美元的上涨和运费走高提供一定支撑,但价格3个月下跌16%,供应压力评分接近零。",
+      "summary": "Supply signals are balanced: some refinery outages are offset by several coker restarts, and the headline score is near zero. Price is down 16% over 3 months, though the recent rally and high freight rates add some firmness.",
+      "watch_next": "Watch how quickly Deer Park and Lytton return to service, and whether US Gulf freight rates ease.",
+      "summary_zh": "供应信号基本平衡:部分炼厂停产被多家焦化装置复产所抵消,综合得分接近零。价格三个月下跌16%,但近期反弹和高运费带来一定支撑。",
       "drivers_zh": [
-        "炼厂停产与重启并存(Deer Park停产,Flint Hills、Valero重启)",
-        "石油焦涨至100美元上方,运费上升",
-        "价格3个月下跌16%"
+        "炼厂停产与复产并存(Deer Park停产,Flint Hills、Valero复产)",
+        "能源板块走强,石油焦急涨至100美元以上",
+        "运费高企抑制美国出口"
       ],
-      "watch_next_zh": "关注Deer Park炼厂停产持续时间,以及运费是否继续限制美湾石油焦出口。"
+      "watch_next_zh": "关注Deer Park和Lytton炼厂复产速度,以及美湾运费是否回落。"
     },
     {
       "commodity": "Cobalt",
       "outlook": "Upside risk",
       "confidence": "medium",
       "drivers": [
-        "DRC export quotas cutting output (Glencore cobalt output down 52%)",
-        "China export-control deadlines and critical mineral tightness",
-        "Price already down 24% over 3 months"
+        "DRC export quotas cutting output (Glencore cobalt down 52%)",
+        "China export-control deadlines and critical-mineral tensions",
+        "Price already down 24% in 3 months"
       ],
-      "summary": "DRC quotas are sharply cutting supply, and China's export-control uncertainty adds risk. The 3-month price fall suggests the market has not fully priced this in, though the 12-month gain is large.",
-      "watch_next": "Watch DRC quota adjustments and any change to China's export-control pause.",
-      "summary_zh": "刚果(金)配额大幅削减供应,中国出口管制的不确定性增加风险。价格3个月下跌说明市场可能尚未完全消化这些因素,但12个月涨幅已较大。",
+      "summary": "DRC quotas are sharply cutting supply, a clear bullish factor. Price has fallen 24% in 3 months, so shortage may not be fully priced in, though quota details are still evolving.",
+      "watch_next": "Watch DRC quota allocations and Q4 export volumes, plus China's export-control decisions.",
+      "summary_zh": "刚果(金)配额大幅压缩供应(嘉能可钴产量下降52%),明显利多。价格三个月已下跌24%,短缺可能尚未完全计价,但配额细则仍在变化。",
       "drivers_zh": [
-        "刚果(金)出口配额压减产量(嘉能可钴产量下降52%)",
-        "中国出口管制期限及关键矿产紧张",
-        "价格3个月已下跌24%"
+        "刚果(金)出口配额削减产量(嘉能可钴产量降52%)",
+        "中国出口管制截止日期与关键矿产紧张局势",
+        "价格三个月已下跌24%"
       ],
-      "watch_next_zh": "关注刚果(金)配额调整以及中国出口管制暂停安排的变化。"
+      "watch_next_zh": "关注刚果(金)配额分配、第四季度出口量以及中国出口管制决定。"
     },
     {
       "commodity": "Molybdenum",
       "outlook": "Upside risk",
       "confidence": "medium",
       "drivers": [
-        "Copper-moly major slows molybdenum output growth",
-        "China export-control deadlines",
-        "Price up 18% in 3 months and 42% in 12 months"
+        "Copper-moly major slowing molybdenum output growth",
+        "China export-control uncertainty",
+        "Price up 18% in 3 months"
       ],
-      "summary": "Slower output growth from a major producer and China export-control risk point to tight supply. Prices have already risen sharply, so part of the shortage may be priced in.",
-      "watch_next": "Watch China's export-control decisions and producer output guidance.",
-      "summary_zh": "大型生产商放缓钼产量增长,加上中国出口管制风险,供应偏紧。但价格已大幅上涨,部分短缺可能已被计入价格。",
+      "summary": "A major producer is slowing moly output growth and export-control risk persists. Price is already up 18% in 3 months and 42% in 12 months, so part of the tightness is priced in, but further upside is possible.",
+      "watch_next": "Watch China's export-control decisions and by-product moly output from major copper miners.",
+      "summary_zh": "一家大型生产商放缓钼产量增长,出口管制风险仍在。价格三个月已涨18%、12个月涨42%,部分紧张已被计价,但仍有上行空间。",
       "drivers_zh": [
         "铜钼大型企业放缓钼产量增长",
-        "中国出口管制期限",
-        "价格3个月涨18%、12个月涨42%"
+        "中国出口管制不确定性",
+        "价格三个月上涨18%"
       ],
-      "watch_next_zh": "关注中国出口管制决定及生产商产量指引。"
+      "watch_next_zh": "关注中国出口管制决定以及大型铜矿的副产钼产量。"
     },
     {
       "commodity": "Lithium",
       "outlook": "Neutral",
       "confidence": "low",
       "drivers": [
-        "China export-control uncertainty",
-        "New upstream capacity (CATL Ya'an project)",
+        "Generic China export-control headlines, little lithium-specific news",
+        "CATL expanding upstream lithium resources",
         "Price down 13% in 3 months"
       ],
-      "summary": "Policy risk from China is a supportive factor, but there are no lithium-specific outages. New upstream projects and a weaker 3-month price point to a balanced view.",
-      "watch_next": "Watch China's export-control moves and lithium supply restarts or new project news.",
-      "summary_zh": "中国政策风险提供支撑,但没有锂行业自身的停产消息。上游新项目和3个月价格走弱,整体偏中性。",
+      "summary": "Headlines are mostly broad critical-mineral news with little lithium-specific supply disruption. New upstream capacity from CATL is mildly bearish, so we see no clear shortage signal.",
+      "watch_next": "Watch lithium mine and brine supply updates and China's export-control decisions.",
+      "summary_zh": "新闻多为泛关键矿产消息,缺少锂的具体供应中断。宁德时代扩大上游资源略偏利空,暂无明确短缺信号。",
       "drivers_zh": [
-        "中国出口管制不确定性",
-        "新增上游产能(宁德时代雅安项目)",
-        "价格3个月下跌13%"
+        "中国出口管制的泛泛报道,缺少锂的具体消息",
+        "宁德时代扩大上游锂资源",
+        "价格三个月下跌13%"
       ],
-      "watch_next_zh": "关注中国出口管制动向以及锂供应复产或新项目消息。"
+      "watch_next_zh": "关注锂矿和盐湖供应动态以及中国出口管制决定。"
     },
     {
       "commodity": "Rare Earths",
       "outlook": "Upside risk",
       "confidence": "medium",
       "drivers": [
-        "Yttrium supply to Japan has stalled",
-        "China extended export-control pause by two months only",
-        "Price up 36% in 12 months"
+        "Yttrium supply to Japan 'stalled'",
+        "China export controls on Japan",
+        "China extended export-control pause to January/2027"
       ],
-      "summary": "Yttrium shortages in Japan show real physical tightness. China's two-month pause eases near-term risk but ends in January, so the risk comes back.",
-      "watch_next": "Watch China's January decision on export controls and yttrium shipments to Japan.",
-      "summary_zh": "日本钇短缺显示实物供应确实偏紧。中国将管制暂停期仅延长两个月,短期风险缓解,但1月到期后风险重现。",
+      "summary": "Yttrium is tight, with Japan months from running out, and controls on Japan remain. China's two-month pause on new controls eases near-term risk, but the deadline returns in January.",
+      "watch_next": "Watch for any China announcement on the extended pause and yttrium shipments to Japan.",
+      "summary_zh": "钇供应紧张,日本库存仅够数月,对日管制仍在。中国将新管制暂停延长两个月,缓解短期风险,但1月将再次面临截止期限。",
       "drivers_zh": [
-        "对日本钇供应已停滞",
-        "中国仅将出口管制暂停延长两个月",
-        "价格12个月上涨36%"
+        "对日本的钇供应“停滞”",
+        "中国对日本实施出口管制",
+        "中国将出口管制暂停延至1月/2027年"
       ],
-      "watch_next_zh": "关注中国1月份对出口管制的决定以及对日本的钇出货情况。"
+      "watch_next_zh": "关注中国关于延长暂停的正式公告以及对日本的钇出货情况。"
     },
     {
       "commodity": "Tin",
       "outlook": "Upside risk",
-      "confidence": "high",
+      "confidence": "medium",
       "drivers": [
-        "Congo conflict and Indonesia supply cuts",
+        "Congo conflict and Indonesia cuts squeezing supply",
         "Demand growth outpacing refined supply",
         "Price up 56% in 12 months"
       ],
-      "summary": "Supply disruption in Congo and Indonesia, plus demand outpacing supply, supports further upside. The price is already up strongly over 12 months, but it was flat over 3 months.",
-      "watch_next": "Watch Congo conflict developments and Indonesian export volumes.",
-      "summary_zh": "刚果(金)和印尼的供应中断,加上需求增速超过精炼锡供应,支持进一步上行。12个月涨幅已很大,但近3个月基本持平。",
+      "summary": "Supply disruption in Congo and Indonesia and demand outrunning refined supply point to a tight market. Price is up 56% in 12 months, so some is priced in, but 3-month change is flat and risks remain upward.",
+      "watch_next": "Watch Bisie (Congo) output and Indonesian export volumes.",
+      "summary_zh": "刚果(金)和印尼的供应中断,加上需求增长快于精炼锡供应,市场偏紧。价格12个月上涨56%,部分已被计价,但三个月基本持平,风险仍偏上行。",
       "drivers_zh": [
-        "刚果(金)冲突与印尼减产",
-        "需求增长超过精炼锡供应",
+        "刚果(金)冲突和印尼减产挤压供应",
+        "需求增长快于精炼供应",
         "价格12个月上涨56%"
       ],
-      "watch_next_zh": "关注刚果(金)冲突进展和印尼出口量。"
+      "watch_next_zh": "关注刚果(金)Bisie锡矿产量和印尼出口量。"
     },
     {
       "commodity": "Antimony",
       "outlook": "Neutral",
       "confidence": "low",
       "drivers": [
-        "Export deadline nearing",
-        "China export-control risk",
+        "China export deadline nearing",
+        "Generic critical-mineral policy headlines",
         "Price down 56% in 12 months"
       ],
-      "summary": "An approaching export deadline adds some upside risk, but the details are vague. The price is down sharply over 12 months, which suggests ample supply for now.",
-      "watch_next": "Watch the export deadline outcome and any new Chinese controls.",
-      "summary_zh": "出口期限临近带来一定上行风险,但细节不明确。价格12个月大幅下跌,显示当前供应较充裕。",
+      "summary": "Export-deadline news adds some supply risk, but price is down 56% over 12 months and headlines are generic. Without a specific disruption, we stay neutral.",
+      "watch_next": "Watch the antimony export deadline outcome and any Chinese export-licence changes.",
+      "summary_zh": "出口截止日期临近带来一定供应风险,但价格12个月下跌56%,且新闻较为泛泛。没有具体中断事件,维持中性。",
       "drivers_zh": [
-        "出口期限临近",
-        "中国出口管制风险",
+        "中国出口截止日期临近",
+        "关键矿产政策的泛泛新闻",
         "价格12个月下跌56%"
       ],
-      "watch_next_zh": "关注出口期限结果及中国是否出台新管制。"
+      "watch_next_zh": "关注锑出口截止日期的结果以及中国出口许可变化。"
     },
     {
       "commodity": "Gallium/Germanium (HS 811292)",
       "outlook": "Upside risk",
       "confidence": "medium",
       "drivers": [
-        "China export-control deadlines (Nov 27 for gallium)",
-        "Rising indium prices and tight by-product supply",
+        "China export-control deadlines (Nov 27 gallium)",
+        "Rising indium prices and tight minor-metal supply",
         "Price up 67% in 3 months"
       ],
-      "summary": "Export-control deadlines and tight by-product supply point to more upside risk. Prices have already jumped 67% in 3 months, so part of the shortage is priced in.",
-      "watch_next": "Watch China's November 27 deadline and any licence changes.",
-      "summary_zh": "出口管制期限和副产品供应紧张意味着更多上行风险。价格3个月已大涨67%,部分短缺已被计入价格。",
+      "summary": "China's export-control deadlines and tight minor-metal supply keep supply risk high. Price is already up 67% in 3 months, so much is priced in, but deadlines could push it further.",
+      "watch_next": "Watch China's November 27 deadline and any licensing changes for gallium and germanium.",
+      "summary_zh": "中国出口管制截止日期和小金属供应偏紧使供应风险居高。价格三个月已涨67%,大部分已被计价,但截止日期可能推动进一步上涨。",
       "drivers_zh": [
-        "中国出口管制期限(镓为11月27日)",
-        "铟价上涨、副产品供应紧张",
-        "价格3个月上涨67%"
+        "中国出口管制截止日期(11月27日,镓)",
+        "铟价上涨,小金属供应偏紧",
+        "价格三个月上涨67%"
       ],
-      "watch_next_zh": "关注中国11月27日的期限及许可政策变化。"
+      "watch_next_zh": "关注11月27日截止日期以及镓、锗的许可政策变化。"
     },
     {
       "commodity": "Calcined Pet Coke (CPC)",
@@ -160,18 +160,18 @@
       "confidence": "low",
       "drivers": [
         "Mixed refinery outages and restarts",
-        "Rising anode and feedstock costs",
-        "Price up 15% in 3 months"
+        "Rising anode costs and feedstock rally",
+        "Freight squeeze on US exports"
       ],
-      "summary": "Refinery news is mixed, and the supply score is near zero. Higher anode costs and freight support prices, but the 15% rise suggests much of this is priced in.",
-      "watch_next": "Watch the Deer Park outage and green coke price trends.",
-      "summary_zh": "炼厂消息好坏参半,供应压力评分接近零。阳极成本和运费上升提供支撑,但价格已涨15%,部分利好可能已被计入。",
+      "summary": "Refinery outages and restarts roughly offset, with a near-zero supply score. Higher anode costs and freight support firmness, and price is already up 15%, so we see no clear shortage.",
+      "watch_next": "Watch US Gulf coker restarts and anode feedstock prices.",
+      "summary_zh": "炼厂停产与复产大致抵消,供应得分接近零。阳极成本上升和运费高企带来支撑,价格已上涨15%,暂无明确短缺。",
       "drivers_zh": [
-        "炼厂停产与重启并存",
-        "阳极和原料成本上升",
-        "价格3个月上涨15%"
+        "炼厂停产与复产并存",
+        "阳极成本上升、原料走强",
+        "运费挤压美国出口"
       ],
-      "watch_next_zh": "关注Deer Park炼厂停产情况以及生焦价格走势。"
+      "watch_next_zh": "关注美湾焦化装置复产和阳极原料价格。"
     },
     {
       "commodity": "Pet Coke PPI index (broad)",
@@ -179,18 +179,18 @@
       "confidence": "low",
       "drivers": [
         "Mixed refinery outages and restarts",
-        "Freight squeeze on US exports",
+        "Petcoke rally above US$100",
         "Price down 5% in 3 months"
       ],
-      "summary": "Headlines are mixed and the supply score is near zero. Freight issues add some support, but the 3-month price is slightly lower.",
-      "watch_next": "Watch refinery outage durations and freight rates.",
-      "summary_zh": "消息好坏参半,供应压力评分接近零。运费问题提供一定支撑,但近3个月价格略有下降。",
+      "summary": "Supply headlines are balanced and the score is near zero. The recent petcoke rally and freight pressure give some support, but no clear shortage is visible.",
+      "watch_next": "Watch refinery turnaround schedules and freight rates over the next month.",
+      "summary_zh": "供应新闻基本平衡,得分接近零。近期石油焦反弹和运费压力提供一定支撑,但未见明确短缺。",
       "drivers_zh": [
-        "炼厂停产与重启并存",
-        "运费挤压美国出口",
-        "价格3个月下跌5%"
+        "炼厂停产与复产并存",
+        "石油焦反弹至100美元以上",
+        "价格三个月下跌5%"
       ],
-      "watch_next_zh": "关注炼厂停产持续时间和运费水平。"
+      "watch_next_zh": "关注未来一个月炼厂检修计划和运费走势。"
     }
   ]
 }
