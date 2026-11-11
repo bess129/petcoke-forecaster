@@ -1,0 +1,2284 @@
+{
+ "shifts": {
+  "Green Pet Coke (GPC)|2022-05": {
+   "commodity": "Green Pet Coke (GPC)",
+   "start": "2022-02-01",
+   "end": "2022-05-01",
+   "change": 0.40715806828330026,
+   "direction": "up",
+   "price_start": 136.02,
+   "price_end": 204.84,
+   "n_headlines": 18,
+   "cause_en": "War-driven energy rally lifted coal and petcoke prices, amplified by Kuwait and Benicia logistics disruptions",
+   "cause_zh": "俄乌战争推高能源与煤价,叠加科威特、贝尼西亚物流中断",
+   "explanation_en": "In February 2022 geopolitical risk pushed oil to an 8-year high, with coal supporting petcoke prices [7]. The Russia-Ukraine war then caused havoc for Indian cement makers, who are major petcoke buyers [11], and input costs rose [12]. Supply and logistics disruptions added to this: a Kuwait pipeline fire halted exports in January [3], the Saint John petcoke structure was damaged [10], and the Benicia pier fire in April may have disrupted Bay Area flows [13][14]. The headlines do not give a full price breakdown, so the weighting of these causes is inferred.",
+   "explanation_zh": "2022年2月,地缘风险推动油价升至8年高位,煤炭价格支撑石油焦价格[7]。随后俄乌战争冲击印度水泥企业(石油焦主要买家)[11],投入成本上升[12]。供应与物流扰动进一步加剧:1月科威特管道火灾一度中断出口[3],圣约翰石油焦储存设施受损[10],4月贝尼西亚码头火灾可能影响湾区物流[13][14]。新闻未给出完整的价格分解,各因素权重为推断。",
+   "lesson_en": "When geopolitical shocks lift oil and coal, petcoke tends to follow, especially if cement-sector demand and port logistics are also stressed.",
+   "lesson_zh": "地缘冲击推高油价和煤价时,石油焦往往跟涨,若水泥需求与港口物流同时承压,涨幅会更大。",
+   "categories": [
+    "Macro & Financial",
+    "Demand Shift",
+    "Logistics",
+    "Supply Outage"
+   ],
+   "drivers": [
+    {
+     "title": "Geopolitical risk drives entire energy complex higher with oil at 8-year peak and coal supporting petcoke prices",
+     "title_zh": "地缘风险推高能源价格,煤炭支撑石油焦",
+     "date": "2022-02-19",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxORWQycVdZd1VEZkhJSzhvU1NuZXRTVjR6aDhEenZqbG1tOUVTXzNWWHllOGxha0VwWVI4azhSbTR4a0phWl9ScFRnYU13V2lKZW91OC1feU9BekJhc01WeDJ5V3lPd0J0WnRxcHdkWElmV2NkRUFLcDBDYlNIX0gwWGpjSDRQdTlneHRUdHN2ekhjSHI1S0stUDlhNFgxbTBWSGlTbmwyWHhRbVJULXZWQ1Zyam1Wcm16eXhpcE1ZSkxQRGlxOC1jOXVqa0wyUUlpbXRZR3VvWEZuV1pSNVcybjVsM3pFZmp2QXFxa1F5VQ?oc=5"
+    },
+    {
+     "title": "Russia-Ukraine War is causing havoc on Indian cement companies. Here's what's going on",
+     "title_zh": "俄乌战争冲击印度水泥企业",
+     "date": "2022-03-04",
+     "source": "Livemint",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxObnNrQk1VbXhXZ0NqemdRVmxZTGhoRGJBYlZKYWRJZGlSN1hUeXpfVmdaejhJVzlKTjhmZTdDMlJGN0x4cWNLaFFpT0lfWUpjdGZ1N3hoNzFYWk9Bdnl2eENpWHR6am82a2FIOENINWpQQXhuLWdfSE15eGFRZzN3NVZmYTMtdFNMRExUS3llcGxGZE1WY3JJRkZoYWRMZw?oc=5"
+    },
+    {
+     "title": "Rise in construction block prices on higher input costs to hit real estate projects",
+     "title_zh": "投入成本上升推高建材价格",
+     "date": "2022-04-08",
+     "source": "ET Infra",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcXBXTVZ6aXBwYUJKNTU1YU5iTkM4ZlZDQ0JiV292YlZETHpsYjBTd0dZcHZQa21aY3BJdE9rQ3hnZUxnM19YMEp5QVFMcUFsczBvUl9vS25YNUZ4VkdxVzdMNHNnaGdNdWhxb21Zb3ROOElENE1MQTU2NXRfR0FNSTNPaGE2VHRyT1ZNVE9ncWQyUFZCdThJaExBeXVuY1JNRGtKeGRFQ2wzcEVqUktISHEteUZ0YWN1a2ZQcGZJOG51ZEc3UlluY3RadVcxRVNZNW9qQ2JGLTlWVHZNV3NjbzVOeWhUeWc00gHsAUFVX3lxTE9UaEoyTmhvbVZUYVZwZEpFWE1OVVE0TUFSRjZXZkhrc3I2TUpJTmo3N2pEbng3VG1KOFFueGlTRWpya3htTm8xejlFY2NyUUg4XzVuUjNZb1lZUDdsZXN0Y1dXelhOWGRjczNFVVdBM1FQbXhnVExuQnRqcl96NDV4enp4QzhsRC1GM2laTzhrLU85SXh2OXpxQmdhWkZUUFB1eVVnVktjRmpsbm95WndFVHN6T0g4QV9OSUNwUlgxb2VSamE1czVlSjgyNzJjaXNudmw5eFJJNFcyRHoxV3dHc2tvZjRnMFg2aWw0?oc=5"
+    },
+    {
+     "title": "Mid-March before petroleum coke will be out of damaged Saint John structure",
+     "title_zh": "圣约翰石油焦结构受损",
+     "date": "2022-03-01",
+     "source": "CBC",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQnZJam1mSkVBdnN6b3ZMQUdua2V1cHFaZWRfMEI2eXAtOTVub25QY0ZVcXdpcG9POEsybkstUFZicXc0LXNxLXRYdXY0UENrSk9zcFJNUWtFY3lhbjJsVUdtb19fNUNfREg0OW5qLUdZSkoyNlFqXzE1QWp0TkJ0ZFlOQXZCa2VCd21lM0syYlZEWGVZSnhpTGh4RExBLVAtSEdEQ1NmYldNMXBBRU44UWxJSFhMY1hX?oc=5"
+    },
+    {
+     "title": "UPDATE: Benicia Pier Fire Finally Extinguished; Boaters Warned Of Floating Debris",
+     "title_zh": "贝尼西亚码头火灾",
+     "date": "2022-04-10",
+     "source": "CBS News",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZXMxeDFHU0hwRmFQQTlXU2IwRFFONV9DTTZucWdDdmRSRDNfTmYtRVFyeDdoaExsWTlpWG9UbE9OakMtM3J6RkdZSnlWT0ZaUERUQlBJdl93ZFNCY0h2NzVhZnpOUEl4SnJXUy1GWnlnSXNiUGN1QnNmS21na1k2YlBFR0IxN0RTbGdwbmNBVm02X2htcjhjMW1oSXQtZjFoYzdrNEZsdVVSemRkNkUtOThOa2RvdGdZeUNWUw?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Pipeline fire in Kuwait halts petroleum coke exports, no injuries reported: KNPC",
+     "title_zh": "科威特管道火灾中断石油焦出口",
+     "date": "2022-01-21",
+     "source": "Al Arabiya English",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPM1pIR1oxanpYQzVNTkNxTHN4ankzTWJtcTdmdW11RzFnNGwtT1VkZkYxMElwV21FdlowTmMxajAtTWdjN2lkSTRQd1VNSGtkdTdpaUxKWjVQZlk4RGhJZG5tTlVkWURtaTJfRnoxZ3VrTXdCOVk4WXZGaWtkT2s2RE9VYXYzN2dWZm9TdFYtRUEtb2wwYUFFUEpjYkotTkI4bzRhUXZBRldjaW1zeHRUMjV6T2J6WnFkclFLUEFsZjI4WEdPcW9iU9IBzgFBVV95cUxPSjBiTVRaWjFOMnhXVzJlb2VBUzZVcmhNNUpLTzd0R1g0Qm9JZGFOQkFfNWVtMUZkUk5OYWlCNmZIVEFmQUktSDhuNmp4OTJQdDJqcVdQWVl2MS0tTEJaZElLcnpfR3lsOW0yUGRFMXJkLTUyWVJUanNNY01KU1Rid1JYRHV4MG5FR0UyTjFKZ3o0dDlVNm1HZDcwbVJtOWJsNW5mVDBKWUFsN0IzMENNcVB6SjluSENwS3hfcnktNmpNZ3h6ZUg2N2o0eTlSUQ?oc=5",
+     "lead_days": 10
+    },
+    {
+     "title": "Geopolitical risk drives entire energy complex higher with oil at 8-year peak and coal supporting petcoke prices",
+     "title_zh": "油价8年高位,煤炭支撑石油焦价格",
+     "date": "2022-02-19",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxORWQycVdZd1VEZkhJSzhvU1NuZXRTVjR6aDhEenZqbG1tOUVTXzNWWHllOGxha0VwWVI4azhSbTR4a0phWl9ScFRnYU13V2lKZW91OC1feU9BekJhc01WeDJ5V3lPd0J0WnRxcHdkWElmV2NkRUFLcDBDYlNIX0gwWGpjSDRQdTlneHRUdHN2ekhjSHI1S0stUDlhNFgxbTBWSGlTbmwyWHhRbVJULXZWQ1Zyam1Wcm16eXhpcE1ZSkxQRGlxOC1jOXVqa0wyUUlpbXRZR3VvWEZuV1pSNVcybjVsM3pFZmp2QXFxa1F5VQ?oc=5",
+     "lead_days": -19
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Green Pet Coke (GPC)|2023-06": {
+   "commodity": "Green Pet Coke (GPC)",
+   "start": "2023-03-01",
+   "end": "2023-06-01",
+   "change": -0.3502534854245881,
+   "direction": "down",
+   "price_start": 162.34,
+   "price_end": 102.53,
+   "n_headlines": 15,
+   "cause_en": "Post-2022 spike normalization as Indian import demand and supply shifts eased; headlines only partly explain",
+   "cause_zh": "2022年高价回落，印度进口与新增供应变化，标题仅部分解释",
+   "explanation_en": "Headlines show Reliance halting local petcoke sales and boosting imports, and aluminium smelters stung by high carbon costs, which hints at a tight, expensive market in early 2023. The subsequent fall coincides with new supply signals (Duqm refinery trial operation, Oman petcoke offered to Indian cement firms) and disruption at Venezuela's petcoke trader. None of the headlines directly states the price drop, so the explanation is inferential.",
+   "explanation_zh": "标题显示，信实工业停止国内石油焦销售并增加进口，铝冶炼厂也受高碳成本困扰，说明2023年初市场偏紧、价格偏高。随后价格下跌时，出现了新增供应信号（杜库姆炼厂试运行、阿曼向印度水泥企业推介石油焦），委内瑞拉石油焦贸易商也受调查影响。但标题没有直接说明跌价原因，以上解释属于推断。",
+   "lesson_en": "Watch for new refinery capacity and shifts in Indian import/buying patterns, since prices elevated by tight supply can retrace quickly.",
+   "lesson_zh": "关注新增炼厂产能和印度进口采购模式变化，供应紧张推高的价格可能快速回落。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial",
+    "Logistics"
+   ],
+   "drivers": [
+    {
+     "title": "Trial operation begins for crude oil distillation unit at Duqm Refinery",
+     "title_zh": "杜库姆炼厂原油蒸馏装置开始试运行",
+     "date": "2023-04-03",
+     "source": "Times of Oman",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV2sta0p5cFlCMU9fcHA2QVIyVEYtSDRjODQyNUN3aVVBeVZOY0hoTWNlS1EtRG9WRnNLME1qUXoxVkNpYmZpc2pJNW5HR3Nvc05iTEZEWDBYMk5meFRvMWJyUGZIMjdqdzZmN3hyZ0Z2Y2VDQ3BjeHItUUs4ZEFqc25HU24wTG9XX0tjUlBWYkZaY0Zhb1Y3UW1ULXB5UVpOMkhMcHljN0ZMcXMtLWdN?oc=5"
+    },
+    {
+     "title": "Indian cement companies keen on buying petcoke from Oman",
+     "title_zh": "印度水泥企业有意购买阿曼石油焦",
+     "date": "2023-05-30",
+     "source": "Oman Observer",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNWJkQUJWNHFMSlkyN29ibWtWeUM4RVRSUk5sdjNaVHJTVEdBa3VuVTRtb0YxRldaOVNIWjdGNVppRUJiRkJwaFd1MDZ2QWdDMWhYcXMyWWRvUmctdmpaZEVHLTNWdnNTU1IzY01xWGJNc0hLc19RY3ZPOU03WTFQUWI3UHhIemFzQk9tSXZHRFVVQW9xWFpCYkFtUmpoYnlBU1B1MG55YXFpbEVPdVFwOGlQd0dEZFpq0gFaQVVfeXFMTnRSdnRVcFlqSXJ3TTAtTG9mOER3V0YyRUNwbnE3d1RuUDBsYlNJMVFVUmRLcmRFbFdFeGhYS2dDQWh5UGNzbUxpSDl1RDJydDFHajl2eGZ4cUF3?oc=5"
+    },
+    {
+     "title": "EXCLUSIVE: Venezuela's PDVSA audits accounts with tycoon's petcoke firm amid probe",
+     "title_zh": "委内瑞拉PDVSA审计石油焦公司账目",
+     "date": "2023-03-28",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdGxwQ245WHNOZnpsMXhhaXA3T2R5cURQSGxxNUw5clJwdnY2am5vTkdBNGdBU05sY1dvZHdkQzB6OXA0dUpQNTZiNUF3RXc1UzBvWm8tTkJXVkdxRjRveElVV0VNLWtiSHZSc01GaU5xbGVnWVRQRW5oVkFaVjgxaHhUaFZqY3htTzFhMUE0Z1NNQXg4bXlLeDhQV0sxYWc5Ul9PbVNZT0xOUjdiQWg1RmNmOEc0MDNfaGdtdk13?oc=5"
+    },
+    {
+     "title": "India's Reliance stops local petcoke sales, boosts imports",
+     "title_zh": "信实停止国内石油焦销售并增加进口",
+     "date": "2023-01-31",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZEhvVWtsZlB4RlRfVjJCaXhMVmppcUtxR3F2Tmo2S0ZGVXBDdzVhWC1RN3BCSDJTVGJjeG8wWEJPNnRQVGI0WDVlMVphYUpKRGkyZ1BndEptWU9ybVdjNkxkNUdWSlVXNUxkeWtQS1RFUUEyak4tNVhPdS1oTlJkSDFaeXVGMDNFVHhWbkRfRjdWX2xacmh3RXo2ZTczU01nbEhhZDBhNmpDcEU4MkJaQUNwV2hKWTVlcUFLWTF4V1JqN1dMdWFsRmNsVDBLd9IB0wFBVV95cUxPSkd4RTB2SXR5Wm5IdnprY3dBYjQtNW9BQklLQlg4amZwY0ZUc2xMdzdHOGRYTERCRmZrcnZSREl6YkxHLVhJanNHSl9ISTlMX3VTbjNqMkR2QTlIRUltTDFqYkxxV1RFVWVLblZqRXlJcGVIM3pzMEFXcHYyUGFDRnZ4cWNzbS1TcVRGLXRYLXltU09ZWUgwQW5FTEp2RUtPMkxSTnVabks0SldxcVpoWm1zOHhKWTZpb3h6UC1oT1BOd0JaOXVYV3BZRC1kcmpiODNv?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Aluminium smelters stung by the escalating costs of carbo...",
+     "title_zh": "铝冶炼厂受碳素成本攀升冲击",
+     "date": "2023-02-09",
+     "source": "CRU Group",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTzNGSXYzTi1TR3dyVmdWWHFrVjd6QzFwa1RPUWw5QVRmSUdUckstX2ZXR3ZILTBuOVp2SlN0NGg3LWtmRFBBUElyTnhGQUNfT3VqWkU2UXJOUDgtZUE3Z1dzWHpDOXRseVJXY013OV95TFEyRzRpQ2p1TnFHZHFqQkJoQUdwWnlBUUdCSXZpMUZUQTlVVWpFdzRnWU9KY1RSQWJQNXA4VFVpT2pWQ3lhUmNmQXo3STdETHk2WW9EZ1V4Q09vMnctb0s1X0Y?oc=5",
+     "lead_days": 19
+    },
+    {
+     "title": "India's Reliance stops local petcoke sales, boosts imports",
+     "title_zh": "信实停止国内石油焦销售并增加进口",
+     "date": "2023-01-31",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZEhvVWtsZlB4RlRfVjJCaXhMVmppcUtxR3F2Tmo2S0ZGVXBDdzVhWC1RN3BCSDJTVGJjeG8wWEJPNnRQVGI0WDVlMVphYUpKRGkyZ1BndEptWU9ybVdjNkxkNUdWSlVXNUxkeWtQS1RFUUEyak4tNVhPdS1oTlJkSDFaeXVGMDNFVHhWbkRfRjdWX2xacmh3RXo2ZTczU01nbEhhZDBhNmpDcEU4MkJaQUNwV2hKWTVlcUFLWTF4V1JqN1dMdWFsRmNsVDBLd9IB0wFBVV95cUxPSkd4RTB2SXR5Wm5IdnprY3dBYjQtNW9BQklLQlg4amZwY0ZUc2xMdzdHOGRYTERCRmZrcnZSREl6YkxHLVhJanNHSl9ISTlMX3VTbjNqMkR2QTlIRUltTDFqYkxxV1RFVWVLblZqRXlJcGVIM3pzMEFXcHYyUGFDRnZ4cWNzbS1TcVRGLXRYLXltU09ZWUgwQW5FTEp2RUtPMkxSTnVabks0SldxcVpoWm1zOHhKWTZpb3h6UC1oT1BOd0JaOXVYV3BZRC1kcmpiODNv?oc=5",
+     "lead_days": 28
+    },
+    {
+     "title": "Indian industry turns to biomass as capital bans coal in pollution fight",
+     "title_zh": "印度工业转向生物质，德里禁煤",
+     "date": "2023-01-24",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORTdOZG1nSDhLTlZEM3BFUWZGMUNYVmNHMmthWV9hbGJiOEw5cHd5MDV5MkNqaGhCR1RONERhTmRhb2kyVlBCVGRCRmcyNW43NUI4TmZ6Tlo3T194UkZJM2NDQjFqU0J1SEIwbnpScGw4NS1HM0N0dDdYYWFwT1hyckNXaTZxU29Hd242TUg5N3NtWkR2V3h1TVJRanJ5akEtLTFNSDQ2RHphY0R4bFByTnRRQjNOaWN5SjRMNA?oc=5",
+     "lead_days": 35
+    }
+   ],
+   "confidence": "low"
+  },
+  "Green Pet Coke (GPC)|2026-04": {
+   "commodity": "Green Pet Coke (GPC)",
+   "start": "2026-01-01",
+   "end": "2026-04-01",
+   "change": 0.29525032092426184,
+   "direction": "up",
+   "price_start": 93.48,
+   "price_end": 123.62,
+   "n_headlines": 20,
+   "cause_en": "West Asia war lifted crude and petcoke costs, pushing GPC prices up sharply.",
+   "cause_zh": "西亚战争推高原油与石油焦成本,带动绿焦价格上涨",
+   "explanation_en": "Headlines from mid-to-late March 2026 link rising petcoke costs to a West Asia war and rising crude prices. Indian cement makers faced a cost shock (petcoke and packaging) and expected to raise prices [14][17][9][13]. Before the rally, the Jan 2026 outlook already expected strong fluctuations in petcoke prices [2], and an earlier forecast pointed to a shifting petcoke-to-coal discount [0]. The headlines give no hard supply-outage data, so the geopolitical and crude-cost link is the best-supported cause.",
+   "explanation_zh": "2026年3月中下旬的报道显示,西亚战争和原油价格上涨推高了石油焦成本,印度水泥企业面临石油焦和包装成本冲击,并预计上调水泥价格[14][17][9][13]。此前1月的展望已提示2026年石油焦价格可能大幅波动[2],更早的预测也指出石油焦相对煤炭的折价在变化[0]。标题中没有具体的供应中断数据,因此地缘冲突与原油成本传导是最有依据的解释。",
+   "lesson_en": "Watch crude oil and Middle East geopolitical shocks, since they quickly feed into petcoke costs and Indian cement-sector demand.",
+   "lesson_zh": "关注原油价格和中东地缘冲击,它们会迅速传导到石油焦成本及印度水泥行业需求。",
+   "categories": [
+    "Macro & Financial",
+    "Logistics",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "Cement makers staring at ₹200/tonne cost shock as West Asia war sends petcoke and packaging costs soaring",
+     "title_zh": "西亚战争推高石油焦与包装成本,水泥厂每吨成本增加200卢比",
+     "date": "2026-03-30",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQZTdfV0VEazVUTnNVRmpWb3A3V2xWNzNJVFpHZWJreXl5R05oWEJGU2dyZ3ZaamQ1UnBkZWtiTFBtelozY2pNdTB4TEtLbWJtWnJHdXFwaWdwUy1uQVdwXzNTTVR5QUdUUVBMSXRCNE44WjRuaWhHbHpKWGZvQ1g3d1cwX25yclFOQ0RyZWJvYzVOSkFuRTd5a19kMlFPZXRqaDVrNXk3bk1pZ1lfOXUxZkE3RE9ZX0N1TnNrdnI4SFR4bjdXNG53YTBMRUJpbGJnM3JaOHdEcTRiT1JwTi1QMHpPZFpXd3FJRU9oWlRvaWc1clZiWS01MGo2b2lsUkozODRLcDZ2a1lwZ9IBjwJBVV95cUxPVnFydXBCR201dFNhekxKNXBNMjE4ejJJSFBETzBMSEc1X0hxNWNtRlNGX1BfNkV3UHA0REpVbWVmQ1h3eEk3cnV6MWlSbnJsenY1RXp2bXh6UFFvYmY0MzZSdnRuV0JVUWxqV1pCUGd1ZTN1S01GVGhReC03djY0dEl6UE1DNkhxNHdvaVl1ZFBxQ0cwMXdPM3dOSnpjQWZTODdPZlpFbXNGbk9aUmtJVm1yblhybVpfTUpQaFI4ZDZBcngydzF6WWEtcHVxVWVtWi1TMzRDTm9aYXMzU1FlS2dMZWd4dG9iU21zOThDajU5ZFBhWE5TQVlSSml5eVV4Y3Fsdm5EY0RoSnRSeGpN?oc=5"
+    },
+    {
+     "title": "Cement makers staring at ₹200 per tonne cost shock as West Asia war sends petcoke & packaging costs soarin..",
+     "title_zh": "ET Realty:西亚战争致石油焦和包装成本飙升",
+     "date": "2026-03-30",
+     "source": "ET Realty",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbm9tSzhNTF8xbzBJWmZoakQtd0tkNVFCMUZrZk9hV2hhWjhHbk9JVDRNZ1gyWXN4b014ZFFQaVBraEhpek51WTBwLWRIQkVwVU5JRlF3WGdfeEtJcTY0cFFGRG9fRTF3RUVDLWxwaXNzVlM0TlNQZWlMQlhNSjAyQ1dWRVNNUzFla3pOUUhyanhfaEhVRGpnWU5veWs5THVET1JfYkVyTjRGXzJEcFJxS09nOG5FcEZ3LUIzbkxOakQ2NmkxMkFYTm0wUzRYZTFZZk5j0gHYAUFVX3lxTE43elJCNV9lMnFOSXl1ZlYzQWQzaF9tV25JXy1XaEtCWnhKZFEzZ2txY2htZzVZallWSVZaSFVZY1pTdWRqeEN5a01WNzg3N0dSblhaaVpoRnl2eHpNYTVkcWZJcmV5NTRWNXZWMm1OMWo4TDg3ZFdIWjVZTlZtUkRxVkxrcm5GTnNJc25raTg1a3JySHUwWWQxak16QjM3V3hrRUhQMmtkWlVfWlZOWDBGblZud2I3SGJWNnhjeDlQWGhGVEc2SFlHWW5Bb1RlZHdUSGpiM2k4cQ?oc=5"
+    },
+    {
+     "title": "India Cement Prices To Climb As Petcoke Hits $13 Per Tonne: Report",
+     "title_zh": "石油焦价格上涨,印度水泥价格将攀升",
+     "date": "2026-03-19",
+     "source": "BW Businessworld",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU05PWHVubmw5eWJ1cndXNUJpUmFsd2VpbUo3LXVyRjZWSDFaTklrZnAxT1FVTmJ2eWZ1SVhkTDcyU2Mtd1RwWFgxR2pDcWtRam40NXV1MEdqb1JDQUw3b3ZSZ2hFZ1Nya05CdTZJTDZhYnBPRk1ab0xaYlJHWjU0dzFGOHluVUpHYm5aNFV0STFjVXI4U3RseC1ScmQwa1RWWWFSYzU2eGp1ajhl?oc=5"
+    },
+    {
+     "title": "Cement prices likely to rise by end-March amid rising crude costs: Nuvama report",
+     "title_zh": "原油成本上升,水泥价格或在3月底上涨",
+     "date": "2026-03-20",
+     "source": "ET Infra",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQY2ZCcEk3a0lRN3JoTDVINm9WUTN5ZzdLdFpVN2I5SER0ejdWb25Eamo2S2ZQSTQwWUVJSktkQ29Qb3R6VnYxX19iZ0YzbkVkb1Q1ZjJxTWVTSlI1ZUpRd2RjdWpteFRmMHM5WFEwX01CSXk0Vi1yLTRVaXkxLW8zczJBNmVjLU1XTlFhdDloMldXaFdDVkV1WFFFWEl5TzNGeElRazJob01RS3VxWFVBSEp4UHM0TnRyYi1YZVBWcU1GaURRdEdoZndxOFhRQ2hiM2RKYmM0NmxkWHl2ZHFfc1pPTXbSAegBQVVfeXFMT05QZ2otcDZnNlZvWTlLR2Y2dVdzSkh3N25ObjB0azZNd3pfZlllY1pzRTFyZldBVk5KV25zejZVUS1KNFVzLWtRYUR1d0xfRElBcmNsUlRPMEhhZnB4djM1ZWFUR2xqa3FtTjM0TURIbXJYWmtrLWFrMndTS183cnZiZVVuQV9CdnE1RVdJSVNONm5Nd2RSLTJhMktUSG44LVRHU3RucE9lT2dKeHBOMDlDeVVIVHRMTFZuMS05QjI1LVQ2ZHo4Q2FBY0RsLTF1eTVpcjVtcDB2UkRWUXdkRmNRT3VSSzhHMw?oc=5"
+    },
+    {
+     "title": "Cement Prices Likely To Rise As Petcoke Costs Increase",
+     "title_zh": "石油焦成本上升,水泥价格可能上调",
+     "date": "2026-03-27",
+     "source": "Indian Cement Review",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMktLWVk5SndXS0xHUWxNVFFhenloODRKUUcxb050cUNSSll4V0F6U2loRGMxRDlqcTFVQ1pXVm9HUU43Qk5kODJPeFJHcXdCRl9LYmNvWDV2SXNpNjZoOHlQRUFVUDVzd3RYeXkzVVlFVTBpN3Z3ZUJWYXJPMUlMSWtHYjBNM1BNRWF1N05HdmJSVk1BdUhpMmNR?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "China Petroleum Coke Prices Rose Significantly in 2025, and May Experience Strong Fluctuations in 2026",
+     "title_zh": "中国石油焦2025年大涨,2026年或剧烈波动",
+     "date": "2026-01-19",
+     "source": "Sunsirs",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5BVGpJSjZ6SG9fV3lZRGxQaGhOWEVxQUVPXzF2WEhMSks5OUUyOWlIanpVc2dIVlk2Tzg1U21ZMGFyLWFpcUU1Q1FwTjIxWUJtRVJJeGtleVVRcm9JQ2c?oc=5",
+     "lead_days": -19
+    },
+    {
+     "title": "Oil lower, petcoke discount higher towards coal – 2026 forecast",
+     "title_zh": "油价走低,石油焦相对煤炭折价扩大——2026预测",
+     "date": "2025-11-20",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONkZvdE95enlGc2JoYjNTQjQ2aXRiVkh0QUdPVlJaaV9tR0dPdTFRaHZwOUxGaWdmUEpoRDY5NW11RnZrX3R6aGZWSDFOMUM1Z1BxR0w3RGw5Mi1xR0tjamhSVERzbGZMM3NnYTRTOV8tamJMUHQyZk1la3MyczFFYXBueXg5Z0FkVzEzelczSWJpT1BrYUVXVU9mZ09MQ21vT1kwU19tdjAwQQ?oc=5",
+     "lead_days": 41
+    },
+    {
+     "title": "US Petroleum Coke Prices Edge Up 0.9%, Shows Resilient in December 2025",
+     "title_zh": "2025年12月美国石油焦价格小幅上涨",
+     "date": "2025-12-22",
+     "source": "ChemAnalyst",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdXZVM2dqWW1rQkxKa1hoYlFrZ0hEZV9PSTV6aENFWnFpWDF3Y0lzZElWN1FJMi1qRk5mT2hYWjRHUjl4dFk1dUZfbkhZN05Lc3JSSHlFYmNka0pUN1J1eTJJNUdvTU8yVWlzRVhBSk5CU1ZPeWxYUjN3ZjBXbmpncXFZejFEVGF4TFpJZzFPR0VuNF9NcjZoS2Q3YTZmdUx1YjE5cGZTNHA5NWJ4UG1jdlRjM0x2OFFaYXoyR21Jbw?oc=5",
+     "lead_days": 9
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Cobalt|2019-03": {
+   "commodity": "Cobalt",
+   "start": "2018-12-01",
+   "end": "2019-03-01",
+   "change": -0.4330158730158732,
+   "direction": "down",
+   "price_start": 55263.1578947368,
+   "price_end": 31333.3333333333,
+   "n_headlines": 58,
+   "cause_en": "Cobalt price crash after oversupply and artisanal output; headlines only partially explain it.",
+   "cause_zh": "供应过剩与手采钴涌入致钴价暴跌,新闻仅部分解释",
+   "explanation_en": "The headlines do not directly document the fall. Earlier items point to a supply-side picture: artisanal mining expected to balance the market [0], and a Katanga export halt that was expected to lift prices [7] but was followed by audit and controversy [29]. A March 2019 article titled \"What's Behind The Cobalt Price Crash\" [47] confirms a crash but its content is not shown, so the specific mechanism (likely oversupply after the 2018 boom) is inferred and uncertain.",
+   "explanation_zh": "这些标题并未直接说明价格下跌的原因。早期报道提示了供应面的情况:手工采矿被认为将使市场趋于平衡[0];Katanga出口暂停本被预期推高价格[7],随后却引发审计与争议[29]。2019年3月一篇题为\"钴价暴跌背后\"的文章[47]证实了价格暴跌,但内容未给出,因此具体机制(很可能是2018年热潮后的供应过剩)只是推断,并不确定。",
+   "lesson_en": "When prices are bid up on supply-disruption hopes, watch for artisanal supply and resumed exports that can quickly reverse the rally.",
+   "lesson_zh": "当价格因供应中断预期而被推高时,要留意手工采矿供应和出口恢复,它们可能迅速逆转涨势。",
+   "categories": [
+    "Demand Shift",
+    "Supply Outage"
+   ],
+   "drivers": [
+    {
+     "title": "What's Behind The Cobalt Price Crash",
+     "title_zh": "钴价暴跌背后的原因",
+     "date": "2019-03-04",
+     "source": "Crude Oil Prices Today | OilPrice.com",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb2RqbThDWGp3UGFaNmR2VHdRanlmNzY5QzVVdDdCOWlKOVB6QUVxQmNucVEzcG5QR2UyTzZvSEVEREFsSGJPZUNmUlN5dGZ4MVBHSkx6STFJbUx4WUJTZ3BHSThCLUZHWjBSOVBxUnpHa1JBN2tfM0NUUVJDTl9Hc3VaS05vTzZ4clVZ0gGQAUFVX3lxTE04aWROclFiR3FDcGs4Tl9HNklyS3cwcWFQY2JwUFJvQlJvc0tjVmRDcFlIb0RMcU1XQ1h1czRZckZMU0ltS25nLXI5OTltWllYdTFEM0RGRTJHM2p3ZlMwVGVwZDlUbVlnRWZHRGFNWVk2QUwzOENwVWR1bXJRdzFzVzJCNlkxT08zakdtaUdJVg?oc=5"
+    },
+    {
+     "title": "Artisanal mining will balance the cobalt market",
+     "title_zh": "手工采矿将使钴市场趋于平衡",
+     "date": "2018-10-01",
+     "source": "CRU Group",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWW5JblN6V0liankybkpNdzZaQXpKWFQzV2h0LWhIVTM3QlBNTWZ6VVJnSmhiZGlFSjdPQnRLSGg0cGdUNDVLcmtNLS1GTUFEemJSWDlJa202aGRrWE54ZFMyM0ZqdU5BWEV5Y3g3UGRzMDQyWWhkaUtOdlU1OU1VWUhRRDN3TTMxNkp3OHJWVW1xQkI2R2ZDdm9FRU9UQzgwUS11Q0kzMjdGam44RGdCVDJR?oc=5"
+    },
+    {
+     "title": "Cobalt mine sales halt to push up price of key electric car metal",
+     "title_zh": "钴矿销售暂停将推高电动车金属价格",
+     "date": "2018-11-06",
+     "source": "Financial Times",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWVU0bnRMZnBwbG5Pbm9yWGpCXy1UTmdQZEZESHlBQ1dmbWFqWi13LVRVck5HR0F1R1pxLTc4eFZnU0FwR3M2cUVmczdjc2dNMnZMMVMyWjdtVXlDNVR5eFRyMkVnWlNFSGZzZ1dISDNfXzFjd2NaNDhWVHBhZmFhRURlQmw?oc=5"
+    },
+    {
+     "title": "Congo Begins Audit of Glencore Unit After Cobalt-Export Halt",
+     "title_zh": "刚果在钴出口暂停后开始审计嘉能可子公司",
+     "date": "2018-12-03",
+     "source": "Bloomberg.com",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQUY0QzFHNl9wcnBKRlRkNWs3cXNzUjVsQWF0c2tjb0plY3I3REM5SGQ4RGdNNWcwZnEtbGxxaThNMWt0VWF5OVF5TDM5aWdYTktFR184VDg2N3pIV3dZdFoyM1BvYzBtNUFQeTJ6Yk1FQVlSQW16dndfcTBraTAyUXlhMWJCTGtVMnFYdmNoQUVDVXRRYVkyLUVLb05sZkNtOHloNFRmcVMwZmZMbi1xbXlaYXk?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Artisanal mining will balance the cobalt market",
+     "title_zh": "手工采矿将使钴市场趋于平衡",
+     "date": "2018-10-01",
+     "source": "CRU Group",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWW5JblN6V0liankybkpNdzZaQXpKWFQzV2h0LWhIVTM3QlBNTWZ6VVJnSmhiZGlFSjdPQnRLSGg0cGdUNDVLcmtNLS1GTUFEemJSWDlJa202aGRrWE54ZFMyM0ZqdU5BWEV5Y3g3UGRzMDQyWWhkaUtOdlU1OU1VWUhRRDN3TTMxNkp3OHJWVW1xQkI2R2ZDdm9FRU9UQzgwUS11Q0kzMjdGam44RGdCVDJR?oc=5",
+     "lead_days": 60
+    },
+    {
+     "title": "Cobalt – a potential bottleneck in the transition to electric mobility",
+     "title_zh": "钴可能成为电动出行转型的瓶颈",
+     "date": "2018-11-13",
+     "source": "Phys.org",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZ0FrSlE2UkJ6Z0ltMHZoQW90cElIaVVzSVRqSHdxWEY4WkZGT01weWFVVWFDY2JYaWwyNFZkT1g2eHlSQ3NmVGNmaGg1cW16SlZxVUFBZFM5UV9hYVRTcnZiZFRlS084X3ZEYVpmekk1YnRSRERJT1VQRzJVMm1OTE9ncE0zX2pnQ0E?oc=5",
+     "lead_days": 17
+    },
+    {
+     "title": "Can the world produce enough cobalt for electric vehicles?",
+     "title_zh": "世界能否生产足够的电动车用钴?",
+     "date": "2018-12-01",
+     "source": "The Economist",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWUtLQ1VNSFZaS2ZIdVljOVdMd2VKOGlCb2JHSUd6ZUdZcm1aS0E3NmsxRkNlS0lkbzR3aWt2TTVvSkktSldXMzI1V1VrajlJTjFEa1lWYUZpX25UWUhKZ2ctVWVXQ1h6MzJ5OVZlUDNNS1FLamoxMjd0WTVDY1hTN3o3dzE2ZGRueHBzRGtmN0t6bmRMWi1aNE16eDV6X0JVVlBTUHlR?oc=5",
+     "lead_days": -1
+    }
+   ],
+   "confidence": "low"
+  },
+  "Cobalt|2021-03": {
+   "commodity": "Cobalt",
+   "start": "2020-12-01",
+   "end": "2021-03-01",
+   "change": 0.64400615384855,
+   "direction": "up",
+   "price_start": 31882.2857142857,
+   "price_end": 52414.6739130434,
+   "n_headlines": 63,
+   "cause_en": "EV-driven demand boom and rallying battery-metal prices amid tight supply-chain concerns",
+   "cause_zh": "电动车需求升温带动电池金属价格上涨,供应链趋紧",
+   "explanation_en": "Headlines show a battery-metal rally already under way: cobalt and nickel lifted the EV Metal Index to a 2020 high in Oct, and to a fresh record in Jan 2021. Forecasts of cobalt demand doubling by 2030 and carmakers' blind spot on input prices point to demand-led tightness. By March, Benchmark was voicing supply-chain concern as battery material prices soared. The headlines give no specific supply outage, so the explanation is mainly demand and sentiment, with moderate confidence.",
+   "explanation_zh": "新闻显示电池金属涨势已持续:2020年10月钴、镍上涨推动电动车金属指数升至年内高位,2021年1月再创历史新高。罗斯基尔预测2030年钴需求翻倍,车企对原料价格缺乏预判,均指向需求拉动的供应偏紧。3月Benchmark对供应链表示担忧,电池材料价格飙升。标题中没有明确的供应中断事件,因此主要归因于需求与市场情绪,置信度中等。",
+   "lesson_en": "Watch battery-metal indices and EV demand forecasts: a sustained rally in cobalt and nickel, with carmakers unhedged, can extend into a larger price surge.",
+   "lesson_zh": "关注电池金属指数与电动车需求预测:钴、镍持续上涨而车企未对冲时,涨势可能进一步放大。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Cobalt price rally lifts EV Metal Index to fresh record high",
+     "title_zh": "钴价上涨推动电动车金属指数创历史新高",
+     "date": "2021-01-19",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON042MkZqMDRTMDVadXk4d3J2aFNJemRvSnFoTTRrVThOMl9hR192cnZXOWkzWWkwWjc2eUY1cUo3dVBRRnBMN3ZVbF91b3MwVHdTX1E3WmREelNWVGlRbUhlbndDWC1MZlc2MjU3YkpnTVFPbEZ5YVZUNWFfaG5BX3hSZGx4NFFzcVlzWA?oc=5"
+    },
+    {
+     "title": "Prices for key lithium-ion battery materials soar as Benchmark voices concern over supply chain",
+     "title_zh": "关键锂电材料价格飙升,Benchmark担忧供应链",
+     "date": "2021-03-11",
+     "source": "www.bestmag.co.uk",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeTlaRi1sUVVzbXl5Q0dyTmVCeWx0dHhscmh1SV9LN3pDcjdERFpDV18xWnNkekViZVhPMFdxRS1FYXlqVUpDdURwMzhsQ3dqVHpVRHFLVGhQdG56NVVvd1hjX09XWEhFQ01mVjZ4ckJjcWduTnZSdDZWZzRVS09TcEJTZ2Y2c3d1Z19OUF9jeTVQeWwzUlZrRWUxaWlRNHBKV1F0LTVvY1hYQkxfN1dNaU0wbEw3Zw?oc=5"
+    },
+    {
+     "title": "Roskill forecasts demand for cobalt to double by 2030",
+     "title_zh": "罗斯基尔预测2030年钴需求翻倍",
+     "date": "2020-12-10",
+     "source": "The Northern Miner",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZHA2aUJDSFBOelBMXzdqaFlSdWJpZmVXRnBydlZrNGNNVzlWa1d0aVRHMWJCY2RSM1FQYVp1Vnk2WERmR2NIUGVubm9kMXk2WG4zSVRnZVp3TU1LY1hJbVprT1ZCZDhLM2hMTnpSYjBBMmpVOThEYzhsNjdLMDZtSGFwVDVscXJ3N096RVY2R1RKMzdOc0JTYUJabjRqXzVwckk5YUNBVQ?oc=5"
+    },
+    {
+     "title": "Carmakers have blind spot for lithium, cobalt, nickel prices",
+     "title_zh": "车企对锂、钴、镍价格存在盲区",
+     "date": "2020-12-03",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMlRqclNwcUcwZU9lRFUxZ1NaR3EwM1MzbnNHeVpzR2Roc1NoQnJBcVhaLWFBN1VoRktKNTZsUFlnam1KR2ZRN3BEMGJZQnlDUk5kaGRrNG5mWGhtQ3JJemR4RnFfR1R4dm93WklYbTREekl1YkdxR1lLdVFhQ2RvX0hFYlZzYTFRa0E?oc=5"
+    },
+    {
+     "title": "Cobalt, nickel price rally lifts EV Metal Index to 2020 high",
+     "title_zh": "钴镍价格上涨推动电动车金属指数升至2020年高位",
+     "date": "2020-10-21",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZW5WWV9TZmRTT1JMLVBnd2NKSVVvVFFrWmhXLTViWWZiNUVPRDFkWmlQOFJkMGJkRjM1Z3oxbzVqUEY3QUlPWGVqQmFhSG9yV1NVSlF1S0NiSk1fT1VueWFmYjhtSExWZHFVbXlfX1c5MDlIUlFfUG9PSU8zZ21BaHFSQzVhb01fbmVV?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Cobalt, nickel price rally lifts EV Metal Index to 2020 high",
+     "title_zh": "钴镍价格上涨推动电动车金属指数升至2020年高位",
+     "date": "2020-10-21",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZW5WWV9TZmRTT1JMLVBnd2NKSVVvVFFrWmhXLTViWWZiNUVPRDFkWmlQOFJkMGJkRjM1Z3oxbzVqUEY3QUlPWGVqQmFhSG9yV1NVSlF1S0NiSk1fT1VueWFmYjhtSExWZHFVbXlfX1c5MDlIUlFfUG9PSU8zZ21BaHFSQzVhb01fbmVV?oc=5",
+     "lead_days": 40
+    },
+    {
+     "title": "Battery ready cobalt for electric vehicles",
+     "title_zh": "电动车用电池级钴",
+     "date": "2020-11-24",
+     "source": "Innovation News Network",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUEFfSG5lZDRlUzFBdDNSeTRSamU0TVYxS0pScFltYnotQ3ZrMXRWdm5fTXZVOG5lNUsxRDdBcElOVUw0dktPVlVRV1RTdkowYXZUMDltVkYxYnYtSkpibzdMNGVfcTR2MXpWaVRfZDQxMTBLOGplSW5hQXNjbzNfZWtEbzdaeTZpOFhtNUV5SQ?oc=5",
+     "lead_days": 6
+    },
+    {
+     "title": "Carmakers have blind spot for lithium, cobalt, nickel prices",
+     "title_zh": "车企对锂、钴、镍价格存在盲区",
+     "date": "2020-12-03",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMlRqclNwcUcwZU9lRFUxZ1NaR3EwM1MzbnNHeVpzR2Roc1NoQnJBcVhaLWFBN1VoRktKNTZsUFlnam1KR2ZRN3BEMGJZQnlDUk5kaGRrNG5mWGhtQ3JJemR4RnFfR1R4dm93WklYbTREekl1YkdxR1lLdVFhQ2RvX0hFYlZzYTFRa0E?oc=5",
+     "lead_days": -3
+    },
+    {
+     "title": "Roskill forecasts demand for cobalt to double by 2030",
+     "title_zh": "罗斯基尔预测2030年钴需求翻倍",
+     "date": "2020-12-10",
+     "source": "The Northern Miner",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZHA2aUJDSFBOelBMXzdqaFlSdWJpZmVXRnBydlZrNGNNVzlWa1d0aVRHMWJCY2RSM1FQYVp1Vnk2WERmR2NIUGVubm9kMXk2WG4zSVRnZVp3TU1LY1hJbVprT1ZCZDhLM2hMTnpSYjBBMmpVOThEYzhsNjdLMDZtSGFwVDVscXJ3N096RVY2R1RKMzdOc0JTYUJabjRqXzVwckk5YUNBVQ?oc=5",
+     "lead_days": -10
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Cobalt|2022-08": {
+   "commodity": "Cobalt",
+   "start": "2022-05-01",
+   "end": "2022-08-01",
+   "change": -0.3655692105756324,
+   "direction": "down",
+   "price_start": 77721.3636363636,
+   "price_end": 49308.8260869565,
+   "n_headlines": 58,
+   "cause_en": "Headlines don't directly explain the drop; hints of weaker EV-driven cobalt demand and cobalt-free LFP shift",
+   "cause_zh": "新闻未直接解释跌价；LFP无钴电池普及或削弱需求",
+   "explanation_en": "None of the headlines report cobalt price moves or a specific supply or demand event in May–August 2022. The most relevant context is the structural shift toward cobalt-free LFP batteries (Tesla using them in half of new cars) and earlier concern over surging commodity prices hurting EV affordability, which suggests demand-side pressure after a spike. Other items (DR Congo supply chain scrutiny, ESG risks) were not clearly bearish, so the explanation is tentative.",
+   "explanation_zh": "5至8月的新闻中没有直接报道钴价走势或具体的供需事件。相关背景主要是行业结构性转向无钴的磷酸铁锂电池（特斯拉近半数新车已采用），以及此前对高企的大宗商品价格损害电动车可负担性的担忧，这暗示价格冲高后需求端承压。刚果（金）供应链审查、ESG风险等并不明显利空，因此该解释只是初步判断。",
+   "lesson_en": "After a cobalt price spike, watch for battery-chemistry substitution (LFP) and EV affordability pushback, which can cap demand and trigger sharp reversals.",
+   "lesson_zh": "钴价大涨后，要留意电池化学体系替代（LFP）和电动车成本压力，它们可能抑制需求并引发急剧回落。",
+   "categories": [
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "Tesla is already using cobalt-free LFP batteries in half of its new cars produced",
+     "title_zh": "特斯拉近半数新车已使用无钴LFP电池",
+     "date": "2022-04-22",
+     "source": "Electrek",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPc2NnTUtmUGhWSGVsc1Y4NWVORGdSSzJLMFNJN0psOWdKck9ZQ1REaTRCd1hGTDFvMnNCS1B1SzFFQjNZTnlkbmhqWjZ2clAyb0puVGpYcFRBUzc2bTBpSi02YzJUQndPT2dWeXNlMGdxbTNQWHhzbVprd1k2SFhsT2FuNW9TQTkyYjlxZmdGMWpockFLMWZPN0Qyaw?oc=5"
+    },
+    {
+     "title": "EV affordability threatened by cobalt prices: Did the US let resource control lapse over oil?",
+     "title_zh": "钴价威胁电动车的可负担性",
+     "date": "2022-03-27",
+     "source": "Green Car Reports",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNclRpTXlmdkItaWd0LUdycVNFZllDOERhczRNZVJTYjVqaDl4eXkxbFh2SGV2UzItX1JxTnVXelZJM2dNOVFEWWMwd3Q1T3V2cnJPRURtY2pHdzdSMXBzMFVuOVZqX1ZremdqUVVyRWwxdTE4VGVKMTlMTTNtLS1QMHRMMzd4aWgzSmxJYUV0eVp1ZjZsNzdMV3M0M3g0dmYtUW9abElNMWdDdjQ0czlJS0MzLXJsLU9JUHZvSElaUklWQkRMVG4xdElfM3llX2Z3Nnc?oc=5"
+    },
+    {
+     "title": "Surging commodity prices could impact the growth of the EV sector",
+     "title_zh": "大宗商品价格飙升可能影响电动车行业增长",
+     "date": "2022-03-09",
+     "source": "Mining Technology",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUFdkdU00aWdpMHdHWjItaWFWcFJtR0VONm9WOTJ2RDJZeEMzaEVMR0hpcjI0OUpNZ0Q4UWdZeGt3SnBBeEFIRGttUlpIVi03SDNYRzg3eXlFQ0dBd3JGZm9QTzk0U2d5S0ZyOUdsOU1xeHpiVEJTWVUzTkcxQVFRTGZjZw?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Tesla is already using cobalt-free LFP batteries in half of its new cars produced",
+     "title_zh": "特斯拉近半数新车已使用无钴LFP电池",
+     "date": "2022-04-22",
+     "source": "Electrek",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPc2NnTUtmUGhWSGVsc1Y4NWVORGdSSzJLMFNJN0psOWdKck9ZQ1REaTRCd1hGTDFvMnNCS1B1SzFFQjNZTnlkbmhqWjZ2clAyb0puVGpYcFRBUzc2bTBpSi02YzJUQndPT2dWeXNlMGdxbTNQWHhzbVprd1k2SFhsT2FuNW9TQTkyYjlxZmdGMWpockFLMWZPN0Qyaw?oc=5",
+     "lead_days": 8
+    },
+    {
+     "title": "EV affordability threatened by cobalt prices: Did the US let resource control lapse over oil?",
+     "title_zh": "钴价威胁电动车的可负担性",
+     "date": "2022-03-27",
+     "source": "Green Car Reports",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNclRpTXlmdkItaWd0LUdycVNFZllDOERhczRNZVJTYjVqaDl4eXkxbFh2SGV2UzItX1JxTnVXelZJM2dNOVFEWWMwd3Q1T3V2cnJPRURtY2pHdzdSMXBzMFVuOVZqX1ZremdqUVVyRWwxdTE4VGVKMTlMTTNtLS1QMHRMMzd4aWgzSmxJYUV0eVp1ZjZsNzdMV3M0M3g0dmYtUW9abElNMWdDdjQ0czlJS0MzLXJsLU9JUHZvSElaUklWQkRMVG4xdElfM3llX2Z3Nnc?oc=5",
+     "lead_days": 34
+    },
+    {
+     "title": "Surging commodity prices could impact the growth of the EV sector",
+     "title_zh": "大宗商品价格飙升可能影响电动车行业增长",
+     "date": "2022-03-09",
+     "source": "Mining Technology",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUFdkdU00aWdpMHdHWjItaWFWcFJtR0VONm9WOTJ2RDJZeEMzaEVMR0hpcjI0OUpNZ0Q4UWdZeGt3SnBBeEFIRGttUlpIVi03SDNYRzg3eXlFQ0dBd3JGZm9QTzk0U2d5S0ZyOUdsOU1xeHpiVEJTWVUzTkcxQVFRTGZjZw?oc=5",
+     "lead_days": 52
+    }
+   ],
+   "confidence": "low"
+  },
+  "Cobalt|2023-03": {
+   "commodity": "Cobalt",
+   "start": "2022-12-01",
+   "end": "2023-03-01",
+   "change": -0.3423962116938706,
+   "direction": "down",
+   "price_start": 51497.7727272727,
+   "price_end": 33865.1304347826,
+   "n_headlines": 57,
+   "cause_en": "Cobalt oversupply from Congo and Indonesia swamped soft battery demand, sinking prices",
+   "cause_zh": "刚果与印尼钴供应过剩,叠加需求疲弱,钴价下跌",
+   "explanation_en": "Headlines describe a saturated, \"suddenly superabundant\" cobalt market, with a price slump drawing futures activity and miners taking different strategies (43, 44, 49). Rising supply from Indonesia and new mines such as Idaho and Jervois's Brazil restart added to the glut (46, 18, 5). The Congo export block threat at CMOC (29) did not prevent the decline, so oversupply dominated.",
+   "explanation_zh": "多篇报道称钴市场供应饱和、“突然严重过剩”,价格暴跌还带动期货交易升温,矿业巨头也采取不同应对策略(43、44、49)。印尼新增供应以及美国爱达荷新矿、Jervois巴西精炼厂重启等项目进一步加剧过剩(46、18、5)。洛阳钼业(CMOC)与刚果的出口受阻争端(29)未能阻止下跌,说明供过于求才是主因。",
+   "lesson_en": "Watch for new supply from Indonesia, Idaho and Brazil refinery restarts and for weak battery-demand signals, since they can outweigh Congo export disruption headlines.",
+   "lesson_zh": "要关注印尼、爱达荷等新增供应和巴西精炼厂重启,以及电池需求走弱的信号,它们的影响可能超过刚果出口受阻的消息。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Cobalt, a crucial battery material, is suddenly superabundant",
+     "title_zh": "经济学人:钴突然严重过剩",
+     "date": "2023-02-16",
+     "source": "The Economist",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZFFsNjNLUW9Fa1pfSUFRek5jZUx4dS1QZU1uZ0dWNzNWWlpVNThOYUZjNlpvc2NrUW1uWm5QaU9YMFVVYzNMbGNrN1JycW5PQXVwZ3ZfN2ZVTmhETXk2UVpTdnhiOHRtUGwtdTdrZ3RRaGRaUXVua196dUhabnZOZl9COEpLMXp2VDNNMjN1UXF1NGQ4TTA5TE91TDh1NXZLN2Rncl9XRDN3OU85UVRlZG5MblZRQlkza3c?oc=5"
+    },
+    {
+     "title": "Cobalt mining giants take different approaches amid saturated market - Rystad Energy weekly battery materials market note",
+     "title_zh": "Rystad:钴矿巨头在饱和市场中策略分化",
+     "date": "2023-02-07",
+     "source": "American Journal of Transportation",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVFppMlVSdTJWUUhyQnd3azM0SVhEZVJqX1N1dWd5dmpRd3dmeFlmajI1QW5vdTRmcUg3TU9VOUdVSUdmdGZiRklQZnpmZXR2d1VMYWpFWTk1amplNlBvdS1XT0ZTSXlWa0p0R1FxdUlPM3dOLXNmVjlJdERpUUJXd0xyRnZLY0xheDg5NTBxWU0zci02d1k0S0hR?oc=5"
+    },
+    {
+     "title": "COMMENTARY: Cobalt price slump triggers lift-off in futures trading",
+     "title_zh": "路透评论:钴价暴跌引发期货交易腾飞",
+     "date": "2023-02-07",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxON2FHRDhzXzExS0VoenhMQ1k1SnBsMUQ4VXQ0ekoxdy10Ukt6eEJhUXZ1UVpxWHVPeFFZUVNZcEIxdVBxYWVkOGJnZXpmTktaSnVCVXJRcExvU0RsNFd2VU0zQUhQMjZ2S3RFVXpLb1pETnFHY1kxdDJVQkZZY1N2VmFqNnltd19GY0ZyLTAxbUFYYTFmc0ZKTXJNcXl4YTJKNVYzZjhiVVM4WTJN?oc=5"
+    },
+    {
+     "title": "The biggest source of cobalt outside Africa is now Indonesia",
+     "title_zh": "印尼成为非洲以外最大钴来源",
+     "date": "2023-02-08",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOR1Z0UmhVdTY5dzVqeDlFRVJyQmFzUFdXakJHNXpmM2V2dldsTXNUaU04NUNlYnNZakFTUEdJMVVMY2E2REZmWFFqdGFBOVBEN09mUXhDck1vS0FrQnp0bHBaQmxGZkd6RDlnOHFYdklfM0hRNnNaVF9kUXBzRkdfSnJVWWk4R19Rak5IbGNmM0tJUQ?oc=5"
+    },
+    {
+     "title": "Jervois makes FID on Brazilian nickel-cobalt refinery restart",
+     "title_zh": "Jervois 决定重启巴西镍钴精炼厂",
+     "date": "2022-11-10",
+     "source": "Mining Technology",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9UaWEwbDJlRURNc3hKLWRxRXpxc1hVMHQ3WGpLUXh1WWkycC1IT1MzeUJVOTBvQ3FvNVhJV201LVpuNmwyRXRmcGJmYTY4Ym01QmI4TUwxQkkzMUFIU3lUaTBuN3ZMSGVUaFJxM2ZMaGt5VVF1MEVBeHJOTXQ?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "First new cobalt mine in 40 years now open near Salmon",
+     "title_zh": "美国40年来首个新钴矿开业",
+     "date": "2022-10-12",
+     "source": "Idaho Business Review",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdmFESExORmxVem5HMUxUOTJha1RfeFRzYzB6WDg2S192VmdqSFdQRGs5OEJhbE8tQWFxQ3BkZmVBUURJT3NNbUtMcmlvaFVTQmF0ejNfSEF3UXpSQ3lYN0FJLUE3ME1MSjUzTkJ3VG9UV05WUzcyRFdOOVJUYW12ZFRlQmhoWWlia0lpNXZmUUhmc1BPTjdpODFkNTR2SDA?oc=5",
+     "lead_days": 49
+    },
+    {
+     "title": "Jervois makes FID on Brazilian nickel-cobalt refinery restart",
+     "title_zh": "Jervois 巴西镍钴精炼厂重启",
+     "date": "2022-11-10",
+     "source": "Mining Technology",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9UaWEwbDJlRURNc3hKLWRxRXpxc1hVMHQ3WGpLUXh1WWkycC1IT1MzeUJVOTBvQ3FvNVhJV201LVpuNmwyRXRmcGJmYTY4Ym01QmI4TUwxQkkzMUFIU3lUaTBuN3ZMSGVUaFJxM2ZMaGt5VVF1MEVBeHJOTXQ?oc=5",
+     "lead_days": 20
+    },
+    {
+     "title": "Cobalt Growth in 5 Charts",
+     "title_zh": "CME:钴增长五图",
+     "date": "2022-12-15",
+     "source": "CME Group",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB3OGppaUhPcEQ0SThrSVJ2VV9XbVhCdUVYeVlqeVcycDZDMHozM09uU1VCbXRFVzdoNUpGdW9YM00xMVMyVXpPUloyTjJ2eEt5eHFSU3N6c2NkRGpLc3hSNlNRdEFXNExQa21MSThxdDhmV2FQY1AyVQ?oc=5",
+     "lead_days": -15
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Cobalt|2025-05": {
+   "commodity": "Cobalt",
+   "start": "2025-02-01",
+   "end": "2025-05-01",
+   "change": 0.5312474593955823,
+   "direction": "up",
+   "price_start": 21721.075,
+   "price_end": 33260.3409090909,
+   "n_headlines": 70,
+   "cause_en": "DRC suspended cobalt exports for four months from late February 2025, tightening supply.",
+   "cause_zh": "刚果(金)2025年2月底暂停钴出口四个月,供应收紧",
+   "explanation_en": "On 24 Feb 2025 the DRC suspended cobalt exports for four months to tackle a glut and low prices. Bloomberg and CRU then reported prices spiking and a cobalt rally as supply chains were rattled. Follow-up headlines on export quotas, a state monopoly on artisanal output, and CMOC lobbying to lift the ban show the restriction was still in force through May, which supported the higher price.",
+   "explanation_zh": "2025年2月24日,刚果(金)为应对供应过剩和价格低迷,宣布暂停钴出口四个月。随后彭博和CRU报道钴价飙升、出口禁令引发钴市上涨,供应链受到冲击。之后又有出口配额、手工采矿国家垄断、洛阳钼业呼吁解禁等消息,说明禁令至5月仍然有效,支撑价格走高。",
+   "lesson_en": "When a dominant producer facing a glut and depressed prices starts weighing intervention, watch for export bans or quotas that can quickly reverse the price trend.",
+   "lesson_zh": "当主要产出国面临供应过剩、价格低迷时,要警惕其出台出口禁令或配额,这可能迅速逆转价格走势。",
+   "categories": [
+    "Export Policy",
+    "Supply Outage"
+   ],
+   "drivers": [
+    {
+     "title": "DRC imposes export suspension on cobalt",
+     "title_zh": "刚果(金)对钴实施出口暂停",
+     "date": "2025-02-24",
+     "source": "Fastmarkets",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOT19MT0lMS0s4MjA1UUZaem9BbXdWZFN1WWxuSXdtZjB3LU5zUkFpSmwxUXVHR3VhWjNRaHZLUDBJODZlb2hDa09Gd0JvWTNFWUtSZWxKdlVjeG12enBmTjdnSzBPS2hsMTFrZEl5WVhzUGVqSTVYekxKZDJBYU5EOXFDcw?oc=5"
+    },
+    {
+     "title": "Congo Suspends Cobalt Exports for Four Months Amid Glut",
+     "title_zh": "彭博:刚果因供应过剩暂停钴出口四个月",
+     "date": "2025-02-24",
+     "source": "Bloomberg.com",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOV2tzVElFdTl2Z0tSdmF1V3QxcFU2dmZxNC12S1BvdzNWbnBLRGRSSlZXRHVyc3Z1WmFRbkZHUF84OFJaWjdvVEtnY3BTcUZZTDNvSGpEZU13WTBqaVhLRWo2Y3FhdlRLLVh3a3JaVUJUTGtyWWFhWHZhRlZIaUFPdnZQV0hmQXNjanFXWVhnZ3gwLUhXUWhhUWplT3FNcy14MzZOVW9QMDdxd29SQVZ0WHhn?oc=5"
+    },
+    {
+     "title": "Cobalt Prices Spike as Congo Export Halt Rattles Supply Chain",
+     "title_zh": "彭博:刚果出口停摆冲击供应链,钴价飙升",
+     "date": "2025-03-12",
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTDNpMGN6ejkyTE14WFUzWGRnR19kT0NxTWNCLS0xZmdEZS1PaGhVbG4tRVRRN2VYT0ZIMEx3aWo0cE5zT3ljbkFwTE9XTWZPczUwdzhIa05salpWMG56U0ctdG9YTVlZLWxlaVlBd0h3dG5UOWpYY0FMcHgtUFNtY0FEZHktbW1MSUJfbk1LbkhnTi12TEUxZlZ4YVhZeXROdC1pa012TFB4Snl6LTJJd2F3?oc=5"
+    },
+    {
+     "title": "CRU Commodity Price Performance: Export bans trigger minor metals and cobalt rally",
+     "title_zh": "CRU:出口禁令引发小金属和钴价上涨",
+     "date": "2025-03-26",
+     "source": "CRU Group",
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWjc3bFlFYXVGNkV5YlI5aUZhSjE0SjNYbWo3OWt3aDdyOURqQzRwZUw0OVF5TFV0TjRraGppZDdGWno4b1BJTC1WMktTNnJQd2JZN3RGQms0UFdOcGttbmhDLVF4TzlhQnZtTXRlVjVRMXhmN3FMX09QMTdMT2pMN0g5VjdoQUJrcFN2WlM1MklDV29nSDM0OFQtbFhjWFNfcnVSNTl5UUJsTUNxNzdTLTFUN0hqUklqdENzWWRabGRfX2NaNnN6SkxjY3hveFhGZHcySW9OaU95Wk1HR25N?oc=5"
+    },
+    {
+     "title": "EXCLUSIVE: China's CMOC calls on Congo to lift cobalt export ban, sources say",
+     "title_zh": "洛阳钼业呼吁刚果解除钴出口禁令",
+     "date": "2025-05-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTGVqNTZqOXZiV0x4Q3RFM3ZiZE5LOU81UTJtZjI1LU9UbUNnSjZPb2YtYzVFTDZBRXNMQU4zRWtEcG8zM2xwalUweEF6R3pOQzhjTEo5NFBVMXU5aXhHajRUQURBT0tFZ24wand1QVF2OWtFRXpmS0Y4V1V3Qmo3SHVaVHZxUFJKMndwbHB2RE1zZDdnWV8yTEJxQ1VWbzZNZHFjSFlvS2NQZHgweDhENUthUEo?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "GRAPH: Cobalt price plunge and the EV market",
+     "title_zh": "钴价暴跌与电动车市场",
+     "date": "2025-01-30",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5rUURZRnAxaE1hd1ViTDJPSHpUeXRRSWctajN5NWQwYVplRUpWUVB5XzVPb0EtbzRBd2lzUTZaWWpIazhUaHdtM081N2ZmXzZSUEl6dndNanpkeGZYVGpJbzdPNWMtR0dndk9WU3NwTDh4Vi1IcFE?oc=5",
+     "lead_days": 1
+    },
+    {
+     "title": "Financial troubles hit US-backed cobalt producer",
+     "title_zh": "美国支持的钴生产商陷入财务困境",
+     "date": "2025-01-06",
+     "source": "E&E News by POLITICO",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaUk3UDdrR2E4Yk5ENmNzcTB5MW5CamlTRXVmdTVjbEpWbS1uWW1qeGFEYTc0THcyOHg5SXE5eXZFZHM4ODBNUmNHT2otU3NvUXJBMzgzOUliVmVmc0M0UDN6eHg5M2dmN3cxVVBlUDRHVHhQb09SVzFmRG1hVFM2WDg2bjNaaC1f?oc=5",
+     "lead_days": 25
+    },
+    {
+     "title": "Cobalt miner Jervois in rescue deal to better compete with China",
+     "title_zh": "钴矿商Jervois获救助以对抗中国竞争",
+     "date": "2025-01-02",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaE12OFJLQVBFT1FuZElWTmZOY09lLWFaekc2YVRIYWxCb3NXNk14RFN0OUlBVWlFdktMbmVXSlo3R00zTldjekNXaHBEZDZMbmhBVUdBQ0JjOGV2dUxkRlpWMDFsd2J6UkVLTnMxZVVJZzJHR1VZQl8tX2Foc29XQ1g0X19QZXVuWjFSa0ZjczVSZ3ZVa3hlbVJYSWo4OURGanJrek15cU9vYW55WlNDYzB6YTdJRk1kdFFmY3hTYw?oc=5",
+     "lead_days": 29
+    },
+    {
+     "title": "The Link: EVs, the Cobalt Rush, Unrest in DRC & CSDDD",
+     "title_zh": "电动车、钴热潮、刚果动荡",
+     "date": "2025-02-17",
+     "source": "EV Magazine",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVjVHVHNzWlkxV0Jhblc4cTFWRDE1VlJqQTltUGNNOUlvMzZvZF9VckpRY1NIZTJyb2ZpRWRWR1JqdkU4LXg4dDhxRlV6ckJ1eHBpVklfbHhYTXI3dUZORGloTzlPaU1ZVDNSLXdjNWRLRi01RzlLQ1NRQkFFdFBBdHlKOA?oc=5",
+     "lead_days": -17
+    }
+   ],
+   "confidence": "high"
+  },
+  "Cobalt|2025-12": {
+   "commodity": "Cobalt",
+   "start": "2025-09-01",
+   "end": "2025-12-01",
+   "change": 0.5492678917005114,
+   "direction": "up",
+   "price_start": 33482.0681818181,
+   "price_end": 51872.6931818181,
+   "n_headlines": 70,
+   "cause_en": "DRC replaced its cobalt export ban with restrictive quotas, keeping supply tight.",
+   "cause_zh": "刚果(金)以严格出口配额取代禁令,供应持续紧张",
+   "explanation_en": "After the DRC's export ban left the market short of material (July–August), Congo announced in September that the ban would be replaced by quotas from Oct 16. Quotas were firmly defended and permanent bans threatened for breaches. Producers were still waiting for export approvals in late October, and in December new export conditions and royalties tightened supply further. Cobalt hydroxide costs jumped and a US stockpiling push paused as prices soared.",
+   "explanation_zh": "刚果(金)出口禁令在7–8月已造成原料偏紧。9月该国宣布自10月16日起以配额取代禁令,总统坚持配额制,并威胁永久禁止违规出口商。10月底生产商仍在等待出口批准,12月又出台新的出口条件和特许权使用费规则,进一步收紧供应。氢氧化钴成本大涨,美国国防部门的钴储备计划因价格飙升而暂停。",
+   "lesson_en": "When a dominant producer swaps a ban for quotas, watch the quota size and approval pace, since supply may stay tight well after the ban is lifted.",
+   "lesson_zh": "当主要产区以配额取代禁令时,要关注配额规模和审批进度,因为禁令解除后供应仍可能长期偏紧。",
+   "categories": [
+    "Export Policy",
+    "Supply Outage"
+   ],
+   "drivers": [
+    {
+     "title": "Congo to replace cobalt export ban with quotas from Oct 16",
+     "title_zh": "刚果(金)自10月16日起以配额取代钴出口禁令",
+     "date": "2025-09-21",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWlNweFhiUzV0Z0c0THpiSmZ5Z3Axd0Vvc3VRT0JaSHNDdHd5bGJtZ0VpRmpWd1lZSHFiUUJ0dkEtSFNOSzhUNkVQNW8zLVRUS1lDbnlwUnh6TjZuM3lYUkdpbW4wZDVTam5PVWtFbnh0OVE0c01OTHJwZzFrR0N2VjNUY0N2YzV2N3RQOUcxZXdHQl8wN2JMVGd2eEMzcEFB?oc=5"
+    },
+    {
+     "title": "Congo’s Cobalt Export Shock Spurs Rally and Doubts Over Supply",
+     "title_zh": "刚果出口冲击引发涨势,供应存疑",
+     "date": "2025-10-12",
+     "source": "Bloomberg.com",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdkJYeUYxbTBQRFgwc1o5dUlSc2lJOHBlYk81cU5famhBVGdUT0paTVFTM0U5R0dORlhZb2JrYkR4NVNWTXBpRTVYZ2FKVlVhMzI1Y2xTMmNwY0xTUWh6NHB5eEg0azVEel9xSHVJeVBSdGUxeVM1V1Z2ZEFfanlZVWwwOVNfa1hZNENmU0xPa0VXU0NpRFBxTWxNSXV4cTJfQ1h4cHVlbmo5RTE4QjI2Z1pKNA?oc=5"
+    },
+    {
+     "title": "Congo's cobalt producers still waiting for export approvals, sources say",
+     "title_zh": "刚果钴生产商仍在等待出口批准",
+     "date": "2025-10-24",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOd1B5YlJZSWtNV2RXNjV3Y2o4ZnJ3anJSdnAzMDRaV3ZoTFlCTjV0NFNiaXNwOE14cjJQOXdtZ083dExHZWJjcHhXd3pkLWstYWNCRFM5MHJyTG5uYXlWSDV6OW83RFpmTUlMWHpQcl9uRGkydkdLaHptb0JSOFhHejh6RVZfS1A3bXdxMXFKMXFDSXhwLXRVbVJTbzV3THlpOWpiVktrRDRZa29VMkl5T0pkdWlnZw?oc=5"
+    },
+    {
+     "title": "EXCLUSIVE: Congo sets new export conditions to keep tight grip on cobalt",
+     "title_zh": "刚果设定新出口条件以牢牢控制钴",
+     "date": "2025-12-05",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbnFRR0RSWllqb0hwX29hei1xcUE0c3EzdkRyWlktS3luQl9BMVlsQW50ejBKdEtDZFNPLTU5MkRLcmJ1Qm9xRjVnYlVLb1V6NFRXV1RDdVowaVlnMTNhaDRSakxmbEVmY3FvdXBFb0U3aTNWelpwRkJSYkdBYjVEUlJBUy1DU21rT3pGdl9GcjhvVE5BMWhUWFo2TTlQZV82QlhvM1VRWQ?oc=5"
+    },
+    {
+     "title": "Costs of EV battery material cobalt hydroxide jump on Congo export restrictions",
+     "title_zh": "刚果出口限制推高氢氧化钴成本",
+     "date": "2025-12-09",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUU5WNk1McUZka3NCdmNfcnJiSGVyRE1zVWJWRWlEX21nUlEtTjBvc0lFX1g1bE1UYkhUTjJFbFpfc2NtZGp1Y1lQVE1YQ0hycjByRE9hdldpMnI0NS1iOVBrYWtYUXdnQmZKbC1XOV93bkt1YWFxUWYwTUNES2Zzd1lYcU9LRElseXk3RVJVY3FXMGlHYWJRNEJUc1BkUzI4N2hGUnhKUERtT05RMU5ibFJ6anJheTlCMjR1T1RtOA?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "How an unexpected extension of the Democratic Republic of the Congo’s cobalt export ban will impact the global market",
+     "title_zh": "刚果钴出口禁令意外延期将影响全球市场",
+     "date": "2025-07-04",
+     "source": "Marex",
+     "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPY2pRNlBYY0F1c3Z0Vmh6NWVVT19Vb1A0c2lOR3BqWkZMZDVSTEVFUUpVdE5qV1IxTFpXQmxKUklxVG83LTF6cU4xX2JVTUwwOF9HYkxOY0JtZ2FVR1VSRF9NX1lNQXU3aEE1QnJsUDVMTGZNN3BsYzh1N21Fb0YyWEpVTnN5M0V2Z3NjZ2g2V0RILXluZHBPajRRWEpfUF9ibmVYODRXOGNZTkd2R0plOENwMXVTbjJGOFJObnNlbW9oY2J3TWpGTDFtc0hrcFFaOWw5VWdBNFJXYndFbUc3dUt6RkZwUQ?oc=5",
+     "lead_days": 58
+    },
+    {
+     "title": "DRC cobalt export ban: When will market tightness hit?",
+     "title_zh": "刚果钴出口禁令:市场紧张何时显现?",
+     "date": "2025-07-15",
+     "source": "Fastmarkets",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNN2JMU0thR09Ha0ZCRVZoSFU4VFBoYUEzNTJEcnhTT2piM3p3VWw2OEhKMUNnS3ZScEFLN096ZDNLVEdpM1d1THN0WEt2Ym9CTWJWdlktekVaNXoxQ1FUQzhHRmRyUXBHSy1nSDVLd2lsOUFXcGVBV2NXakNac2c2SmFjSnJldDJoZjJxbHJNdUxlU2VP?oc=5",
+     "lead_days": 47
+    },
+    {
+     "title": "DRC export ban continues to drag down China’s July cobalt intermediate imports",
+     "title_zh": "出口禁令继续拖累中国7月钴中间品进口",
+     "date": "2025-08-20",
+     "source": "Fastmarkets",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOd0NVZXNFdXpJVzI5WWpTZHlSRnF5MWEwNll1TEVjRDZBaGdDTXNnU29hNEpaN2JBei00MTNUWDBkNkN6dTdnX1lCMGVNX0NiLUtoazNhdVg0enJnZEJWeGxoLUJVdkZZQmdFcnlVNk5NZnl2MUFzTzFQTlczczNhR2NWNHY?oc=5",
+     "lead_days": 11
+    },
+    {
+     "title": "Congo to End Cobalt Export Ban in October, Introduces Quotas",
+     "title_zh": "刚果将于10月结束钴出口禁令并引入配额",
+     "date": "2025-09-21",
+     "source": "Bloomberg.com",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNd3FJMjM3VUdVZnpTZjZyc1AtMDBfS2lIZHU5S2s5TEhtd1RQMnNSVERfZTFsc1pkb3hOVi1RR2tUUDB5elA5UlBJUDkwaXNTZWJfR3AtZzg3akNveWJ4cW12a28xTHVxNThaRkNlZlgxSC1BUDlwdWI1czMzUDlXRzVwbmNTSXNwSWtoUDdpSUZ0cDVObDljeVFHUjg2N3plOS16elZyQ3RrTVROdl9R?oc=5",
+     "lead_days": -21
+    }
+   ],
+   "confidence": "high"
+  },
+  "Molybdenum|2018-05": {
+   "commodity": "Molybdenum",
+   "start": "2018-02-01",
+   "end": "2018-05-01",
+   "change": 0.5915293274644284,
+   "direction": "up",
+   "price_start": 15630.4,
+   "price_end": 24876.24,
+   "n_headlines": 18,
+   "cause_en": "Headlines do not explain the rally; only tangential mining and pollution news appear.",
+   "cause_zh": "新闻未能解释这轮涨价,仅有零星矿业和污染报道",
+   "explanation_en": "The headlines are mostly scientific papers and local news on Climax Mine's pollution-limit extensions. None mention molybdenum prices, supply cuts, or demand changes in Feb–May 2018. Climax's permit news suggests continued operation rather than a supply loss, so the 59% rise cannot be attributed from these articles.",
+   "explanation_zh": "这些新闻多为科研论文和Climax矿水污染限值延期的地方报道,没有提到2018年2至5月钼价、减产或需求变化。Climax获准继续运营,并不意味着供应减少,因此无法凭这些标题解释钼价上涨59%。",
+   "lesson_en": "Look for direct news on molybdenum supply, steel demand and by-product copper output, which these headlines lack.",
+   "lesson_zh": "应关注钼供应、钢铁需求和铜副产钼产量的直接新闻,而这些标题中缺少相关信息。",
+   "categories": [],
+   "drivers": [],
+   "warnings": [],
+   "confidence": "low"
+  },
+  "Molybdenum|2019-12": {
+   "commodity": "Molybdenum",
+   "start": "2019-09-01",
+   "end": "2019-12-01",
+   "change": -0.23949600171678975,
+   "direction": "down",
+   "price_start": 26235.01,
+   "price_end": 19951.83,
+   "n_headlines": 28,
+   "cause_en": "Headlines do not explain the molybdenum price fall; only weak hints of supply-side news.",
+   "cause_zh": "新闻未能解释钼价下跌，仅有零星供应面线索",
+   "explanation_en": "Most headlines are academic papers, unrelated \"Moly\" brand items, or company profiles, and none discusses molybdenum prices, demand, steel output or inventories. The only market-relevant items are mine-level news: a strike at Armenia's Agarak molybdenum combine [3], a legal challenge to Nevada's Mt. Hope mine [17], and China Molybdenum's loss-making Congo copper mine [7]. These do not clearly explain a 24% fall, so the cause cannot be determined from these headlines.",
+   "explanation_zh": "大部分标题是学术论文、与钼无关的“Moly”品牌内容或公司简介，没有任何一条谈及钼价、需求、钢铁产量或库存。仅有的与市场相关的是矿山层面的消息：亚美尼亚Agarak钼联合企业罢工[3]、内华达Mt. Hope钼矿面临法律挑战[17]，以及洛阳钼业刚果铜矿亏损[7]。这些都无法清楚解释24%的跌幅，因此仅凭这些标题无法确定原因。",
+   "lesson_en": "Molybdenum price falls need steel-demand, tender and inventory news; mine-level or academic headlines alone cannot explain them.",
+   "lesson_zh": "解释钼价下跌需要钢铁需求、招标和库存方面的信息，仅靠矿山或学术类标题无法说明原因。",
+   "categories": [
+    "Supply Outage",
+    "Environment & Weather"
+   ],
+   "drivers": [
+    {
+     "title": "Agarak Copper and Molybdenum Combine Workers on Strike: Demand Overtime Pay, Better Work Conditions",
+     "title_zh": "Agarak铜钼联合企业工人罢工",
+     "date": "2019-07-11",
+     "source": "Hetq.am",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9JMXB6YVpKYjUyVHljbGt4a0xEbV9zZFN6ckZ4d1ZqWTk3NDhvRmFwdmFPYzVad0E3Xy1CVGhJUUltXzZUNXMxVg?oc=5"
+    },
+    {
+     "title": "Mt. Hope Molybdenum Mine Challenged in Federal Court",
+     "title_zh": "Mt. Hope钼矿在联邦法院受到挑战",
+     "date": "2019-11-02",
+     "source": "Sierra Nevada Ally",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNb2ppTjkwVDN0QTNwUlN0S09OY2VyTXVCV0RHX19pcW1rN2ZOanhjNlFfNHE1M3pzMzdjbWo0RFlkbmNVSldVMlliUlZvLVFRN1RVOU1RU1RTdjRJZVU3WW5fWldxQ3l1bWpvZ3RiUkN3SlNlTUJoYmZORkltQXY4c3JFQ3pHUDVra1kxZEs3UGQyeE9JUEFn?oc=5"
+    }
+   ],
+   "warnings": [],
+   "confidence": "low"
+  },
+  "Molybdenum|2020-06": {
+   "commodity": "Molybdenum",
+   "start": "2020-03-01",
+   "end": "2020-06-01",
+   "change": -0.22852396486282578,
+   "direction": "down",
+   "price_start": 24030.39,
+   "price_end": 18538.87,
+   "n_headlines": 25,
+   "cause_en": "COVID-19 demand collapse hit steel/alloy demand; headlines only weakly confirm this",
+   "cause_zh": "疫情冲击钢铁需求致钼价下跌,标题证据有限",
+   "explanation_en": "Few headlines explain the drop directly. The timing (Mar–Jun 2020) fits the pandemic slump in industrial demand, and Freeport's May cut to Colorado molybdenum output [16] suggests supply was being reduced in response to weak prices and demand. The Tenke Fungurume strike after lockdown [22] shows pandemic disruption in related metals, but most other items are scientific or unrelated, so the evidence is thin.",
+   "explanation_zh": "直接解释钼价下跌的标题很少。3至6月的时间点与疫情冲击工业需求的时期吻合,Freeport 5月宣布削减科罗拉多钼产量[16],说明在价格和需求疲弱下供应被迫收缩。Tenke Fungurume 封锁后罢工[22]反映了疫情对相关金属的扰动,但其余标题多为科研或无关内容,证据不足。",
+   "lesson_en": "In a demand-driven slump, watch for producer output cuts and lockdown-related disruption as signs of how deep the demand shock is.",
+   "lesson_zh": "需求驱动的下跌中,应关注生产商减产和封锁相关扰动,以判断需求冲击的深度。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Freeport-McMoRan to cut molybdenum production at Colorado mine",
+     "title_zh": "Freeport削减科罗拉多钼产量",
+     "date": "2020-05-05",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQc2k1eVVfM3VrZ1JNNllRcFBySngzNEQxLXExNkZJYlNBVmpnNEtNV0UxVXc4cGZ1aVd5X3V2OFNza085Z1RmUWt3c1JablNtcnQyTHEwamEzVkVpeHJXdG5HSTRpYklJYVFMenJ3MHNXeTdITjdjYzU5bjVTeWwwQkU4bFJRTkhYSmZibzZXSnM4YV82?oc=5"
+    },
+    {
+     "title": "Strike ends at Tenke Fungurume after workers agree “isolation bonus” following lockdown",
+     "title_zh": "疫情封锁后Tenke Fungurume罢工结束",
+     "date": "2020-05-25",
+     "source": "MiningMX",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTThiNzNPVzRKcGcwRjEzS19LYTNJQlVnM25vcUZWX19ZWTJoSFk5LUlHMlI1TW9GZHVlU1pCLXNzZF9CN2hZU3NNaURyQklnODVTWWNXalA5WXJPYkpSdFFlSFRTMk5oNEZiS2JQc2ZQclU3Wi1iSFZyTm9RTVVzUXhrUFJ4YXNRZE1xSWVwT28ydzRXZkEyM2VkNjFWRzh6OGtmeUpyZE8tYzN0QlpFRUlLSElwOHMxTUlkS3lheTBmdVA5b1V6WGxvbDhqMzRP?oc=5"
+    }
+   ],
+   "warnings": [],
+   "confidence": "low"
+  },
+  "Molybdenum|2021-07": {
+   "commodity": "Molybdenum",
+   "start": "2021-04-01",
+   "end": "2021-07-01",
+   "change": 0.725438572059508,
+   "direction": "up",
+   "price_start": 25132.7,
+   "price_end": 43364.93,
+   "n_headlines": 35,
+   "cause_en": "Molybdenum price surged in 2021, but headlines give little concrete explanation",
+   "cause_zh": "2021年钼价大涨,但新闻对原因解释有限",
+   "explanation_en": "Headline [23] confirms molybdenum prices had gone \"sky high\" in 2021, and [19] notes production rising while usage falls per IMOA, so the rally is not clearly explained by supply cuts. Other headlines are mostly scientific or unrelated; the only hints are steel-sector cost dynamics [15] and industrial/nuclear uses [6]. The headlines do not firmly identify the cause of the +73% move.",
+   "explanation_zh": "标题[23]证实2021年钼价“飙升”,而[19]提到IMOA称钼产量上升、消费下降,因此涨价并非明显由减产引起。其余标题多为科研或无关内容,仅[15]涉及不锈钢相关成本、[6]涉及工业/核能用途的线索。这些标题无法明确说明钼价上涨73%的原因。",
+   "lesson_en": "When prices rally without visible supply news, check steel-sector demand recovery and market commentary, as headlines alone may not explain the move.",
+   "lesson_zh": "当价格上涨却没有明显供应消息时,应关注钢铁行业需求复苏和市场评论,仅凭这些标题难以解释行情。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "The molybdenum price has gone sky high in 2021. Yes, molybdenum",
+     "title_zh": "钼价在2021年飙升",
+     "date": "2021-06-10",
+     "source": "Stockhead",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9CVE93OTJISnF3VUNuZk14ZGt0NzNzVnRrcmhCdkVnOVZxYW5nY0dGR091TXBYYnlIdDNvY0xydE5taTJGX0dyVUJBWlFHckJUMDA1aUE4a1NwMnNELTNGNHg0WmVUb202RVJxX0Z3?oc=5"
+    },
+    {
+     "title": "Molybdenum production rises, usage falls, says IMOA",
+     "title_zh": "IMOA:钼产量上升、用量下降",
+     "date": "2021-06-02",
+     "source": "Steel Times International",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNc0dBd21HbkhXNXhySVl1cTNQa290U3pLay1yY2lnRkZMZXNxNExRc3FHU0lXajhfRWZGVDBFblpFZWUzMGhjTUFrMUhpSkJXU0doNmtpS0YycXBDUzc1VENONjl1ODY2UkVCNkdNMXZHdTVFSnBaVjl4N2loMVhjX0VXT2dJVGZhZi1Xdg?oc=5"
+    },
+    {
+     "title": "Prices of high-grade NPI against stainless steel scrap declined, but still enjoyed cost-effectiveness",
+     "title_zh": "高镍生铁与不锈钢废钢价格对比",
+     "date": "2021-05-26",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPN25TMmFmMVRaU2d6LVRiVGM1bE5wVUxqN0N2VURXTTVGbkpWRXNHVHZSUndPWlVYZ1dTSFJzcTZoMC0wY3B5Z0FiaC1wY1ZnYXh3ZVozME8tUm1TVllIVDRZVzVIeGxwTmhVSVNBX0QzSm13ZGNJWWxVc3RyR1RpNW5LbThXemNNMFRZRkpnS2xubG9GUXRTM3d5dmVQWUtPeFRLdjJfeC0zN2ZodE4yQ2VSN200UkIxU1ZuYTNpSXJiNF96QXZRNUF0bXFsdmc0WmJhXzJUc2dlbmR1X1E?oc=5"
+    }
+   ],
+   "warnings": [],
+   "confidence": "low"
+  },
+  "Molybdenum|2023-02": {
+   "commodity": "Molybdenum",
+   "start": "2022-11-01",
+   "end": "2023-02-01",
+   "change": 1.1941337121285702,
+   "direction": "up",
+   "price_start": 37578.79,
+   "price_end": 82452.89,
+   "n_headlines": 34,
+   "cause_en": "Molybdenum market 'perfect storm' with surging prices; tight supply and demand drove rally",
+   "cause_zh": "钼市场出现“完美风暴”，供应偏紧推动价格飙升",
+   "explanation_en": "Headlines show a surging molybdenum price in January 2023 (cited as driving a copper-producer rally) and S&P Global describing a 'perfect storm' of four key factors in molybdenum markets by February. The headlines do not list those factors, so the specific supply/demand drivers are not documented here. Zijin's purchase of Asia's largest molybdenum mine is only background on industry consolidation.",
+   "explanation_zh": "2023年1月有报道称钼价飙升，并带动铜生产商股价上涨；2月标普全球称钼市场出现由四大因素造成的“完美风暴”。但标题并未列出这些因素，具体供需驱动无法确认。紫金矿业收购亚洲最大钼矿只是行业整合的背景。",
+   "lesson_en": "When trade press speaks of a 'perfect storm' or surging prices in a small market like molybdenum, check the underlying supply and demand factors, since rallies can run far.",
+   "lesson_zh": "钼这类小金属市场一旦出现“完美风暴”或价格飙升的报道，应关注背后的供需因素，涨势可能延续很远。",
+   "categories": [
+    "Macro & Financial",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "Surging molybdenum price adds weight to new year rally for copper producers",
+     "title_zh": "钼价飙升为新年铜生产商上涨行情增添动力",
+     "date": "2023-01-10",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNnhLWk1LVW93enF4WTNKd0NLM3VXdy0xU0RCRDcxT0lCcjBfaTFEejEwSk5lckNHcXdtZDdSN3QyX3JvcVdiTlc3bV9CWkFJcUdSVnI3MjBVWTlJQkJUN2dHdF9UNlkwZjRRRHRvdmtlenJZTkVZX1JKVlVzTVJJNFJMbDBTZk9lRmxiOEFLUkNoZVNCbFFPY002eFVkcWh6?oc=5"
+    },
+    {
+     "title": "4 key factors driving the ‘perfect storm’ in molybdenum markets",
+     "title_zh": "推动钼市场“完美风暴”的4大关键因素",
+     "date": "2023-02-13",
+     "source": "S&P Global",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVUVRWTRxeDdtNXFRc3ZvcEYxb2RraWJVVVdUR3h4VWRDdzZGbkdpNzhGTWNVVmR3by0zNWZ0YUVNOGU3VlI0Slg3Q3laNThQdi01OGlKWFhib3g0SG02UDJZNGJfMTNHdnNKVkFzOW02UFRZalY1cTh2Z0lZc2YxS2pZWmd2a2JYS0poc2t4bjRROEsxX2E3MXkxeXVmZ3Z4SGlOWEh3Qi12cGtDSVg4N1dIMWF5MnV4ZDFWWg?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Zijin Mining bought the largest molybdenum mine in Asia for 5.9 billion yuan--Seetao",
+     "title_zh": "紫金矿业59亿元收购亚洲最大钼矿",
+     "date": "2022-10-24",
+     "source": "见道网",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ETl83akNKcU9HSVJ2aXM5MGFqTnVhcWFmUXk3WDBkZFJMT3kxSnZmUE15dExQWk9wbnRYd1k4V1VhUGExRF9UN0VOM2JqbGRyWkpUNg?oc=5",
+     "lead_days": 7
+    }
+   ],
+   "confidence": "low"
+  },
+  "Molybdenum|2025-11": {
+   "commodity": "Molybdenum",
+   "start": "2025-08-01",
+   "end": "2025-11-01",
+   "change": 0.2646615370250731,
+   "direction": "up",
+   "price_start": 47766.82,
+   "price_end": 60408.86,
+   "n_headlines": 47,
+   "cause_en": "Tight Chinese molybdenum ore supply and rising concentrate bids, plus strong producer sales",
+   "cause_zh": "中国钼精矿供应偏紧、招标价上涨,叠加需求强劲",
+   "explanation_en": "SMM reports from June and July showed Chinese molybdenum ore and concentrate bidding prices rising repeatedly and sharply, with the market expected to stay at highs. That firm raw-material pricing probably carried into the Aug–Nov rise. Grupo Mexico's Q3 profit jump on strong molybdenum sales in late October confirms the high-price environment. Emerging semiconductor and advanced-materials uses (Air Liquide, Lam Research) may add some demand support, but the headlines do not show a decisive trigger inside the window.",
+   "explanation_zh": "上海有色网6、7月的报道显示,中国钼矿和钼精矿招标价多次上涨、涨幅明显,市场预期将在高位运行。这种原料端的强势很可能延续到8至11月的涨势中。10月底墨西哥集团因钼销量强劲而第三季度利润大增,也印证了高价环境。半导体和先进材料领域的新需求(液化空气、泛林)或提供一定支撑,但标题中没有看到窗口期内的决定性触发事件。",
+   "lesson_en": "Watch Chinese concentrate bidding prices; sustained rises there tend to feed through to molybdenum prices within a few months.",
+   "lesson_zh": "关注中国钼精矿招标价,持续上涨往往会在数月内传导到钼价。",
+   "categories": [
+    "Supply Outage",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "The bidding sales price of China's molybdenum concentrate has risen sharply",
+     "title_zh": "中国钼精矿招标售价大幅上涨",
+     "date": "2025-07-29",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVnBlZDdqNEdyMGQ5Wl8zZUpJeEJDYjJLWUwtaThyTDRobmliLWw0aFI5VGxaU2VJMzVtTXp2eUdaUVlvaGotQzVsRTBqNGJYNzhwQWZwNU50ZE1DYXVsYXlMMjdWaVN1c040VFZzdGc1ZFNrRW5BQjN6UzVUNkdLc1p4UnZyQXlPVXAtdENxQWlaYUx6ZlZwNm95d0VWN1FheXZ1QVRJT3RXWHNPeWpjcmhzOE1ZTlJRVFBR?oc=5"
+    },
+    {
+     "title": "Bidding price for molybdenum ore rises again, molybdenum market to hover at highs in short term [SMM Analysis]",
+     "title_zh": "钼矿招标价再涨,市场短期高位盘整",
+     "date": "2025-06-06",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNTmxfMUM1ZjdnNDhZNGs2LTd5TF9uVXFMdGpZUlJaeXlNNXFtTWZFaHpVaG5OdVpGVDlEckxIUS1GNWt2cXFZckJmT0paVXZabUZleXZ6RnJuYlNQVVNoVzZtd3lIUXBIUngtbVhQVTJaM3A4Q0xoZVlsNU9wZnhubnhXeXprV2pQS0lzXzQwcnBBMkg3U1lfNEp6RjVTQnhCM29kWlYwX2pKRzVsODZoVjNwYlhCLVRBeWhmazBxN0lXUDhPQi1TOGtNSVdfNHVGbG5OQXdTMEUtU3gwY04zTnZJYVF0SVU?oc=5"
+    },
+    {
+     "title": "Mining giant Grupo Mexico's Q3 profit up over 50% on strong molybdenum, silver, zinc sales",
+     "title_zh": "墨西哥集团Q3利润因钼销售强劲大增",
+     "date": "2025-10-28",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZ0trZVdyMnNHNlpzLWNBdk14YmFCRFJlMWt6aUNZbHE2OHBEdXhiRkZ5S3hnR01LMGdfTXIwdm5HOHpVVU92MzhiNi1HZUFjWlYxcnpVaDBvcGVyQXNJTmlUbmtJQWhNWUVicGVtRkFRUkpMWk41eUpFRE15N2NsLU1ZeE9NNlNHM2syV0loSFF3X0lSSHVKTnQ0M0RZOVk?oc=5"
+    },
+    {
+     "title": "Multiple positive factors drive the molybdenum market upward.",
+     "title_zh": "多重利好推动钼市上行",
+     "date": "2025-06-06",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbEwwSE1HVl8tOFV6S1hXell6YlQ1Ym83clZnRml3cUdkb0h0bXJpZUVyeDN4dUtzU1cyYlRua3BKSUZkZS1XaEV2akJrUHZTUUlKNThaM1ZUZU5QcTBGU2o5QjRMaVNyd0d2emRUYTNyQ0RyWHZ1bTdnWk5NSzhqMnV2eTNfZkJ6Z3NrekNjb2dtY2QtUm5IWTExelZZWDJqQUQ5X1lycy0?oc=5"
+    },
+    {
+     "title": "Air Liquide strengthens its Advanced Materials Leadership with a new Molybdenum manufacturing plant in South Korea to support next-generation semiconductors",
+     "title_zh": "液化空气在韩建钼材料厂,支持半导体需求",
+     "date": "2025-07-21",
+     "source": "Air Liquide",
+     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPZVVEbnI4dzNGb3lSalk1cXhpVEhTNDlEVDNrQjItT2NiMWNmRlBYcEN6NmN4anExZnFpWDdRTHQtMk5UbGJXeVV5d2JuN0cwTmpZcW1mTjEtZEowekpZVnlGemFJOVRCaUQxYXZWbXVuWkNUeU5HLVVMckFDUnZxTTV3MlgtWHNWRFZPXzI2MW5NV09DUnJFekRkNHp6RjFpajJQVEExc0hvcEs2emZaS0tiWTh3M2F1Mm9pZ2IwMkI3SHFibEtVODhsWXlxNVR4aDdkbkkzbTYtRXA0T2M1RVZKV2otVlM5U3lYSmo2T1ZUbDEx?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Bidding price for molybdenum ore rises again, molybdenum market to hover at highs in short term [SMM Analysis]",
+     "title_zh": "钼矿招标价再涨,市场短期高位盘整",
+     "date": "2025-06-06",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNTmxfMUM1ZjdnNDhZNGs2LTd5TF9uVXFMdGpZUlJaeXlNNXFtTWZFaHpVaG5OdVpGVDlEckxIUS1GNWt2cXFZckJmT0paVXZabUZleXZ6RnJuYlNQVVNoVzZtd3lIUXBIUngtbVhQVTJaM3A4Q0xoZVlsNU9wZnhubnhXeXprV2pQS0lzXzQwcnBBMkg3U1lfNEp6RjVTQnhCM29kWlYwX2pKRzVsODZoVjNwYlhCLVRBeWhmazBxN0lXUDhPQi1TOGtNSVdfNHVGbG5OQXdTMEUtU3gwY04zTnZJYVF0SVU?oc=5",
+     "lead_days": 55
+    },
+    {
+     "title": "Multiple positive factors drive the molybdenum market upward.",
+     "title_zh": "多重利好推动钼市上行",
+     "date": "2025-06-06",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbEwwSE1HVl8tOFV6S1hXell6YlQ1Ym83clZnRml3cUdkb0h0bXJpZUVyeDN4dUtzU1cyYlRua3BKSUZkZS1XaEV2akJrUHZTUUlKNThaM1ZUZU5QcTBGU2o5QjRMaVNyd0d2emRUYTNyQ0RyWHZ1bTdnWk5NSzhqMnV2eTNfZkJ6Z3NrekNjb2dtY2QtUm5IWTExelZZWDJqQUQ5X1lycy0?oc=5",
+     "lead_days": 55
+    },
+    {
+     "title": "The bidding sales price of China's molybdenum concentrate has risen sharply",
+     "title_zh": "中国钼精矿招标售价大幅上涨",
+     "date": "2025-07-29",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVnBlZDdqNEdyMGQ5Wl8zZUpJeEJDYjJLWUwtaThyTDRobmliLWw0aFI5VGxaU2VJMzVtTXp2eUdaUVlvaGotQzVsRTBqNGJYNzhwQWZwNU50ZE1DYXVsYXlMMjdWaVN1c040VFZzdGc1ZFNrRW5BQjN6UzVUNkdLc1p4UnZyQXlPVXAtdENxQWlaYUx6ZlZwNm95d0VWN1FheXZ1QVRJT3RXWHNPeWpjcmhzOE1ZTlJRVFBR?oc=5",
+     "lead_days": 2
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Lithium|2021-10": {
+   "commodity": "Lithium",
+   "start": "2021-07-01",
+   "end": "2021-10-01",
+   "change": 0.48582010138918585,
+   "direction": "up",
+   "price_start": 95767.61,
+   "price_end": 142293.44,
+   "n_headlines": 52,
+   "cause_en": "EV sales surge drove demand beyond supply, flagging shortages and record lithium prices.",
+   "cause_zh": "电动车销量激增推高需求,锂供应短缺,价格创纪录",
+   "explanation_en": "Headlines show lithium prices rallying on surging electric vehicle demand, with Reuters flagging shortages of lithium and cobalt in July and again in September as EV sales surged. By mid-October Caixin reported battery-grade lithium prices had jumped more than fourfold to a record. Supply-side responses (Chile opening reserves, new extraction projects) were only starting, so they did not ease the tightness.",
+   "explanation_zh": "新闻显示,电动车需求激增推动锂价上涨:路透社7月和9月先后提示锂、钴短缺,电动车销量飙升带动锂价走高。10月中旬财新报道电池级锂价较上年涨逾四倍,创历史新高。智利开放储量、新提锂项目等供给措施刚刚起步,无法缓解紧张局面。",
+   "lesson_en": "When analysts flag EV-driven supply crunches and metal indices are already rallying, expect lithium prices to keep climbing until new supply arrives.",
+   "lesson_zh": "当分析师提示电动车拉动的供应紧缺、且金属指数已走强时,在新增供给到位前锂价可能继续攀升。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Surge in electric vehicle sales power lithium prices as shortages loom",
+     "title_zh": "电动车销量激增推动锂价上涨,短缺迫近",
+     "date": "2021-09-13",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbzBtb2VFcVhXOHhiaWRtN2JYbkJsRzFmd1gyb19ac2JwS1BRVEh0MVM0WktQR194bkhON282cjY4U2E4c1p6R3BmdC01R2NTeF9xN2dPWF9HazR0X2NKUDctSExOWlZYOFYtelM3LWd3SW1Kd01wa2UzQ0IzSkhEWlc2U0VkNWJpOWxLV1dxb0MzcDNiVW5GUEFrNDNGVG9iQ0FVcFB3emdvQjgyc2xVQnZMUW1qVUhaLXVQbENyUmNsUGVyS0Y4UnB3?oc=5"
+    },
+    {
+     "title": "Battery-Grade Lithium Price Jumps More Than Fourfold to Hit New Record",
+     "title_zh": "电池级锂价上涨逾四倍创新纪录",
+     "date": "2021-10-14",
+     "source": "Caixin Global",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOb1M4N1pLc1kwRGE1REZUN3c3UzB4MlZxSkZOQ1hLM3RwU3VDc0l1cFJzaUpJdEZ3TkZyZjZPUERfSzBiejVWX0FHVzVGblVUcjhPaC1Qd3VaUEc5TlU4dklhb3d5akhMQmluZ1g3dGpwa2laVEJzYUM4d002VjA3TlA4WjlXUFU2Q0R3TTBNU243MG1vMzdiY2oyeUdydmNTOVcyVHBld3RFSmRKbkFFRklKSHJCT25BeDNWN0ctUHQ4RUU?oc=5"
+    },
+    {
+     "title": "Shortages flagged for EV materials lithium and cobalt",
+     "title_zh": "电动车材料锂和钴被指将短缺",
+     "date": "2021-07-01",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdEhKMndmNlhwV0FBZW5XX3RETXRNd3FEMlY4U0xaQ0p2WFc3TW5TREJIcjI2ZDNuMUxhM3JRSXR3VW9sOXduTkd3QWx2OXA3a3JuemxBTW9wZF9NRlJJazNTOERZZW00dUpmSGoyUlZwVTRxaGVOLXZXcFh5SmhqRURGU2VvY3FHOWtRcVZfcURyWUUtUWRiTWlVRldSUQ?oc=5"
+    },
+    {
+     "title": "Lithium prices are soaring thanks to EVs and this start-up has a more sustainable way to extract it",
+     "title_zh": "受电动车带动锂价飙升",
+     "date": "2021-09-22",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaTVUYlhhMnpJWUxPa3Byb0JCdGR2cVc5R0pOZ1B4ZWJFdll1cVROUVh3SFprMXdUSTUwSDVuVmc3R2RMU011M2M4LWRzZUhwUGdPRVVsVEo3Q25qNXdGZGI1ZHFYM0ZON25PRE1ZRWpld3J2TWphbkZXVDhjcVRvb1hrMVk3dmhKWHRwLU1FaGFiYmtXRmZfWVM5d2lUcEZsOElR0gGoAUFVX3lxTE1CYlBQZ2d0VW9tWUUwdWpUbll4N0c5NkgwdkRxUkFST1RwZUFOeG5tRl9keW9ybzFqMEpONGZYYjJab1NHcHNTdEptUmM1dVkxRTUyZElMTGJQemFjNndJMXlBOEd4WFFNOV8tUWJYS3ktWnZJbXdSamlBcm1DQ3AzaEUyN0doWTgyUzlnZERyRXViSVQxdXhLNURObmU5OEtpblh2RGltQw?oc=5"
+    },
+    {
+     "title": "EV Metal Index quadruples year-on-year as lithium, nickel prices rally",
+     "title_zh": "电动车金属指数同比翻两番,锂镍价格上涨",
+     "date": "2021-07-19",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOODdYLVcza19wUG9iWXdDSWFBZzRVT3djMnlRQng5anJpTV9OSmtQSTA3VUloVTJNZExBTnFJYWF2ZGswQ1duZkNOU3pNN2FrdFl5ZVhtbE5CRFlOV1V3T0FnRnpfQnFhOTFlNGRSM1FDRHdpQnU1QXZuWnRUMi1hdUhTYjZDbFRMY3VfdW94bU9ONk1uajN6UA?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "EVs Will Drive A Lithium Supply Crunch",
+     "title_zh": "电动车将引发锂供应紧缺",
+     "date": "2021-05-05",
+     "source": "IEEE Spectrum",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9TNnIwM3ZRcnFaODktWjVTRWp4cnRYUDlTU1ZJNGFtekk0QndyUVQtRDdyRVI4ZlZEZXFXTk1UdnYtbERnMEYtc1hHM25KbkplVS0tUEpvODJBbldtanEwaGp3d0J3MkNDTHFlbllBWQ?oc=5",
+     "lead_days": 56
+    },
+    {
+     "title": "Lithium price: Hydroxide back on top",
+     "title_zh": "锂价:氢氧化锂重回领先",
+     "date": "2021-06-17",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9pV01MczVWODd0eVNfWEZnb0UtNDBySi1pMWJfakRfYlpvZ2w1MFYtcHBQREtnZTZWY3dmYThTMDJ3M21VcXBRczN5TG1NdVF5cU5zSkdLVVpsclJmd01hSDcxbnhiVlhHbEhZ?oc=5",
+     "lead_days": 13
+    },
+    {
+     "title": "Shortages flagged for EV materials lithium and cobalt",
+     "title_zh": "电动车材料锂和钴被指将短缺",
+     "date": "2021-07-01",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdEhKMndmNlhwV0FBZW5XX3RETXRNd3FEMlY4U0xaQ0p2WFc3TW5TREJIcjI2ZDNuMUxhM3JRSXR3VW9sOXduTkd3QWx2OXA3a3JuemxBTW9wZF9NRlJJazNTOERZZW00dUpmSGoyUlZwVTRxaGVOLXZXcFh5SmhqRURGU2VvY3FHOWtRcVZfcURyWUUtUWRiTWlVRldSUQ?oc=5",
+     "lead_days": -1
+    },
+    {
+     "title": "EV Metal Index quadruples year-on-year as lithium, nickel prices rally",
+     "title_zh": "电动车金属指数同比翻两番",
+     "date": "2021-07-19",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOODdYLVcza19wUG9iWXdDSWFBZzRVT3djMnlRQng5anJpTV9OSmtQSTA3VUloVTJNZExBTnFJYWF2ZGswQ1duZkNOU3pNN2FrdFl5ZVhtbE5CRFlOV1V3T0FnRnpfQnFhOTFlNGRSM1FDRHdpQnU1QXZuWnRUMi1hdUhTYjZDbFRMY3VfdW94bU9ONk1uajN6UA?oc=5",
+     "lead_days": -19
+    }
+   ],
+   "confidence": "high"
+  },
+  "Lithium|2022-03": {
+   "commodity": "Lithium",
+   "start": "2021-12-01",
+   "end": "2022-03-01",
+   "change": 1.565676139004153,
+   "direction": "up",
+   "price_start": 184429.31,
+   "price_end": 473185.88,
+   "n_headlines": 65,
+   "cause_en": "EV-driven demand outstripped tight lithium supply, with contracts failing to keep pace, sparking a price surge.",
+   "cause_zh": "电动车需求猛增,锂供应紧张,价格飙升",
+   "explanation_en": "Headlines describe record lithium prices driven by surging EV demand from China, a tight market and a supply crunch (\"this time it's for real\"). Automakers and battery makers (Tesla, Stellantis, BYD) rushed to lock in supply, while supply agreements failed to keep up and spot prices for hydroxide and carbonate outpaced spodumene. Battery makers like BYD were already passing on higher lithium costs before the surge accelerated in early 2022.",
+   "explanation_zh": "新闻显示,中国电动车需求激增,锂市场持续紧张、供应吃紧,价格屡创新高。特斯拉、Stellantis、比亚迪等车企和电池厂争相锁定供应,而长协供应跟不上需求,氢氧化锂和碳酸锂现货价格涨幅超过锂辉石。比亚迪等在涨势加速之前已开始向下游转嫁锂成本。",
+   "lesson_en": "When battery makers start raising prices over lithium costs and analysts call the market tight, expect further spot price spikes as buyers scramble for supply.",
+   "lesson_zh": "当电池厂开始因锂成本上调售价、分析师称市场持续紧张时,买家抢货可能推动现货价格进一步飙升。",
+   "categories": [
+    "Demand Shift",
+    "Supply Outage"
+   ],
+   "drivers": [
+    {
+     "title": "Lithium Prices Surge on EV Demand from China",
+     "title_zh": "中国电动车需求推动锂价飙升",
+     "date": "2022-01-26",
+     "source": "Elements by Visual Capitalist",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPT1hYMFhNQ051TXJ4NHhKVnlLYUZCRGptaWtJcFVsa3hxbk5yaklqcVlnYVBJZU5mU0RCcnlqbURGYlJHU0RqVi1CSjI0ZlpyV0NZSHJhcVhuZWQ0LXVzaDFycVA0cjc5MlpEZklXcFphUFktcGZOTFdSTFBSNURlTXJnOXNOcGVLUFlZ?oc=5"
+    },
+    {
+     "title": "Lithium price rockets 45pc with no end in sight",
+     "title_zh": "锂价暴涨45%,涨势看不到尽头",
+     "date": "2022-02-04",
+     "source": "AFR",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeEI3WTdBZHVvTWFXd0lWN3RoM2lTWTBsb25RYzI2OVJwTVN5ZWNSYkNOQ0tkNkJFNnc0YTdDX3FUUFFiUk9lZWoxMkhheHdxbXRDZmNtTEs2eDJFUWxla0tvdFNETWx5UXprZTBrU1hSZ1hxOXBtbnh6YVNWQzBuN3lsN1ZMbC1jN2ZLaUNUb1l1TUhJYzF2ZktPM2VxNmwyYXc?oc=5"
+    },
+    {
+     "title": "COMMENTARY: Lithium supply crunch Part II - this time it's for real",
+     "title_zh": "锂供应危机第二幕,这次是真的",
+     "date": "2022-02-16",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUUhMQldYSkpCTVY5d1FkS0Z1bjJfTzlyX2VfcXoxSmluZ3ZJcnhtdDJfZkN3cGNXQ19VSkRYSUEzOS1VMEZuYjlVSTFiN241Y3lIVnpDVVhVZXNvSFFiMlVfM0hjUGR2UW9LTzZxUmtlTWRFRS1BYThxNm5vRmd4dmhjWGRvRXVKZi04LW55Q2dTTU10ZGxKalVSVlQtZEtxUHVNdkl0VQ?oc=5"
+    },
+    {
+     "title": "Lithium prices rose more than 400% in 2021; supply agreements failed to keep up",
+     "title_zh": "2021年锂价上涨逾400%,供应协议跟不上",
+     "date": "2022-02-23",
+     "source": "Fastmarkets",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTzN5cE0teTlZbDFuRlJxMFhGVWpGOVZUNmxEbHl0REh4SjFvVnZDakJDaDV5cDh0WnRqYjFpUm9EZDBFbHFyeUR4QnROVlBDUnNmTUtoSFBUYkU5U3FUX19lR3U0bEkzZDBMVGNNd3JDRUUtZ0ZQY3dNUExheDhSeElEMlM2SWxYZ0ZLQVB5OFZpQThHb3dCR1N6VTBETmxDZ0hhNUFPTC1zTEJERDhuUlpIb2ZQdw?oc=5"
+    },
+    {
+     "title": "Spot prices for lithium hydroxide and carbonate outpace spodumene",
+     "title_zh": "氢氧化锂和碳酸锂现货价格超过锂辉石",
+     "date": "2022-03-02",
+     "source": "Fastmarkets",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVTBkVEZ6N2w1S1VhN0NKb2ktZ2JBZ08ta08wemFzc0ZRVUlkSGZ3RXE1UC1lcnlOamJpOXRSdFdhUlNkUldrQ252LXVkbHpUZHR2ZjBFb0VqNGpXMmItZmlURkhxQTRwdGhHdFlCSEFYNmdRMDVwUEVqQXo3aTBhUGFEdlg3NUZwbTFRdHFyeTExZ1pIOFE0LU1OYmRic0Y0ZlUwc1VB?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "BYD to Raise Battery Price 20% as Lithium Costs Soar",
+     "title_zh": "比亚迪因锂成本飙升将电池提价20%",
+     "date": "2021-10-27",
+     "source": "Caixin Global",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbWNYWW8tbmYxYi11SElyY0Jfc01WQlNMaHlWNlI2TTVEdVY0ektZMTdVcHhHOWdtM2JMZHRPZTBsekZTZEEtbEYza2xJYXdqSFpOOVRwS000dnUtMVV5VHo5WWFqSHhjbFhsU3JEXzYtZ1JjYW54cV9oVEVxeWxCT0F0cFduakFXRHc5WDdKcEtqSnN6NWFVa1RtNnFrTGxadHZrUzJkcXI2dw?oc=5",
+     "lead_days": 34
+    },
+    {
+     "title": "High lithium costs start to feed into prices of China EV batteries -BMI",
+     "title_zh": "高锂成本开始传导至中国电动车电池价格",
+     "date": "2021-10-29",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQTZuUl9lN3lENVk2UWdJYjZUUHpUcWEtTGZLT0RpX0hUMElQU29rSjlIS2VlU2Z3a0d5NUtlcUJVSnRSdVlnejFNM24yVUREX0N1NVRkaFh2ckJac2hJTVdFMWlxMHRJNjlua3E3WmFwRndtVU5jTTJZckFSLW9MeUp6NVRpNGxxVkJoVHdHS3JwVHNMTFdUejNGaHAtMTROS1pTeTJidWVzdlp6eEFPag?oc=5",
+     "lead_days": 32
+    },
+    {
+     "title": "Battery Pack Prices Fall to an Average of $132/kWh, But Rising Commodity Prices Start to Bite",
+     "title_zh": "电池组价格下降,但原材料涨价开始显现",
+     "date": "2021-11-30",
+     "source": "BloombergNEF",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZ05PblFVVUwyZ184LUlUcElmVG9ycmFiVkh4dXlKTTdBc0U1VGVLVnJNc1FsYmRXcjZYNVlUQ0dPZG1LdjRvMHBLaURoWWF3dnFZcEc4WWxKT2ZvQnpSbzNUM2ZCWjR0c01nb3RpN1FNU2VUX1ZxTzBsRldZZm8wQ2h3Z2hZNW05Q3NLUGlpN05KTVo0ci1WRW1GeTBWTXA3UERNQmU0eXZQeTE0RGVWQXpFREZSdzJtUUVXSDQ3UnVMR3hGLVpPZ1BUOUdVT1lHbFBN?oc=5",
+     "lead_days": 0
+    },
+    {
+     "title": "Commodities 2022: Global lithium market to remain tight",
+     "title_zh": "2022年大宗商品:全球锂市场将持续紧张",
+     "date": "2021-12-14",
+     "source": "S&P Global",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUU96TWlHLS0wWEpRaU55T2FLS1lZM2JKVEswUkJkeUwyTGcyZ21CaFBSRThVaGZFQlR0MDBpbExMRmIzaGFoTUEzYlg5VS1LVUkyX2lUYzkxSHE1MTJ6RE90anBnRU9HLWM0cXJtRk80X2Fld3lxdHpMT2pVemphS3htWTcyaEl4NkE2aUZMelhmUGpZTEQtZjdqYzNzMTg5bjJDQ1JKeFM3NW9NUzRodmJPTjM5RDkycjdnMi01RUhqSF96M21ET1dOWWp6UWEtWjJwdklDMGVzcFFiUmQtZzZjZ2Y?oc=5",
+     "lead_days": -14
+    }
+   ],
+   "confidence": "high"
+  },
+  "Lithium|2023-05": {
+   "commodity": "Lithium",
+   "start": "2023-02-01",
+   "end": "2023-05-01",
+   "change": -0.46078007411328437,
+   "direction": "down",
+   "price_start": 416103.54,
+   "price_end": 224371.32,
+   "n_headlines": 70,
+   "cause_en": "Demand softened and supply surplus expected, causing a lithium price crash after the 2022 spike",
+   "cause_zh": "需求转弱、预期供应过剩,锂价在2022年暴涨后暴跌",
+   "explanation_en": "Headlines describe a spectacular lithium price slide from February 2023, with Bank of America forecasting a 2023 surplus as demand eased. Reuters reported that Chinese producers set a price floor as demand \"evaporated\", and CATL was reported to be betting on cheaper inputs. Cheaper-battery-input coverage in March–April confirms the collapse, and a 40% drop since November was already cited by mid-March.",
+   "explanation_zh": "2023年2月起锂价急剧下滑。美国银行预计2023年因需求减弱出现供应过剩;路透报道中国锂生产商因需求“消失”而设定价格底线,宁德时代也被报道转向更便宜的原料。3月至4月的媒体报道(如“锂价暴跌”“电动车更便宜”)印证了这一下跌,3月中旬已提到自11月以来下跌约40%。",
+   "lesson_en": "When prices are extreme, watch official forecasts of price pullback, battery-maker cost-cutting moves and surplus projections, as they can herald a sharp reversal.",
+   "lesson_zh": "价格处于极端高位时,应留意官方的回落预测、电池厂商的降本动向以及供应过剩预期,这些可能预示价格急剧反转。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Lithium price slide deepens as China battery giant bets on cheaper inputs",
+     "title_zh": "锂价下滑加深,中国电池巨头押注更便宜原料",
+     "date": "2023-02-28",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcjVJb0dSb09xVEZrV3ZDWmdobnFxR2wzMkltamJaSHEwZW85TVItbkRwZFQ5WVBDbno5Z0RaNVdhaU5OTGQ1a2YteVJsZ1ZPYjg1NGMyWUxwWXlPWHFkMG85eEh5bEFQVWJsellOQnppcTFfbnZJTFVZbDg4Y2swZ0owOExtTFpXcm4xM1ZtVW1XY29rRFhpSVVmRDlNeTZjUDhWY2JxcXFyNUJwczV1SkZtRTQ0dDBUc0w0MWlIOTk?oc=5"
+    },
+    {
+     "title": "Lithium Prices Have Crashed Spectacularly, Here's What Next",
+     "title_zh": "锂价惊人暴跌,后市如何",
+     "date": "2023-03-05",
+     "source": "Crude Oil Prices Today | OilPrice.com",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOakM0ZmNKVWVRcUZxQkxMY1hFZ0MycnZEcm4ybDNqSHRPaXRpblpBMEduWGhIU1otd0RFdXAtVzRkYlYzS09wOTZBdTRVc3JFbjduRGtBdTMwVUFBX003ckptUlBJZkN3THdlUGFCNnN0YTRMWUFZRXR0VmoxcHI5QkpuYW1oOGRtX2gzSC1tWldjVzVNMnp1UUNGMldWN2t6WW1rZjBpTUTSAa4BQVVfeXFMTzRCTDdCZXJEWF9lUGkxazRSRU0xUGEzR2hROEJpQ2tvd3JwOER1MVhOYmpXbS1zUk5UWlprV0t5b0k3Wmp0b0pQQk1UVkhzcXBQdGN1WEtIcEMwdkZ1cmg2M0ZCMkVNeFgtT1NqSG5iRjZXNTJlUVJCSmFWRTE3SUN3b0h1UVdxN3cwZ2czQVU1d2V2NlRwRDdBMEQ0WkVYQjFtZkFYN25YVXdacElB?oc=5"
+    },
+    {
+     "title": "Bank of America sees lithium surplus in 2023 as demand eases",
+     "title_zh": "美银预计2023年锂过剩、需求放缓",
+     "date": "2023-03-06",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTVlIUEFpZlZndFNKaEg2WmdjNGZFSnZRY215Yk1NNTk2VEZPOEMtWHc1SjU3aUNTTHQ0emNVM2RYQnlsam9aRVI2TEhmV3N1SmxQdmhJZnJielVXb1NPd3J0NlJkQUtMa0QtY3JjcDJuTEZzd0xiamJCZml3VjRaZ0dUNk5nMU1KZFhsTlllWEYtaWtGaHNpT3R4aXdrZw?oc=5"
+    },
+    {
+     "title": "EXCLUSIVE: Chinese lithium producers set price floor as demand evaporates, sources say",
+     "title_zh": "中国锂生产商设价格底线,需求蒸发",
+     "date": "2023-03-31",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa0Y5Y0RKb241U1k4MFpmeXFGT013eTcwVzRoQnk5TmtsOFpyOTVTVEZHUTJ4NFhMTW1CRkVSWlBMcy1EOFYzekhNdlJVZXptMVpETmp0NGg0OXM4OUVHbWpKUENpcUJYNEotQlZpaWxBZ00tenNlTnJZZGs3Q2NmeUJjdEM5Rjc2cEd4OFpubzRUczZHMlFRM1hWQzhMYnlPSzExQXZqT2NTcGFmQ3hfQzczRWNqUQ?oc=5"
+    },
+    {
+     "title": "Why Are Lithium Prices Collapsing?",
+     "title_zh": "为何锂价崩盘",
+     "date": "2023-03-22",
+     "source": "International Banker",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbi05MmZCQXlRVk9yM29kR1VJSWpGSl8xQnduWHZnaEdqdmdHbXVKQTBMbTBjWUJhZ2JoSENFTGJTdUtwZmhDLXNCd2VxSjV6eFBRWnptOURwaUhDczlMTndrZHFENXdOcS1TZ3FkOFZFTjVRQTlkVy1YTi1VVEdINkJR?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Australia expects sharp lithium price pullback in 2024",
+     "title_zh": "澳大利亚预计锂价将大幅回落",
+     "date": "2022-12-19",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQ1B0RWR2eFAxMnh2RkFIZS04TzVOLXlvckZyYXZrTEdzMFpweUlUQ0VxRVkyQ1hPb09vNDhGSl9idnNYcnBTRUt6LXhlU3R5bjh6d255M3hsbGNZN2N0RU5BTWphSEhMYXE4TkVvaXhxVW5jSTNVY0VoUkktbUxfN1g2S2E?oc=5",
+     "lead_days": 43
+    },
+    {
+     "title": "Lithium-ion Battery Pack Prices Rise for First Time to an Average of $151/kWh",
+     "title_zh": "电池组价格首次上涨,需求承压",
+     "date": "2022-12-06",
+     "source": "BloombergNEF",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNS214MWdJM09fbmhKOGF5ZXJneU4tdTQzbjBTbnJiYWJNTDEwaVlxcEt5VURIZHk5WEhrVm9qTlN3ZXFuSkxhQTctQVVZN0RpalRjdzFDYWV6N21hUUdiM2wyakV0czJXWFFQajd3cTU3Vkk4R3p5T0dBcFpDMDNhcUVWR0VTUFQzeTB5SUNIY3BJS3BlMXdzbjQySGRSWEd4VENuSXhnSnJUSmdTdkJ2c2tONkxTRVE3OXp0aUFB?oc=5",
+     "lead_days": 56
+    },
+    {
+     "title": "Lithium sector: High lithium prices do not dampen demand but increase risk",
+     "title_zh": "高锂价不抑制需求但增加风险",
+     "date": "2023-02-06",
+     "source": "Credendo",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNGczSkpsVi1YM01JczgxWnAxYUVFWUEyTlpTRnA2bVB0ZXRVYkF1OUZiX19DcUdLWDQ0YjZKcEVWV3B5OVZKRlRXMEJIU1NVdkpWeDhpS2RweDVyOUtTQVBKREpOdldrWGJsejNhQ190WG83N2l1emVQRnlRQXpwV0lDdmI5bzNoclY2VUJxYVo1aEFYaHNvdUhORnVvNVpqOWgwaUVidmNJWXc?oc=5",
+     "lead_days": -6
+    },
+    {
+     "title": "Lithium price slide deepens as China battery giant bets on cheaper inputs",
+     "title_zh": "锂价下滑加深",
+     "date": "2023-02-28",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcjVJb0dSb09xVEZrV3ZDWmdobnFxR2wzMkltamJaSHEwZW85TVItbkRwZFQ5WVBDbno5Z0RaNVdhaU5OTGQ1a2YteVJsZ1ZPYjg1NGMyWUxwWXlPWHFkMG85eEh5bEFQVWJsellOQnppcTFfbnZJTFVZbDg4Y2swZ0owOExtTFpXcm4xM1ZtVW1XY29rRFhpSVVmRDlNeTZjUDhWY2JxcXFyNUJwczV1SkZtRTQ0dDBUc0w0MWlIOTk?oc=5",
+     "lead_days": -28
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Lithium|2023-10": {
+   "commodity": "Lithium",
+   "start": "2023-07-01",
+   "end": "2023-10-01",
+   "change": -0.33221675444498266,
+   "direction": "down",
+   "price_start": 268325.57,
+   "price_end": 179183.32,
+   "n_headlines": 70,
+   "cause_en": "Lithium price rout as new mine supply ramps up and brokers forecast further declines",
+   "cause_zh": "新矿产能释放,券商预期锂价继续下跌,价格暴跌",
+   "explanation_en": "Headlines point to a lithium price rout in mid-2023, with Goldman Sachs urging a sell on MinRes and expecting more pain for prices, and brokers (E&P) saying prices would fall further as new mines open. Supply additions such as Zimbabwe's Chinese-built processing plant and the new mines weighed on prices, while LFP gains narrowed the nickel/cobalt gap. Later headlines (Oct) refer to a \"price crash\", though they are framed around future shortages, so the demand side is not clearly explained.",
+   "explanation_zh": "2023年年中锂价大幅下挫:高盛建议卖出MinRes并预期锂价还会承压,E&P等券商称随着新矿投产价格将进一步下跌。津巴布韦中资锂加工厂等新增供应加重了压力,磷酸铁锂追赶镍钴三元也影响需求结构。10月的报道直接提到\"锂价暴跌\",但多着眼于未来短缺,需求端原因在标题中并不清晰。",
+   "lesson_en": "Watch broker downgrades and new mine/processing capacity ramp-ups, which often precede sharp lithium price corrections even amid bullish long-term narratives.",
+   "lesson_zh": "即使长期看多叙事盛行,券商下调评级和新矿/加工产能释放往往预示锂价将大幅回调,需要重点关注。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Goldman Sachs says it's time to sell MinRes + More pain for lithium price",
+     "title_zh": "高盛称该卖出MinRes,锂价还将更痛",
+     "date": "2023-06-20",
+     "source": "Market Index",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR0NySXVlSHNlRHJ5T2dieGpOU3R0VDdWbnBLV2t0eXMyNXJjcXdlUlpSOWJqa0tEdXRIb3BtSlFRVWJ6SDlXVzEzWENuSmtVeEszUGt0algtTXNUTDN6eUpVVjZ1TnVTWGRkUmliYnlXSzlZTmZrYkh5TUpuenFrLVVNR1pDQQ?oc=5"
+    },
+    {
+     "title": "Lithium prices to fall further as new mines open, broker E&P says",
+     "title_zh": "E&P:新矿投产,锂价将进一步下跌",
+     "date": "2023-08-07",
+     "source": "AFR",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT0FXeS11LVBNTnVmbVFVdG95OWtrZm9wZkRqeHFYeXFoeWx5WVFSUk5PendUbXNoaHhOdkwtbXFaemNJY05xVWNuRTJfcmxJSDE4UDZxbjllS2k0VXRjVmFTaVYtam9RWWF5RHpmczhNYWJkbzBBTm9uQlZlRDVZWVBrU25uR25UNHZsdmxnVEhva3JmbFNlYTloYVpzNmZaRjh3bWVUdVRwdjZEQUE?oc=5"
+    },
+    {
+     "title": "ASX: Will the lithium price rout kill the next wave of Australian mines?",
+     "title_zh": "锂价暴跌是否会扼杀下一批澳洲矿山",
+     "date": "2023-08-06",
+     "source": "AFR",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcGpGb2lBOEZRM2JER3lLdXdNWTJ3TERORkwwN0Z6UXB5ZmFDd055NlpEWVlvbWE5TG5CV2lpb2FaenJ2Sy04eklQcDFVVDNkZmxqSHVLcDQtcjR6Y3JWemRMMURWR193WmhMMXZVUDlUMHVyVW5iaFhvR2U4VERXaXk3a3Vna2FRdTViRGI5UDlnUlRhUzNxWEo2OXVITjNWZzROM2tUMjlpR19IVmJ2RG9DaWJhb3Z4dHRJ?oc=5"
+    },
+    {
+     "title": "A Chinese mining company has opened a giant lithium processing plant in Zimbabwe",
+     "title_zh": "中国企业在津巴布韦开设大型锂加工厂",
+     "date": "2023-07-05",
+     "source": "AP News",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZk5zUURSWHgySjh1VEl2ZVpyQWpqVmVpMXZDc3pKWWlGNmhLSC1OYWI1a0NXaUY4N0NXTTdhR0RELU5XamdXd2FkUkZ3eFNYaVRRZ1FNeVR1N3dKS0xNOExxcGRVa2tnLURDU2o4RWFnOHg4MTE5dmpQVERnRHJaUThna05oVGpaUWU5TVJpdEhWUWJuUmdN?oc=5"
+    },
+    {
+     "title": "Lithium Price Crash Could Trigger Shortages From 2025",
+     "title_zh": "锂价暴跌或引发2025年起的短缺",
+     "date": "2023-10-19",
+     "source": "Crude Oil Prices Today | OilPrice.com",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSUFrYmtoT3ViTkF5LVdRd3pZX3Y2NXZwZG9lMkxfU1puSkY0Y25nMk9GVjU0aFp6WjhkTVBQNDJjMnJBZzhSSTJxRnJPMlFVVUFqaDY3OUtHZmtTSEZ2eDNCMm1Iamc1Qi1oVTVQcDQ0MzEybDhRYm5NS3puSmZzaEpVU0lmcWdxV3hHbXpqcWEyMl9WRmFBRGRhT2xWbWRrQmhN0gGoAUFVX3lxTE8zam5CdFQxT3ZMRDdMVVE0bU1vWEhWeG5kQUlyVVVDWG4tTkUxNHpuV1lTVGE3WFFVeUViNldEUm9DdmtWTkFBaXJGMTlURi1RWWFHYlFfNDR1RXlGUm9BaS1uTlVGUXRyVFBiajZQRkFybF9qZTdpQ0FpRUR1T2N4eDRMSWJDb2JXWFpwZEliSDNZdnB0UjVKY2doWHlwcTdwVmtmQmV1TQ?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Goldman Sachs says it's time to sell MinRes + More pain for lithium price",
+     "title_zh": "高盛称该卖出MinRes,锂价还将更痛",
+     "date": "2023-06-20",
+     "source": "Market Index",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR0NySXVlSHNlRHJ5T2dieGpOU3R0VDdWbnBLV2t0eXMyNXJjcXdlUlpSOWJqa0tEdXRIb3BtSlFRVWJ6SDlXVzEzWENuSmtVeEszUGt0algtTXNUTDN6eUpVVjZ1TnVTWGRkUmliYnlXSzlZTmZrYkh5TUpuenFrLVVNR1pDQQ?oc=5",
+     "lead_days": 10
+    },
+    {
+     "title": "For EV batteries, lithium iron phosphate narrows the gap with nickel, cobalt",
+     "title_zh": "磷酸铁锂缩小与镍钴电池差距",
+     "date": "2023-06-23",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQNGoweGktLTd3SXNNRFZ5YXdGeWk4TGcwN2hTdDh3ZEdLb09hUWdiQ29HSmZWNnJrUURSQU5ORFBmUERpWnk1SWJrRmlJOTUxS0otRE1GM0lndWRFUV9TTEdtOEdRbl9WQXJHUG1ONFlrblpack5vRDRtTHM1OExLVEplS1NrcUh6M0IxUDBHdGhIOWt3UFlWclBqTHNnU2ZXNF9WWkQ0V3RjOS1aTmZZTG5kNmdJd3BGbUtCZFpUaVBpTFVNSE04VzVMNW0?oc=5",
+     "lead_days": 7
+    },
+    {
+     "title": "A Chinese mining company has opened a giant lithium processing plant in Zimbabwe",
+     "title_zh": "中国企业在津巴布韦开设大型锂加工厂",
+     "date": "2023-07-05",
+     "source": "AP News",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZk5zUURSWHgySjh1VEl2ZVpyQWpqVmVpMXZDc3pKWWlGNmhLSC1OYWI1a0NXaUY4N0NXTTdhR0RELU5XamdXd2FkUkZ3eFNYaVRRZ1FNeVR1N3dKS0xNOExxcGRVa2tnLURDU2o4RWFnOHg4MTE5dmpQVERnRHJaUThna05oVGpaUWU5TVJpdEhWUWJuUmdN?oc=5",
+     "lead_days": -5
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Lithium|2026-02": {
+   "commodity": "Lithium",
+   "start": "2025-11-01",
+   "end": "2026-02-01",
+   "change": 0.7420879105992639,
+   "direction": "up",
+   "price_start": 85629.72,
+   "price_end": 149174.5,
+   "n_headlines": 65,
+   "cause_en": "Energy-storage demand boom, China export tax rebate removal and mining licence revocations lifted lithium",
+   "cause_zh": "储能需求爆发、中国取消出口退税及矿证吊销推高锂价",
+   "explanation_en": "Lithium rebounded on China's energy-storage policy drive and booming battery demand, which tightened the outlook after a long slump (ids 23, 27, 38, 39). Supply-side shocks added fuel: Chinese authorities' plan to revoke mining licences in December and the announced removal of battery export tax rebates in January triggered spikes (35, 41). Speculative volatility, including a late-November plunge after trading curbs, did not stop the rally, which left prices tripled since June by February (32, 53).",
+   "explanation_zh": "在长期低迷之后，中国推动储能的政策和电池需求激增改善了锂的供需预期，推动价格反弹（23、27、38、39）。供给端与政策冲击进一步助推：12月中国地方政府计划吊销矿业许可证，1月中国宣布取消电池出口退税，引发价格飙升（35、41）。11月下旬因遏制投机交易出现过暴跌，但未能阻止涨势，到2月锂价较6月已上涨两倍（32、53）。",
+   "lesson_en": "Watch Chinese energy-storage demand signals and Beijing's mining-licence and export-rebate policy, as these can quickly flip a depressed lithium market into a squeeze.",
+   "lesson_zh": "关注中国储能需求信号以及矿证和出口退税政策，它们可能迅速使低迷的锂市转为紧张。",
+   "categories": [
+    "Demand Shift",
+    "Export Policy",
+    "Supply Outage",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Lithium surges in China after local authorities announce plan to revoke mining licences",
+     "title_zh": "中国地方计划吊销采矿许可，锂价飙升",
+     "date": "2025-12-17",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU2hzWmdGVU9IS19rYlFGYzVrLVVuRk1vakNhb2p4MXFiOVRudTBtYVg5ZEpOTzRzRjRBdmdwZmxnRlRBNjRrT1lCb0dHd1U2N3NGRFpDZl9xcGt1QlBDSjB3eVZHbFJoMHBycU4tSGsxUUF5Q1pmUnk4b1UwajJ3Q1dOYWJ0RDE5U01TNzVwVDlGSmVTQm9qdmdnbWFJY0VCbnl3a0djeGs5MW5KZ0I1SWZUY3pVY0xkNUVRRmpYdjZLMlNJUnc?oc=5"
+    },
+    {
+     "title": "Lithium soars as China to revoke battery export tax rebates",
+     "title_zh": "中国取消电池出口退税，锂价大涨",
+     "date": "2026-01-12",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaDVwUE5nc3N1eTFsOGV1NU5uY0liNkJMeXd5ODF6bDlnVVQyWXJGdER3MmdQQ211Vlc2WkxqVEUweV9JRlU0N3Fqbk1rTzZhUUxWRVBUN1pOSmVtYnpUU3NrRUxaLUE0cDlNRTdUTnRsTW9semo4dzNRcUNQcTI0dXJxTmlLUDRod0loMXBZbDVZTXozYjFzSUM4UE5jaTY4dHZfR0VXczRTZllQ?oc=5"
+    },
+    {
+     "title": "Energy storage boom strengthens demand outlook for beaten-down lithium",
+     "title_zh": "储能热潮强化被压低的锂需求前景",
+     "date": "2026-01-05",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVjNFTExZbmpadXAwdWZUd1h4OGNXaF9UbXk3RlFCdk1HSEl1X283WWd3NFRTSFRVbFJseGZvZUtGV3NMa0NjN1ZhTDcyNlhCT3ZBTTFia1U2SnBDSHBiS3RXODlJTHItYm5EWlFHeGlBSV8yV2Y1OHlfTXJkZGRTWlBQZlFDRlNTRFBpRHc0WXZjT05OVlpFaU9fbS13OXUzRDBJd3VuVzdhZ19SVTJRM0tBd1h5UkptTWNTUFZxdlVJY2UyOEREbzJVb1c?oc=5"
+    },
+    {
+     "title": "Lithium price rebound lifts SQM profits and demand outlook",
+     "title_zh": "锂价反弹提振SQM利润与需求前景",
+     "date": "2025-11-18",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdC1UMU01UFlPVjVORkZGckFGRmRfbWJBTnNFOG1SOE1JQ3BxWVlxMTNFNTBOY1dUR19JNTVBdW1LSEVtQXJxRklfUlZ3MkxiZmpReDdnZXBSVXhXc1JoODlrc2xyTDk0VVc1RlhiVE95VC1EQktvQlYwMzYxdzBXVUwzbVY5TVRYX2U5VzBLOXg3U3RVd1NsNWNwQmNtenlJZkZld2VTVnBWR0Vl?oc=5"
+    },
+    {
+     "title": "Lithium prices have tripled since June, but can the rebound last?",
+     "title_zh": "锂价自6月以来已涨两倍",
+     "date": "2026-02-11",
+     "source": "AFR",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdHYxa3gycVREUkVsZ0xsVEZUM1YyYmVNNTFYQ0djSHUtZTc4am5UVThQSTY5T2x0cU9OczQ5aW9rNjItVVh1U0NmeVNVaUlRM2h3dFBtbzJ0X09PUUxvQlBuX2R3NE5lYXhwdFYyUmNWR19aNlFRTXVPOVBQakJra24yQnpxeGRKNG9PdEY3TGFNWHd2aWV6Q2RIUUFETTZwNmZPSnFqQmdzN0QtTmNTS0wtUENRdzhpd2U4?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Lithium prices boosted by China’s policy drive on energy storage",
+     "title_zh": "中国储能政策推动锂价上涨",
+     "date": "2025-10-29",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSEhnbXRQNnRFNkZaREtyWm5ObDY5UV9EZXZkYXQwM3BVVEZRUDVqMHdWSDBiTTFXeXhiNGxxb3FGbHJNMHl5Y0NDRXVuajRfN2JzZjIwV285RlUtREt0S2JBRjQ1Ry16bzhGR3lrRUpnTDRlcVdJcVB6OHVwWnVlMnZMTkhoUTJBNmhMcHNvdWhCRXNXUlE?oc=5",
+     "lead_days": 2
+    },
+    {
+     "title": "ASX lithium stocks face short squeeze as prices surge",
+     "title_zh": "锂价飙升，澳股锂企面临轧空",
+     "date": "2025-11-03",
+     "source": "AFR",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc2g4bDMyRkJNMjh4NDJqeFY3d0h3aGxZckdJc0dxVU9IemRLbnJ1Z2x3MlNXSmJMOFNEako0ZGpIYTc4MkJjeWQ1Q2VDUndIcjVoSnh4akE4RHJYMWlVbnVLRmZRNTROU1pBMWpsOXNpdGdmQmY1TmJmSERTWVFBcWRUSVdyVXYxZDc2RUNfVkVsQWV3dGR1SHdEd19QekdDc0MzSUxKTzF5akxLc2lpZk5n?oc=5",
+     "lead_days": -3
+    },
+    {
+     "title": "Booming battery demand to send ASX lithium stocks soaring",
+     "title_zh": "电池需求强劲将推高澳股锂企",
+     "date": "2025-11-11",
+     "source": "AFR",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRUQtZkpmVFhFRXJZV0U3cE1QOTVTMTB0UHZFX2k4cW9XYlI1SVd0QV91al95VnI4Q05ReXdEU3pzaXozS1VLUDVsSUlRT0tYbnNYcWNkd0o0cnJRZDhwSmVRNDM5SHN5dlRRZW1NZGFCMjEyVVFaMXlPRjNrRzR3UG9jREl5Z09mN29PeThkNkM2RXM3dTVrVzcySkZ4UUNReFg2MHlPRkNIXzlZOWdCZ09pZw?oc=5",
+     "lead_days": -11
+    },
+    {
+     "title": "Lithium giant’s $43,000 price forecast gets local mining stocks racing",
+     "title_zh": "锂巨头价格预测使本地矿股飙升",
+     "date": "2025-11-18",
+     "source": "AFR",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNc3g4NG9GRWpKUE05ekpOOXRaeEdjaGNtUHNsa0kxLWFfbHh5Rmo5OHhvUG5PcHktMnUwemVMLW9BLXpqTWtqWlVmZThqTmhJX0pudEZJaDYtYzg0ZS12cXVqZFN1dG5JZ0ZJX3JaM1pZYjJHTl9CNzBtVnA5b1ljclhmcmVqcXYtaDRNczU1UjNoQWRUc3NXSFQ3XzlkZzFHa2FXVXdoMnc5bkNoMzF4dWtmRzVXeVlHRzZ5QXdscUxQYjA?oc=5",
+     "lead_days": -18
+    },
+    {
+     "title": "China imposes export controls on lithium-batteries and artificial graphite anode materials",
+     "title_zh": "中国对锂电池和石墨负极实施出口管制",
+     "date": "2025-10-10",
+     "source": "Herbert Smith Freehills Kramer",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPV0psWGcxTEFVV0lRX0pKbnlHS1ZiMVptUEZkZGhHbmhGR1VDLVFDS0Zvc1lvU2xXR0tkLVo3YkI2N19kalhaMmxORm1SSnhlT2VxSHZ3ekRvcFRiZ2lTaUI4THFKaUEzMkJwZlFPU3liTkZYbW5xS2ZZUnhvWVdBWWRXQmxXellFNFFYOVB3NHF4RFcxNC1wTXFjUFJYWFdDbWhfb09mY1pzUzVtaDMtYlhvbkZodmNWNEw2UElNMA?oc=5",
+     "lead_days": 21
+    }
+   ],
+   "confidence": "high"
+  },
+  "Rare Earths|2021-03": {
+   "commodity": "Rare Earths",
+   "start": "2020-12-01",
+   "end": "2021-03-01",
+   "change": 0.3694943325914808,
+   "direction": "up",
+   "price_start": 3477.78,
+   "price_end": 4762.8,
+   "n_headlines": 48,
+   "cause_en": "China-dominance fears plus strong EV and wind-turbine demand lifted rare earth prices",
+   "cause_zh": "对中国垄断的担忧叠加电动车与风电需求推高稀土价格",
+   "explanation_en": "Headlines show a build-up of Western concern over China's rare earth dominance and supply-chain security, with US DOD awards, domestic mine-to-magnet plans and renewed talk of China \"rattling its saber\" over exports. Alongside this, Lynas's bumper profit was attributed to EV and wind turbine demand, and Barron's noted huge gains in the rare-earth market by March. No headline gives hard price data, so the link is inferred from demand and policy-risk signals.",
+   "explanation_zh": "新闻显示,西方对中国稀土垄断和供应链安全的担忧不断升温:美国国防部发放资助、美国推进“矿山到磁体”本土产业链,而且有报道称中国再度以出口为筹码施压。同时,Lynas因电动车和风电需求而利润大增,3月Barron's也提到稀土市场涨幅巨大。不过标题中没有具体价格数据,因此这一联系是根据需求和政策风险信号推断的。",
+   "lesson_en": "Watch for China export-policy rhetoric and Western supply-chain funding alongside EV and wind demand data, as these can precede rare earth price rallies.",
+   "lesson_zh": "关注中国出口政策表态、西方供应链资金支持以及电动车和风电需求数据,这些往往先于稀土价格上涨出现。",
+   "categories": [
+    "Demand Shift",
+    "Export Policy",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Electric vehicles, wind turbine demand drive Lynas’s bumper profit",
+     "title_zh": "电动车和风电需求推动Lynas创纪录利润",
+     "date": "2021-02-26",
+     "source": "SMH.com.au",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUnFzVEk1Y3RIREV6NFMyQlJaT08xVVF6SWRkSGI2eDJ0S2loUnZRRmhQOVN1MXVwUHN6WERzQXdNOWFkVUFIemdrTnFIVEM4VklaYVJsZFdaeXZxc2lKTnVVeDdVUWpac21QUWsxMmhpemNQMWd6SHB6UTdNQVp2UG0zdEg3cnVfZ3VSajcxSFNxQjNjazQxM0h4Z2RDai1hMlhzemhuQi1Fc2F1SjRjZjNDZmdMdWFGSEZLOTR2dldtVHV3M1ZB?oc=5"
+    },
+    {
+     "title": "China Rattles Its Rare-Earth-Minerals Saber, Again",
+     "title_zh": "中国再度挥舞稀土出口“大棒”",
+     "date": "2021-02-25",
+     "source": "Cato Institute",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRE0tcEljNWNzQngyOUFpTTdFTzNvRFBiWkpNWGcxbFNIZ0stUTFyMHVNbGhSS2ZhZ09kT3JmbGtBbXBBRUYtM3Q2cmR4alBuS0dkM3RjdDh5TURqR3BEM0M4RVFhRlZaNHVtOEJhNF96RUJ0a1JHQUpKa1FKZHNjWHFETzlKSlJZ?oc=5"
+    },
+    {
+     "title": "Competitive Rare-Earth Metals Market Is Producing Huge Gains. What Investors Need to Know.",
+     "title_zh": "稀土金属市场竞争激烈,带来巨大涨幅",
+     "date": "2021-03-11",
+     "source": "Barron's",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNb2xFSFE3ZW44SmczMHFQU2JITjBGdEpRcFNaZ2V6VzBycFh5eldoYVltR0ZuV1Z4NFZqRXBFU2pUWW5xQ2RtbG1HU2RJUVVtbTdlWUQzd29mM0RHU0xXV1hvM1ZiTlZyX0FWMlU4bENtWXM3TmZIVFBiNmJrR1Z4ZDZpanFDczJSSmVtdzcwLWsyUzBBRjFj?oc=5"
+    },
+    {
+     "title": "DOD Announces Rare Earth Element Award to Strengthen Domestic Industrial Base",
+     "title_zh": "美国国防部再度资助国内稀土产业",
+     "date": "2021-02-01",
+     "source": "U.S. Department of War (.gov)",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVkx2T0ZsTEl4cW5FZXprdjdEZldrVi1QSXRBQ1ZJSDFOb2hxc3U4YVNoWWZQWmFJYmQ2bTdiMnJ0NElVSTZ0WURXMUh2b2p3aXBOUTFBakJBMzhYVmpSTi1QWHZyeUtqSThxRGZPZFVqbHQ1UWtVYWRfMXdwbFkzb1NZcU5saVFrQmxRYnlKM3FlS0dUb2h4dF9VaXlEaUxsc25VWHVfTG02VGtCbjM0XzhoUXo4OU11Q2xOZVd3UXJmVmtsVjAtZWlRVWdlSWtiMkE?oc=5"
+    },
+    {
+     "title": "U.S. Needs a Strong Defense Against China’s Rare-Earth Weapon",
+     "title_zh": "美国需防范中国的稀土武器",
+     "date": "2021-03-04",
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbzZKYlk3WEk0Y3pHN3dXVnludDdBekdjUDUyaWtRUW5oM2tKU3J0azl3c1BYakxoN3ZVTWJDZ2ZlMkF2aW84b0NONE13MDN5LWlROFRXZ25DY2JoUVM0SGZNdzVwZ1lpYVloVkhkSl9kc2lvV0hfTnpfTVVjcm9pWXBsUUM1WUZvVkw2Tk5GZHV2YlRyLXlZV1l1d0VaTnoyb1praU1zTGNlUGxPbTdxNGVpM2Y?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "DOD Announces Rare Earth Element Awards to Strengthen Domestic Industrial Base",
+     "title_zh": "美国国防部宣布稀土资助以强化国内产业基础",
+     "date": "2020-11-17",
+     "source": "U.S. Department of War (.gov)",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPYUNmaDFaUWlRdGNvWmotZm4zT1N5M2YxRUtSUTRpUTI5OGkxbEJHSmNVa2kzeWRkUVc3Zk9TeWc2Uk42R3Z6d1pnWll0cWFwNm5NeEJFTnlDcXRLanpTLTlhQWRfSF9WSmpFVjNCQ0ZKSnZ3eW9TLTAyb3ZISTNYekhFNnJ4b3NYZjFOQUpNLWJQdU80eGlrNEJRT1RpaHBoQmpzYVRia0pHVVNVd2djVHVZOFBSMnlEbnBWUzZFZlBtY29WS1MxN05xTlhoZUNSemNR?oc=5",
+     "lead_days": 13
+    },
+    {
+     "title": "Trump issues fresh rare earth mining executive order",
+     "title_zh": "特朗普发布新的稀土采矿行政令",
+     "date": "2020-10-01",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaVV4UjhJQTFZVnVEeHJYUGJoNTJTOENvaFdmN2ZyY25MMXFRMm5kMzNmRGNWSVZsem1RQ0RFeVJUUThVNjU5V0x1b05rUzE3UjZrVEVyNFhYd3Q1NHlnMVFidi1hbV9jaGJpNDR4MnNzWTFnTUhGRnRVYXZpejg0YjBhbXJZbTB0bGN1RmtZNnllV054elVMdXNEX05kTE5OeUx4Q2ZXNA?oc=5",
+     "lead_days": 60
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Rare Earths|2021-09": {
+   "commodity": "Rare Earths",
+   "start": "2021-06-01",
+   "end": "2021-09-01",
+   "change": 0.6578458907750646,
+   "direction": "up",
+   "price_start": 4514.72,
+   "price_end": 7484.71,
+   "n_headlines": 7,
+   "cause_en": "Headlines show Western push to cut China rare earth dependence; they don't directly explain the surge",
+   "cause_zh": "西方推动摆脱对华稀土依赖,但新闻未直接解释涨幅",
+   "explanation_en": "The headlines, all from May 2021, cover US, Australian and Indian efforts to reduce reliance on Chinese rare earths, and a forecast of fivefold growth in magnet rare earth oxide demand by 2030. This points to strong demand expectations and supply-security concerns supporting prices. However, none cover June–September 2021 events, so the specific trigger of the 66% rise is not shown in these articles.",
+   "explanation_zh": "这些新闻均发布于2021年5月,内容涉及美国、澳大利亚和印度努力降低对中国稀土的依赖,以及磁体用稀土氧化物需求到2030年将增长五倍的预测。这说明需求预期强劲、供应安全担忧对价格形成支撑。但没有任何报道涉及2021年6月至9月的具体事件,因此无法确认此轮66%涨幅的直接触发因素。",
+   "lesson_en": "Watch for demand forecasts tied to the energy transition and for supply-security policy shifts, which can tighten rare earth markets before concrete supply events appear.",
+   "lesson_zh": "关注与能源转型相关的需求预测和供应安全政策变化,它们可能在具体供应事件出现之前就推紧稀土市场。",
+   "categories": [
+    "Demand Shift",
+    "Export Policy"
+   ],
+   "drivers": [
+    {
+     "title": "Magnet rare earth oxides market to increase fivefold by 2030 — report",
+     "title_zh": "磁体稀土氧化物市场到2030年将增长五倍",
+     "date": "2021-05-07",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPenZQb21zc2VSTkgtS3lHMFBsNUg1Sm1JbG1uQUxGOGlONUlFakxzM1Q2SmZPSWs5Q1U4OGczQ1laNTE4bjNSSjEzTXcwd2xoUWM3UHZzRTdoT3FvOEZKZDMtMlM5NjJXb0M2S0ozalEyaUxyYnREUXdadjVQUTRpR0VTOExjVm1jV3BKVUNLVU5NOHlZRWc?oc=5"
+    },
+    {
+     "title": "Tech Companies Depend on China for Rare Earths. Can That Change?",
+     "title_zh": "科技公司依赖中国稀土,能否改变?",
+     "date": "2021-05-04",
+     "source": "WSJ",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZDRLQ2ZsZjFQNmt5MGlNVWdNanRxdE95WkdkekZ1OFJ1Tl80clJxaGdBZVR6YUV3NE4yQ0hka1VBalhrZ1MtTXJ5VV96dHFBWXJUNG1wOTdPSzg1cUdGUElzaHZFcUdzT1dhZ0JVNHhYNk5VR0VKMUJZVEQ2X3VfLVc1S1ZXbTM1M3hJTzlKcERIUkVfSTM4Mm5BcXljSWdkMGdncWhvb3cyTFJVTWkxTklnT2Z3cEFqMC1CR3k4c2xVS2xpUllMVGN4OHprcFR4OFpYU1dQdkFxbVdNRWN0TzluSnY?oc=5"
+    },
+    {
+     "title": "Miners eye 'critical' rare earths market amid potential shift in ground beneath China's feet",
+     "title_zh": "矿商关注中国优势可能动摇下的关键稀土市场",
+     "date": "2021-05-24",
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMU1kcDVjRms1QlVFaVRkcHlpT2l3Sm1sXy1sZU84aHpWUHpEZ215N3R6Wm53YjlCNUZtaU1PRHRFUUJxN3QtOF9nTndlTHZ0dUJZaWY3ejItLTVZSzNUMWhWblJCRkZwTDUwdVFEZU9QRDFUcVNYRGZINFg5ZzZlVHJqaUhlX1FuQld2NXhNcjFUOF9Qci1lMHhlRWI3S0RoQjEtWmtBRzFPVU9YYWZUYUhiQQ?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Magnet rare earth oxides market to increase fivefold by 2030 — report",
+     "title_zh": "磁体稀土氧化物市场到2030年将增长五倍",
+     "date": "2021-05-07",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPenZQb21zc2VSTkgtS3lHMFBsNUg1Sm1JbG1uQUxGOGlONUlFakxzM1Q2SmZPSWs5Q1U4OGczQ1laNTE4bjNSSjEzTXcwd2xoUWM3UHZzRTdoT3FvOEZKZDMtMlM5NjJXb0M2S0ozalEyaUxyYnREUXdadjVQUTRpR0VTOExjVm1jV3BKVUNLVU5NOHlZRWc?oc=5",
+     "lead_days": 24
+    },
+    {
+     "title": "Rare Earth Elements: A Resource Constraint of the Energy Transition",
+     "title_zh": "稀土是能源转型的资源约束",
+     "date": "2021-05-18",
+     "source": "Kleinman Center for Energy Policy",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxON0ptaTl6blBJTzNHak1oeE5SMVFOeGJaM2FkVzhzSVZWWGFsckY1VjlkM2t4eGdkVWNxRU9lMVFVeGw1djVNTGlhTWpQNGRydTdQNUxEd2YyakhDSVI0bGtRaXd6M1FWOGJXcGl3Q0JjUFZwb1ZXcjhVRm8wejlQZG5xUlQxM3JndWJ1RHBDUXFGX05NUk9mUjhfYktjNUpkbE5ZU3pXQVZDWW9JYWVDQk9VRkhGbXcwem5sVXJ4cw?oc=5",
+     "lead_days": 13
+    },
+    {
+     "title": "Tech Companies Depend on China for Rare Earths. Can That Change?",
+     "title_zh": "科技公司依赖中国稀土,能否改变?",
+     "date": "2021-05-04",
+     "source": "WSJ",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZDRLQ2ZsZjFQNmt5MGlNVWdNanRxdE95WkdkekZ1OFJ1Tl80clJxaGdBZVR6YUV3NE4yQ0hka1VBalhrZ1MtTXJ5VV96dHFBWXJUNG1wOTdPSzg1cUdGUElzaHZFcUdzT1dhZ0JVNHhYNk5VR0VKMUJZVEQ2X3VfLVc1S1ZXbTM1M3hJTzlKcERIUkVfSTM4Mm5BcXljSWdkMGdncWhvb3cyTFJVTWkxTklnT2Z3cEFqMC1CR3k4c2xVS2xpUllMVGN4OHprcFR4OFpYU1dQdkFxbVdNRWN0TzluSnY?oc=5",
+     "lead_days": 27
+    }
+   ],
+   "confidence": "low"
+  },
+  "Rare Earths|2022-09": {
+   "commodity": "Rare Earths",
+   "start": "2022-06-01",
+   "end": "2022-09-01",
+   "change": -0.3757519324205909,
+   "direction": "down",
+   "price_start": 11480.42,
+   "price_end": 7166.63,
+   "n_headlines": 39,
+   "cause_en": "China raised 2022 rare earth quota 25%, easing supply amid softer demand; headlines only partly explain.",
+   "cause_zh": "中国上调2022年稀土开采指标25%,供应预期宽松",
+   "explanation_en": "The headlines offer only limited direct explanation. The clearest supply-side item is China's 25% hike of the 2022 rare earth quota (Aug 17), arriving as new non-Chinese capacity was announced or started (Canadian mine shipping, Australian refinery, US magnet plant). Earlier headlines about disinformation campaigns and a Turkey discovery add supply-narrative noise, but no headline documents a demand collapse, so the cause is only partly supported.",
+   "explanation_zh": "标题对此次下跌的直接解释有限。最明确的供给端信息是8月17日中国将2022年稀土开采配额上调25%,同时海外新增产能陆续推进(加拿大矿山开始发运精矿、澳大利亚稀土精炼厂、美国磁体工厂)。此前关于虚假信息攻势和土耳其发现稀土的报道增加了供应预期的噪音,但没有标题直接说明需求崩塌,因此解释只能部分成立。",
+   "lesson_en": "Watch China's annual mining quota announcements and new ex-China capacity start-ups, which can shift supply expectations and prices quickly.",
+   "lesson_zh": "关注中国年度开采配额公布及中国以外新增产能投产,它们会迅速改变供应预期和价格。",
+   "categories": [
+    "Export Policy",
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "China hikes 2022 rare earth quota by 25% on rising demand",
+     "title_zh": "中国将2022年稀土配额上调25%",
+     "date": "2022-08-17",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPclRHN2xUZUhpSGQyQk1DazlwVVF5THRHN2FaMXNseTBjZjFoODh3ZDRkVFpuU1BCclp3c0hrOE85c2o5d2VsWTdqXzBhSmsybFZvRTJHQmJoR0VJSTFOUXlfYlpvZUxndXlhUGl5enc0ZnNLdzZvbFZ0MHE3NWtybm9fSjgyMVBhekplTg?oc=5"
+    },
+    {
+     "title": "First Canadian rare earth mine starts shipping concentrate from N.W.T.",
+     "title_zh": "加拿大首个稀土矿开始发运精矿",
+     "date": "2022-05-23",
+     "source": "CBC",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMFRWRmtWd0YzV3BNa2JRSTFodnNFSGY3UTktdlVGQkxPNFJWdXNHLWhMcVlReTZUMTRaYTE4UURQZHlkcDEzQnRpYXhaUldHem9XSS1jTmNuUDM2Wm8yZG1MWnh4WUhfSkI1UUVQNmtjalBMUUN6RkdCTml1a1dmV2duWFBmcEtaRWc?oc=5"
+    },
+    {
+     "title": "Australia’s first integrated rare earths refinery",
+     "title_zh": "澳大利亚首个一体化稀土精炼厂",
+     "date": "2022-04-13",
+     "source": "Western Australian Government",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1JWd3hoTWR2MzdkaE1xV09zMVJ5RjNWeVFuaHROSmFQNkFBeDlaQXlzaWEyNzZNejRBQlljVVpnbGVndkVqdnFvTUJDbE9lakJxTXJ0QlJzMlM3bmNIQ1p0TjVIeWZkQjRmWDF1QW5LVkVTbm1EYWRWS25GVEpnYm95N21oeDJYSHJLcWV2cko0UFJTSVl1eW5zaw?oc=5"
+    },
+    {
+     "title": "Rare Earth Magnet Producer To Start Operations In Stillwater",
+     "title_zh": "稀土磁体生产商将在斯蒂尔沃特投产",
+     "date": "2022-07-13",
+     "source": "Site Selection Magazine",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPS1Ffd1NOa0w1SXZtT19qVUxyLUM4R2dKUk1jSlV2T1FJM1lsU3hNS0tuT1hMc05fYUFVODRCRWowVkZGR1BJQUhzSFluMmR1MTk3bElwZmh5ejdQTzdBdUVKQWZ2c2M2a0VHRmMwTm9IckFoZ1Z1Mkh6RUZjdk5mRnZGWGpMdTluOVdGVWJmSEc?oc=5"
+    },
+    {
+     "title": "Rare Earths Market Update: H1 2022 in Review",
+     "title_zh": "2022上半年稀土市场回顾",
+     "date": "2022-07-26",
+     "source": "Investing News Network",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMlF4WjN5UHlhSHpGajB1Q2xVMS1nVFFmc0JheGdYdHY0Q0FDZzJFeU5fcHV5T3dFbHI2cUJVbkxzdTNkanVWWXdGNXQwM2tkSkcyaDhVM1V0RTR2OHNNaEJLZUZSZWNnN0tEYU14QmE5bEdqMExqamdnM2RUdGt3bVpsa1RsdEFVOHlUay16ZXljS0VqX2E1NGhka1FJenZmTDdhSHVucVBkdlNpQm10bVFCUHN3cHJka2NKcEp5QmdIZw?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "First Canadian rare earth mine starts shipping concentrate from N.W.T.",
+     "title_zh": "加拿大首个稀土矿开始发运精矿",
+     "date": "2022-05-23",
+     "source": "CBC",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMFRWRmtWd0YzV3BNa2JRSTFodnNFSGY3UTktdlVGQkxPNFJWdXNHLWhMcVlReTZUMTRaYTE4UURQZHlkcDEzQnRpYXhaUldHem9XSS1jTmNuUDM2Wm8yZG1MWnh4WUhfSkI1UUVQNmtjalBMUUN6RkdCTml1a1dmV2duWFBmcEtaRWc?oc=5",
+     "lead_days": 8
+    },
+    {
+     "title": "Australia’s first integrated rare earths refinery",
+     "title_zh": "澳大利亚首个一体化稀土精炼厂",
+     "date": "2022-04-13",
+     "source": "Western Australian Government",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1JWd3hoTWR2MzdkaE1xV09zMVJ5RjNWeVFuaHROSmFQNkFBeDlaQXlzaWEyNzZNejRBQlljVVpnbGVndkVqdnFvTUJDbE9lakJxTXJ0QlJzMlM3bmNIQ1p0TjVIeWZkQjRmWDF1QW5LVkVTbm1EYWRWS25GVEpnYm95N21oeDJYSHJLcWV2cko0UFJTSVl1eW5zaw?oc=5",
+     "lead_days": 48
+    },
+    {
+     "title": "Pro-PRC DRAGONBRIDGE Influence Campaign Targets Rare Earths Mining Companies in Attempt to Thwart Rivalry to PRC Market Dominance | Mandiant",
+     "title_zh": "亲中国势力针对稀土矿企的舆论攻势",
+     "date": "2022-06-28",
+     "source": "Google Cloud",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTnhKbm1kc1NNQ2FnenpQdVVHMmRTWl82c3FlMnRYbE5TbWsxTWg2NC1YNVNVR2pkTndocFVuRTBYMFVTYlhINXJfLUJld1NtdWtDLWRtNVZDZ3J6US0yZTR0MVg5OUJadExTSnE3a21ZR0RtU09tQmJsM1JTN2E0a0g0b2o1eVRzRHV5bzhUYlZBdi1jN2xLSFNxSFNad0cwSGhqV2xDOHRTZw?oc=5",
+     "lead_days": -28
+    }
+   ],
+   "confidence": "low"
+  },
+  "Rare Earths|2023-05": {
+   "commodity": "Rare Earths",
+   "start": "2023-02-01",
+   "end": "2023-05-01",
+   "change": -0.3591182703325285,
+   "direction": "down",
+   "price_start": 8404.39,
+   "price_end": 5386.22,
+   "n_headlines": 63,
+   "cause_en": "Rare earth prices slumped from early-2023 highs as demand softened and Tesla cut rare earth use.",
+   "cause_zh": "需求转弱、特斯拉减少稀土用量,稀土价格回落",
+   "explanation_en": "Headlines directly confirm a price plunge in April–May 2023 that hurt Western producers' projects [54][57]. Contributing demand-side signals include Tesla's plan to cut rare earths from next-generation EVs and commentary that Tesla was \"hitting the brakes\" [29][40]. Supply-side expansion news (Sweden's large deposit, Australian, Tanzanian and US discoveries and projects) added to a picture of growing future supply, though the headlines do not give detailed price mechanics [9][45][51]. Explanation is partial, as few headlines address Chinese domestic pricing.",
+   "explanation_zh": "新闻直接印证了2023年4—5月稀土价格暴跌,并拖累西方项目进展[54][57]。需求端方面,特斯拉计划在下一代电动车中减少稀土用量,相关评论也称特斯拉在\"踩刹车\"[29][40]。供给端,瑞典大型矿床、澳大利亚、坦桑尼亚及美国的新发现和新项目,强化了未来供应增加的预期[9][45][51]。不过标题对中国国内价格机制着墨不多,解释并不完整。",
+   "lesson_en": "Watch for EV makers' moves to reduce rare earth magnet use and for signs of demand weakness, since price falls can follow quickly after peaks.",
+   "lesson_zh": "关注电动车厂商减少稀土磁体用量及需求走弱的信号,价格见顶后可能快速回落。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Rare Earth Metals See Prices Plunge",
+     "title_zh": "稀土金属价格暴跌",
+     "date": "2023-05-03",
+     "source": "Crude Oil Prices Today | OilPrice.com",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNS2RKMXE5NDJZeGQ0QTFoOXJ5X1FTczR5QmJBNWJuSFJURFhjTC1EUHZ6VGVEbVR3cldFM2psU01FNXA3NXNqV0JPdGV4aUxBSEVmdTZadE9DMUtSQUNaWWJOR1BHRjdXX1Nod0J2b3FKYkNsamFYcGZNWHVVVWhPODBNeGJyS0pYM21z0gGQAUFVX3lxTFA2Wk1NRW16ZlQ0YXpxcDdqOENGWnB4Nmd1blZ0U0pjYi02RlVNdFM2X1RfUzljTzhfdFJWNlBTT2hROWFwbENUSWRRdkc4V0E5YXV2WTF1UC0yTmdwazh2V3V5VVlDS0tJWEl1TDVoSnpBLTJNckFaX2xyRWhVMTRGWjlndDZNVUhnTjE5MTZzdA?oc=5"
+    },
+    {
+     "title": "Canada’s goal to weaken China’s grip on rare earth mining hits snag as prices plunge",
+     "title_zh": "价格暴跌使加拿大削弱中国稀土主导地位的目标受阻",
+     "date": "2023-04-24",
+     "source": "Financial Post",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tU0Mxd05MQlVlN1lnUzJzUjJkaTZpUGxLMW1mWXBPNVVXMlZJUHNnR21oS184OWxSTkM3b09vWENDT0N3V2xnc2JpWTFkRExMSE1kN2c2MjBQMkwwamNmaXgxc3M2ZmVTNE9CTXJwSW5LeW5ZQTBodG56UTc?oc=5"
+    },
+    {
+     "title": "Tesla to cut rare earths from next-gen EVs",
+     "title_zh": "特斯拉将在下一代电动车中削减稀土",
+     "date": "2023-03-31",
+     "source": "The Australian",
+     "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQYVppd1FVU2NtUjlmMDViaGNEdVQ2Y2hxUzViWmhvQ2tmVWRRcGJCSGRROTNmMEVIR1dQMFBfLUtyTmF3emkwN2V0dXZnVUFyc04wMU5nZlI1ZU96Rjd1SldxUEZLUVRMeXM4clJoNUdOV2pVN2UwcllwRU1mcDRPTnNWV254MWdYeUxRTm1fRllmR2RacEpNSEZKZ213QzdNLUNQSk4tbGhsX3lsdlJGZnU4U2w2X2hJSU1kMW1saEdOSG5hdzZWQ0J4MEFjVXhXaXJvWGJJX2pXVTVfMFAzZEJNRTl4Vi1vNzc3LWdLY3NvTFlPZXZQb3dUR3JOd3c?oc=5"
+    },
+    {
+     "title": "COMMENTARY: Tesla hits the brakes but rare earths juggernaut rolls on",
+     "title_zh": "评论:特斯拉踩刹车,稀土仍在前行",
+     "date": "2023-03-08",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQd0FlUzRoQUpLZ0tyMTJvZURQN2dlUXljZWpxcXpJMzhNNkJ4RUtBS1BxaGVjWDlPUFV2VVdBTjQ4YkZ1ZjM3VjY0RkEzNHB4cVVmNE82Y21FejU2bmt5eHBhcVpEN0JzMDVUTE5qSjlLaDVfd1V2aktIaVYzeVFmamxsQjVOMEREcUdyam9rVGRtNVFIVnpIcklycXRyY19aY0N0Ug?oc=5"
+    },
+    {
+     "title": "Sweden's LKAB finds Europe's biggest deposit of rare earth metals",
+     "title_zh": "瑞典LKAB发现欧洲最大稀土矿床",
+     "date": "2023-01-12",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZl8tTm1jNmFUdy1RdjZRSWJRQ1NtQllTc2loN29wT2FyeDJJdDh3bkxhdTk2MXlfOWl0akZNRkpvYW41NlZtc3FMME04Zjh2ZklyQncwZnEzMHpvZ3hodGhadEdVYU1IYnRvZllNMlZTNV9tdE1wSEdQUTFBaDhfWExmZzYxSk1DWjh0d3ZieG9NY2RiaEEwTnA3S1dQOE02NklJV3hMRXU1dmVsNWdaLTJtN1dYX0U?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Sweden's LKAB finds Europe's biggest deposit of rare earth metals",
+     "title_zh": "瑞典LKAB发现欧洲最大稀土矿床",
+     "date": "2023-01-12",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZl8tTm1jNmFUdy1RdjZRSWJRQ1NtQllTc2loN29wT2FyeDJJdDh3bkxhdTk2MXlfOWl0akZNRkpvYW41NlZtc3FMME04Zjh2ZklyQncwZnEzMHpvZ3hodGhadEdVYU1IYnRvZllNMlZTNV9tdE1wSEdQUTFBaDhfWExmZzYxSk1DWjh0d3ZieG9NY2RiaEEwTnA3S1dQOE02NklJV3hMRXU1dmVsNWdaLTJtN1dYX0U?oc=5",
+     "lead_days": 19
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Rare Earths|2025-08": {
+   "commodity": "Rare Earths",
+   "start": "2025-05-01",
+   "end": "2025-08-01",
+   "change": 0.3466459049629529,
+   "direction": "up",
+   "price_start": 4784.45,
+   "price_end": 6442.96,
+   "n_headlines": 70,
+   "cause_en": "China's April export controls created supply shortages; US-backed MP Materials deal lifted price expectations.",
+   "cause_zh": "中国稀土出口管制造成供应短缺,美国扶持MP推高价格预期",
+   "explanation_en": "China's April export controls on key rare earths and magnets (headlines 3, 5) led to licensing bottlenecks and shortages, with auto firms \"in full panic\" by June (18, 20, 25) and exports still choked despite the US-China pact (39). In July the Pentagon's MP Materials deal and a US pricing system (46, 49) lifted price expectations outside China, and Lynas forecast higher prices (54).",
+   "explanation_zh": "4月中国对关键稀土及磁体实施出口管制(3、5),许可审批形成瓶颈并造成短缺,6月汽车业陷入\"全面恐慌\"(18、20、25),即便中美达成协议,出口仍受限(39)。7月美国国防部入股MP Materials并推出价格机制(46、49),抬升了中国以外的价格预期,Lynas也预计价格上涨(54)。",
+   "lesson_en": "When China imposes export licensing on rare earths, expect shortages and price premiums outside China to build for months, and watch for Western state backing that reinforces them.",
+   "lesson_zh": "中国对稀土实施出口许可后,应预计中国境外短缺与价格溢价会持续数月积累,并关注西方政府支持措施带来的进一步推升。",
+   "categories": [
+    "Export Policy",
+    "Logistics",
+    "Macro & Financial",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "China hits back at US tariffs with export controls on key rare earths",
+     "title_zh": "中国以出口管制反击美国关税",
+     "date": "2025-04-04",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU1Nwa24zNk9oU1VkdFFNbGN1VkYtMXhEZUhNWWdRNU9tb2dKODlYTGpBcFR3RVlQT3FkaXpnelRobFRuOFN2YlRJR0RIeGl6VnhyY3FPYUp0QWlNQmg3TVlwSlJGVkprVkYzbTRCOTJjZEZZeE9XSVhCWFBkYjZ6alcwa2YxdjRxcV9iNHhBYUhEOHpHWlZ5SUdKMlNXajZvb2c?oc=5"
+    },
+    {
+     "title": "EXCLUSIVE: China's rare earth export curbs hit the auto industry worldwide",
+     "title_zh": "独家:中国稀土出口管制冲击全球汽车业",
+     "date": "2025-06-04",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPa0hLd3QwV21OWVJCTThfMHhQbzJKWVI4QXJsM1VMNTFyN0FiYVlCRHBLdFRSeUpsdmdsLWVOVFRoZ1V4XzJ0cjBxQXVyN011LUppbjJrcHdhVFp4NjRIR2t6TU1ILW5Gdl83Y2RnalJLREZPaTJ0b29OODkwd2oyNVc1MzY5NW9sQlZSUERmQWxfRVpCZ252bS1CcmZpQTRWWkZPLW94NnducmVtYVpxci1FdkJxcFR6OE5wQ2ZVYk93eDhDT0ZtWnZ3bG5BTlJVRWJNUVd2UQ?oc=5"
+    },
+    {
+     "title": "Auto companies 'in full panic' over rare-earths bottleneck",
+     "title_zh": "汽车企业因稀土瓶颈\"全面恐慌\"",
+     "date": "2025-06-09",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWlRieS1XZXEzczZZMzVxVVN0M2E0VWpidHRwU29CS0dfX0pJQ3V2U3BMTGdIZkRkdVR1LXVWWGxTWXlydUJPYllTcEkzT1VfYXl0ak5VNDBRaGhVdjJsVVRrZzI5TnBmWFpxcUVCMkctdnlkX2Z3Wk03ZGhVbmVyRGdUcEdKNDc2S1JsVU5FcW1pSk9LNXNaSUZIeXFVQ3RTRDZBNjJBamtGRXlrNTF0V1Z5S1QyZUxpaDNrWVQ0NA?oc=5"
+    },
+    {
+     "title": "Pentagon to become largest shareholder in rare earth miner MP Materials; shares surge 50%",
+     "title_zh": "五角大楼将成MP Materials最大股东,股价飙升50%",
+     "date": "2025-07-10",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZy1nZ2FieE82a21uN2NSYm1HOW5JY0U4XzRwZGpqZUdmV0p6NlFPOUNBUUFnYVRyU2pfMDdfVXY0cGtjMkJpemRnR1NTOE5JdTgzZk15cXNYcnIzRWtINTB5LVJRWUdZYmVXaXk5WHBLZVV4dUE0U0JYeGsyMlBRNXBlejFBdEl0UjdrMFZtWlJQVGVkdVk3RlZ0T2FRYUhIaGJGb19BOXNGVXRxc0RLOUNGekdaZ9IBuwFBVV95cUxPT0w3RVY3dlJmSEVQbXU0SUxYbkpJcE9HVTZlaDNlZEhFUmNYOGpfRnV2SV80WVVrMzNZSVV3SzhQbnRUbVhIWTJ2YWczWktkZjhoRHFNdUlnU3dDUVpROXdjVzAtc3hCakp0ZkpKSFkzX29WNWQyZEtxc1BBYWVsNFctU01vX1ZrRFdkWVhKWTluTGRJQ3VDa1ZhODBhWmdIU195THpFT3haSnhIZGladm1uTlVERjl4SzIw?oc=5"
+    },
+    {
+     "title": "Lynas sees higher rare earths prices after US backs MP Materials",
+     "title_zh": "Lynas预计美国支持MP后稀土价格走高",
+     "date": "2025-07-23",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbFlKUWQ3NEJpMzB5Wjctci16YjJNZEoxT1BMMlV6S213ODNObWhEaHhGYVZ4ZnRwTENEUlRpMk0zSjRfZ3JTVDZvanJBSGFncmFwNXVrUzhZbFRPb2lqYnVDOWVYUDFvWkpyNGpKRVNjLWFoY2hZMTJJZW8zcG5NUWhIVmVubzdUMVE2SXN1LWRmeHlWajNiUUZUNEFJS1ZhWGtNQUQtN0ZWQUdYblgyMGpETHdBY1oxcmFv?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "China hits back at US tariffs with export controls on key rare earths",
+     "title_zh": "中国以出口管制反击美国关税",
+     "date": "2025-04-04",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU1Nwa24zNk9oU1VkdFFNbGN1VkYtMXhEZUhNWWdRNU9tb2dKODlYTGpBcFR3RVlQT3FkaXpnelRobFRuOFN2YlRJR0RIeGl6VnhyY3FPYUp0QWlNQmg3TVlwSlJGVkprVkYzbTRCOTJjZEZZeE9XSVhCWFBkYjZ6alcwa2YxdjRxcV9iNHhBYUhEOHpHWlZ5SUdKMlNXajZvb2c?oc=5",
+     "lead_days": 26
+    },
+    {
+     "title": "China Halts Critical Exports as Trade War Intensifies (Published 2025)",
+     "title_zh": "中国暂停关键出口,贸易战升级",
+     "date": "2025-04-14",
+     "source": "The New York Times",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE83SGs1bWI5ZHF3MFAwUmk1LUhnRTJkZUdZbTAwTGZ5X2pNMTFVdlpPenh5TkZzbEVncm1odDM3VTdvSnE0Y3E5NVE2TmR4M2JWZWtQckJQSFNWTlJQMGlzOF9rVFBoX2Jxc01WajM0ZnF1VHNFbmczdkphbEV6dE0?oc=5",
+     "lead_days": 16
+    },
+    {
+     "title": "Why China curbing rare earth exports is a huge blow to the US",
+     "title_zh": "中国限制稀土出口对美国是巨大打击",
+     "date": "2025-04-17",
+     "source": "BBC",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5vRTYza2g0OXBxMWNCcnhUa3lUS29meFBfR0NpSC0xSHZGbHJjT2pMdzNmWFd4N0lOWlN5dktzUWFJMW9DVnFzQm9QU2JqWWlOX0NoYVcwX0pKdzdi?oc=5",
+     "lead_days": 13
+    },
+    {
+     "title": "Myanmar rebels disrupt China rare earth trade, sparking regional scramble",
+     "title_zh": "缅甸反政府武装扰乱中国稀土贸易",
+     "date": "2025-03-28",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQi10NlNJR1FyTnlaQWxqc3JoNlZkUHBZaDU4Y0h0bG16QnR1VjVhSXZJbnpGR25zbnFFZmpCZVo4WnhnMnZEUDlDS2FJZ1lSeU8xTWZubG8xOTJVVUE0Zy1rcEdkZ21YbWJyZzBPV0N2Y0pyQ1luOF9HaXIxUjV0SjJJTUdjNEZQSVhSc1FHRUtEU3ZNdEloVXZUMzJPZUdCUkI5b3NQZnBXeGxLS2tObmk4eFRFUTg2Z3JoaUlmcVlEY2d6dHc?oc=5",
+     "lead_days": 33
+    },
+    {
+     "title": "EXCLUSIVE: Beijing has issued first rare earth magnet export permits, Volkswagen suppliers on the list",
+     "title_zh": "北京首批稀土磁体出口许可发放",
+     "date": "2025-05-13",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPajhJeFpldW9wQUJuWUtEWUV4SFFhdHZaVXFxWkd4bk1ZM2wwSkNUMnV4anFLcjNjZGVjbmdYTTRveDZXelN3NzFtNnBrOFhGalRBQk9xN0JlSXNIeUk3eEUxRWZxbmloREJKNkxtMUhMQmNOTVFXOURGZ25zZVBPa1VDWnFIS3Q1YzNUc2dzUi1IRmZHMGNDUHpELUl3S1ZtRzlRQlBwMTVmcm9uSXdkNGxCZF9rMk5EbFRkTzQ0NGk2S3dxTjFJR2Q5MThoMTZFUXlHY1paT1BIc0Yw?oc=5",
+     "lead_days": -13
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Rare Earths|2026-02": {
+   "commodity": "Rare Earths",
+   "start": "2025-11-01",
+   "end": "2026-02-01",
+   "change": 0.5525139602358828,
+   "direction": "up",
+   "price_start": 6262.43,
+   "price_end": 9722.51,
+   "n_headlines": 70,
+   "cause_en": "China's expanded rare earth export controls, ongoing licensing curbs and heavy-REE shortages, plus Western stockpiling push",
+   "cause_zh": "中国扩大稀土出口管制、重稀土短缺,叠加西方囤储与扶持",
+   "explanation_en": "China's October 2025 expansion of export controls to new elements and users, and licensing delays, created lasting supply anxiety. Even after the November pause, headlines show heavy rare earth/yttrium shortages and dual-use licensing that \"isn't going away\". From January 2026, China curbed exports to Japan, while the US took equity stakes in miners and announced a strategic reserve, pushing prices up into February. The headlines give no price data, so the link is inferred.",
+   "explanation_zh": "2025年10月中国把出口管制扩大到新元素和下游用户,许可审批迟缓,造成持续的供应焦虑。11月虽暂停部分管制,但钇等重稀土短缺蔓延,两用物项许可\"不会消失\"。2026年1月中国限制对日本企业出口,美国入股稀土企业并宣布建立战略储备,推动价格在2月继续走高。标题没有价格数据,因此这一联系属于推断。",
+   "lesson_en": "A temporary pause in China's export controls does not remove the licensing lever, so watch heavy rare earth shortages and new targeted curbs.",
+   "lesson_zh": "中国暂停出口管制并不等于取消许可这一手段,需持续关注重稀土短缺和新的针对性限制。",
+   "categories": [
+    "Export Policy",
+    "Supply Outage",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "China expands rare earths export restrictions to new elements",
+     "title_zh": "中国将稀土出口限制扩大到新元素",
+     "date": "2025-10-09",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUmtPcVVmaVViSFdMdXN4OGQyVjhFTXlCVF8zRk9FTUs2SUozWG54NmZSckg4NTFvUEdTZUNIWnF0NjNaZU0tb2VfajY4bDluWWhmWEpsc0NYdUJ5LWlYeFhzUzYzWmYwZkNDTWpqUHktWVJ6d0VaanNXTzEtekpiZTlOMk5UQ1F6c0t1Znpqa1RBR2hUc0pyOW1tdEFBaDRQUHBPRXJyTWtKUQ?oc=5"
+    },
+    {
+     "title": "EXCLUSIVE: A new rare earth crisis is brewing as yttrium shortages spread",
+     "title_zh": "独家:钇短缺蔓延,新稀土危机酝酿",
+     "date": "2025-11-14",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONFZETWZmcG1YQlByQnNxNjlhTGxQWktsTU5sYUhsWWt6OWZzY3NmaldZbDF4ck9vOVNqZ05YQWl4aF9oZlhKakVkalZReXo4UklMYWxFNEJESEFlVE9LVGVLNFNiZkRBdFFocGl1NDI3YzZTa1U0aWtObzNXaG5sTi12a0ZsVXJkZVNNZG11amZfZWtmaUhoUFc1cWQzQlpBQThFRWlKZ0RaSmgzdmVXQ1NoV1JwbE44TU5MbA?oc=5"
+    },
+    {
+     "title": "West scrambles to fill heavy rare earth gap as China rivalry deepens",
+     "title_zh": "西方急于填补重稀土缺口",
+     "date": "2025-11-19",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPOC1tR2s2YTczeGdOdVJYUkhUVnE4ak1vN1ZkVFJ1aGN0Rl9iUERLdkNXZFVHUzg4aXRRQ0hiTHNIMHBDdWxuWG1BSUdueDFfc3RFNkRVUWc5Q2xZS0hzYlVJdV9WWDQ5QmRMT1NrSnZILWZSbXk0WWh2cEtqRWNqdmUzUHBqZFZBS0ZzVEV4ZlloZHliN0lQNHlDUHQxa1htTlpMWDVJX3kwNjZVQ3dkVV9IM3d1amlaU05NZlNCcHhTU2Q4dnA0?oc=5"
+    },
+    {
+     "title": "China curbs rare earth exports to Japanese companies after dual-use ban, WSJ reports",
+     "title_zh": "中国在两用物项禁令后限制对日稀土出口",
+     "date": "2026-01-08",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMjlkZmtzaW1MbGdraEpKZkw1MTJUUVpENHRaQkd2Ui1ybG5ob0c5ZTl0UWNMenVrQUo3WURpQjJZX2l1S29TNGRVdEVxS1RDYXQyRzBRNkQ1VTVBWXlXLV9UOHZKVDhxOG5xRlJBSFN6NVlQSF9MOVFreFVVN0l2Ql9HbHNjOWJGVkFETC1DdHBldDRKVy01SnEyWVNKdkVIbWVJNkhraEs4anBUdWxZcG1MdGxVWnlTT0M3Q2dlZWFsTTBkdHBTRzFOSEJpejk5?oc=5"
+    },
+    {
+     "title": "Trump administration to create a strategic reserve for rare earth elements",
+     "title_zh": "美国将建立稀土战略储备",
+     "date": "2026-02-02",
+     "source": "AP News",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORUNxV3E3d1NhLVZoVTAzTFZpQ2Q1ZGdBaGFjbFFjN0hMUHZQUVp3b0hQMUlVSjNrTFpqaFA2M2luV3d5OUc5UnptVzRXWURIbWE0UFcwYjZOTHZVZzNrMDdhUGt5V0Q2UTMxLWxWSl82Wk9GczFSZ0FIVmRoYUJlOEJwSjBrQTZ0eS02ZkZPQU9YdzI0aGtmUXlEeFBHaFkx?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "EU firms brace for more shutdowns due to China rare earth controls despite summit promise",
+     "title_zh": "欧洲企业担忧稀土管制导致更多停产",
+     "date": "2025-09-16",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUXpub25kMEJ0clRmQkczdld0VlRnMEZKS1lvSl9WTmFrazBDazhSSVRoMHZFX1BUUTZZX0FsakxBZ1FJWEEzVV82QUU0c1NyM1lJVFVpdk5XLXhkU3JmWnRSOUJsa1IzODRpNXBrQ2FXb0VZZ3BKaV9aSUpjTXprdkZ2Z3J0QnhVNFVHMGNkdHFqLW9ONjdGRTFFaHVKRWtiUG55VjRBN2drcEQ1c29aWVpXaDFxYTNxV1FKSkQwUQ?oc=5",
+     "lead_days": 45
+    },
+    {
+     "title": "Beijing’s rare-earths export licensing system: delays by design?",
+     "title_zh": "北京稀土出口许可制度:有意拖延?",
+     "date": "2025-10-01",
+     "source": "Mercator Institute for China Studies",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdU1WcUF2Nkhqc1lreXdFbGoycmN6Qlg5eEwtQUJpSFlBaVhiOW5wVklVLVpzODMtZm9yVVRCSjJzS2ZCeXQ2b0E2WEg1Q2c5cTYxcmNHRUhpT1NPQVlpSHZTOExPZ1ZqazZqVkxlcE5GSl9MSjRYSzIzdlppaDM0SEY2Sk9jR3FXa1FEUUxWSFhiZw?oc=5",
+     "lead_days": 30
+    },
+    {
+     "title": "China expands rare earths restrictions, targets defense and chips users",
+     "title_zh": "中国扩大稀土限制,瞄准国防和芯片用户",
+     "date": "2025-10-08",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSUR4SkVKUUltWllCZ0NWNXlzUk9UaEltRFNMUDhKUDJELTZNUXVveVJWX0s4YjdHQ2FmRHhXUTBvbU1MMmljdnB2U01jNXJRQUo3WlZxLVFZdk1hY1BTRHM0cjRqTVJvUG9JSllMcG42d041RWJVUHNwSkdiTzFYOGxoZDU3SktXY0xILXdtTzNfUFE?oc=5",
+     "lead_days": 23
+    },
+    {
+     "title": "Concerned carmakers race to beat China's rare earths deadline",
+     "title_zh": "车企赶在中国稀土期限前抢购",
+     "date": "2025-10-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSVMxVW1pLVU0TWhnZ09ubmJpLUpoWEdJZ3pXcTZpSkdsR1Y2NVlueVRlUjFPNGk5WWxMVjJHRlJKWF9PSXRIWmxpU2FISDlpZUtoRWYzVU5EN1Q4TXdjYkhJa3FzcmdVQkxpc19pWV9IWVQyb2Zwb3QxTXJDUUpLY2F6WTV4eGE4SkVIMXVjbFpnU1pnOF91R1o1anIyWVA5ME5PTUlCdkgxb3hwZjR2YmtEN1lsWFVYMUtYdS1xZWQ?oc=5",
+     "lead_days": 11
+    },
+    {
+     "title": "NioCorp CEO Warns China’s Dual-Use Export Licensing on Heavy Rare Earths “Isn’t Going Away”",
+     "title_zh": "NioCorp CEO:重稀土两用许可不会消失",
+     "date": "2025-11-20",
+     "source": "NioCorp Developments Ltd.",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMWdDMGJQdDdoeFozeTRiWEp0S3BIYzVIRnAwT1pWclBMWWszaGhFdHpzV3VMY0h4YUZ4ZXZkNmNwVmFGWkt5OUQ4dG1iTGlBa2lDMTF3QjVHNklVV0hzNHJCVlQ4OU0zdGVJWUdnem5hVmpUc1c0WmdHcTVKUVBoakRtWVRhWVFZY2dPN2pTVGFtTUktMm9GTVlzQjZXU0RSUmFGazFCY2ppQWNuMTJkSGFB?oc=5",
+     "lead_days": -20
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Tin|2021-02": {
+   "commodity": "Tin",
+   "start": "2020-11-01",
+   "end": "2021-02-01",
+   "change": 0.4207465738929128,
+   "direction": "up",
+   "price_start": 18522.48,
+   "price_end": 26315.75,
+   "n_headlines": 27,
+   "cause_en": "Headlines don't explain the rally; only hints of supply tightness and new smelter capacity",
+   "cause_zh": "新闻无法充分解释涨势，仅有供应相关零星线索",
+   "explanation_en": "The headlines are mostly generic mining profiles, Cornish exploration stories and Valheim game guides, and none directly discusses tin prices, demand or supply disruption in Nov 2020–Feb 2021. The only loosely relevant items are a mine collapse in Uganda (small producer), Tanzania's export approval, and Yunnan Tin's new smelter start-up, which are too minor to account for a 42% rise. The cause cannot be confirmed from these headlines.",
+   "explanation_zh": "这些新闻多为矿业概况、康沃尔勘探报道和《Valheim》游戏攻略，没有直接涉及2020年11月至2021年2月的锡价、需求或供应中断。仅有乌干达矿井坍塌、坦桑尼亚获准出口、云南锡业新冶炼厂点火等零星信息，规模太小，难以解释42%的涨幅。因此仅凭这些标题无法确认原因。",
+   "lesson_en": "When headlines are generic, look to dedicated market data (inventories, Myanmar/Indonesia supply, electronics demand, shipping) rather than inferring causes from them.",
+   "lesson_zh": "当新闻内容泛泛时，应转向库存、缅甸/印尼供应、电子需求和航运等专门市场数据，而不是凭这些标题推断原因。",
+   "categories": [
+    "Supply Outage",
+    "Logistics"
+   ],
+   "drivers": [
+    {
+     "title": "11 trapped as tin mine collapses in Ntungamo",
+     "title_zh": "乌干达锡矿坍塌，11人被困",
+     "date": "2020-09-16",
+     "source": "Daily Monitor",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdmU1TTlLMk9vVFcwVF9BZEV6cnZWemVVQ3A0SmpwUllkbE9Gb0lzS1FSanktVzJGdFR5UTc3RC1iQ1BkVmxYajFNTHhRV1FBYTRZeklkQWxnenVUeHltbmVYSU9tcER1bkp3WFFCa3ZJUHp2MWd3cUw2bzB1cHlCVWdqZ1ZkZndpQXBmcG1nRDhnMmtZN3hydWQ4cy1DT1huamc?oc=5"
+    },
+    {
+     "title": "Fires lit at Yunnan Tin’s new smelter",
+     "title_zh": "云南锡业新冶炼厂点火",
+     "date": "2020-11-30",
+     "source": "International Tin Association",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE50V1NBRGtWeVlENXo3TVkyMTNCRWxoVVJsRlk5c3U3ckVidjB4Zmstbmx5MVh3djV0eDVUcGhoM1MyTWR0QWt0SG1faXN4dGhZVmM5dWlsaUZZRWRfUXAwc3NwQTdnbmpFN2FkRjF1R2s0LVdRczFBS3Jn?oc=5"
+    },
+    {
+     "title": "Tanzania gets nod to export tin, tantalum",
+     "title_zh": "坦桑尼亚获准出口锡、钽",
+     "date": "2020-11-01",
+     "source": "thecitizen.co.tz",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPV0lySFVqRVc0VmkwSHhBTlJNUWMyeXdzd0JFbzZDWWdiQ0NYYWJvdDdLd2JPeFNPNlJxTEtuQWl0VHFBWVNTVklaZWtJRGEycndOV3dVdnEySFhDaWNCZGdfN2h1cGhjdGZ3ZTFaSmE3VldHbW1VeFduVDhQN1BvZE1ITVFMQ2lIdHlfSnFnVVZrRmxFZ2dKUlhtTzFHRUwxRkE?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "11 trapped as tin mine collapses in Ntungamo",
+     "title_zh": "乌干达锡矿坍塌，11人被困",
+     "date": "2020-09-16",
+     "source": "Daily Monitor",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdmU1TTlLMk9vVFcwVF9BZEV6cnZWemVVQ3A0SmpwUllkbE9Gb0lzS1FSanktVzJGdFR5UTc3RC1iQ1BkVmxYajFNTHhRV1FBYTRZeklkQWxnenVUeHltbmVYSU9tcER1bkp3WFFCa3ZJUHp2MWd3cUw2bzB1cHlCVWdqZ1ZkZndpQXBmcG1nRDhnMmtZN3hydWQ4cy1DT1huamc?oc=5",
+     "lead_days": 45
+    }
+   ],
+   "confidence": "low"
+  },
+  "Tin|2022-07": {
+   "commodity": "Tin",
+   "start": "2022-04-01",
+   "end": "2022-07-01",
+   "change": -0.40970600322065975,
+   "direction": "down",
+   "price_start": 43022.24,
+   "price_end": 25395.77,
+   "n_headlines": 32,
+   "cause_en": "Tin rally unwound as consumer demand weakened and supply recovered after record highs",
+   "cause_zh": "需求疲软叠加供应恢复,锡价自历史高位回落",
+   "explanation_en": "Tin hit record highs in March 2022, but by April commentary noted prices were \"flying high despite resurgent production\", and global output had rebounded. By July, Reuters reported consumer belt-tightening hobbling demand for solder metal, so the earlier supply-squeeze premium unwound. Supply-side disruptions (Yunnan mine closure, Myanmar safety review) were not enough to offset weaker demand.",
+   "explanation_zh": "锡价在2022年3月创历史新高,但4月已有评论指出产量回升而价格仍高企,全球产量在复苏。到7月,路透报道消费者紧缩开支拖累焊料用锡需求,前期供应紧张溢价消退。云南矿山关闭、缅甸安全审查等供应扰动不足以抵消需求走弱。",
+   "lesson_en": "When a supply-squeeze rally hits record highs while output is recovering, watch consumer demand signals, since weak demand can quickly reverse prices.",
+   "lesson_zh": "当供应紧张推动的涨势创出纪录、而产量正在恢复时,要密切关注终端消费需求,需求走弱会让价格迅速反转。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Consumer belt tightening hobbles demand for solder metal tin",
+     "title_zh": "消费者紧缩开支拖累焊料锡需求",
+     "date": "2022-07-05",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPOGk2MjgxeGR2RmZuNmxySmJQVkhFTU9Kc3p2SzZaT1NmajEycnljTWZ6NFdvd3dYWlRDdlllZlJNTzU4dTk5RjFGbU9aNTRpRTNjUV9zZ0tUYUJQaVloS1NvTU1oWkhaWUs2QkwzYXBrckJqZFNwZkxFaWZWaTlRVjRjNEp2akhydWVDQWQwR3hpbVQwUnY0LU9KdF9ucW9iRmRUZ20ydnBDTWxpX0I4RmpR?oc=5"
+    },
+    {
+     "title": "COMMENTARY: Tin still flying high despite resurgent production",
+     "title_zh": "产量回升而锡价仍高企",
+     "date": "2022-04-21",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMVF2Vm9KbUpVUWtvVEtyMGNucFBNMjhnTks0WTFTR01tWUV0UkJqRjhkd2xia2tFV2ZaRUtsa3FTZTJjZ2kwTXFZTmJCOHlBU3NMR0w4cF92eG5PRThhMkFwdmtveXA1bHpNbVBoRXk4b2wtVmVZRGNHWEVUWk1DV3J6ZmxkT1lKeVBZSlNZM2RLTTJoeHBscHE0djlqVUtoSllTd2lvUEF6UQ?oc=5"
+    },
+    {
+     "title": "Global tin production increases due to rebound in consumer demand in 2021",
+     "title_zh": "2021年需求反弹带动全球锡产量增加",
+     "date": "2022-02-22",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWVk0NXM1QUtaVEtWZndib3p2c29OT2k4RDJheFRaQk9nMWg2WXFnZVZ1YXRRNVpCbGozM05WeFZjbTVzOFpTT1JqYkxSSkEtd2lfZWhLbURlOU1TMEotODNVemozU3Z1aEZ5U1BvOUxvX3F4djdQU3J3cDRrOFVmZFIzUVJaOWV3UnYySFVmblFySDhTSmxGQkJZY0UtVjB0MlQwMm1aX1FjeUF4NUxJUkF0eEFPcHVqVVE?oc=5"
+    },
+    {
+     "title": "Alphamin to capture 6% of world tin supply after rejecting option for Bisie trade sale",
+     "title_zh": "Alphamin保留Bisie矿,占全球供应约6%",
+     "date": "2022-07-05",
+     "source": "MiningMX",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWjYyb1l0V1F5dkNfcW9CVm9vemRTenF0MWVhQjlrUm5UZ3BCSVF0OGF6TG01ZWNvUjN3aVNEYTRHaDZzbTkweE83X2lMaXM1M05rUXkzR3d3WkplZW1MRWw2endGMFFGSklPN3FheFhfQzgxTDVrR0RzVE9Ob29wdVhDelBOSHJqenRLdEZZTFk2OWg0b1YxMGwxZ1Nya0xMVEwtSjJQLXBFbnVtNWFvZm9qQnhLMHVrRmxOejVoZGgwRUluaUx1R3dLenc4WVli?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Tin prices are at record highs. Here’s why they could double again",
+     "title_zh": "锡价处于纪录高位,涨势过热",
+     "date": "2022-03-17",
+     "source": "Stockhead",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUktwOHgxSmNWS2hwcThISmVxZHVtbzA2STR5b3h4Y1dTQmJKY0hOOThNbnU1U2ROLVRmRHJoTlh3NGVhalJpYWFPTElvMGtxUTBaakc3el9vbHFCdEJMR3RZWkg1bjJWV09oZzlVdFBGVVN4ZWl4VXlaVmQ4ZllYdGhSeUphSkNqRktnUmZDSmpJSExtZkJsTUhVUVZOUUNCVGc?oc=5",
+     "lead_days": 14
+    },
+    {
+     "title": "COMMENTARY: Tin still flying high despite resurgent production",
+     "title_zh": "产量回升而价格仍高企",
+     "date": "2022-04-21",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMVF2Vm9KbUpVUWtvVEtyMGNucFBNMjhnTks0WTFTR01tWUV0UkJqRjhkd2xia2tFV2ZaRUtsa3FTZTJjZ2kwTXFZTmJCOHlBU3NMR0w4cF92eG5PRThhMkFwdmtveXA1bHpNbVBoRXk4b2wtVmVZRGNHWEVUWk1DV3J6ZmxkT1lKeVBZSlNZM2RLTTJoeHBscHE0djlqVUtoSllTd2lvUEF6UQ?oc=5",
+     "lead_days": -21
+    },
+    {
+     "title": "Global tin production increases due to rebound in consumer demand in 2021",
+     "title_zh": "全球锡产量回升",
+     "date": "2022-02-22",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWVk0NXM1QUtaVEtWZndib3p2c29OT2k4RDJheFRaQk9nMWg2WXFnZVZ1YXRRNVpCbGozM05WeFZjbTVzOFpTT1JqYkxSSkEtd2lfZWhLbURlOU1TMEotODNVemozU3Z1aEZ5U1BvOUxvX3F4djdQU3J3cDRrOFVmZFIzUVJaOWV3UnYySFVmblFySDhTSmxGQkJZY0UtVjB0MlQwMm1aX1FjeUF4NUxJUkF0eEFPcHVqVVE?oc=5",
+     "lead_days": 37
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Tin|2023-01": {
+   "commodity": "Tin",
+   "start": "2022-10-01",
+   "end": "2023-01-01",
+   "change": 0.4439355644863101,
+   "direction": "up",
+   "price_start": 19391.17,
+   "price_end": 27999.6,
+   "n_headlines": 33,
+   "cause_en": "Indonesia export-ban talk, Peru San Rafael halt, and China reopening hopes tightened tin supply",
+   "cause_zh": "印尼出口禁令传闻与秘鲁圣拉斐尔停产推升锡价",
+   "explanation_en": "The clearest supply-side headline is Reuters on 20 Oct 2022, which reported that Indonesia, a top exporter, had not yet decided the timing of a tin export ban, signalling possible supply loss just as prices bottomed. In January 2023, San Rafael, Peru's major tin mine, was halted after protests [32]. Other headlines are mostly about mine development and history and do not explain the size of the rally, so the demand and macro drivers behind it are not evidenced here and confidence is limited.",
+   "explanation_zh": "最明确的供应端线索是2022年10月20日路透社报道：全球主要出口国印尼尚未确定锡出口禁令的时间，暗示价格见底之际可能出现供应缺口。2023年1月，秘鲁大型锡矿San Rafael因抗议活动停产[32]。其余标题多为矿山开发和历史内容，无法解释涨幅的全部原因，需求和宏观因素在这些标题中没有证据，因此置信度有限。",
+   "lesson_en": "When a top exporter such as Indonesia discusses export bans, or a major mine faces unrest, expect a sharp supply-driven rally in thin tin markets.",
+   "lesson_zh": "当印尼等主要出口国讨论出口禁令，或大型矿山面临动荡时，市场规模较小的锡可能出现由供应驱动的快速上涨。",
+   "categories": [
+    "Export Policy",
+    "Supply Outage"
+   ],
+   "drivers": [
+    {
+     "title": "Indonesia has yet to decide on timing of tin export ban",
+     "title_zh": "印尼尚未决定锡出口禁令时间",
+     "date": "2022-10-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ0N5WnZuVmFlb1hLYV91a0FHakpuRlhQMjI0X2tRX3M5TG53OF9TdGhCZ1AxVlhfWFFCY2JWRlpQOGN2R1dRRW92ckVFaDNCU0RxOVR0WFBoczVidmpjMmJIbTFyaG90U2Qxb2FWZEpTMWpZZ1VWV0tSSHhDUW1TNEIwckcyRFlBbklWWkxGRFpyV3hycUswYW40Y3laWVA3MWVPag?oc=5"
+    },
+    {
+     "title": "San Rafael operations halted after Peruvian protests",
+     "title_zh": "秘鲁抗议导致San Rafael停产",
+     "date": "2023-01-20",
+     "source": "International Tin Association",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSXUxanE5UEFrQWgwbG83TDRxekFGdUN4NUpydW1aVGFoSkRDU1JQeENPbDZxQmZPdjd0SUxvcEo2M05sZ05iUkJoTmxMVFZGS0tKbzBZYndlN0JtUGJUOHUxNU0wTkEtM25ON3I1TUVpdG9LaTBEV2ZleVZ6dTdkMUFjMFpVUE1fOHMtdGcxZw?oc=5"
+    },
+    {
+     "title": "Why Have Tin Prices Struggled in 2022?",
+     "title_zh": "2022年锡价为何走弱",
+     "date": "2022-12-06",
+     "source": "International Banker",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORlFjak9qRmNBalFMOWE4d3dSTU9wcW9lSlIwMWJDVTM1V2JVeU1DcFJXeV9pVi1WLXFDYkdCOHFaMzBVcm9pUXVlRV95My1SUzVDUnVMNFpCVXpCeUpxczhGYl9NUFZPZHEzRUdUNUkxb1J5ckFWbkpUWWE5cS15T2RkNzJnX2c?oc=5"
+    },
+    {
+     "title": "Tin Price Volatility in 2022 and Expectations for 2023",
+     "title_zh": "2022年锡价波动与2023年预期",
+     "date": "2022-09-29",
+     "source": "MetalMiner",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYkJfcF9hS1pDeF9ueWVNSzdlSDl6N0t5MzQ2M0hZd3hVdkVtZGxfNEZ4andvU0Z4Mm1XVnJrbEViTWNCWFBzN0lkNV9wb0hJRWhZbFhRWks2Q0NnVE9YeHB4c1lzd0pMYzQzS1RJak16ejgxUGhtYUxJMndfS2tOYXR1SFo2blhjbGt5bnRKSjBOQl9LUUE?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Indonesia has yet to decide on timing of tin export ban",
+     "title_zh": "印尼尚未决定锡出口禁令时间",
+     "date": "2022-10-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ0N5WnZuVmFlb1hLYV91a0FHakpuRlhQMjI0X2tRX3M5TG53OF9TdGhCZ1AxVlhfWFFCY2JWRlpQOGN2R1dRRW92ckVFaDNCU0RxOVR0WFBoczVidmpjMmJIbTFyaG90U2Qxb2FWZEpTMWpZZ1VWV0tSSHhDUW1TNEIwckcyRFlBbklWWkxGRFpyV3hycUswYW40Y3laWVA3MWVPag?oc=5",
+     "lead_days": -20
+    },
+    {
+     "title": "Tin Price Volatility in 2022 and Expectations for 2023",
+     "title_zh": "2022年锡价波动与2023年预期",
+     "date": "2022-09-29",
+     "source": "MetalMiner",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYkJfcF9hS1pDeF9ueWVNSzdlSDl6N0t5MzQ2M0hZd3hVdkVtZGxfNEZ4andvU0Z4Mm1XVnJrbEViTWNCWFBzN0lkNV9wb0hJRWhZbFhRWks2Q0NnVE9YeHB4c1lzd0pMYzQzS1RJak16ejgxUGhtYUxJMndfS2tOYXR1SFo2blhjbGt5bnRKSjBOQl9LUUE?oc=5",
+     "lead_days": 1
+    }
+   ],
+   "confidence": "low"
+  },
+  "Tin|2024-05": {
+   "commodity": "Tin",
+   "start": "2024-02-01",
+   "end": "2024-05-01",
+   "change": 0.26162633456047146,
+   "direction": "up",
+   "price_start": 26104.1,
+   "price_end": 32933.62,
+   "n_headlines": 43,
+   "cause_en": "Indonesian export slump, Myanmar Wa and DRC supply disruptions, falling stocks drove tin higher",
+   "cause_zh": "印尼出口骤降、缅甸佤邦及刚果(金)供应受扰、库存下降推高锡价",
+   "explanation_en": "Headlines point to tightening supply: an Indonesian export slump tied to the PT Timah corruption case and resource nationalism, uncertainty over Myanmar's Wa State output, and M23 rebels disrupting supply routes in North Kivu. A Reuters commentary in April explicitly says falling stocks and more supply trouble sent tin skywards, while Fastmarkets noted prices near $32,000 on technology and renewables demand.",
+   "explanation_zh": "新闻显示供应趋紧:印尼因PT Timah腐败案和资源民族主义导致出口大幅下滑,缅甸佤邦产量前景不明,M23叛军又扰乱北基伍省的供应通道。路透4月评论直言库存下降和供应问题推动锡价飙升,Fastmarkets also指出在科技和可再生能源需求支撑下,锡价逼近3.2万美元/吨。",
+   "lesson_en": "Watch for export disruptions in Indonesia, Myanmar and the DRC, since tin's thin market reacts sharply to supply shocks when stocks are low.",
+   "lesson_zh": "关注印尼、缅甸和刚果(金)的出口与供应扰动;库存偏低时,锡这一小市场对供应冲击反应尤为剧烈。",
+   "categories": [
+    "Export Policy",
+    "Supply Outage",
+    "Logistics",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "COMMENTARY: Indonesian export slump ripples through tin market",
+     "title_zh": "印尼出口下滑波及锡市场",
+     "date": "2024-02-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcGZNLVNxYjkxM05oRDNvYnZENUJEQW9mNFM3d0FYYWZkX3RQelZFd3hxZUtoWlFycGQ3WmVabWY1OFBlaTJ0Z0hRTXlLY3RqbFVaUDVMVVFDRTBQVk5WOUN4a2l0MF9EN0dWVGE2OGt1T3VIWndJTllUVUt5RUNYU0F3YzVJYTZjNmNrWHpRcEtSZU9rMFVPUkdoSVRhb2V5TTdJUFJZUUg2Zw?oc=5"
+    },
+    {
+     "title": "COMMENTARY: Tin supply trapped in resource nationalism squeeze",
+     "title_zh": "锡供应受资源民族主义挤压",
+     "date": "2024-03-12",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYTlJbHNYY3Y2cWZVYkJvZmwybE5wVUtLX3Z2VlRoN1RoTTYyVHZpOHhvZ1FJbHJNQ0JvUnJ6UVdlVWxhSFlRSFMwV1FTMzFPY1NGdldudmhGSXNIYW56UWxDdkNNM2JLT2ZXd1FkUUd0ZkFIcEk5WXJwWHkwX2s1RHVpTjdUbl9xZU1NdWdqZjIzdGZsSTNiLUNsT05tcXZUdTJ2ZE1n?oc=5"
+    },
+    {
+     "title": "M23 rebels disrupt tin supply routes in key region of North Kivu",
+     "title_zh": "M23叛军扰乱北基伍锡供应通道",
+     "date": "2024-04-04",
+     "source": "International Tin Association",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVW11THFoN296azlVdzFOZE5vUmdoZmpfZTgyZFltNThnanlsLW5FRlQ5dXdKNHZKX2ZwQ09Sb3dPbXAxcDJRYWI0T3ZkVGlNRE5mVkNkVDU0aElQWGtDUk05UnlaYTNCTXdVTDh2aXFyTk9VMGhLeTJjdjdIcm5tNDNUTjhJbmcxTVcwcV8yOWZaUjlXQTNkSVFPV0Y2VWM?oc=5"
+    },
+    {
+     "title": "COMMENTARY: Falling stocks and more supply trouble sends tin skywards",
+     "title_zh": "库存下降和供应问题推高锡价",
+     "date": "2024-04-11",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYV9YMUcwamhQeVdOMHV3bjlwSmpON1ROTVVWN054Z3NFUTh4LXBsaVJQM2hBTkdGVjZlZGRXNWE4ckllYUM4SWItTkRVTE9lTlVaSEw1TXdwMEM1SWFnT3hrWmNpTktSbW45WEJpZE1Pbm5JeHZJOENnYWNxNnlSUkE2eldSZWNqbmxFM1dWbTllcllFOWJpZGp4NkZ2TGtOWkh0OVdDUlJrdy1xZGc?oc=5"
+    },
+    {
+     "title": "Tin price nears $32,000 per tonne on demand for technology, renewables",
+     "title_zh": "需求支撑锡价逼近3.2万美元",
+     "date": "2024-04-12",
+     "source": "Fastmarkets",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPN1Z0ZndaX2JONmFlTUFLeUNyTW1zSU5CdkhhS2VrV3EwN052dUpYYjV4cE5UVi1mN2ptZW5RUk5zZTNIejl4UFhpbVNISjZ0OWdUZ1k1QnVMQVFLRW9GbFNKSDBlWmFHSXhFSnMtNGF2MnJKaU1pSGtfeFpaWFlNRmZNX1dWTVB0YndiaTln?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "COMMENTARY: Myanmar's Wa State Army keeps global tin market guessing",
+     "title_zh": "缅甸佤邦军令锡市场难以预料",
+     "date": "2024-01-10",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYlM4eUo3YUVrV0NxQ3RPSHd2bHpKMk9JNFlDNHFjUDJ3MUtsODd5U2ZkYXVSNGR6dDJyQU5zc1VDTnN5cXZMdVI5NkJlalR4WHJhT1V0eGJlNGk1YzE4Y2RwdFc4YnlzeFhvbDRITGpPYnE1SmpzY0pUdmtmeFgtMHR1VGtSUnZxcDA2dk5aM1VYRWFlRm5nQm84aVJpQjd5dFI1aHFZS20tekFkR2RDcw?oc=5",
+     "lead_days": 21
+    },
+    {
+     "title": "COMMENTARY: Indonesian export slump ripples through tin market",
+     "title_zh": "印尼出口下滑波及锡市场",
+     "date": "2024-02-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcGZNLVNxYjkxM05oRDNvYnZENUJEQW9mNFM3d0FYYWZkX3RQelZFd3hxZUtoWlFycGQ3WmVabWY1OFBlaTJ0Z0hRTXlLY3RqbFVaUDVMVVFDRTBQVk5WOUN4a2l0MF9EN0dWVGE2OGt1T3VIWndJTllUVUt5RUNYU0F3YzVJYTZjNmNrWHpRcEtSZU9rMFVPUkdoSVRhb2V5TTdJUFJZUUg2Zw?oc=5",
+     "lead_days": -20
+    },
+    {
+     "title": "PT Timah Tin Mining Corruption Case Causes Rp271.06 trillion of State Loss, Environmental Expert Says",
+     "title_zh": "PT Timah腐败案造成巨额损失",
+     "date": "2024-02-20",
+     "source": "Tempo.co English",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUVVNbmUyTHhCQ0QwQTI5aVdpazdfenhLanRBdThFZ0FhbV92Y0ZNLWV0clNWRFNaYm1fc1dKdFlQNW41SThCU0VUSS05S0JKUkVFRnM1WmdidG9uVkNkV0NEdkdXbThsRzhCa1VsSGJGeDB1MmxqYkVaMjBWQzFMd0wxMnJLRDVLUXJPQ0owUDVLdnc0dmxfQzNmMG5hTldSNkZjS09EelphVzVBbFk0N2tLMGxpeWJUMHVqaGN6N2JUNWlnTl9yd0xjOEYyUQ?oc=5",
+     "lead_days": -20
+    },
+    {
+     "title": "Uganda clarifies minimum tin export grade",
+     "title_zh": "乌干达明确锡出口最低品位",
+     "date": "2024-01-04",
+     "source": "International Tin Association",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOLTRWREU2TXBDSndEYlFndkpVaklGWkx5a2JONzY1V3JIM1hWMWd1YlI1ZklWemRpNGM1bkZxdE5KTHRRcDFLX0JfVTc5eWFQLV9UYXVQd3pVS1h6b2w2SHR6N2hyM0RyelBUQzlxa21TX0NzdFRzUXZqRTZRTE1tWA?oc=5",
+     "lead_days": 27
+    }
+   ],
+   "confidence": "high"
+  }
+ },
+ "generated_at": "2026-11-11T05:16+00:00",
+ "model": "claude-sonnet-5-5"
+}
