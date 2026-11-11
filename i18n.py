@@ -207,6 +207,7 @@ TEXT = {
     "card_forecast":    ("预测（{date}）", "Forecast ({date})"),
     "card_range":       ("可能区间 {lo} – {hi}", "Likely range {lo} – {hi}"),
     "card_reliability": ("预测可靠性：{level}", "Reliability: {level}"),
+    "flat":             ("基本持平", "about flat"),
     "rel_high":         ("较高", "high"),
     "rel_mid":          ("中等", "medium"),
     "rel_low":          ("较低", "low"),
@@ -339,15 +340,20 @@ TEXT = {
 - 🟡 **需关注**：只有一个信号指向风险（新闻或 AI 其一），或预测价格变化较大（±8%以上）。
 - 🟢 **平稳**：暂无明显风险信号。
 
-**2. 价格预测** —— 单个品种的详细图表：
+**2. 石油焦价格** —— 生石油焦按产地、硫含量、钒含量分别列出最新可得价格，每个价格都标明**价格日期、距今天数和来源链接**：
+- 🟢 7天内　🟡 31天内　🔴 已过时（只作参考，**不代表当前价格**）。
+- 只在相同计价方式（离岸价 FOB / 到岸价 CFR / 海关均价）之间比较价格。
+- 只有 62 天内的价格才给出 30 天预测，可靠性标为“较低”或“中等”。
+
+**3. 价格预测** —— 单个品种的详细图表：
 - 蓝线是历史价格，红线是预测，浅红色区域是“可能区间”（过去约80%的情况下实际价格落在其中）。
 - **预测可靠性**：系统会用历史数据反复模拟测试多种预测方法，自动选择过去最准确的方法，并告诉您平均偏差有多大。
 - 三角形标记是相关新闻，绿色代表利多（供应趋紧），红色代表利空。
 
-**3. 供应风险** —— 所有品种按“供应短缺风险”排序，并附 AI 分析师的文字观点。
+**4. 供应风险** —— 所有品种按“供应短缺风险”排序，并附 AI 分析师的文字观点。
 
 ### 数据来源
-- **生石油焦（GPC）/煅烧石油焦**：联合国 Comtrade 美国出口单价（月度）。
+- **生石油焦（GPC）/煅烧石油焦**：联合国 Comtrade 美国出口单价（月度，用于模型预测）；分产地/分硫含量价格来自 Argus 公开报告、SMM（上海有色网）中国海关进口均价、ETI 能源周报等公开来源。
 - **钴、钼、锂、稀土、锡**：国际货币基金组织（IMF）初级商品价格（月度）。
 - **锑、镓/锗**：联合国 Comtrade 美国进口单价（月度）。
 - **新闻**：Google 新闻，每天早上自动收集，由 Claude（AI）评估类别、影响方向和重要性。
@@ -366,15 +372,20 @@ TEXT = {
 - 🟡 **Watch**: only one signal points to risk (news or AI), or the forecast moves notably (more than ±8%).
 - 🟢 **Stable**: no significant risk signal.
 
-**2. Price Forecast**: detailed chart for one commodity:
+**2. Pet Coke Prices**: green pet coke prices by origin, sulphur and vanadium level, each with its **price date, age in days and source link**:
+- 🟢 within 7 days, 🟡 within 31 days, 🔴 out of date (reference only, **not a current price**).
+- Prices are only compared within the same basis (FOB / CFR / customs average).
+- A 30-day forecast is only given for prices up to 62 days old, labelled low or medium reliability.
+
+**3. Price Forecast**: detailed chart for one commodity:
 - Blue = historical price, red = forecast, light-red area = likely range (the actual price fell inside it about 80% of the time in past tests).
 - **Reliability**: the system repeatedly tests several forecasting methods on past data, picks the most accurate automatically, and shows its average error.
 - Triangles are related headlines: green = bullish (tighter supply), red = bearish.
 
-**3. Supply Risk**: all commodities ranked by shortage risk, with a written AI analyst view.
+**4. Supply Risk**: all commodities ranked by shortage risk, with a written AI analyst view.
 
 ### Data sources
-- **Green / calcined pet coke**: UN Comtrade US export unit values (monthly).
+- **Green / calcined pet coke**: UN Comtrade US export unit values (monthly, used for the model forecast); prices by origin/sulphur from Argus public reports, SMM China customs import averages, ETI weekly and other public sources.
 - **Cobalt, molybdenum, lithium, rare earths, tin**: IMF Primary Commodity Prices (monthly).
 - **Antimony, gallium/germanium**: UN Comtrade US import unit values (monthly).
 - **News**: Google News, collected every morning and scored by Claude (AI) for category, price impact and importance.
@@ -395,3 +406,130 @@ TEXT = {
     "auto_refresh":     ("新闻与分析每天早上 7:17（新加坡时间）自动更新。",
                          "News and analysis update automatically every morning at 7:17 (Singapore time)."),
 }
+
+
+TEXT.update({
+    "tab_petcoke":      ("石油焦价格", "Pet Coke Prices"),
+    "pc_none":          ("暂无石油焦分级价格数据。", "No graded pet coke price data yet."),
+    "pc_intro":         ("**生石油焦（GPC）分产地、分硫含量价格。** 每个价格都标明价格所属日期和来源；"
+                         "公开来源不每日发布报价，**过时的价格只作参考，不代表当前价格**。",
+                         "**Green pet coke (GPC) prices by origin and sulphur level.** Every price shows the date it "
+                         "refers to and its source. Public sources do not publish daily prices, so "
+                         "**out-of-date prices are for reference only and are not current prices**."),
+    "pc_count":         ("共 {n} 个价格系列", "{n} price series"),
+    "pc_cnt_fresh":     ("{n} 个在 {d} 天内", "{n} within {d} days"),
+    "pc_cnt_recent":    ("{n} 个在 {d} 天内", "{n} within {d} days"),
+    "pc_cnt_stale":     ("{n} 个已过时", "{n} out of date"),
+    "pc_newest":        ("最新数据：{date}（{src}）", "Newest data: {date} ({src})"),
+    "pc_warn_no_fresh": ("⚠️ 目前没有 7 天内的公开报价。Argus、Platts 等机构的每日/每周报价需付费订阅；"
+                         "本页显示的是能免费获得的最新数据，请以日期为准。如果公司获得了供应商报价或订阅数据，"
+                         "可以用下方“导入 Argus 或公司报价”加入。",
+                         "⚠️ No public price within the last 7 days. Daily/weekly prices from Argus, Platts etc. "
+                         "need a paid subscription; this page shows the latest freely available data, so check each "
+                         "date. Supplier quotes or subscription data can be added via 'Import Argus or company quotes' below."),
+    "pc_basis":         ("计价方式", "Price basis"),
+    "pc_sulfur":        ("硫含量", "Sulphur"),
+    "pc_only_recent":   ("只看 {d} 天内", "Only last {d} days"),
+    "pc_g_all":         ("全部", "All"),
+    "pc_g_fob":         ("离岸价 FOB", "FOB"),
+    "pc_g_cfr":         ("到岸价 CFR/CIF", "CFR/CIF"),
+    "pc_g_customs":     ("海关均价", "Customs average"),
+    "pc_s_low":         ("低硫", "Low S"),
+    "pc_s_medium":      ("中硫", "Medium S"),
+    "pc_s_high":        ("高硫", "High S"),
+    "pc_s_mixed":       ("混合/未注明", "Mixed / not stated"),
+    "pc_v_low":         ("低钒", "Low V"),
+    "pc_v_high":        ("高钒", "High V"),
+    "pc_v_unpub":       ("未公布", "Not published"),
+    "pc_age_days":      ("{d} 天前", "{d} days ago"),
+    "pc_age_stale_m":   ("过时：约 {m} 个月前", "Out of date: ~{m} months ago"),
+    "pc_age_stale_d":   ("过时：{d} 天前", "Out of date: {d} days ago"),
+    "pc_age_future":    ("日期有误", "Date error"),
+    "pc_type_assess":   ("机构报价评估", "Agency assessment"),
+    "pc_type_customs":  ("海关统计均价", "Customs average"),
+    "pc_type_report":   ("市场报道", "Market report"),
+    "pc_type_implied":  ("按升贴水推算", "Derived from stated premium"),
+    "pc_type_auto":     ("自动提取（AI 搜索）", "Auto-extracted (AI search)"),
+    "pc_type_imported": ("导入（订阅数据）", "Imported (subscription)"),
+    "pc_type_company":  ("公司报价", "Company quote"),
+    "pc_table_title":   ("最新可得价格", "Latest available prices"),
+    "pc_empty_filter":  ("没有符合筛选条件的价格。", "No prices match these filters."),
+    "pc_c_origin":      ("产地", "Origin"),
+    "pc_c_market":      ("市场", "Market"),
+    "pc_c_basis":       ("计价方式", "Basis"),
+    "pc_c_sulfur":      ("硫含量", "Sulphur"),
+    "pc_c_vanadium":    ("钒含量", "Vanadium"),
+    "pc_c_hgi":         ("HGI", "HGI"),
+    "pc_c_price":       ("价格（美元/吨）", "Price (US$/t)"),
+    "pc_c_date":        ("价格日期", "Price date"),
+    "pc_c_age":         ("新鲜度", "Age"),
+    "pc_c_change":      ("较上期", "vs previous"),
+    "pc_vs":            ("对比", "vs"),
+    "pc_c_type":        ("数据类型", "Data type"),
+    "pc_c_source":      ("来源", "Source"),
+    "pc_c_link":        ("链接", "Link"),
+    "pc_table_note":    ("海关均价是该产地当月所有生焦等级的平均到岸价，会混合燃料级和阳极级（例如巴西、阿根廷多为低硫阳极级，价格明显更高），"
+                         "并且通常晚 1–2 个月公布。",
+                         "Customs averages mix all uncalcined grades shipped from that origin in the month (e.g. Brazil and "
+                         "Argentina are mostly low-sulphur anode grade, so much higher) and are published 1–2 months late."),
+    "pc_cmp_title":     ("价格比较（同一计价方式）", "Price comparison (same basis)"),
+    "pc_cmp_pick":      ("比较哪一类价格", "Which prices to compare"),
+    "pc_unit":          ("美元/吨", "US$/t"),
+    "pc_cmp_note":      ("颜色：绿色 = 7 天内，黄色 = 31 天内，灰色 = 已过时。括号内是价格日期；不同日期的价格请谨慎比较。",
+                         "Colour: green = within 7 days, yellow = within 31 days, grey = out of date. Dates are in brackets; "
+                         "compare prices from different dates with care."),
+    "pc_fc_title":      ("未来 30 天预测", "30-day forecast"),
+    "pc_fc_intro":      ("只预测 {d} 天内的价格。方法：以该价格为起点，套用生石油焦主模型的预期涨跌幅；"
+                         "价格越旧，可能区间越宽。",
+                         "Only prices up to {d} days old are forecast. Method: start from that price and apply the main "
+                         "GPC model's expected change; the older the price, the wider the range."),
+    "pc_f_last":        ("最新价格（日期）", "Latest (date)"),
+    "pc_f_fc":          ("30 天后预测", "Forecast in 30 days"),
+    "pc_f_range":       ("可能区间", "Likely range"),
+    "pc_f_chg":         ("预期变化", "Expected change"),
+    "pc_f_rel":         ("可靠性", "Reliability"),
+    "pc_fc_none":       ("目前没有 {d} 天内的价格，因此不做分级预测（避免用旧价格误导）。整体趋势请看“价格预测”页的生石油焦预测。",
+                         "No price within {d} days, so no graded forecast is made (to avoid misleading with old prices). "
+                         "See the GPC forecast on the Price Forecast page for the overall trend."),
+    "pc_fc_nobench":    ("主模型预测暂不可用。", "Main model forecast not available."),
+    "pc_fc_skipped":    ("另有 {n} 个价格超过 {d} 天，未做预测。", "{n} more prices are older than {d} days and were not forecast."),
+    "pc_hist_title":    ("历史走势", "Price history"),
+    "pc_hist_pick":     ("选择价格系列", "Choose price series"),
+    "pc_grades_title":  ("等级定义（硫、钒）", "Grade definitions (sulphur, vanadium)"),
+    "pc_grades_md":     ("""- **低硫**：硫 < {low:g}%　**中硫**：{low:g}% – {high:g}%　**高硫**：≥ {high:g}%
+- **低钒**：钒 ≤ {v} ppm　**高钒**：> {v} ppm
+- **HGI**（哈氏可磨性指数）：越高越容易磨粉，燃料用户常用 HGI 40–45 或更高。
+- 公开的燃料级报价（如 Argus 美湾 6.5% 硫）**通常不公布钒含量**，因此显示“未公布”；钒含量主要影响阳极/煅烧用途，需向供应商索取化验单。""",
+                         """- **Low sulphur**: S < {low:g}%; **medium**: {low:g}–{high:g}%; **high**: ≥ {high:g}%
+- **Low vanadium**: V ≤ {v} ppm; **high**: > {v} ppm
+- **HGI** (Hardgrove grindability index): higher = easier to grind; fuel users commonly buy HGI 40–45 or above.
+- Public fuel-grade assessments (e.g. Argus US Gulf 6.5% S) **usually do not publish vanadium**, so it shows "Not published"; vanadium matters mainly for anode/calcining use and comes from the supplier's certificate of analysis."""),
+    "pc_sources_title": ("数据来源与限制", "Sources and limitations"),
+    "pc_s_rows":        ("价格条数", "Rows"),
+    "pc_s_last":        ("最新日期", "Latest date"),
+    "pc_limits_md":     ("""**限制说明**
+- **Argus**：每日/每周完整报价需要付费订阅。本系统只使用 Argus 免费公开的样本报告和新闻中写明的价格，因此日期可能较早。
+- **SMM（上海有色网）**：中国海关进口均价按产地免费公布，但通常晚 1–2 个月；每日分产地报价需要登录会员。
+- **沙特、印度**：目前没有找到免费公开、可核实的出口离岸价；印度到岸价来自 Argus 样本报告和 ETI 周报。
+- **钒含量**：没有免费来源按钒含量分别报价。
+- **自动提取**：系统每 3 天用 AI 搜索新公布的价格，只保存原文中明确写出的数字（附原句和链接），并标为“自动提取”。请在重要决策前打开链接核对。""",
+                         """**Limitations**
+- **Argus**: full daily/weekly prices need a paid subscription. Only prices written in Argus's free sample report and free news are used, so dates may be older.
+- **SMM**: China customs import averages by origin are free but 1–2 months late; daily origin prices need a member login.
+- **Saudi Arabia, India**: no free, verifiable FOB export price was found; CFR India comes from the Argus sample report and ETI weekly.
+- **Vanadium**: no free source prices coke by vanadium level.
+- **Auto-extracted**: every 3 days an AI search looks for newly published prices and only saves numbers written explicitly in the source (with the sentence and link), labelled "Auto-extracted". Open the link to check before important decisions."""),
+    "pc_import_title":  ("导入 Argus 或公司报价", "Import Argus or company quotes"),
+    "pc_import_md":     ("""以后如果订阅了 Argus，或收到供应商报价，可以这样加入系统：
+1. **Argus**：在 Argus 网站把石油焦价格历史导出为 Excel 或 CSV（包含日期、价格名称、价格或高/低价）。
+2. **公司报价**：下载下面的模板，每行填一个报价（日期、产地、计价方式、硫%、钒 ppm、HGI、价格），删除示例行。
+3. 在 GitHub 网站打开 `data/argus/` 文件夹，上传文件（Add file → Upload files → Commit changes）。
+4. 第二天早上自动更新时，系统会读取文件，并从价格名称（如“6.5% sulphur HGI 40-45 fob US Gulf coast”）自动识别硫含量、HGI、计价方式和市场。重复的价格会自动跳过。""",
+                         """If you subscribe to Argus later, or receive supplier quotes, add them like this:
+1. **Argus**: export the pet coke price history from Argus as Excel or CSV (date, price name, price or low/high).
+2. **Company quotes**: download the template below, one quote per row (date, origin, basis, S%, V ppm, HGI, price), and delete the example row.
+3. On the GitHub website open the `data/argus/` folder and upload the file (Add file → Upload files → Commit changes).
+4. At the next morning update the system reads it and recognises sulphur, HGI, basis and market from the price name (e.g. "6.5% sulphur HGI 40-45 fob US Gulf coast"). Duplicates are skipped."""),
+    "pc_template_btn":  ("下载报价模板（CSV）", "Download quote template (CSV)"),
+    "pc_all_btn":       ("下载全部石油焦价格数据（CSV）", "Download all pet coke price data (CSV)"),
+})

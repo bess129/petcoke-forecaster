@@ -34,6 +34,37 @@ OLD_NAMES = {"Green Pet Coke (GPC)": "Pet Coke (fuel-grade)",
              "Pet Coke PPI index (broad)": "Pet Coke (PPI index)"}
 COLORS = {"red": "#c0392b", "yellow": "#d4a017", "green": "#2e8b57"}
 ICONS = {"red": "🔴", "yellow": "🟡", "green": "🟢"}
+BADGE_BG = {"red": "#fdecea", "yellow": "#fdf6e3", "green": "#e9f5ee"}
+
+
+def change_html(chg):
+    """Neutral-coloured change (in China red = up, green = down, so avoid both)."""
+    if abs(chg) < 0.005:
+        return f"<span style='color:#666'>→ {t('flat')}</span>"
+    arrow = "▲" if chg > 0 else "▼"
+    return f"<span style='color:#444;font-weight:600'>{arrow} {chg:+.1%}</span>"
+
+
+def value_html(label, value, unit="", sub="", help_text=""):
+    """A number that never gets cut off: big value, small unit, optional sub-line."""
+    tip = f" title='{help_text}'" if help_text else ""
+    return (f"<div{tip} style='min-width:0'>"
+            f"<div style='color:#6b6b6b;font-size:0.85rem;white-space:nowrap;overflow:hidden;"
+            f"text-overflow:ellipsis'>{label}</div>"
+            f"<div style='font-size:1.65rem;font-weight:600;line-height:1.25;word-break:break-word'>"
+            f"{value} <span style='font-size:0.85rem;font-weight:400;color:#6b6b6b'>{unit}</span></div>"
+            f"<div style='font-size:0.9rem;min-height:1.2em'>{sub}</div></div>")
+
+
+def row_html(cells):
+    cols = "".join(f"<div style='flex:1 1 0;min-width:140px'>{c}</div>" for c in cells)
+    return f"<div style='display:flex;flex-wrap:wrap;gap:12px 24px;margin:6px 0 10px'>{cols}</div>"
+
+
+def badge(light, label):
+    return (f"<span style='font-size:0.8rem;font-weight:600;padding:2px 10px;border-radius:12px;"
+            f"background:{BADGE_BG[light]};color:{COLORS[light]};white-space:nowrap;"
+            f"vertical-align:middle'>{label}</span>")
 
 st.set_page_config(page_title="价格预警系统 | Price Early-Warning", page_icon="📈", layout="wide")
 
@@ -177,8 +208,8 @@ def summary_row(c):
 
 
 st.title(t("app_title"))
-tab_ov, tab_fc, tab_risk, tab_help = st.tabs(
-    [t("tab_overview"), t("tab_forecast"), t("tab_risk"), t("tab_help")])
+tab_ov, tab_pc, tab_fc, tab_risk, tab_help = st.tabs(
+    [t("tab_overview"), t("tab_petcoke"), t("tab_forecast"), t("tab_risk"), t("tab_help")])
 
 # ======================================================================
 # OVERVIEW
@@ -219,14 +250,15 @@ with tab_ov:
     for i, r in enumerate(rows):
         with cols[i % 2]:
             with st.container(border=True):
-                st.markdown(f"### {ICONS[r['light']]} {name_of(r['c'])} "
-                            f"<span style='color:{COLORS[r['light']]};font-size:0.8em'>"
-                            f"· {r['label']}</span>", unsafe_allow_html=True)
-                m1, m2 = st.columns(2)
-                m1.metric(t("card_latest", month=fmt_month(r["last_month"])),
-                          f"{fmt_price(r['last'])} {unit_of(r['c'])}")
-                m2.metric(t("card_forecast", date=fmt_date(target)),
-                          f"{fmt_price(r['fc_val'])} {unit_of(r['c'])}", f"{r['chg']:+.1%}")
+                st.markdown(f"<div style='font-size:1.35rem;font-weight:700;margin-bottom:4px'>"
+                            f"{ICONS[r['light']]} {name_of(r['c'])} &nbsp;{badge(r['light'], r['label'])}"
+                            f"</div>", unsafe_allow_html=True)
+                st.markdown(row_html([
+                    value_html(t("card_latest", month=fmt_month(r["last_month"])),
+                               fmt_price(r["last"]), unit_of(r["c"])),
+                    value_html(t("card_forecast", date=fmt_date(target)),
+                               fmt_price(r["fc_val"], r["last"]), unit_of(r["c"]), change_html(r["chg"])),
+                ]), unsafe_allow_html=True)
                 st.markdown(t("sentence", date=fmt_date(target), fc=fmt_price(r["fc_val"]),
                               unit=unit_of(r["c"]), chg=f"{r['chg']:+.1%}",
                               lo=fmt_price(r["lo"], r["last"]), hi=fmt_price(r["hi"], r["last"]),
@@ -276,16 +308,19 @@ with tab_fc:
     err, level = reliability_of(mdl)
     unit = unit_of(commodity)
 
-    k1, k2, k3, k4 = st.columns(4)
-    k1.metric(t("card_latest", month=fmt_month(last_data)), f"{fmt_price(current)} {unit}",
-              help=t("kpi_latest_help", unit=unit_of(commodity, long=True)))
-    k2.metric(t("kpi_forecast"), f"{fmt_price(row30['yhat_signal_adjusted'])} {unit}",
-              t("kpi_vs_latest", chg=f"{row30['yhat_signal_adjusted'] / current - 1:+.1%}"),
-              help=t("kpi_forecast_help", date=fmt_date(target)))
-    k3.metric(t("kpi_range"), f"{fmt_price(row30['yhat_lower_adj'], current)} – "
-                              f"{fmt_price(row30['yhat_upper_adj'], current)}",
-              help=t("kpi_range_help"))
-    k4.metric(t("kpi_signal"), f"{ICONS[light]} {label}")
+    adj_chg = row30["yhat_signal_adjusted"] / current - 1
+    st.markdown(row_html([
+        value_html(t("card_latest", month=fmt_month(last_data)), fmt_price(current), unit,
+                   help_text=t("kpi_latest_help", unit=unit_of(commodity, long=True))),
+        value_html(f"{t('kpi_forecast')}（{fmt_date(target)}）" if is_zh()
+                   else f"{t('kpi_forecast')} ({fmt_date(target)})",
+                   fmt_price(row30["yhat_signal_adjusted"], current), unit, change_html(adj_chg),
+                   help_text=t("kpi_forecast_help", date=fmt_date(target))),
+        value_html(t("kpi_range"), f"{fmt_price(row30['yhat_lower_adj'], current)} – "
+                                   f"{fmt_price(row30['yhat_upper_adj'], current)}", unit,
+                   help_text=t("kpi_range_help")),
+        value_html(t("kpi_signal"), f"{ICONS[light]}", "", badge(light, label)),
+    ]), unsafe_allow_html=True)
     st.caption(t("data_delay", month=fmt_month(last_data), date=fmt_date(target)))
     if info["regime"] != "Normal":
         st.error(t("regime_alert", total=f"{info['total_shift_pct']:+.1%}",
@@ -435,6 +470,16 @@ with tab_fc:
                 lambda r: [f"background-color: {colors.get(r[ucol], '')}; color: #111"] * len(r), axis=1)
             st.dataframe(styled, width="stretch", hide_index=True, height=380,
                          column_config={t("col_link"): st.column_config.LinkColumn(display_text=t("open"))})
+
+# ======================================================================
+# PET COKE PRICES (by origin / sulphur / vanadium)
+# ======================================================================
+with tab_pc:
+    try:
+        import petcoke_tab
+        petcoke_tab.render(forecast_for)
+    except Exception as e:
+        st.error(t("refresh_fail", err=e))
 
 # ======================================================================
 # SUPPLY RISK (all commodities)

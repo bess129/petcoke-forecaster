@@ -149,3 +149,18 @@ To check: open **Task Scheduler** → Task Scheduler Library → PetCokeForecast
   Illiquid metals move on one-off policy events that past prices cannot predict.
 - HS 811292 mixes several metals, so the "Gallium/Germanium" price is noisy and its
   forecast range is very wide.
+
+## Pet coke prices by origin, sulphur and vanadium (石油焦价格 page)
+
+| File | What it does |
+|---|---|
+| `data/gpc_prices.csv` | One row per published GPC price: date, origin, market, basis (FOB/CFR/customs avg), sulphur %, vanadium ppm, HGI, price, source and link |
+| `gpc_prices.py` | Loads prices (+ UN Comtrade US export series), grades sulphur (<3% low, 3–5% medium, ≥5% high) and vanadium (≤500 ppm low), labels age (🟢 ≤7 days, 🟡 ≤31 days, 🔴 out of date), forecasts only prices ≤62 days old |
+| `price_watch.py` | Every 3 days (in the GitHub Action) Claude searches the web for newly published prices; only numbers written in the source, with link and quote, are kept (marked "auto-extracted") |
+| `import_argus.py` | Imports Argus Excel/CSV exports or company quotes put in `data/argus/`; reads sulphur, HGI, basis and market from the price name |
+| `data/gpc_prices_template.csv` | Template for company/supplier quotes |
+| `petcoke_tab.py` | The dashboard page |
+
+Public sources used: Argus free sample report and free news, SMM (China customs import averages by origin),
+Energy Transit Intelligence weekly, UN Comtrade. Limitations: full daily Argus/Platts prices need a subscription;
+no free source prices coke by vanadium; no free verifiable Saudi FOB price was found; customs averages are 1–2 months late.
