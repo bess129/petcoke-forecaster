@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from shifts import load_events, patterns, current_watch, detect_shifts, shift_key, EVENTS_JSON
+from shifts import load_events, patterns, current_watch, EVENTS_JSON, WATCH_ALERT
 from shock import signals_for
 from i18n import t, is_zh, pick, name_of, unit_of, category_name, fmt_month, fmt_price, zh_punct
 
@@ -46,27 +46,39 @@ def render(available, histories, signals):
     # ------------------------------------------------------------ early-warning check (now)
     st.subheader(t("sh_watch_title"))
     st.caption(t("sh_watch_caption"))
-    rows = []
+    rows, alerts = [], []
+    sep = "、" if is_zh() else ", "
     for c in available:
         watch = current_watch(events, signals, c, signals_for)
         if not watch:
             continue
         top = sorted(watch, key=lambda w: -w["past_moves"])[:3]
+        found = sorted((w for w in watch if w["now"]), key=lambda w: -w["now"])
         now_total = sum(w["now"] for w in watch)
-        alert = any(w["now"] >= 2 for w in watch)
+        alert = any(w["now"] >= WATCH_ALERT for w in watch)
+        leads = [w["median_lead"] for w in top if w["median_lead"] == w["median_lead"]]
         rows.append({
             t("col_commodity"): name_of(c),
-            t("sh_c_past"): "、".join(f"{category_name(w['category'])}（{w['past_moves']}）" for w in top) if is_zh()
-            else ", ".join(f"{category_name(w['category'])} ({w['past_moves']})" for w in top),
-            t("sh_c_lead"): _lead_text(np.nanmedian([w["median_lead"] for w in top])
-                                       if any(w["median_lead"] == w["median_lead"] for w in top) else np.nan),
-            t("sh_c_now"): now_total,
+            t("sh_c_past"): sep.join(f"{category_name(w['category'])}" + (f"（{w['past_moves']}）" if is_zh()
+                                     else f" ({w['past_moves']})") for w in top),
+            t("sh_c_lead"): _lead_text(np.median(leads) if leads else np.nan),
+            t("sh_c_now"): sep.join(t("sh_n_items", cat=category_name(w["category"]), n=w["now"]) for w in found)
+            or "–",
             t("sh_c_status"): t("sh_alert") if alert else (t("sh_some") if now_total else t("sh_quiet")),
             "_sort": (2 if alert else 1 if now_total else 0, now_total),
         })
+        if alert:
+            alerts.append((c, [w for w in found if w["now"] >= WATCH_ALERT]))
     if rows:
         df = pd.DataFrame(rows).sort_values("_sort", ascending=False).drop(columns="_sort")
         st.dataframe(df, hide_index=True, width="stretch")
+        for c, ws in alerts:
+            with st.expander(t("sh_alert_detail", name=name_of(c))):
+                for w in ws:
+                    st.markdown(f"**{category_name(w['category'])}**")
+                    st.markdown("\n".join(
+                        f"- {r['published_date']:%Y-%m-%d} · [{pick(r.get('headline_zh'), r['title'])}]({r['link']})"
+                        for _, r in w["examples"].iterrows()))
     else:
         st.info(t("sh_watch_none"))
 

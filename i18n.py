@@ -654,13 +654,17 @@ TEXT.update({
     "sh_none":          ("尚未生成价格大变动分析。下次自动更新（或在 GitHub 手动运行 Run workflow）后会出现。",
                          "No price-shift analysis yet. It appears after the next automatic update (or a manual Run workflow on GitHub)."),
     "sh_watch_title":   ("现在是否出现了类似的预警信号？", "Are similar warning signs appearing now?"),
-    "sh_watch_caption": ("把过去“大涨之前”常见的新闻类型，与最近 30 天直接提到该品种的利多新闻比较。",
-                         "Compares the kinds of news that came before past big RISES with bullish news naming the "
-                         "commodity in the last 30 days."),
+    "sh_watch_caption": ("把过去“大涨之前”出现过至少 2 次的新闻类型，与最近 30 天直接提到该品种的重要利多新闻"
+                         "（重要性 ≥ 3/5）比较。同一类型 ≥ 3 条为“出现类似信号”。",
+                         "Compares news types that came before at least 2 past big RISES with important bullish news "
+                         "(importance ≥ 3/5) naming the commodity in the last 30 days. 3 or more of one type = "
+                         "'similar signs now'."),
+    "sh_n_items":       ("{cat} {n} 条", "{cat}: {n}"),
+    "sh_alert_detail":  ("查看{name}的相关新闻", "See the {name} headlines"),
     "sh_watch_none":    ("暂无可比较的数据。", "Nothing to compare yet."),
     "sh_c_past":        ("过去大涨前常见的新闻类型（次数）", "News types before past rises (count)"),
     "sh_c_lead":        ("通常提前多久", "Typical lead time"),
-    "sh_c_now":         ("最近30天同类新闻", "Similar news, last 30 days"),
+    "sh_c_now":         ("最近30天出现的同类重要新闻", "Similar important news, last 30 days"),
     "sh_c_status":      ("状态", "Status"),
     "sh_alert":         ("⚠️ 出现类似信号", "⚠️ Similar signs now"),
     "sh_some":          ("👀 少量类似新闻", "👀 A few similar headlines"),

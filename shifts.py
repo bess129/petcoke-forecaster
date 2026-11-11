@@ -85,29 +85,33 @@ def patterns(events, commodity=None):
             .reset_index().sort_values(["direction", "moves"], ascending=[False, False]))
 
 
+WATCH_MIN_URGENCY = 3      # only important headlines (1-5 scale)
+WATCH_MIN_PAST = 2         # news type must have come before at least 2 past rises
+WATCH_ALERT = 3            # >= 3 such headlines of one type = alert
+
+
 def current_watch(events, signals, commodity, signals_for, today=None, days=30):
-    """Is news of the same kinds that came before this commodity's past big
-    RISES appearing now? Returns list of dicts per category."""
+    """Is important bullish news of the same kinds that came before this
+    commodity's past big RISES appearing now? One dict per news type."""
     today = pd.Timestamp(today or pd.Timestamp.today()).normalize()
     pat = patterns(events, commodity)
-    up = pat[pat["direction"] == "up"]
+    up = pat[(pat["direction"] == "up") & (pat["moves"] >= WATCH_MIN_PAST)]
     if up.empty or signals is None or signals.empty:
         return []
     s = signals_for(signals, commodity)
-    if s.empty:
-        recent = s
-    else:
+    if not s.empty:
         s = s.copy()
         s["published_date"] = pd.to_datetime(s["published_date"], errors="coerce")
-        recent = s[(s["published_date"] >= today - pd.Timedelta(days=days))
-                   & (pd.to_numeric(s["price_direction"], errors="coerce") > 0)]
-        if "applies_to" in recent:
-            recent = recent[recent["applies_to"] != "All metals (general)"]
+        s = s[(s["published_date"] >= today - pd.Timedelta(days=days))
+              & (pd.to_numeric(s["price_direction"], errors="coerce") > 0)
+              & (pd.to_numeric(s["urgency_score"], errors="coerce") >= WATCH_MIN_URGENCY)]
+        if "applies_to" in s:
+            s = s[s["applies_to"] != "All metals (general)"]
     out = []
     for _, r in up.iterrows():
-        hits = recent[recent["signal_category"] == r["category"]] if not recent.empty else recent
+        hits = s[s["signal_category"] == r["category"]] if not s.empty else s
         out.append({"category": r["category"], "past_moves": int(r["moves"]),
                     "median_lead": r["median_lead"], "now": int(len(hits)),
-                    "examples": hits.sort_values("urgency_score", ascending=False).head(3)
+                    "examples": hits.sort_values(["urgency_score", "published_date"], ascending=False).head(3)
                     if len(hits) else hits})
     return out
