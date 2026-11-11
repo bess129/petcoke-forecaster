@@ -25,7 +25,7 @@ from shock import (apply_signal_shock, signals_for, supply_outlook,
                    LOOKBACK_DAYS, OUTLOOK_DAYS, SUPPLY_CATEGORIES)
 from outlook import load_outlook, OUTLOOK_JSON
 from build_forecasts import load_cached, CACHE
-from i18n import (t, set_lang, is_zh, pick, name_of, unit_of, model_name, category_name,
+from i18n import (t, set_lang, is_zh, pick, zh_punct, name_of, unit_of, model_name, category_name,
                   fmt_date, fmt_month, fmt_price)
 
 SIGNALS_CSV = DATA_DIR / "signals.csv"
@@ -138,10 +138,13 @@ def status_of(c, fc, hist):
     news_strong = risk > 0.10 and specific >= 3
     row = fc.iloc[(fc["ds"] - target).abs().argmin()]
     chg = row["yhat"] / hist["y"].iloc[-1] - 1
+    news_up = risk > 0.10 and specific >= 1
     # RED only when two independent signals agree; one alone = YELLOW
     if news_strong and ai_up:
         return "red", t("light_red"), t("light_red_why")
-    if news_strong or (risk > 0.10 and specific >= 1):
+    if news_up and ai_up:                       # both agree, but thin evidence
+        return "yellow", t("light_yellow"), t("light_yellow_why_few", n=specific)
+    if news_up:
         return "yellow", t("light_yellow"), t("light_yellow_why_news_only")
     if ai_up:
         return "yellow", t("light_yellow"), t("light_yellow_why_ai_only")
@@ -442,6 +445,7 @@ with tab_risk:
         st.info(t("no_news"))
     else:
         r_sorted = rank.reset_index()
+        status_by = {r["c"]: r for r in rows}       # same traffic light as the Overview
         bar = r_sorted.sort_values("risk_score")
         lim = max(0.15, float(bar["risk_score"].abs().max()) * 1.25)
         rfig = go.Figure(go.Bar(
@@ -468,8 +472,9 @@ with tab_risk:
         table = pd.DataFrame({
             t("col_rank"): range(1, len(r_sorted) + 1),
             t("col_commodity"): [name_of(c) for c in r_sorted["commodity"]],
-            t("col_signal"): [{"Upside risk (supply)": t("light_red"), "Downside risk": t("outlook_down")}
-                              .get(o, t("outlook_flat")) for o in r_sorted["outlook"]],
+            t("col_signal"): [f"{ICONS[s['light']]} {s['label']}" for s in
+                              (status_by.get(c, {"light": "green", "label": t("light_green")})
+                               for c in r_sorted["commodity"])],
             t("col_claude"): [outlook_label(claude.get(c)) for c in r_sorted["commodity"]],
             t("col_score"): r_sorted["risk_score"].map(lambda v: f"{v:+.2f}"),
             t("col_headlines"): [f"{a} ({b})" for a, b in
@@ -491,15 +496,16 @@ with tab_risk:
                 if not o:
                     continue
                 icon = {"Upside risk": "▲", "Downside risk": "▼"}.get(o["outlook"], "●")
-                with st.expander(f"{icon} {name_of(c)}: {outlook_label(o)}",
+                with st.expander(f"{icon} {name_of(c)}{'：' if is_zh() else ': '}{outlook_label(o)}",
                                  expanded=o["outlook"] == "Upside risk" and o["confidence"] != "low"):
                     st.markdown(pick(o.get("summary_zh"), o.get("summary", "")))
-                    drivers = o.get("drivers_zh") if is_zh() and o.get("drivers_zh") else o.get("drivers", [])
+                    drivers = ([zh_punct(d) for d in o["drivers_zh"]] if is_zh() and o.get("drivers_zh")
+                               else o.get("drivers", []))
                     if drivers:
                         st.markdown(f"**{t('drivers')}：** " + "；".join(drivers) if is_zh()
                                     else f"**{t('drivers')}:** " + "; ".join(drivers))
-                    st.markdown(f"**{t('watch_next')}：** " if is_zh() else f"**{t('watch_next')}:** ")
-                    st.markdown(pick(o.get("watch_next_zh"), o.get("watch_next", "")))
+                    st.markdown(f"**{t('watch_next')}{'：' if is_zh() else ':'}** "
+                                + pick(o.get("watch_next_zh"), o.get("watch_next", "")))
 
         with st.expander(t("risk_method")):
             st.markdown(t("risk_method_text", days=OUTLOOK_DAYS,

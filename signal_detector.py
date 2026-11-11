@@ -56,7 +56,7 @@ SIGNALS_CSV = DATA_DIR / "signals.csv"
 
 MODEL = "claude-sonnet-5-5"   # older names in the brief (claude-3-5-...) are retired
 BATCH_SIZE = 25
-TRANSLATE_PER_RUN = 120   # older headlines translated into Chinese per run
+TRANSLATE_PER_RUN = 200   # older headlines translated into Chinese per run
 
 CATEGORIES = ["Supply Outage", "Export Policy", "Host Metal Cut",
               "Refinery Turnaround", "Demand Shift", "Logistics", "Noise"]
@@ -233,8 +233,8 @@ def translate_missing(client, df, limit=TRANSLATE_PER_RUN):
         return df
     print(f"  Translating {len(need)} older headlines into Chinese...")
     done = 0
-    for start in range(0, len(need), 40):
-        part = need.iloc[start:start + 40]
+    for start in range(0, len(need), 20):
+        part = need.iloc[start:start + 20]
         lines = [f"{i}. HEADLINE: {r.title}\n   REASONING: {r.reasoning}"
                  for i, r in zip(part.index, part.itertuples())]
         try:
@@ -245,8 +245,8 @@ def translate_missing(client, df, limit=TRANSLATE_PER_RUN):
                            "Translate each HEADLINE and REASONING into Simplified Chinese and call "
                            "record_translations once, keeping each id.\n\n" + "\n".join(lines)}])
         except Exception as e:
-            print(f"  Translation failed: {type(e).__name__}: {e}")
-            break
+            print(f"  Translation batch failed: {type(e).__name__}: {e}")
+            continue
         for block in msg.content:
             if block.type == "tool_use":
                 for it in as_list(block.input.get("items", [])):

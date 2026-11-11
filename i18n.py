@@ -64,10 +64,25 @@ def t(key, **kw):
     return s.format(**kw) if kw else s
 
 
+def zh_punct(s):
+    """Use Chinese punctuation next to Chinese characters, e.g.
+    '刚果(金)配额,明显利多' -> '刚果（金）配额，明显利多'."""
+    import re
+    if not isinstance(s, str):
+        return s
+    cjk = r"[\u4e00-\u9fff]"
+    s = re.sub(rf"(?<={cjk})\s*,\s*|\s*,\s*(?={cjk})", "，", s)
+    s = re.sub(rf"(?<={cjk})\s*;\s*|\s*;\s*(?={cjk})", "；", s)
+    s = re.sub(rf"(?<={cjk})\s*:\s*(?!//)", "：", s)
+    s = re.sub(rf"\(([^()]*{cjk}[^()]*)\)", r"（\1）", s)
+    s = re.sub(rf"(?<={cjk})\(([^()]*)\)", r"（\1）", s)
+    return s
+
+
 def pick(zh, en):
     """Choose between a Chinese and English value (falls back if one is empty)."""
     if is_zh():
-        return zh if isinstance(zh, str) and zh.strip() else en
+        return zh_punct(zh) if isinstance(zh, str) and zh.strip() else en
     return en if isinstance(en, str) and en.strip() else zh
 
 
@@ -173,6 +188,8 @@ TEXT = {
     "light_green":      ("平稳", "Stable"),
     "light_red_why":    ("新闻与 AI 分析均显示供应趋紧，价格有上涨风险", "News and AI analyst both point to tightening supply, upside price risk"),
     "light_yellow_why_news_only": ("新闻显示供应趋紧，但 AI 分析师尚未确认", "News points to tighter supply, not yet confirmed by the AI analyst"),
+    "light_yellow_why_few":  ("新闻与 AI 分析均指向上涨，但直接相关新闻较少（{n} 条，需至少 3 条才标红）",
+                              "News and AI both point up, but few headlines name it ({n}; red needs at least 3)"),
     "light_yellow_why_ai_only":   ("AI 分析师认为有上涨风险，但直接相关新闻较少", "AI analyst sees upside risk, but few headlines name this commodity"),
     "alert_detail":     ("评分 {score}，{n} 条直接相关供应新闻。主要新闻：", "score {score}, {n} supply headlines naming it. Top headline: "),
     "light_yellow_why_up":   ("预测价格明显上升，建议关注", "Forecast shows a notable rise, worth watching"),
