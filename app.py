@@ -225,7 +225,7 @@ with tab_fc:
             f"and measured the average % miss. The model with the smallest error is used. "
             f"The shaded range on the chart comes from the chosen model's real past misses.")
         b1, b2, b3 = st.columns(3)
-        b1.metric("Chosen model", mdl["model"])
+        b1.markdown(f"Chosen model  \n**{mdl['model']}**")
         b2.metric("Its average error", f"{lb['avg_error_pct'].iloc[0]:.1f}%")
         b3.metric("No-change guess error", f"{nochange:.1f}%",
                   help="Benchmark: last known price stays flat.")
@@ -241,8 +241,10 @@ with tab_fc:
         ctx = hist[(hist["ds"] > last_origin - pd.DateOffset(months=12))]
         bfig.add_trace(go.Scatter(x=ctx["ds"], y=ctx["y"], name="Actual price",
                                   line=dict(color="#1f3b57", width=3)))
-        for name, color, dash in [(mdl["model"], "#d6604d", "solid"),
-                                  ("No-change", "#7f7f7f", "dash")]:
+        lines = [(mdl["model"], "#d6604d", "solid")]
+        if mdl["model"] != "No-change":
+            lines.append(("No-change", "#7f7f7f", "dash"))
+        for name, color, dash in lines:
             f = fold[fold["model"] == name]
             if not f.empty:
                 bfig.add_trace(go.Scatter(x=f["ds"], y=f["pred"],
