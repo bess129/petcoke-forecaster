@@ -28,6 +28,14 @@ import pandas as pd
 DATA_DIR = Path(__file__).parent / "data"
 
 
+def as_id(value):
+    """Headline id as an int, even if Claude sent it as text ("12")."""
+    try:
+        return int(str(value).strip().rstrip("."))
+    except Exception:
+        return None
+
+
 def as_list(value):
     """Claude sometimes returns a tool list as a JSON *string* instead of a
     real list. Accept both, and keep only dict entries."""
@@ -177,7 +185,7 @@ def analyze_headlines(news: pd.DataFrame, use_cache=True) -> pd.DataFrame:
             print(f"  Batch {start // BATCH_SIZE + 1} failed: {type(e).__name__}: {e}")
             continue
         for s in scored:
-            i = s.get("id")
+            i = as_id(s.get("id"))
             if i in batch.index:
                 row = batch.loc[i].to_dict()
                 row.update({k: s[k] for k in ["signal_category", "price_direction",
@@ -224,6 +232,7 @@ def translate_missing(client, df, limit=TRANSLATE_PER_RUN):
     if need.empty:
         return df
     print(f"  Translating {len(need)} older headlines into Chinese...")
+    done = 0
     for start in range(0, len(need), 40):
         part = need.iloc[start:start + 40]
         lines = [f"{i}. HEADLINE: {r.title}\n   REASONING: {r.reasoning}"
@@ -241,9 +250,12 @@ def translate_missing(client, df, limit=TRANSLATE_PER_RUN):
         for block in msg.content:
             if block.type == "tool_use":
                 for it in as_list(block.input.get("items", [])):
-                    if it.get("id") in part.index:
-                        df.loc[it["id"], "headline_zh"] = it.get("headline_zh")
-                        df.loc[it["id"], "reasoning_zh"] = it.get("reasoning_zh")
+                    i = as_id(it.get("id"))
+                    if i in part.index:
+                        df.loc[i, "headline_zh"] = it.get("headline_zh")
+                        df.loc[i, "reasoning_zh"] = it.get("reasoning_zh")
+                        done += 1
+    print(f"  Chinese translations added: {done} of {len(need)}")
     df.to_csv(SIGNALS_CSV, index=False)
     return df
 
