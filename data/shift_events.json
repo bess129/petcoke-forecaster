@@ -2277,8 +2277,959 @@
     }
    ],
    "confidence": "high"
+  },
+  "Tin|2026-01": {
+   "commodity": "Tin",
+   "start": "2025-10-01",
+   "end": "2026-01-01",
+   "change": 0.36437508347928027,
+   "direction": "up",
+   "price_start": 36011.93,
+   "price_end": 49133.78,
+   "n_headlines": 37,
+   "cause_en": "Indonesian illegal-mining crackdown, Myanmar and Malaysia supply disruptions, plus fund-driven metals rally",
+   "cause_zh": "印尼打击非法采矿、缅甸马来西亚供应受扰,叠加基金推动金属普涨",
+   "explanation_en": "Indonesia's crackdown on illegal tin miners and confiscation of smelters (handed to PT Timah) cut supply from a key exporter, while Myanmar's mine uncertainty kept the market tight. Malaysia's suspension of tin mining after a river turned blue added another disruption in November. Funds and a broad metals rally, with AI-linked demand and forecasts of a widening deficit, then pushed tin to records above $51,000 in January.",
+   "explanation_zh": "印尼打击非法锡矿开采并查封冶炼厂移交给PT Timah,削减了这一主要出口国的供应;缅甸矿山的不确定性使市场持续偏紧。11月马来西亚因河水变蓝暂停锡矿开采,进一步加剧扰动。随后在基金买盘、金属板块普涨、AI相关需求以及供应缺口扩大预期的推动下,1月锡价突破5.1万美元创历史新高。",
+   "lesson_en": "Watch supply-side crackdowns and disruptions in Indonesia, Myanmar and Malaysia, since a thin tin market can be amplified quickly by fund buying and broad metals rallies.",
+   "lesson_zh": "关注印尼、缅甸、马来西亚的供应管控与中断,锡市规模小,基金买盘和金属普涨会迅速放大涨幅。",
+   "categories": [
+    "Supply Outage",
+    "Environment & Weather",
+    "Macro & Financial",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "COMMENTARY: Tin breaks higher as Indonesia cracks down on illegal miners",
+     "title_zh": "锡价因印尼打击非法矿工而走高",
+     "date": "2025-10-03",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRXdRcFdLeHZCbEdjeU1WWHhVcHlDT291N2g4OWd6Uk1NRE1ZZkkweEF2NUo5UTRlSDlaUXJEUE5uSks2T2UzRDdNZHVCazFhTVozNW5CM2tKNC1RM3l3OEZFVWcyWS1uNDluYVRjQnpma2kzem43dURTdVBzclo4RjdVZXpXQ1A0Wk8wWUFQc3dFSGNUdXpZUHR0UUVlaVlRdDFuaGt4aWZGN3NTNV9n?oc=5"
+    },
+    {
+     "title": "Indonesia's Crackdown on Illegal Tin Mining & the Structural Shock Reshaping Global Tin Supply",
+     "title_zh": "印尼打击非法锡矿引发全球供应结构性冲击",
+     "date": "2025-10-22",
+     "source": "Crux Investor",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNmw3QW1KU3VLWmlaLWxLVUZIQmdwaFhFemlaTFJBdElydGtXcGhUUklqQkRSOGt0aWFMaElmLVpBSzBPVHdNalltWk02S0MwNVhLblJTQkkzb2ZBazh0ejVSandWWGtYZUpjY2UxNmsxXzRPZnZJZnFCclNHM2Z2Z2k1ekdEVGZHNzdtMTZNUW40WDJPd3VxcWVLWHZqbi1wTUkya2hCZDFKdXRZd050czBKYUg5NHZvNTFMNUFVQUlBX0pf?oc=5"
+    },
+    {
+     "title": "Malaysia suspends rare earths, tin mining operations after river water turns blue",
+     "title_zh": "马来西亚河水变蓝后暂停稀土和锡矿开采",
+     "date": "2025-11-20",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQnh2UF8zT0x6YWxGeC1SZldFcmhLVzdaUFlneDdfc01qMjlaeGpmQWloUV8zTUpZMUlKYTNkeHJlUi12ZTZreThrbk40ZVIxXzd5ZHFQZmo4ZU16WVNWZWozdXU1SVpnTUJDQno0djU4YWJTM3ZHaFh1VldsZ3NzVnFUb0R4Wk12UHRaS3RMdDRrdC1GZDlPVDhJR1BQV1ZNdTREWUlBWS1GeWJwM3RTNHJGdlhuWXFl0gG-AUFVX3lxTFBuWGYweUtaUXVvRk9JSDYzeGhLZzVwUVJiRmlseno3ZkZjZjh4UDQtckdpVHppNXpIdzNiQWFyTmNqTDdlN1h0elRyNHhpeDlJZzBEbHdmUVpsQlNnRkFuU3JobEJ5NlV0OFZDemFSY3FJOUU3MUxKNVh0OEIzVjJKRFY1TXRlLXFFTlJUWVN6TklTR1M0Zy01Tk5hcDAwbXAwakJfX2k4SzZCTUlVZWNxMkhPQVZOUXhoWXFYd0E?oc=5"
+    },
+    {
+     "title": "Tin Reaches $38,000/t on Myanmar & Indonesia Supply Shocks: How Geopolitical Risk Is Repricing Critical Mineral Scarcity",
+     "title_zh": "缅甸与印尼供应冲击推动锡价至3.8万美元",
+     "date": "2025-12-01",
+     "source": "Crux Investor",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNMnhudTIxSW4yZkxFd2EwREtFSGlOSjl2ek9GSHlqd3J6Y2RUY3pxTDhlQW9vV0hiMUVjRG5jSGd5X0Y4aFd0S3BRYXZIV1lFOHFIa1dNOHlQS2lWZHhja0hQeGRDR3pabkM2eW5HajBFek9uOGpteHQ0LV9TLXBpbExseHV5TzZwUWUxbDBrdjk5OUZGTXd6UGdsSVdZckFSaXpiTlBjZjF3bC15ZjFBeFE5ajEzT0g5dHVFaUhKM3BISzZmWHdWZkpDcUQxdE9JVzVYdDB6MWNpQjRMQUN4dTNhYzVVeDVZ?oc=5"
+    },
+    {
+     "title": "Tin Hits Record Above $51,000 on LME After Broad Metals Rally",
+     "title_zh": "金属普涨后锡价在LME突破5.1万美元创纪录",
+     "date": "2026-01-13",
+     "source": "Bloomberg.com",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQ01xYllMaktYd2p1bE5TWWx0dVNENHpfSUROXzlEc0VBZzUyRDItakxxaEtPNDZvSGVrUDNONDBWUTVPa3FjeUtHLTlPT29sakE0T0xwZVFlM0ZQbUVXaWZ4MzdxZ0k4VnNzMXdqTWpuVUd5MnRiQzEzNkNCRTBMaDNzVFZVMHg1WDBvUU9rUnUyUEp6QzBLYnlYazNqaG4yem9fcmM0UXBxNGp4bnI2YQ?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "COMMENTARY: Tin market still beholden to the fortunes of Myanmar mine",
+     "title_zh": "评论:锡市仍受缅甸矿山left影响",
+     "date": "2025-09-08",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNXdrM0RfQ29qcHM0S3M1cXg5NHRUZEk1aFh1SFFYcnpGVWctdGF3SXNId0pXNXVSYnpiLVIyNWlZelBDN0NpSnJJYmZDenJWRWJBbUFBX25Hblp0Y1dUblAybkY0UmctczdsRWJ1ajFXUGpheUxjNTlzYzgyYXR6U3ZfeFJBWUlKbVdRblczZEZvZEZ0UVdXUW1lbTlYaDlEZjk1TTVR?oc=5",
+     "lead_days": 22
+    },
+    {
+     "title": "【SMM News】Indonesia's Crackdown on Illegal Tin Ore Mining Advances: Top-Tier Enterprises Temporarily Stable, Short-Term Volatility in Supply Side but Expected to Stabilize.",
+     "title_zh": "印尼打击非法锡矿推进,供应短期波动",
+     "date": "2025-09-30",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPSDR5ZjZoRWtTenE3c1JPenRoWjV4OV9uOFY0UUFuUDJwdkRfMVBJazgwdjFiWmx2VEFCNHBUWkh3cVdDeVhvQzVXNVd1ZFN6eXhQZU5jcE56UUVtNTQ1N2RQck5lT0NRWHVlcGZZVWNLVlVzVTNkSUlCVzZ4SEh4UER2cS1mVlFXcDBnSUs4SndNd0EtalhJRlRZVXUtZDdGN0VIT1h1RWRGVGlfQTN3NXpXVkQ5OGJHV0FWTzdVZ0RjSENLWVpWem9CNVJmaHpoTjlMclJjaWdqaUx0WHlRajNIbmZ3T1hzSXl1c1BoUjJrREQ1WFpKQ09BXzA5eUpBRGtjYVp0TGR6ZVRERUMtaUtPVzdRNzRlaWdrNjE0VzZGUldvMEZyY0dSNVdKaEN4UDBrTVNB?oc=5",
+     "lead_days": 0
+    },
+    {
+     "title": "COMMENTARY: Tin breaks higher as Indonesia cracks down on illegal miners",
+     "title_zh": "锡价因印尼打击行动突破走高",
+     "date": "2025-10-03",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRXdRcFdLeHZCbEdjeU1WWHhVcHlDT291N2g4OWd6Uk1NRE1ZZkkweEF2NUo5UTRlSDlaUXJEUE5uSks2T2UzRDdNZHVCazFhTVozNW5CM2tKNC1RM3l3OEZFVWcyWS1uNDluYVRjQnpma2kzem43dURTdVBzclo4RjdVZXpXQ1A0Wk8wWUFQc3dFSGNUdXpZUHR0UUVlaVlRdDFuaGt4aWZGN3NTNV9n?oc=5",
+     "lead_days": -3
+    }
+   ],
+   "confidence": "high"
+  },
+  "Gallium/Germanium (HS 811292)|2025-02": {
+   "commodity": "Gallium/Germanium (HS 811292)",
+   "start": "2024-11-01",
+   "end": "2025-02-01",
+   "change": 1.5306808629868311,
+   "direction": "up",
+   "price_start": 71.38,
+   "price_end": 207.97,
+   "n_headlines": 68,
+   "cause_en": "China banned gallium and germanium exports to the US on 3 Dec 2024.",
+   "cause_zh": "中国于2024年12月3日对美禁运镓、锗",
+   "explanation_en": "On 3 Dec 2024 China banned exports of gallium, germanium and antimony to the US in response to US chip curbs, and many outlets covered it. Headline [38] reports gallium at its highest since 2011 after the curbs, and [45] asks why the metals are so expensive. Firms braced for supply disruption [32][36][54], and the price rise continued through Feb 2025.",
+   "explanation_zh": "2024年12月3日，中国为回应美国芯片管制，宣布禁止向美国出口镓、锗和锑，多家媒体广泛报道。[38]称镓价在出口限制后升至2011年以来最高，[45]也在讨论这两种金属为何如此昂贵。企业担心供应中断[32][36][54]，价格在2025年2月前持续走高。",
+   "lesson_en": "When China escalates export controls on critical minerals in response to US tech curbs, expect sharp price jumps in gallium and germanium.",
+   "lesson_zh": "当中国因美国科技管制而升级关键矿产出口管制时，镓、锗价格往往会大幅上涨，需密切关注相关政策动向。",
+   "categories": [
+    "Export Policy",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "China bans export of gallium, germanium and antimony to the US",
+     "title_zh": "中国禁止向美国出口镓、锗和锑",
+     "date": "2024-12-03",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOY083Y2ljSjZFek9xZG44Ulk4amhOeFd3dUw0WmFabjU0Vm9maFVOaWtFR29fd2RSZzlJRTBqOG5nTVQ1N090RndwaWdlSE93SVBnNGtvdXBrMXFPQUw4V1FjaldXVTkwZHFGNkpUNUFuNU5YSUhvdlIyelBHZm9MMVBmX01GUkZVekg4QmNB?oc=5"
+    },
+    {
+     "title": "China bans export of critical minerals to US as trade tensions escalate",
+     "title_zh": "路透：贸易紧张升级，中国禁止向美出口关键矿产",
+     "date": "2024-12-03",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZ1JHb21pVVhWdV9UcHNSdTJnWWd4eXBZdHhhVGJacml4VDFzSmxYWkdsb0xreGZBSFVSZWJpdEdscnFZWXlfRDBrUDhuQlQzTlNqS3I1VkEwdkNXRW9ENnpzelVMYWVMaWp2VGZPM1hGa205eFh1dzh2MmFqMnZpOGpKUEZHVVJHREVpeERmdWtTYThsMm1KZHI5dmdrdk9jbmJwam94Zw?oc=5"
+    },
+    {
+     "title": "Gallium price rises to highest since 2011 following China export curbs",
+     "title_zh": "出口限制后镓价升至2011年以来最高",
+     "date": "2024-12-13",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdk9YNDVyemFOcnN2bFJTVjIzTlR6c1FHcFE1VEd0X0hSTUpoR0NuaVRpYnRkaGJaZ1J3dkstSXN2Q3kyUU9uRWdOSjh0R3NxS05URm4xc2xfamhCcUpQNHVmS1A5MC1qOVZNYU5hN1ZZdy1PakdCNS1vY3hJN0FkazNKQW12eEt6TlVwelRiS0hVSElJY1VkaW1YWUdrVUU?oc=5"
+    },
+    {
+     "title": "How China’s Gallium & Germanium Export Ban is Disrupting Supply Chains",
+     "title_zh": "镓锗出口禁令扰乱供应链",
+     "date": "2024-12-09",
+     "source": "Z2Data",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVmtENXFIU3pTSW1zS1Y5VzcyaW5EVXZJYVBuaUJ4bzhyRzdhN21IelhVcjlNZlVnWXNXY0VDWjhSQVVLcmhvcW4tMG5GUlpPS3ZXM1RfVGJBVjVZY1lkSUx6TGJMTTZlSXBYdzFDcFNXSWYwVkgxMFFOd2ZUZ2p2YXdkcW5EX0NIWEtNeWlSQ0xqOHZJbDE3N0NTYklRTTNWaUE?oc=5"
+    },
+    {
+     "title": "What Are Germanium and Gallium, and Why Are They So Expensive Right Now?",
+     "title_zh": "镓和锗为何如此昂贵",
+     "date": "2024-12-30",
+     "source": "International Banker",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMVNQNHBoV1NsYS16TmhZSWFzUGdiaXlTdGRVQUU1bWNwa3VWazliZ3YxVm5YcU5UVDlnanhNaGphTjJObDU5V2ZvX2p4cTA3QkZKMlFIYm9JMlRWV21zdDFOdjFVM1FwaHpBcFhUMlQxb2FoYk1saEQxS3ZzaXZRUElTTk5qS09GX2t3ZVR2Y1EyczJVM2lwWm9jandNakxkUlkyY04xQU9rQTBjMXBGWHJJaw?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Manufacturers Brace for China’s Mineral Export Limits",
+     "title_zh": "制造商为中国矿产出口限制做准备",
+     "date": "2024-09-04",
+     "source": "Manufacturing Today",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaGVfellORHRRMDhKWVY1cjN5MzFIRXhFb2pUa0lTSGRiQU5QdHN6cVdMRkVEZHphQ2Q3RVBUV0JLSDhQUDNGVTlMekdqaEtiRGd1cXRLaUZvcXFZdWc4d2g5bnFBZE9pSE9DUFhJcFdNdEhqdTRrRVQtcnlPNkRadzVTejdfdjFrSk5VZVh0dVFyWXhi?oc=5",
+     "lead_days": 57
+    },
+    {
+     "title": "China's export controls on critical minerals aren't starving the United States—at least so far",
+     "title_zh": "中国出口管制暂未使美国断供",
+     "date": "2024-10-31",
+     "source": "Peterson Institute for International Economics",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQzJnVXVZMjF0NkZDV0daUUJKTm5OUTFtTDl6Y001N2hoVm44bnJyUm4wd1ZZaUlndTZpTTRQS0d6WnhRMWpfbld6a2FxakRMcVZuaDZ0OG1uWXAyMlJwWVd2QmFEbzdDMnA3ZkJCNjFnYWU0ZXJoWFRiRG40NmR1X1V6blc3OHhLYzM5MDBvUHBHSC0tV04wLTVOeFgyVlVrdUJTUVdxQ1lITDF0bnUyeGRob1h0d1RuYnRRcg?oc=5",
+     "lead_days": 0
+    },
+    {
+     "title": "China’s germanium, gallium ban could cost the US $3.4 billion",
+     "title_zh": "中国镓锗禁令或使美国损失34亿美元",
+     "date": "2024-11-20",
+     "source": "Mining.com",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTUJwczltdUFjTVpGSDVpYl9mczJfUE45SFB6Z3otUV9LamRGbFhqbThITkxvLXdfX0xiSTd0T1BDT3JGanFiaHFmeHlFSHl3MWhBbUVQZE43bjc0UVFsOFVjRGMwRmVnSERBUHA0cU96RFNKYTViUjg3dUg1NW0xMWNaNTZUdjhJbUQ4?oc=5",
+     "lead_days": -20
+    }
+   ],
+   "confidence": "high"
+  },
+  "Gallium/Germanium (HS 811292)|2025-11": {
+   "commodity": "Gallium/Germanium (HS 811292)",
+   "start": "2025-08-01",
+   "end": "2025-11-01",
+   "change": 2.0056818181818183,
+   "direction": "up",
+   "price_start": 191.7,
+   "price_end": 344.47,
+   "n_headlines": 57,
+   "cause_en": "China's export ban on gallium/germanium to US kept supply tight; prices hit multi-year highs",
+   "cause_zh": "中国对美镓锗出口禁令致供应紧张，价格升至多年高位",
+   "explanation_en": "Headlines show China's export ban and controls on gallium and germanium choked ex-China supply, with Chinese exports plunging and buyers seeking workarounds. Germanium hit a 14-year high by September and a roughly 165% surge was reported in October, while India's fibre industry and others faced shortages. The November suspension of the US ban came as the rise peaked, and new non-China projects were only long-term and could not ease near-term tightness.",
+   "explanation_zh": "相关报道显示，中国对镓、锗的出口禁令和管制使中国以外的供应收紧，中国出口大幅下滑，美国买家只能设法绕道采购。9月锗价升至14年高位，10月有报道称涨幅约165%，印度光纤业等也面临短缺。11月中国暂停对美禁令时，涨势已近尾声；中国以外的新项目都是长期安排，无法缓解短期紧张。",
+   "lesson_en": "When China restricts exports of niche by-product metals, ex-China supply is slow to respond, so watch export data and trade-talk headlines for price spikes.",
+   "lesson_zh": "中国限制镓、锗这类小金属出口时，海外供应短期难以补上，应关注出口数据和贸易谈判消息，预判价格飙升。",
+   "categories": [
+    "Export Policy",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "EXCLUSIVE: How US buyers of critical minerals bypass China's export ban",
+     "title_zh": "美国买家如何绕过中国出口禁令",
+     "date": "2025-07-09",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQTBtVlFuQlFOSmpOUzZITkI4WFRNRGwtYXJ1eGVqZGtxdnZJcVUwWU15ZmpJOHAtSnhhdFhkOXBEMG1Ic1lBSmp1WGNVTG5peHhZbXJEV1hTdWxKaVgybmRJOVEySGpxSWdPYm1qOVRNRnp6VnF0MUN0Ql8xZHM1RTdYa3hOUHgxUjVDZTdNNW9QYjRwRGZCb3otN1VKMi1aQk5hVFM5TDg2V0l4MlVMM3hydW40ajZEZmxLSmpmZw?oc=5"
+    },
+    {
+     "title": "Chinese exports of two critical minerals plunge even as rare earths rebound",
+     "title_zh": "中国两种关键矿产出口骤降",
+     "date": "2025-07-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbXRuZlVlWUZOdDI1SVJLNUpwTUJHMFB2cmpQdXJxazFqUzQtclY2bTZyTHkzQlpkZE5kbklDTkJSOS1DdUh1Sm5UVTBEdGR5aXc4c0ZlU2czblJxc1N2aFYtWHhNWkZJY2IxeFZLSmN3MW9nenljQUZfNzJlUEpLOTFkYWVaN2g0bnFtQXIwRU9abThFMnA1RXlEWV9yN3VKMS1VQzFiREhyTzdIbVRXNkRVZWphZE5T?oc=5"
+    },
+    {
+     "title": "The Germanium gridlock: How China is disrupting India's optical fibre supply chain",
+     "title_zh": "中国致印度光纤供应链锗短缺",
+     "date": "2025-08-11",
+     "source": "ET Government",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYXdwa1h5TTZWWDRoQjdhWWhXenJ5blM0YUg3MDJwN1ZENWo2TEVWYlFSM3VVUDcyaFF2TzRGbERHX3Zzbjc1b0VNWU1QREtMWkZrZE1vc1pLRHZ2dGdlb0JpOHlIMjZNYXNJZWhWUUUtN3dsSXZacXJEZ21PSERtdWdGWFdFS0l3QlBHZ1N6U2ZZN0FobVZjaWhHUmkwN2VoRGRfck02NlZUYWM4Nm9EXy0yMEU5VnFpejRNS21fV0hTbm4zN3BWbTZ5SmxvZFE0VWk4LVVaVWgxUWNnakg1ZjhB0gHnAUFVX3lxTE51dFpuakNENGQ3Z1NjbTZsWUFoT2xZSjRONUZrRm1HWXAzUVN3Ukl4NE1qR0lfZmJaVTZOcUxFQ0xKMTVYSFhEN3NnRUVsd2dDZnRjTmFaSG1YWC1mOUVjVmNmUFVBXzRyVnB2YzZUNDU5b3FoMDZEbXpaSUEyUnc3Z0NvbFdOM2E5STE4SjJ2SURnT0FrYVlQR1JoQkx3NkNmbUlyaHczVjQxbTRWanpOMDZNMGVodXZCaWw5UGhGTW5iTFpvOHZlai1ZNFA4SnZaeUM1N09pX3l3cVNRbjNKenJqRmRTSQ?oc=5"
+    },
+    {
+     "title": "Germanium Prices Soar to 14-Year High",
+     "title_zh": "锗价飙升至14年高位",
+     "date": "2025-09-15",
+     "source": "Crude Oil Prices Today | OilPrice.com",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTmN5RFBldjhPVDRtckh2RlZWV196eFJHMF9nSERjWlUwcG0xSHc3RVJtQnJMOFg2T2llUzh6MGhXdk9obHd3UTIwYlJ3VFFfTGlUSnZ2VWpOMTdyMWxyU2ZldzA4SlZEelNfcFhKSlJkby1FNzJJaDdvQWV4cTlRRlZvbHRmMk9HaEY4a05FeWFiUGhEcWNnRdIBngFBVV95cUxPcmdkSzBGUnRuRXVMT2ZOMmE4dGpxSkpva2JmTkE2b3BVUC1jMlpBV2hMWTZ6dEhsaVRGeFVSQWM1Z043Tm5nSExseC1JZHdpYk5wT2t6ZXBoU01RWVp5b0JqLW9TekEzdmpKZS1SbGN1WUpiLWplVDlENGt2SUt5dWItX2lqN2NaZFJpTjA2bDJjN25NVTVYRm9CVjN4Zw?oc=5"
+    },
+    {
+     "title": "Chinas Germanium-Embargo und die Folgen für Deutschlands Industrie: Preis-Explosion um 165 % – Dieses Metall wird zum Albtraum",
+     "title_zh": "中国锗禁运致价格暴涨165%",
+     "date": "2025-10-11",
+     "source": "Xpert.Digital - Konrad Wolfenstein",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9LU09BLWF6dk9RYVpTelQ4REVZNGhjWWlxWWltQnZ3WHJBcjcza094aF8zWmdMcG9sQ2FONmlrX0RjVkZWQXV5Q0lqd9IBU0FVX3lxTE9UY2htdnduSlk4aDBPWEp1YlY4SHJwaURSVlJZR05TYndodEowV1A5YTQ1NWJ4Wk9WR2R6a0ZTSEh6eDhZWE5tMlE5VG55UDctZmN3?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "EXCLUSIVE: How US buyers of critical minerals bypass China's export ban",
+     "title_zh": "美国买家如何绕过中国出口禁令",
+     "date": "2025-07-09",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQTBtVlFuQlFOSmpOUzZITkI4WFRNRGwtYXJ1eGVqZGtxdnZJcVUwWU15ZmpJOHAtSnhhdFhkOXBEMG1Ic1lBSmp1WGNVTG5peHhZbXJEV1hTdWxKaVgybmRJOVEySGpxSWdPYm1qOVRNRnp6VnF0MUN0Ql8xZHM1RTdYa3hOUHgxUjVDZTdNNW9QYjRwRGZCb3otN1VKMi1aQk5hVFM5TDg2V0l4MlVMM3hydW40ajZEZmxLSmpmZw?oc=5",
+     "lead_days": 22
+    },
+    {
+     "title": "Chinese exports of two critical minerals plunge even as rare earths rebound",
+     "title_zh": "中国两种关键矿产出口骤降",
+     "date": "2025-07-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbXRuZlVlWUZOdDI1SVJLNUpwTUJHMFB2cmpQdXJxazFqUzQtclY2bTZyTHkzQlpkZE5kbklDTkJSOS1DdUh1Sm5UVTBEdGR5aXc4c0ZlU2czblJxc1N2aFYtWHhNWkZJY2IxeFZLSmN3MW9nenljQUZfNzJlUEpLOTFkYWVaN2g0bnFtQXIwRU9abThFMnA1RXlEWV9yN3VKMS1VQzFiREhyTzdIbVRXNkRVZWphZE5T?oc=5",
+     "lead_days": 11
+    },
+    {
+     "title": "China’s battery technology export restrictions – cathode, lithium, gallium",
+     "title_zh": "中国电池技术及镓出口限制",
+     "date": "2025-07-25",
+     "source": "Herbert Smith Freehills Kramer",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbWFXbEktMGoySVFFVUZSMUhDU1lZTFdSaE1ZZzhaNEtQdnExaFZ3S0Utc2QzMFBkTDJNck9MVDYtblBFOWhqSzhhZUFyOUJNdDlHQzRQOFNNWkliclJDeXdmTldxRl9VM25ZdUFuNU1lMzdtbzU4TFVvQ1JJSVkyWTF0VC1qd2ZIQkhmZlJNekF5WERoUGFmbHE2NzlYdTRfYTMxcGpfVElsbm16TmNBbnNVemx6eHRySWc?oc=5",
+     "lead_days": 6
+    },
+    {
+     "title": "The Germanium gridlock: How China is disrupting India's optical fibre supply chain",
+     "title_zh": "中国致印度光纤供应链锗短缺",
+     "date": "2025-08-11",
+     "source": "ET Government",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYXdwa1h5TTZWWDRoQjdhWWhXenJ5blM0YUg3MDJwN1ZENWo2TEVWYlFSM3VVUDcyaFF2TzRGbERHX3Zzbjc1b0VNWU1QREtMWkZrZE1vc1pLRHZ2dGdlb0JpOHlIMjZNYXNJZWhWUUUtN3dsSXZacXJEZ21PSERtdWdGWFdFS0l3QlBHZ1N6U2ZZN0FobVZjaWhHUmkwN2VoRGRfck02NlZUYWM4Nm9EXy0yMEU5VnFpejRNS21fV0hTbm4zN3BWbTZ5SmxvZFE0VWk4LVVaVWgxUWNnakg1ZjhB0gHnAUFVX3lxTE51dFpuakNENGQ3Z1NjbTZsWUFoT2xZSjRONUZrRm1HWXAzUVN3Ukl4NE1qR0lfZmJaVTZOcUxFQ0xKMTVYSFhEN3NnRUVsd2dDZnRjTmFaSG1YWC1mOUVjVmNmUFVBXzRyVnB2YzZUNDU5b3FoMDZEbXpaSUEyUnc3Z0NvbFdOM2E5STE4SjJ2SURnT0FrYVlQR1JoQkx3NkNmbUlyaHczVjQxbTRWanpOMDZNMGVodXZCaWw5UGhGTW5iTFpvOHZlai1ZNFA4SnZaeUM1N09pX3l3cVNRbjNKenJqRmRTSQ?oc=5",
+     "lead_days": -11
+    },
+    {
+     "title": "5 Critical Minerals Vulnerable Due to China’s Production Control",
+     "title_zh": "五种受中国生产管控影响的关键矿产",
+     "date": "2025-08-11",
+     "source": "Z2Data",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQOGllc1pIekNuQV9oZWdDZC00NzNVR2cyaTRMU1c0WHhBaXdDYWNkbW10b2M2NHBjcm9uZmV1VktIOUhBcXh3WjNaUHNDNGZKejhpWXJodjRmQ01ZakhhN2ZxdGF3Q1dOd01VRGwwY2Y4OFpuS2RYdGxVVkVENGgtX1BHaXRnS25iZmw4Yno2U00wX0hMd3dNdHVidlc?oc=5",
+     "lead_days": -11
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Gallium/Germanium (HS 811292)|2026-08": {
+   "commodity": "Gallium/Germanium (HS 811292)",
+   "start": "2026-05-01",
+   "end": "2026-08-01",
+   "change": 1.2187380007679507,
+   "direction": "up",
+   "price_start": 208.82,
+   "price_end": 347.95,
+   "n_headlines": 6,
+   "cause_en": "Headlines don't directly explain the surge; hints of persistent gallium supply tightness despite US-China truce.",
+   "cause_zh": "新闻未直接解释涨价；仅暗示贸易休战后镓供应仍紧张",
+   "explanation_en": "The headlines contain no direct report of a supply cut, export ban or demand spike in the May–Aug 2026 window. The CSIS piece says the US-China trade truce has not solved the gallium problem, which suggests ongoing supply risk. New Western capacity (METLEN's Greek gallium expansion) and germanium recovery deals (Teck/Titan), plus new US gallium price launches, point to a scramble for non-Chinese supply, but they do not explain the size of the rise.",
+   "explanation_zh": "在2026年5月至8月期间，新闻中没有直接提到减产、出口禁令或需求激增。CSIS的文章指出中美贸易休战并未解决镓的问题，暗示供应风险持续存在。METLEN在希腊的镓扩产项目、Teck与Titan的锗回收协议，以及Fastmarkets新推出的美国镓价格，都反映出市场正在争夺非中国来源的供应，但这些并不能解释涨幅的大小。",
+   "lesson_en": "Watch Chinese export-control status and Western non-China capacity announcements, since a truce may not ease gallium/germanium supply.",
+   "lesson_zh": "关注中国出口管制的实际执行情况及西方非中国产能的进展，贸易休战未必能缓解镓锗供应紧张。",
+   "categories": [
+    "Export Policy",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "The U.S.-China Trade Truce Has Not Solved the Gallium Problem",
+     "title_zh": "中美贸易休战未解决镓问题",
+     "date": "2026-05-11",
+     "source": "CSIS | Center for Strategic and International Studies",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWVZLV1Y3NEVpcy03YXJ4dEVvbHdUZkVIOWxFVlJDRS1OMnNQUWlfelFRTWxVV0xTSmxYMVd6U3p0V09pbDBhMmVoa2g2bzVEZTI4YjlNOGYtaDUwRnlrZEVLMmJYUnZVU0NKWWNDVVYweXZKMHhNbTd1YjdBTTMwRmJiTjRHQTRB?oc=5"
+    },
+    {
+     "title": "METLEN Energy & Metals Wins Approval for €300 Million Gallium Expansion Project in Greece",
+     "title_zh": "METLEN获批3亿欧元镓扩产项目",
+     "date": "2026-05-19",
+     "source": "ChemAnalyst",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTUw5WWNPcXAzem9RN2QyZ1hON2lJT2xHLVZWSFRaMmdKMkpjbmRsWjU2V2tEdm9yZTQ2NnRCbTRWTjZUMVBub093ek1OT3B2R01yY1d6VTZhM1dTdVI1dllfVlFkcm9oU1h5aVRTRUlRQzFNYldwX2pxeklrd1NOVkNub2Z1TzZYQ0stQlBFYWlUODR3NHM5aTJYWGZBd09Xdll1LXM2TkNUWHgtaURoQ0RZQnFYNGVa?oc=5"
+    },
+    {
+     "title": "A Look At Teck Resources (TSX:TECK.B) Valuation After Germanium Recovery Agreement With Titan Mining",
+     "title_zh": "Teck与Titan Mining达成锗回收协议",
+     "date": "2026-05-20",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYW45NHM2blR3VWw0VzhoRW85Mnl0dkNZeGtFOGRBVDllNS1ybWlTUlhudHNvRHRFMHBFLWh5dXk4bmdnNTJqWGRHUTdSTk5pcXNKbl9JYnh4RDFSOHZUbzlVZzlVZS1zTG5wdExDcFZZSFpfV2pOZklpQVQ2bDNvbm9QcjRnWkhBQnJHZnVyZ3VBY2E0NWEyRQ?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "The U.S.-China Trade Truce Has Not Solved the Gallium Problem",
+     "title_zh": "中美贸易休战未解决镓问题",
+     "date": "2026-05-11",
+     "source": "CSIS | Center for Strategic and International Studies",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWVZLV1Y3NEVpcy03YXJ4dEVvbHdUZkVIOWxFVlJDRS1OMnNQUWlfelFRTWxVV0xTSmxYMVd6U3p0V09pbDBhMmVoa2g2bzVEZTI4YjlNOGYtaDUwRnlrZEVLMmJYUnZVU0NKWWNDVVYweXZKMHhNbTd1YjdBTTMwRmJiTjRHQTRB?oc=5",
+     "lead_days": -11
+    },
+    {
+     "title": "Fastmarkets launches US bismuth, indium and gallium prices: pricing notice",
+     "title_zh": "Fastmarkets推出美国镓等价格",
+     "date": "2026-05-01",
+     "source": "Fastmarkets",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSmxka3pTMC01cllNWWZGV0xkSFdWcFN2UGZ0Y2N4ZXhtUWV3eURCd1FNT1dUVU1COHF1WkE3SWNPVFg1NlZGSkZRQmhPU2lIUjhXRUhyQXRKUXFqdHpVa0xFcG11c0w0LXE3TnFDcG41N09NWEh0VEFSdThqU3FUQ1BRbkhqRW9Gc1g1QjdnVWFMYTA5ZnFZR2p1SmdsNWlGN25KU0dOQk1zdjFWLS1B?oc=5",
+     "lead_days": -1
+    }
+   ],
+   "confidence": "low"
+  },
+  "Calcined Pet Coke (CPC)|2022-09": {
+   "commodity": "Calcined Pet Coke (CPC)",
+   "start": "2022-06-01",
+   "end": "2022-09-01",
+   "change": 0.231840452467857,
+   "direction": "up",
+   "price_start": 542.03,
+   "price_end": 648.89,
+   "n_headlines": 7,
+   "cause_en": "Tight raw petcoke supply and strong energy-complex prices lifted CPC; headlines only partially explain it.",
+   "cause_zh": "石油焦原料紧张与能源价格高企推升煅烧焦价格,但新闻解释有限",
+   "explanation_en": "The headlines do not directly describe CPC pricing. They show strong demand for petcoke as a coal substitute, with India buying discounted Venezuelan petcoke and Venezuela raising exports to India [2][3][5]. They also show an energy complex shaped by inflation and recession fears [1]. A Benicia port fire in May may have briefly disrupted US Gulf/West Coast logistics [0]. These links to the CPC rise are plausible but not proven, so confidence is low.",
+   "explanation_zh": "这些新闻并未直接说明煅烧焦价格变动。它们显示,石油焦作为煤炭替代品需求强劲:印度大量购买委内瑞拉折价石油焦,委内瑞拉也增加对印出口[2][3][5]。此外,通胀和衰退担忧影响了能源板块[1]。5月贝尼西亚港口火灾或曾短暂扰动美国西海岸物流[0]。这些因素与煅烧焦上涨有合理关联,但无法证实,因此置信度较低。",
+   "lesson_en": "Watch fuel-grade petcoke demand and coal-substitution flows, since they can tighten raw material available for calcining.",
+   "lesson_zh": "关注燃料级石油焦需求和煤炭替代流向,它们可能挤占煅烧用原料供应。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial",
+    "Logistics"
+   ],
+   "drivers": [
+    {
+     "title": "India buys discounted Venezuelan petcoke to replace coal",
+     "title_zh": "印度购买折价委内瑞拉石油焦替代煤炭",
+     "date": "2022-08-16",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNREpSc2ZrRTNsX0gwTVZ6emRoaXlmbXd0TGZsNWZQOFo3LVlpNHJabnlaaTBlTW5YWGFuVjBaZHlubzJUVFhlSGJoUWstdGVHZERrbGZHZUpGcWJTYXNFZEt6M1Njb1Y3eFlkTHlZY3pGblM0WWhDZUFGV0s1bEZLZ0luMHAtTnp0dmxwR1RxTjhHZWJKck1HMm5RanZTdEhkYVF1dUxQdk4?oc=5"
+    },
+    {
+     "title": "Venezuela Increases Petcoke Exports to India",
+     "title_zh": "委内瑞拉增加对印度石油焦出口",
+     "date": "2022-08-21",
+     "source": "Venezuelanalysis",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE02c0xHWlRWSF9YQmp1d05oRHBhdzhTY0hERV9hTDNmMVdhakdKWkgtQXAwRE0wNk9paG44cC02Zm5NckpRdnBLUXRZM1g2Nmw3YXc?oc=5"
+    },
+    {
+     "title": "Higher inflation and fear of recession impact energy complex",
+     "title_zh": "通胀与衰退担忧影响能源板块",
+     "date": "2022-08-04",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSVpEUjdubDhRX0FROGI2S3A5bl9PWkkxTHk2NmRDVE9md0N1VnRaWkZJU2RHREx3QzlNeWZkdjZMUFlUcjR0RHhTdFhkSEc0RHJXUkZlTTE1N01UU2k2T19vbXBYR1ZSQi1tR2poMkhPZUk3QmlmNkM3UXFYY2gxNWV0YVBvS1hHTE9tOFk1MmxzVjQ1bUVZZmYyZGhvcFdseTNtSDVPVzJtdw?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Benicia port fire likely caused by mechanical issue",
+     "title_zh": "贝尼西亚港口火灾,可能扰动物流",
+     "date": "2022-05-25",
+     "source": "The Vallejo Sun",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUVpwd3pMY3VQWmQwX1F0Wmx0ZzlSRF9MSDFEaGFjNUFkX3BfYUlRT1hoY2E5WXUtSDczbHdRY25XSlFYYmRxcE13SVNYSF82NUxEY2pSVk1jYVZsYWVSQWZXZFB1a0pYcU9NMHlnV1hLOG9oTXM5bzMtMmpkbDJIVzNiQkhJUQ?oc=5",
+     "lead_days": 6
+    }
+   ],
+   "confidence": "low"
+  },
+  "Calcined Pet Coke (CPC)|2023-04": {
+   "commodity": "Calcined Pet Coke (CPC)",
+   "start": "2023-01-01",
+   "end": "2023-04-01",
+   "change": -0.16144946518227454,
+   "direction": "down",
+   "price_start": 642.59,
+   "price_end": 576.21,
+   "n_headlines": 8,
+   "cause_en": "Headlines don't directly explain the fall; only hints of ample supply and new CPC capacity.",
+   "cause_zh": "新闻未直接解释下跌，仅暗示供应充裕与新增产能",
+   "explanation_en": "None of the headlines describes CPC price drops directly. Weak hints of looser raw petcoke supply come from large petcoke shipments to Zambia [4][5], stable petcoke prices with lower discounts [3], and Reliance's shift toward imports [6]. A new CPC plant in Oman [0][1][2] suggests added calcined capacity. The causal link to the 16% decline is speculative.",
+   "explanation_zh": "现有新闻并未直接说明煅烧焦价格下跌的原因。赞比亚大宗石油焦货运[4][5]、石油焦价格持稳但折扣收窄[3]以及信实工业转向进口[6]，只能间接反映原料供应较宽松；阿曼新建煅烧焦工厂[0][1][2]意味着新增产能。但这些与16%的跌幅之间的因果关系只是推测，证据不足。",
+   "lesson_en": "When headlines don't explain a CPC move, check aluminium/anode demand and calcining capacity additions alongside raw petcoke supply.",
+   "lesson_zh": "当新闻无法解释煅烧焦走势时，应同时关注铝/阳极需求、煅烧产能新增以及原料石油焦供应。",
+   "categories": [
+    "Demand Shift",
+    "Logistics"
+   ],
+   "drivers": [
+    {
+     "title": "India's Reliance stops local petcoke sales, boosts imports -sources",
+     "title_zh": "印度信实停止国内石油焦销售，加大进口",
+     "date": "2023-01-31",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNaEF0cy1VTGRIN3BZbjhNXzVrQXFObnYzSUQwNWRrMXJrMFBvcW44dXlpQkdKa2FFRHJaTVpRVHNoNFNCMUxoSUI1UVRiZ2VHNkhZdzhfVnFOTU1TcUVBVXRCYmhSQ3lkMmF5ZzFtQTY1UFFqQ0F2ZnJsRWRkQkh3b1c0NHZYZDlkcGc0YnRiY1pfNTRTM0lmNC02Z1dSZHJRMVhucEl2U2FNSmdjRFRpZnQ4UTJSUVU?oc=5"
+    },
+    {
+     "title": "Petcoke prices stable with lower discounts",
+     "title_zh": "石油焦价格稳定，折扣缩小",
+     "date": "2022-12-02",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONkRud3BOT3l5TzdyLWZEWkpXeko3YWVMZ25Hb1FJd1haSGFoamM0azBxSXlyU1ZkbVB4U0JUVTFuRlFjX2pSaERpcm9iOU9PMkthcGRNRWNRUGhBQ1Z0STdnYVZFdU9QZ0NZRmxiSHg3d3F6Vld5TFZrWlZ1MEZtSEtXMXNKY3NVUFhkN0tkdHVEUQ?oc=5"
+    },
+    {
+     "title": "Sanvira Carbon’s RO60mn plant inaugurated in Sohar",
+     "title_zh": "Sanvira Carbon在苏哈尔的煅烧焦工厂落成",
+     "date": "2022-11-13",
+     "source": "Muscat Daily",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRElSdEc5bG5qZnZxVFA2MklxVXg3N2t1UmRGblI0Q1ZGbjBuVzRveThXMXJfd3VxZ0gtcDIxa21uYzdqSlh6eXN4OVpQaTlfR3hCQWY3LUFZQWdhaFZQamJPS245dHRNNkpURWJ0RkJVX2pZVHpVV040cFMtUGdqMmJlbnVTdXhtVEJfZWp0VVNYRkU?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Petcoke prices stable with lower discounts",
+     "title_zh": "石油焦价格稳定，折扣缩小",
+     "date": "2022-12-02",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONkRud3BOT3l5TzdyLWZEWkpXeko3YWVMZ25Hb1FJd1haSGFoamM0azBxSXlyU1ZkbVB4U0JUVTFuRlFjX2pSaERpcm9iOU9PMkthcGRNRWNRUGhBQ1Z0STdnYVZFdU9QZ0NZRmxiSHg3d3F6Vld5TFZrWlZ1MEZtSEtXMXNKY3NVUFhkN0tkdHVEUQ?oc=5",
+     "lead_days": 29
+    },
+    {
+     "title": "Oman’s first calcined petroleum coke project launched",
+     "title_zh": "阿曼首个煅烧石油焦项目启动",
+     "date": "2022-11-13",
+     "source": "Oman Observer",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQVR3enNDZTFqRUJwblFuRFU4azQ5bnBwLW5SSGNrN3hBQWF6djV4eGlNTFI2TElDRkhDUVoxTF9obm9fUW5MMzRGd2h2bVZsRXRBUExfZlkxQnlEeTN0cVRRS1ZGdnlhTDBiSWhkaWtqcjZSa0FQWVlST2w4bDlmSmJUOHZzajNRUG90U2JTX1FmMDdvcmRRNnN0MmFxbC01TjhtS2VlU0dWdmVtMzV4TldJZ9IBWkFVX3lxTE5BU3V1RWkwNFZfRE9BUzU5QVdiYXhCdERneXM1QWZtaXVmbXFCcU8tYWtxaGQ5QkdqbTRzY1dza2tSZzdkMXZIZVVaelBBaldKcU1vZG1HMmxjdw?oc=5",
+     "lead_days": 48
+    }
+   ],
+   "confidence": "low"
+  },
+  "Calcined Pet Coke (CPC)|2025-03": {
+   "commodity": "Calcined Pet Coke (CPC)",
+   "start": "2024-12-01",
+   "end": "2025-03-01",
+   "change": 0.23740178345123142,
+   "direction": "up",
+   "price_start": 439.37,
+   "price_end": 442.76,
+   "n_headlines": 10,
+   "cause_en": "Headlines do not clearly explain the CPC rally; only weak hints of petcoke supply/quality and environmental pressure.",
+   "cause_zh": "新闻无法明确解释煅烧焦涨价，仅有供应、质量和环保压力的间接线索",
+   "explanation_en": "None of the headlines directly addresses CPC pricing. Raw petcoke was sliding in November [4], most US petcoke is exported [5], and environmental litigation hit petcoke and refining sites [0][3][7], which could constrain green coke supply. Anode-grade CPC quality variation [9] was also a concern, but the link to the Dec–Mar rise is speculative.",
+   "explanation_zh": "没有任何一条新闻直接谈及煅烧焦价格。11月燃料焦价格下滑[4]，美国大部分石油焦用于出口[5]，针对石油焦工厂和炼厂的环保诉讼[0][3][7]可能限制生焦供应。阳极用煅烧焦的质量波动[9]也受到关注，但与12月至3月涨价的关联只是推测。",
+   "lesson_en": "When CPC rallies without clear news, check raw petcoke supply, anode-grade quality tightness and environmental constraints on refiners and calciners.",
+   "lesson_zh": "煅烧焦在缺乏明确新闻时上涨，应关注生焦供应、阳极级原料品质紧张以及炼厂和煅烧厂的环保约束。",
+   "categories": [
+    "Environment & Weather",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "EPA faces lawsuit over water pollution from petroleum coke plants",
+     "title_zh": "美国环保署因石油焦工厂水污染面临诉讼",
+     "date": "2024-10-31",
+     "source": "E&E News by POLITICO",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY0Rqd0IwTTZkcGFVdjB0aDZjYlBzeFpVY29wb1UwbHRob1NLUnBWaWtobGVob2JfcklwaTZWaDcwblQ1Q2dNM3BLYWhwdFBPUEc2SkJ1MlZuX3ZZWjctZWZYQlhzcFZWNXRaNDIzLUVmMGRNVDVRTHBPMnViN2FaVVotWS1Dd1RoQlFreDcwMjJtVUNnZzRIOVFEd0UzOWs?oc=5"
+    },
+    {
+     "title": "Environmental groups allege Louisiana plants illegally polluting Calcasieu River",
+     "title_zh": "环保组织指控路易斯安那工厂污染卡尔克苏河",
+     "date": "2025-02-13",
+     "source": "The Advocate",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRGlmdURHLWhYR2lxWHJqZ1lpVklCMm1rUURQTTE1QjQxWkZFTzA5aldCVTIxVnFrbUVpS1lFdDNKY3hreC1WZERDLUdFS01iWDB1RFViVHVMUFE2NUFLTDZXV2V3U0x5RXU4YVI1MXNGMUo4amY4SFpiZXQ4RFVpczdEMlF6ZTRPWmwxdUFVOC1hSHVQT0pBaFVSTFVhSWU4RzdwUGJmd3Y4Nkx4N29sb2xuTEFYUldQMWZVSmI2YmhSV2JfYVZaN0xCaWJEaHRDNVcxYzBBWkl2TjJTdk0yMg?oc=5"
+    },
+    {
+     "title": "EGA Addresses Calcined Petroleum Coke (CPC) Quality Variation Impact on Anode Quality and Performance",
+     "title_zh": "EGA谈煅烧石油焦质量波动对阳极的影响",
+     "date": "2025-03-03",
+     "source": "Springer Nature Link",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE41SVhPV1ptWEFJQTUyQnlUZnBaNDFlOHhIM1loQVNCSGNaYV93MjNSaFh1ZVhEQlpydUdsZngzZEpvaVBYR2Q1OTh1YkNUN1Z3bDZPRWF5YTdfcTZhRXd5NE5leDlDU2dBMXFnOXNBcTk?oc=5"
+    },
+    {
+     "title": "Most U.S. petroleum coke is exported",
+     "title_zh": "美国大部分石油焦用于出口",
+     "date": "2024-11-14",
+     "source": "U.S. Energy Information Administration (EIA) (.gov)",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zSF81T0xoWk1zQzQza0hlYXIzWXJHVURjcURTOTJLOERSckdTSjNiZlJ5ZGJHM0d6OWFrRDV5SjhqV25PMlVyc0QxMlpVbHlTU3FqQ2o5bEVtUjFzVGFVb09Idw?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "EPA faces lawsuit over water pollution from petroleum coke plants",
+     "title_zh": "美国环保署因石油焦工厂水污染面临诉讼",
+     "date": "2024-10-31",
+     "source": "E&E News by POLITICO",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY0Rqd0IwTTZkcGFVdjB0aDZjYlBzeFpVY29wb1UwbHRob1NLUnBWaWtobGVob2JfcklwaTZWaDcwblQ1Q2dNM3BLYWhwdFBPUEc2SkJ1MlZuX3ZZWjctZWZYQlhzcFZWNXRaNDIzLUVmMGRNVDVRTHBPMnViN2FaVVotWS1Dd1RoQlFreDcwMjJtVUNnZzRIOVFEd0UzOWs?oc=5",
+     "lead_days": 30
+    },
+    {
+     "title": "Environmental group and Valero, Port of Benicia settle pollution lawsuit",
+     "title_zh": "环保组织与Valero、Benicia港就污染诉讼和解",
+     "date": "2024-10-11",
+     "source": "The Vallejo Sun",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNXF3UlBaWkJXcm1BUkxpcVdIUnJaZXBBYnFkcVF3dXQwRmhVUUY1U25pcmpHNW5oVTBMb3VmQWV0N1B3WHpOTkJMdko0eFF3TE5MQjhSVmhhM25wMUZZNk9mM1dQcmZDaWVEQWpEWjljUlEwNmxNczZGbEVmYzNYU2ZOUXJUVDFlakc1UFhZUkRFWG5wa25tcXZtb24tZ2F3?oc=5",
+     "lead_days": 50
+    }
+   ],
+   "confidence": "low"
+  },
+  "Pet Coke PPI index (broad)|2020-12": {
+   "commodity": "Pet Coke PPI index (broad)",
+   "start": "2020-09-01",
+   "end": "2020-12-01",
+   "change": 0.33246357903892143,
+   "direction": "up",
+   "price_start": 459.9,
+   "price_end": 612.8,
+   "n_headlines": 14,
+   "cause_en": "Headlines don't clearly explain the rise; only weak hints of fuel-demand and petcoke policy context.",
+   "cause_zh": "新闻无法明确解释涨价，仅有零星政策与需求线索",
+   "explanation_en": "None of the headlines directly addresses the Sep–Dec 2020 price rise. Context items include India's NGT directive to enforce petcoke bans (July), CRU noting calcined coke underperforming metals prices (August), and articles on petcoke use in cement (Sept), which suggest cement/industrial fuel demand as a possible but unproven factor. The evidence is too thin to attribute the +33% move confidently.",
+   "explanation_zh": "没有任何一条新闻直接解释2020年9月至12月的涨价。相关背景包括:7月印度国家绿色法庭要求落实石油焦禁令、8月CRU指出煅烧石油焦价格表现落后于金属价格、9月关于水泥行业使用石油焦的报道,这些只暗示水泥/工业燃料需求可能是因素,但缺乏证据,难以对这33%的涨幅作出可靠归因。",
+   "lesson_en": "When headlines are silent, check cement/industrial fuel demand, refinery output and calcined coke vs metals pricing before inferring a cause.",
+   "lesson_zh": "当新闻缺乏解释时,应关注水泥等工业燃料需求、炼厂开工率以及煅烧焦与金属价格的比价,再下结论。",
+   "categories": [
+    "Demand Shift",
+    "Environment & Weather"
+   ],
+   "drivers": [
+    {
+     "title": "Petcoke markets and the cement industry",
+     "title_zh": "石油焦市场与水泥行业",
+     "date": "2020-09-11",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPejE0aUp1LXFDVXVYZm9ldHE2aFdhWjNMZDdQY25meUhaNUlLNW5kT3RZUE5RT0Z2S1g3VDRGT3JsbElhVHYtRGxlOVBFZ1hxeGtzMm1RNWhiZVRNYXNDV3I0aU5ydDlxUkU4OVRqZGxDa21kN0RxRXhTTjdJX0VTMVcwaU5xRXJzeGcwZW53?oc=5"
+    },
+    {
+     "title": "Calcined petroleum coke prices under-performing vs LME an...",
+     "title_zh": "CRU:煅烧石油焦价格落后于LME金属",
+     "date": "2020-08-21",
+     "source": "CRU Group",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVS00VHJyZnFLX2VXM0JWQ0lleTJhQ0w5R2MxVzJ5MFFrc3J3Vk11Y2FHNDQ0ZXlaLXN0cEVpWW5seUJUZjd2VHdUb3VZWC0tNlpiMkp0bkxJczJoWElwLXl4SGtUUDRIYlhWa0lBMTVCdWhYOENhYjJrOHdpVF9CeGtab1U3akxfay1JWFdHTEVpeno3YjdYWUo1eHpfWGJfRFkxcGE5WHhQZVhmaDRoSy1saTdQdllZc05PV0NmRS05VjBHMXB3?oc=5"
+    },
+    {
+     "title": "UltraTech’s valuation gap with Shree Cement may narrow post earnings",
+     "title_zh": "UltraTech估值差距或在财报后收窄(水泥需求)",
+     "date": "2020-10-21",
+     "source": "Livemint",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRUxoc3AzM3czd0JScGVqS1BXbko0a3lLMlZfdXYyMXZwUHN3bzlwaGpIUjRmeWpqaWYtQVNkTkFDSFZSWHM3NlRpMk9iQlVuMV9kY1EtTkU0LWZYRnlRRHd4X1Q4RVhKdEExRUlVTTB3UjhMXzN2eUhfdERRelJCaDNjTmRWUmtGSU8zX0NWVzh4ZTZjMXhLc05VaHM1MXFyTkdOMHFJM281QlQwVzVOLXlYcUVDZjBPYW43V0pSc9IBxAFBVV95cUxNaDdPUm5JU3dHdExmdHl6NkF0bUdkc21LRWoydGh1N0g1d1J2bXowT1lCS2FJYnpyejJCN3VZZU5lUjRTMWRPbGtObWphbFR1R1BmX3RKZF90ZjBGTGJFZ2drS19Hc2FncE84WTJNQVVLWEhkT3dMcHFEOHVENVJPM280NDlTMHJYTEtjdkVPUXJqajFldEpPQS1fT2ZWN2dsbjlCbHVCNkFJUHZsSzRfWkUyczE0UGtBZWRzbHc1YlZwcUph?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Calcined petroleum coke prices under-performing vs LME an...",
+     "title_zh": "CRU:煅烧石油焦价格表现落后",
+     "date": "2020-08-21",
+     "source": "CRU Group",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVS00VHJyZnFLX2VXM0JWQ0lleTJhQ0w5R2MxVzJ5MFFrc3J3Vk11Y2FHNDQ0ZXlaLXN0cEVpWW5seUJUZjd2VHdUb3VZWC0tNlpiMkp0bkxJczJoWElwLXl4SGtUUDRIYlhWa0lBMTVCdWhYOENhYjJrOHdpVF9CeGtab1U3akxfay1JWFdHTEVpeno3YjdYWUo1eHpfWGJfRFkxcGE5WHhQZVhmaDRoSy1saTdQdllZc05PV0NmRS05VjBHMXB3?oc=5",
+     "lead_days": 10
+    },
+    {
+     "title": "Petcoke markets and the cement industry",
+     "title_zh": "石油焦市场与水泥行业",
+     "date": "2020-09-11",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPejE0aUp1LXFDVXVYZm9ldHE2aFdhWjNMZDdQY25meUhaNUlLNW5kT3RZUE5RT0Z2S1g3VDRGT3JsbElhVHYtRGxlOVBFZ1hxeGtzMm1RNWhiZVRNYXNDV3I0aU5ydDlxUkU4OVRqZGxDa21kN0RxRXhTTjdJX0VTMVcwaU5xRXJzeGcwZW53?oc=5",
+     "lead_days": -11
+    }
+   ],
+   "confidence": "low"
+  },
+  "Pet Coke PPI index (broad)|2021-12": {
+   "commodity": "Pet Coke PPI index (broad)",
+   "start": "2021-09-01",
+   "end": "2021-12-01",
+   "change": 0.3613462154595173,
+   "direction": "up",
+   "price_start": 621.119,
+   "price_end": 845.558,
+   "n_headlines": 18,
+   "cause_en": "Broad input-cost surge (costly crude, raw materials +30-50%) lifted petcoke prices; headlines only partly explain.",
+   "cause_zh": "原油及原材料成本普涨推动石油焦价格上行,证据有限",
+   "explanation_en": "Headlines point to a broad cost-push environment: costly crude oil spreading across sectors [3] and raw material prices jumping 30-50% for manufacturers [10]. Fuel-use restrictions and regulatory pressure on petcoke handling (Gujarat HC on approved fuels [9], Richmond phase-out [14][15]) added supply-side and policy uncertainty. A CRU note in late November suggests Chinese green coke prices were starting to ease [16], and no headline directly explains the +36% PPI rise, so confidence is low.",
+   "explanation_zh": "新闻显示当时处于成本推动型环境:原油价格高企波及各行业[3],制造业原材料价格上涨30%-50%[10]。同时,石油焦使用与处理面临政策压力,如古吉拉特邦高等法院质疑煤炭作为认可燃料的通知[9],以及里士满市计划逐步淘汰煤和石油焦处理[14][15],增加了供给与政策不确定性。11月下旬CRU提到中国绿焦价格开始回落[16];但没有标题直接解释PPI上涨36%,因此可信度较低。",
+   "lesson_en": "Watch crude oil and broad input-cost inflation, plus fuel-use regulations, as petcoke prices tend to follow energy costs and policy shifts.",
+   "lesson_zh": "关注原油走势、整体投入成本通胀以及燃料使用监管变化,石油焦价格往往随能源成本和政策而动。",
+   "categories": [
+    "Macro & Financial",
+    "Environment & Weather",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "Costly crude oil is sending ripples across sectors",
+     "title_zh": "高油价向各行业传导",
+     "date": "2021-07-26",
+     "source": "Livemint",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSHllZEhGSXhFQlEtSGl0eFRLUzNKdTZHVDF1Q1V1YXVLZTNnQ2ZsS3NUY0NjYkRpNW1xeDhFYUJiUVZzV3lzOE5KNE8yeWllbTBkdkI5cmVNOEVHNEFhVFdidlh1ZHBNTllET3BWbGpQRDFocHdFN0ZuTGtQTmJuTV9MWWpLY2Fva1lZUWNVNDFETURfSThkbzBaSHlKV1otMDlnVmJBVG9KaUxwTEYyWVp2R0NCaUJUZ1pldm5WTVBXT2lEdFHSAcsBQVVfeXFMTkY1TkhoOUVISGpPMDl2a3BRb0RCc2JKdHZXYW1WR0RwcFNVQV9VaVBubGdnX1JZM0E1NDk4UEFyWDBDS3RCWDJfNEZpb1VnZXJGNXhjUXVLemNGeDNMR0x6b2otUG1oeHhjRFRCbm1rUDg3ZU5mY2h6WlJRZUoyVGZoMVdJRTZuR1dOMzJzMW9lVW9vX251elk1NE52Sk5BQmxmZ2k0ZWt5bUZBV1l5X09qYWpXSW8wdkZQUzkzYXFSSzhDWlZwQ0hBT1k?oc=5"
+    },
+    {
+     "title": "Raw material prices shoot 30-50%: Manufacturing on red alert",
+     "title_zh": "原材料价格上涨30-50%,制造业告急",
+     "date": "2021-11-02",
+     "source": "Fortune India",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcVNtTWxBZVE4RjlRWVpzQlZDYm9NSG5PZVVXN1pqdUFfOFNtVl9selh1MlYtRFl3ZEc3cGVaWjE1dTNTMUtGaklMQmw5MWdNbnJSU0tRUUdNTEJPRWN4SmJaQUxRd2xZUUt6QWRlWm5mQnJVNTlheHRtbjE2RXk4NEtwOWxScGFsQVZVQTd6SGg1LXJiMERKN0tLUExzVlNRN0ctWXcwOWjSAbYBQVVfeXFMTkg0bmF2dVZWY0dYZENSNDNFQkF4VzhldEZwQnllb1ZoZVhSZzVyRjhvT3VWdUJwSmpBWTBnLWE4SzIwNFVfUWFFTzczeko0d1AwRkdadkRaSzlUMGczVXVvRFQxMGRQbWlEVC1BQmljWl9YM3FmUXZuN0VJTWxlZUMteHZROFlNMUtxVlpxendTZXI5Y1FjMDN0bWRrRXVyOF9qTExKQnl5cHo0WWdrOWY4TWxkSEE?oc=5"
+    },
+    {
+     "title": "Why not strike down notification of coal as approved fuel, Gujarat HC asks state",
+     "title_zh": "古吉拉特邦高院质疑煤炭作为认可燃料",
+     "date": "2021-10-30",
+     "source": "The Indian Express",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVzllVFZKWFZmUG9NSHpjcnN6WGJHNmZqUUw2ajM0ODFNcVBfODVibWw5VV9nRHlIdHZabFF3ajk1OUh6WURrYkZRVWNhYjEyeTBTY2c4VHZiemV5RTNiWnh2UlAtUEtJTjlLUnYtRll2X25hd096T3o2d2ljcFVYYjZLTjZYelUwU016clpmcFZxZXdZYm4xWWIta3ljdHZkOTNXa19rczJLakZwN3ZSOG5ZY2lVY1djZEd0UzVvZlI4OXpPTkk00gHOAUFVX3lxTE10QTYxN2k5TTMySmNfdklfWVNnY2pIdU5QcTdYY1FycVN4bktqTi1FUUlFd2U5am9pU0FzeVdPMFlLNk9YR3BRbjQ5WnAxaTZIdDRDR3VjYTBhcnBnQmJPaWl4Z2xTeExjWi1TSzVlZUtrR1FrY2hGZ1VUU0lDTF9NODdOSG92bUdXTklNcUhNYTc0TURuOTU5WmpaSGhPNmpTLXEyMFc2aVV2SDB6VWowVVYtRm9WbXhZdTN0bWpZbW9OSTQ1ZWYzRHpqSFRB?oc=5"
+    },
+    {
+     "title": "Richmond City Council and Levin Terminal Reach Monumental Settlement to Phase Out Handling of Coal and Petcoke in the City By 2026",
+     "title_zh": "里士满与Levin码头达成和解,逐步淘汰煤和石油焦",
+     "date": "2021-11-12",
+     "source": "Earthjustice",
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOSVFtdkRTS29oclhNaW5CWUIzeUU5bHljT3RVSWwwSlpZUnpYck83bU5tbmZTaDNlTER4RTNEcTRjN3M2VnRlM0lkdWNwTE5RaEpQUkdiRGJzN21Tc2p0NVdCRVpqTk5hT1FGdm9TSDlpdERxOUtXUklnZFFfNVVSSllUWGRYaXk5cmEyYkhQVTdPQWVkRkpPT3diRjl2dWllaGJtUTRpanpjSUViWUdNX3NUMTVSMENsNkx2bmJzZmFBbmVITkJRa09GaHFOS0JYb3JqLTdEYkEweEJoZVpj?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Costly crude oil is sending ripples across sectors",
+     "title_zh": "高油价向各行业传导",
+     "date": "2021-07-26",
+     "source": "Livemint",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSHllZEhGSXhFQlEtSGl0eFRLUzNKdTZHVDF1Q1V1YXVLZTNnQ2ZsS3NUY0NjYkRpNW1xeDhFYUJiUVZzV3lzOE5KNE8yeWllbTBkdkI5cmVNOEVHNEFhVFdidlh1ZHBNTllET3BWbGpQRDFocHdFN0ZuTGtQTmJuTV9MWWpLY2Fva1lZUWNVNDFETURfSThkbzBaSHlKV1otMDlnVmJBVG9KaUxwTEYyWVp2R0NCaUJUZ1pldm5WTVBXT2lEdFHSAcsBQVVfeXFMTkY1TkhoOUVISGpPMDl2a3BRb0RCc2JKdHZXYW1WR0RwcFNVQV9VaVBubGdnX1JZM0E1NDk4UEFyWDBDS3RCWDJfNEZpb1VnZXJGNXhjUXVLemNGeDNMR0x6b2otUG1oeHhjRFRCbm1rUDg3ZU5mY2h6WlJRZUoyVGZoMVdJRTZuR1dOMzJzMW9lVW9vX251elk1NE52Sk5BQmxmZ2k0ZWt5bUZBV1l5X09qYWpXSW8wdkZQUzkzYXFSSzhDWlZwQ0hBT1k?oc=5",
+     "lead_days": 36
+    },
+    {
+     "title": "Petcoke market: roiled by change in 2020",
+     "title_zh": "石油焦市场受2020年变化冲击",
+     "date": "2021-09-03",
+     "source": "Dry Cargo International",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtT3E1b1ZOMEctaGlkSlh5aUxGZURqZXcwaG5URjg5bGNBaVg4RldZMklVcTNHRENrblFpbU9PUUlhRE81QU9vc2xhYjJFOEUwZ2gxbU8zMU1iMjVmMFBRRjU0bUdIb25yNGtOZDQ2R0VERUJXdWc?oc=5",
+     "lead_days": -3
+    }
+   ],
+   "confidence": "low"
+  },
+  "Pet Coke PPI index (broad)|2022-12": {
+   "commodity": "Pet Coke PPI index (broad)",
+   "start": "2022-09-01",
+   "end": "2022-12-01",
+   "change": 0.4578698336871687,
+   "direction": "up",
+   "price_start": 813.467,
+   "price_end": 1185.929,
+   "n_headlines": 24,
+   "cause_en": "Weak evidence; likely tighter supply and robust fuel-switch demand, but headlines don't clearly explain it.",
+   "cause_zh": "证据有限:供应收紧与替代燃料需求或推高价格,但新闻未明确解释",
+   "explanation_en": "Headlines show tightening or disrupted supply: Chinese imports were falling [2], the St. Croix refinery sat idled with an EPA explosion warning [17], and Maroil took over most of Venezuela's petcoke trading [13]. Demand was supported by Indian buyers switching from coal to discounted petcoke [7][10], and new calcined coke capacity in Oman [20]. However, none of these headlines directly explains a 46% PPI rise, and a Dec report says prices were stable with lower discounts [21], so the attribution is tentative.",
+   "explanation_zh": "新闻显示供应偏紧或受扰:中国petcoke进口持续下滑[2],圣克洛伊炼油厂停运并被EPA警告存在爆炸风险[17],Maroil接手委内瑞拉大部分石油焦贸易[13]。需求方面,印度买家以折价石油焦替代煤炭[7][10],阿曼新增煅烧焦产能[20]。但这些报道都没有直接解释46%的涨幅,且12月报道称价格稳定、折扣缩小[21],因此归因只是初步判断。",
+   "lesson_en": "Watch supply disruptions at refineries and shifts in trade flows (Venezuela, India, China imports), and confirm with direct price reports before attributing a PPI jump.",
+   "lesson_zh": "关注炼厂供应中断和贸易流向变化(委内瑞拉、印度、中国进口),并用直接的价格报道验证后再解释PPI涨幅。",
+   "categories": [
+    "Supply Outage",
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Imports of Petroleum Coke Dropped 14.94% MoM in June, and Are Likely to Fall Again in July",
+     "title_zh": "6月石油焦进口环比降14.94%,7月或再降",
+     "date": "2022-07-21",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNVndPTDNqc00xanlDSE5uaXRyM0JQVW1RS3hwWWVQTnZlN1pLZEZVekVVRVZ3MGhZenVqMGc0Qy1ZSUFlVUwtTmxnVlZGb0Z2U0MxaWFkWXVHb0gxdFJwX1BUaC1VTlpyS2d0UDByNGl4cjl6ekdIY0FyVXp6U0N0dXpfUGdnMHFhajV1eFBoWU9sc1d4R19nM2dKLXgxYnFpT0FZV1ZCaHZBcGNDQ2x4ZVZCTHFWUE1pczdmNjBYT3EtSkVDdndCLThrMWpyUkVuME5vVUhhUzdoWk5kRmp6Y091Y0E3T2MyT21pem5ZSXY3VzUt?oc=5"
+    },
+    {
+     "title": "Idled St. Croix refinery risks explosion, 'catastrophic' releases: EPA",
+     "title_zh": "停运的圣克洛伊炼油厂存在爆炸风险:EPA",
+     "date": "2022-10-25",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZE5URWo5YURRRWpIeU1LZG1rUlVnUmd5dGFoR1UzdXJWZnBULXFVOGM3NzJ4LXZhY2poWXBhWDBOd1hENEJrcTBpRlVTa0NEU3BMdU9VMVJ6Z2NoTXlOZzBCb2xVX2ZlUmVJRHNtWnFwbGRrUFJlQzJjbnVyUHRPaGk4QkpaUEU5OEhWR2tyay1Cc29YZTVnNURIVWlCS1VqY0RWRERPTXhQVWpsUGJRek9UU0pZN2ZFekhoY1lR?oc=5"
+    },
+    {
+     "title": "EXCLUSIVE Maroil takes over most of Venezuela's petroleum coke trading",
+     "title_zh": "Maroil接手委内瑞拉大部分石油焦贸易",
+     "date": "2022-09-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOb19rYWhvN1pIdGV4NDB0N3lxaU0xWEVrR080cTQ4aDNJSHp6Zno2NzQ5S3pPdUpMSVgxeWhhMmpxdHpDYkIwZmRYWnp5dDg1dXFvODBMOTV5cmllNTZ1b2FsSlJielBEWlJOOUs3SzBHdlJKekZZOS1hWmswMHNBXzBtSmZBb08wbTFTOHY3VmJPM3FjR2RKbmhNU21hUmNOb2xDME9LNGZpUHJpUWRENHF5bkItZDM0UFJXU2RiTQ?oc=5"
+    },
+    {
+     "title": "India buys discounted Venezuelan petcoke to replace coal",
+     "title_zh": "印度购买折价委内瑞拉石油焦替代煤炭",
+     "date": "2022-08-16",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNREpSc2ZrRTNsX0gwTVZ6emRoaXlmbXd0TGZsNWZQOFo3LVlpNHJabnlaaTBlTW5YWGFuVjBaZHlubzJUVFhlSGJoUWstdGVHZERrbGZHZUpGcWJTYXNFZEt6M1Njb1Y3eFlkTHlZY3pGblM0WWhDZUFGV0s1bEZLZ0luMHAtTnp0dmxwR1RxTjhHZWJKck1HMm5RanZTdEhkYVF1dUxQdk4?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Imports of Petroleum Coke Dropped 14.94% MoM in June, and Are Likely to Fall Again in July",
+     "title_zh": "6月石油焦进口环比降14.94%,7月或再降",
+     "date": "2022-07-21",
+     "source": "Shanghai Metals Market",
+     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNVndPTDNqc00xanlDSE5uaXRyM0JQVW1RS3hwWWVQTnZlN1pLZEZVekVVRVZ3MGhZenVqMGc0Qy1ZSUFlVUwtTmxnVlZGb0Z2U0MxaWFkWXVHb0gxdFJwX1BUaC1VTlpyS2d0UDByNGl4cjl6ekdIY0FyVXp6U0N0dXpfUGdnMHFhajV1eFBoWU9sc1d4R19nM2dKLXgxYnFpT0FZV1ZCaHZBcGNDQ2x4ZVZCTHFWUE1pczdmNjBYT3EtSkVDdndCLThrMWpyUkVuME5vVUhhUzdoWk5kRmp6Y091Y0E3T2MyT21pem5ZSXY3VzUt?oc=5",
+     "lead_days": 41
+    },
+    {
+     "title": "Smoldering Petroleum Coke Pile Discovered at St. Croix Refinery",
+     "title_zh": "圣克洛伊炼油厂发现阴燃的石油焦堆",
+     "date": "2022-08-08",
+     "source": "St. Thomas Source",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQTI0a1NvNVp1QlhKaHFkejhJQ2NGNjdsMXZlWVUxeEw3UThBM2paY1FlOE1mZGJhc1lXTTVmbFBUcE9xdndFcGFyWmtrRDJHSVF3NjRwVU8xbVN0TXN3ZmF2bWMxUTRZNG04YW1kTHk0RXZ6aGhaa0MwMG9RakszSXdWWmtIZUYyUUxlWElWRkphZGU2Zy1jbC1NV1ZxYnk1bGlWdjZuWjdoNTA?oc=5",
+     "lead_days": 23
+    },
+    {
+     "title": "Venezuela Increases Petcoke Exports to India",
+     "title_zh": "委内瑞拉增加对印度石油焦出口",
+     "date": "2022-08-21",
+     "source": "Venezuelanalysis",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE02c0xHWlRWSF9YQmp1d05oRHBhdzhTY0hERV9hTDNmMVdhakdKWkgtQXAwRE0wNk9paG44cC02Zm5NckpRdnBLUXRZM1g2Nmw3YXc?oc=5",
+     "lead_days": 10
+    }
+   ],
+   "confidence": "low"
+  },
+  "Pet Coke PPI index (broad)|2023-06": {
+   "commodity": "Pet Coke PPI index (broad)",
+   "start": "2023-03-01",
+   "end": "2023-06-01",
+   "change": -0.35460789542763416,
+   "direction": "down",
+   "price_start": 1196.186,
+   "price_end": 772.009,
+   "n_headlines": 15,
+   "cause_en": "Headlines don't clearly explain the drop; Indian import demand shifts and new supply hint at easing.",
+   "cause_zh": "新闻未能明确解释跌势;印度进口需求变化与新增供应或致价格回落",
+   "explanation_en": "The headlines don't directly explain a 35% fall. Reliance halting local petcoke sales and boosting imports (2,3) and Delhi's coal ban (1) point to shifting Indian demand, while Duqm refinery startup (8,10) adds future supply and Indian cement firms seeking Omani petcoke (14) suggests buyers hunting cheaper cargoes. Venezuelan probes (6) are a possible supply-side factor, but the evidence is thin, so this is tentative.",
+   "explanation_zh": "这些新闻并不能直接解释35%的跌幅。信里安斯(Reliance)停止本地石油焦销售并增加进口(2、3)、德里禁煤(1)显示印度需求结构在变化;杜库姆炼厂试运行(8、10)带来未来供应,印度水泥企业寻求阿曼石油焦(14)说明买家在寻找更便宜的货源。委内瑞拉相关调查(6)或影响供应,但证据有限,结论仅供参考。",
+   "lesson_en": "When headlines are mostly about regional demand and new refinery supply, check cargo-level pricing and Indian import buying before attributing a petcoke slide.",
+   "lesson_zh": "当新闻主要涉及区域需求和新炼厂供应时,应结合印度进口采购与实际货物价格来判断石油焦的下跌原因。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "India's Reliance stops local petcoke sales, boosts imports",
+     "title_zh": "信实停止本地石油焦销售并增加进口",
+     "date": "2023-01-31",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZEhvVWtsZlB4RlRfVjJCaXhMVmppcUtxR3F2Tmo2S0ZGVXBDdzVhWC1RN3BCSDJTVGJjeG8wWEJPNnRQVGI0WDVlMVphYUpKRGkyZ1BndEptWU9ybVdjNkxkNUdWSlVXNUxkeWtQS1RFUUEyak4tNVhPdS1oTlJkSDFaeXVGMDNFVHhWbkRfRjdWX2xacmh3RXo2ZTczU01nbEhhZDBhNmpDcEU4MkJaQUNwV2hKWTVlcUFLWTF4V1JqN1dMdWFsRmNsVDBLd9IB0wFBVV95cUxPSkd4RTB2SXR5Wm5IdnprY3dBYjQtNW9BQklLQlg4amZwY0ZUc2xMdzdHOGRYTERCRmZrcnZSREl6YkxHLVhJanNHSl9ISTlMX3VTbjNqMkR2QTlIRUltTDFqYkxxV1RFVWVLblZqRXlJcGVIM3pzMEFXcHYyUGFDRnZ4cWNzbS1TcVRGLXRYLXltU09ZWUgwQW5FTEp2RUtPMkxSTnVabks0SldxcVpoWm1zOHhKWTZpb3h6UC1oT1BOd0JaOXVYV3BZRC1kcmpiODNv?oc=5"
+    },
+    {
+     "title": "Trial operation begins for crude oil distillation unit at Duqm Refinery",
+     "title_zh": "杜库姆炼厂蒸馏装置开始试运行",
+     "date": "2023-04-03",
+     "source": "Times of Oman",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV2sta0p5cFlCMU9fcHA2QVIyVEYtSDRjODQyNUN3aVVBeVZOY0hoTWNlS1EtRG9WRnNLME1qUXoxVkNpYmZpc2pJNW5HR3Nvc05iTEZEWDBYMk5meFRvMWJyUGZIMjdqdzZmN3hyZ0Z2Y2VDQ3BjeHItUUs4ZEFqc25HU24wTG9XX0tjUlBWYkZaY0Zhb1Y3UW1ULXB5UVpOMkhMcHljN0ZMcXMtLWdN?oc=5"
+    },
+    {
+     "title": "Indian cement companies keen on buying petcoke from Oman",
+     "title_zh": "印度水泥企业欲购阿曼石油焦",
+     "date": "2023-05-30",
+     "source": "Oman Observer",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNWJkQUJWNHFMSlkyN29ibWtWeUM4RVRSUk5sdjNaVHJTVEdBa3VuVTRtb0YxRldaOVNIWjdGNVppRUJiRkJwaFd1MDZ2QWdDMWhYcXMyWWRvUmctdmpaZEVHLTNWdnNTU1IzY01xWGJNc0hLc19RY3ZPOU03WTFQUWI3UHhIemFzQk9tSXZHRFVVQW9xWFpCYkFtUmpoYnlBU1B1MG55YXFpbEVPdVFwOGlQd0dEZFpq0gFaQVVfeXFMTnRSdnRVcFlqSXJ3TTAtTG9mOER3V0YyRUNwbnE3d1RuUDBsYlNJMVFVUmRLcmRFbFdFeGhYS2dDQWh5UGNzbUxpSDl1RDJydDFHajl2eGZ4cUF3?oc=5"
+    },
+    {
+     "title": "Indian industry turns to biomass as capital bans coal in pollution fight",
+     "title_zh": "印度工业转向生物质、首都禁煤",
+     "date": "2023-01-24",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORTdOZG1nSDhLTlZEM3BFUWZGMUNYVmNHMmthWV9hbGJiOEw5cHd5MDV5MkNqaGhCR1RONERhTmRhb2kyVlBCVGRCRmcyNW43NUI4TmZ6Tlo3T194UkZJM2NDQjFqU0J1SEIwbnpScGw4NS1HM0N0dDdYYWFwT1hyckNXaTZxU29Hd242TUg5N3NtWkR2V3h1TVJRanJ5akEtLTFNSDQ2RHphY0R4bFByTnRRQjNOaWN5SjRMNA?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Aluminium smelters stung by the escalating costs of carbo...",
+     "title_zh": "铝冶炼厂受碳素成本上涨冲击",
+     "date": "2023-02-09",
+     "source": "CRU Group",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTzNGSXYzTi1TR3dyVmdWWHFrVjd6QzFwa1RPUWw5QVRmSUdUckstX2ZXR3ZILTBuOVp2SlN0NGg3LWtmRFBBUElyTnhGQUNfT3VqWkU2UXJOUDgtZUE3Z1dzWHpDOXRseVJXY013OV95TFEyRzRpQ2p1TnFHZHFqQkJoQUdwWnlBUUdCSXZpMUZUQTlVVWpFdzRnWU9KY1RSQWJQNXA4VFVpT2pWQ3lhUmNmQXo3STdETHk2WW9EZ1V4Q09vMnctb0s1X0Y?oc=5",
+     "lead_days": 19
+    },
+    {
+     "title": "India's Reliance stops local petcoke sales, boosts imports",
+     "title_zh": "信实停止本地石油焦销售并增加进口",
+     "date": "2023-01-31",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZEhvVWtsZlB4RlRfVjJCaXhMVmppcUtxR3F2Tmo2S0ZGVXBDdzVhWC1RN3BCSDJTVGJjeG8wWEJPNnRQVGI0WDVlMVphYUpKRGkyZ1BndEptWU9ybVdjNkxkNUdWSlVXNUxkeWtQS1RFUUEyak4tNVhPdS1oTlJkSDFaeXVGMDNFVHhWbkRfRjdWX2xacmh3RXo2ZTczU01nbEhhZDBhNmpDcEU4MkJaQUNwV2hKWTVlcUFLWTF4V1JqN1dMdWFsRmNsVDBLd9IB0wFBVV95cUxPSkd4RTB2SXR5Wm5IdnprY3dBYjQtNW9BQklLQlg4amZwY0ZUc2xMdzdHOGRYTERCRmZrcnZSREl6YkxHLVhJanNHSl9ISTlMX3VTbjNqMkR2QTlIRUltTDFqYkxxV1RFVWVLblZqRXlJcGVIM3pzMEFXcHYyUGFDRnZ4cWNzbS1TcVRGLXRYLXltU09ZWUgwQW5FTEp2RUtPMkxSTnVabks0SldxcVpoWm1zOHhKWTZpb3h6UC1oT1BOd0JaOXVYV3BZRC1kcmpiODNv?oc=5",
+     "lead_days": 28
+    }
+   ],
+   "confidence": "low"
+  },
+  "Pet Coke PPI index (broad)|2025-03": {
+   "commodity": "Pet Coke PPI index (broad)",
+   "start": "2024-12-01",
+   "end": "2025-03-01",
+   "change": 0.3007298390437525,
+   "direction": "up",
+   "price_start": 663.845,
+   "price_end": 863.483,
+   "n_headlines": 19,
+   "cause_en": "Headlines do not clearly explain the rise; only weak hints on export reliance and anode demand",
+   "cause_zh": "新闻无法明确解释涨价，仅有出口依赖和阳极需求的弱线索",
+   "explanation_en": "None of the headlines reports a supply disruption, policy shock or price data for petcoke in Dec 2024–Mar 2025. The closest context is that most US petcoke is exported [8], so prices depend on overseas demand, and that petcoke is needed for energy-transition uses [14] and for anode-grade calcined coke [15]. Environmental pressure on US petcoke plants [3][5][13] and weak cement demand [17] are background items, and the cement item points the other way. The move therefore cannot be reliably attributed from these headlines.",
+   "explanation_zh": "这些标题中没有任何一条报道2024年12月至2025年3月石油焦的供应中断、政策冲击或价格数据。最接近的背景是：美国石油焦大部分出口[8]，价格取决于海外需求；石油焦还用于能源转型相关用途[14]和阳极级煅烧焦[15]。针对美国石油焦工厂的环保压力[3][5][13]以及水泥需求疲弱[17]只是背景信息，其中水泥一条的方向还相反。因此仅凭这些标题无法可靠解释此次涨幅。",
+   "lesson_en": "Track petcoke-specific price and supply data, such as export demand, refinery runs and calcined coke demand, since general news here does not explain the move.",
+   "lesson_zh": "应关注石油焦自身的价格和供应数据，如出口需求、炼厂开工和煅烧焦需求，因为一般性新闻无法解释这次波动。",
+   "categories": [
+    "Demand Shift",
+    "Environment & Weather"
+   ],
+   "drivers": [
+    {
+     "title": "Most U.S. petroleum coke is exported",
+     "title_zh": "美国石油焦大部分出口",
+     "date": "2024-11-14",
+     "source": "U.S. Energy Information Administration (EIA) (.gov)",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zSF81T0xoWk1zQzQza0hlYXIzWXJHVURjcURTOTJLOERSckdTSjNiZlJ5ZGJHM0d6OWFrRDV5SjhqV25PMlVyc0QxMlpVbHlTU3FqQ2o5bEVtUjFzVGFVb09Idw?oc=5"
+    },
+    {
+     "title": "Energy transition initiatives will require naphtha, petcoke",
+     "title_zh": "能源转型将需要石脑油和石油焦",
+     "date": "2025-02-19",
+     "source": "Oil & Gas Journal",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSGh5Q3ZTNGI1OHRIUGJHUU8xenB6d24zTGljZWZCVndmSGE3ZWtMNkRrRkdXQTI0VEhUdGdLdEhjVU13ZTcwc0RhMktDSXB3c1o5TWxlY1B5NC14TjdGN1BTaXE3TUlMZnByQ01Uc3hOUEd2TE5FeDExN1ViN29UM1RvS0cwNjh1eVpFbi1vT3ItUzd1XzJLRjFiVDM0d19ocVZQVmRQSVBvT2pNcXVXMU1BUzNvUQ?oc=5"
+    },
+    {
+     "title": "EGA Addresses Calcined Petroleum Coke (CPC) Quality Variation Impact on Anode Quality and Performance",
+     "title_zh": "煅烧石油焦质量影响阳极性能",
+     "date": "2025-03-03",
+     "source": "Springer Nature Link",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE41SVhPV1ptWEFJQTUyQnlUZnBaNDFlOHhIM1loQVNCSGNaYV93MjNSaFh1ZVhEQlpydUdsZngzZEpvaVBYR2Q1OTh1YkNUN1Z3bDZPRWF5YTdfcTZhRXd5NE5leDlDU2dBMXFnOXNBcTk?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "EPA faces lawsuit over water pollution from petroleum coke plants",
+     "title_zh": "EPA因石油焦工厂水污染被诉",
+     "date": "2024-10-31",
+     "source": "E&E News by POLITICO",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY0Rqd0IwTTZkcGFVdjB0aDZjYlBzeFpVY29wb1UwbHRob1NLUnBWaWtobGVob2JfcklwaTZWaDcwblQ1Q2dNM3BLYWhwdFBPUEc2SkJ1MlZuX3ZZWjctZWZYQlhzcFZWNXRaNDIzLUVmMGRNVDVRTHBPMnViN2FaVVotWS1Dd1RoQlFreDcwMjJtVUNnZzRIOVFEd0UzOWs?oc=5",
+     "lead_days": 30
+    },
+    {
+     "title": "Rising coal consumption may bolster US thermal coal markets in 2025",
+     "title_zh": "煤炭消费上升或支撑美国热煤市场",
+     "date": "2024-11-15",
+     "source": "S&P Global",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNWUpQZ2dnbUxTSGdERXNyWm9BOGlnTGRTYzE0VDRHb25RYjQ2LXN4MlBOSzVHbTBJWmRVejBydER6cmJ2RVRRcVRiRmVUOVlJX3RDc05ROC1XMzl3dzU0alNvUWZHVGpvVzF5cDBya1VLcmd5dXQyX2x4Z3hnOC0wMlphLUJLTm9lNkdSVUY0c0h5a0pZOGtReHU0SnZfaVEwQ0RER1g0cnBZelRuQjVwNlRGQXVURExQNW94VHJScUlzRTJkN09GMFpWb0JPdktfMEo3dVBJQQ?oc=5",
+     "lead_days": 15
+    }
+   ],
+   "confidence": "low"
+  },
+  "Pet Coke PPI index (broad)|2026-03": {
+   "commodity": "Pet Coke PPI index (broad)",
+   "start": "2025-12-01",
+   "end": "2026-03-01",
+   "change": 0.2577931418759487,
+   "direction": "up",
+   "price_start": 879.395,
+   "price_end": 1106.097,
+   "n_headlines": 19,
+   "cause_en": "Petcoke discount to coal narrowed and crude costs rose, lifting petcoke demand and prices",
+   "cause_zh": "石油焦对煤折价收窄、原油成本上升,带动需求与价格上涨",
+   "explanation_en": "Headlines show a bullish petcoke market from late 2025, with the discount to coal widening or shifting in ways that favored petcoke use by cement makers [4], and Chinese petcoke prices rising significantly through 2025 and into 2026 [9]. By March 2026, reports of rising crude costs and petcoke price increases, passed through to cement prices, indicate a cost-push rally [17][18]. Strong cement volume growth supported demand [5][10]. The headlines give only partial, indirect support for the exact magnitude.",
+   "explanation_zh": "从2025年末起,石油焦市场偏强:水泥行业因石油焦相对煤炭的折价而增加使用[4],中国石油焦价格在2025年大幅上涨并预计2026年波动加剧[9]。到2026年3月,原油成本上升和石油焦涨价推动水泥价格上调[17][18],水泥销量强劲增长也支撑需求[5][10]。不过这些标题只能间接解释涨幅的具体幅度。",
+   "lesson_en": "Watch the petcoke–coal price discount, crude oil direction and cement-sector demand, as they signal fuel-switching and cost-push price moves.",
+   "lesson_zh": "关注石油焦与煤炭的价差、原油走势以及水泥行业需求,它们预示燃料替代和成本推动的价格变动。",
+   "categories": [
+    "Demand Shift",
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "Oil lower, petcoke discount higher towards coal – 2026 forecast",
+     "title_zh": "油价走低、石油焦对煤折价扩大——2026预测",
+     "date": "2025-11-20",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONkZvdE95enlGc2JoYjNTQjQ2aXRiVkh0QUdPVlJaaV9tR0dPdTFRaHZwOUxGaWdmUEpoRDY5NW11RnZrX3R6aGZWSDFOMUM1Z1BxR0w3RGw5Mi1xR0tjamhSVERzbGZMM3NnYTRTOV8tamJMUHQyZk1la3MyczFFYXBueXg5Z0FkVzEzelczSWJpT1BrYUVXVU9mZ09MQ21vT1kwU19tdjAwQQ?oc=5"
+    },
+    {
+     "title": "China Petroleum Coke Prices Rose Significantly in 2025, and May Experience Strong Fluctuations in 2026",
+     "title_zh": "中国石油焦2025年显著上涨,2026或大幅波动",
+     "date": "2026-01-19",
+     "source": "Sunsirs",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5BVGpJSjZ6SG9fV3lZRGxQaGhOWEVxQUVPXzF2WEhMSks5OUUyOWlIanpVc2dIVlk2Tzg1U21ZMGFyLWFpcUU1Q1FwTjIxWUJtRVJJeGtleVVRcm9JQ2c?oc=5"
+    },
+    {
+     "title": "India Cement Prices To Climb As Petcoke Hits $13 Per Tonne: Report",
+     "title_zh": "石油焦涨价推动印度水泥价格上行",
+     "date": "2026-03-19",
+     "source": "BW Businessworld",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU05PWHVubmw5eWJ1cndXNUJpUmFsd2VpbUo3LXVyRjZWSDFaTklrZnAxT1FVTmJ2eWZ1SVhkTDcyU2Mtd1RwWFgxR2pDcWtRam40NXV1MEdqb1JDQUw3b3ZSZ2hFZ1Nya05CdTZJTDZhYnBPRk1ab0xaYlJHWjU0dzFGOHluVUpHYm5aNFV0STFjVXI4U3RseC1ScmQwa1RWWWFSYzU2eGp1ajhl?oc=5"
+    },
+    {
+     "title": "Cement prices likely to rise by end-March amid rising crude costs: Nuvama report",
+     "title_zh": "原油成本上升,水泥价格3月底前或上涨",
+     "date": "2026-03-20",
+     "source": "ET Infra",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQY2ZCcEk3a0lRN3JoTDVINm9WUTN5ZzdLdFpVN2I5SER0ejdWb25Eamo2S2ZQSTQwWUVJSktkQ29Qb3R6VnYxX19iZ0YzbkVkb1Q1ZjJxTWVTSlI1ZUpRd2RjdWpteFRmMHM5WFEwX01CSXk0Vi1yLTRVaXkxLW8zczJBNmVjLU1XTlFhdDloMldXaFdDVkV1WFFFWEl5TzNGeElRazJob01RS3VxWFVBSEp4UHM0TnRyYi1YZVBWcU1GaURRdEdoZndxOFhRQ2hiM2RKYmM0NmxkWHl2ZHFfc1pPTXbSAegBQVVfeXFMT05QZ2otcDZnNlZvWTlLR2Y2dVdzSkh3N25ObjB0azZNd3pfZlllY1pzRTFyZldBVk5KV25zejZVUS1KNFVzLWtRYUR1d0xfRElBcmNsUlRPMEhhZnB4djM1ZWFUR2xqa3FtTjM0TURIbXJYWmtrLWFrMndTS183cnZiZVVuQV9CdnE1RVdJSVNONm5Nd2RSLTJhMktUSG44LVRHU3RucE9lT2dKeHBOMDlDeVVIVHRMTFZuMS05QjI1LVQ2ZHo4Q2FBY0RsLTF1eTVpcjVtcDB2UkRWUXdkRmNRT3VSSzhHMw?oc=5"
+    },
+    {
+     "title": "Cement majors post double-digit volume growth in Q3, expect price recovery ahead",
+     "title_zh": "水泥企业三季度销量两位数增长",
+     "date": "2026-02-08",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNMU14UjlGZEM2SU5TbzZmVndwZlp3V0g0R2Zhd0pqaE5Zc1EycEZEaUFKUXR3VEFrMFpxZ2lfeTF5cXlYLXJGeU53TDZHOWVWVHRYVEU2WEhLOE82UlkwQ2t6eV8wZXdHTEZvNHZBeUphVjZFMUs3M2NWUFRadTdodzJfZ0FEaklhMmdfUVdsekU4Qy1XRTdwNmlNYXdMbThTRmdSZlZYYlRiQ3RxLURkMUxWaFJkVnBiWU1NbndEMlAyaUZKbk9IOGl1UkpwMFlBXzltT3BuZUk1dGhJalBNWG1XWUQtSms50gHuAUFVX3lxTFBzdDZLZ2RDMzFzaTJFQTRUUHp4LVhqSmUzUUR5dzBOdVg2SVp0aWc0SFB4NlBUUVoyQUlBNlpUM1hrVjJQZEVSUEwtdDJVZzhNeFptZUJKZngyX05JVzFxTVI5VlhjeTIxLWZGOHFtekFVdGk1b0JqUVdINGhqNmVFSzlmbUxXWmNDZXVQLVJkbGxFY2lKQmFSal9CemhRc0V1aV9RQ3ZnLVBwOUJ5SGN1aURUVXg4R3YzMElSdDZzcjdhVnBxa0FmenA5Q0RQaGNqbXpvVi1tSk9KNG96eFVGUmQ4OEduSFo2VUk0Q0E?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Global Pet Coke Market Enters Oct 2025 on a Bullish Tone, Stable Outlook Expected",
+     "title_zh": "2025年10月全球石油焦市场看涨",
+     "date": "2025-10-09",
+     "source": "ChemAnalyst",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbTVvMkRwX19NWHpZdDAxY2c3RUxITnU2M0g4eVg2WkNiRllYLTNhUVBlT3hCQkhhZkdxQXdHSjFkakZRU3E3YTJkbDh2LUItZ3RxSzdxOWNOZURwc3gxZGM5NFFfN3AxN2JRSENfamJzY2J0S2pjUUszU05zenRMdVQ4aUZBUHNYUnRySnlVNUVFYWVIYXNFd0lQV0lDdUFwZDhJY0ZMWDl1WW9iYTlCQ1M4SWkwNzhEUHJ4eGRZRjhVMVRyd09FR3l3?oc=5",
+     "lead_days": 52
+    },
+    {
+     "title": "Oil lower, petcoke discount higher towards coal – 2026 forecast",
+     "title_zh": "石油焦对煤折价预测",
+     "date": "2025-11-20",
+     "source": "CemNet.com",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONkZvdE95enlGc2JoYjNTQjQ2aXRiVkh0QUdPVlJaaV9tR0dPdTFRaHZwOUxGaWdmUEpoRDY5NW11RnZrX3R6aGZWSDFOMUM1Z1BxR0w3RGw5Mi1xR0tjamhSVERzbGZMM3NnYTRTOV8tamJMUHQyZk1la3MyczFFYXBueXg5Z0FkVzEzelczSWJpT1BrYUVXVU9mZ09MQ21vT1kwU19tdjAwQQ?oc=5",
+     "lead_days": 10
+    },
+    {
+     "title": "China Petroleum Coke and Coke Markets Are Rising and Falling on December 31",
+     "title_zh": "中国石油焦与焦炭市场12月31日上涨",
+     "date": "2025-12-31",
+     "source": "Sunsirs",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZOWtQUmRQZ3JKNVg5SWlfWWlBczV5dnNiRHVmSkZJQ3NBbldfTTBHMUJuVENtZ004NWdQS1V1SGFlR1VmRmVYN2Z2NVVkWURhUTlFb3FGRE05OG1CLWc?oc=5",
+     "lead_days": -31
+    },
+    {
+     "title": "US Petroleum Coke Prices Edge Up 0.9%, Shows Resilient in December 2025",
+     "title_zh": "美国石油焦12月价格小幅上涨",
+     "date": "2025-12-22",
+     "source": "ChemAnalyst",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdXZVM2dqWW1rQkxKa1hoYlFrZ0hEZV9PSTV6aENFWnFpWDF3Y0lzZElWN1FJMi1qRk5mT2hYWjRHUjl4dFk1dUZfbkhZN05Lc3JSSHlFYmNka0pUN1J1eTJJNUdvTU8yVWlzRVhBSk5CU1ZPeWxYUjN3ZjBXbmpncXFZejFEVGF4TFpJZzFPR0VuNF9NcjZoS2Q3YTZmdUx1YjE5cGZTNHA5NWJ4UG1jdlRjM0x2OFFaYXoyR21Jbw?oc=5",
+     "lead_days": -22
+    }
+   ],
+   "confidence": "low"
   }
  },
- "generated_at": "2026-11-11T05:16+00:00",
+ "generated_at": "2026-11-11T05:26+00:00",
  "model": "claude-sonnet-5-5"
 }
