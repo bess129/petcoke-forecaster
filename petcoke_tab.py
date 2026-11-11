@@ -28,7 +28,12 @@ MARKET_ZH = {"US Gulf coast": "美湾", "US west coast": "美西", "China": "中
              "West coast India": "印度西海岸", "Turkey": "土耳其",
              "China (import, customs average)": "中国进口（海关均价）",
              "US exports (customs average)": "美国出口（海关均价）", "Saudi Arabia": "沙特阿拉伯",
-             "Russia": "俄罗斯", "Canada": "加拿大", "Brazil": "巴西", "Europe": "欧洲"}
+             "Russia": "俄罗斯", "Canada": "加拿大", "Brazil": "巴西", "Europe": "欧洲",
+             "India east coast": "印度东海岸", "East coast India": "印度东海岸",
+             "ARA (Northwest Europe)": "西北欧（ARA）", "Northwest Europe": "西北欧", "ARA": "西北欧（ARA）",
+             "Pakistan": "巴基斯坦", "Japan": "日本", "Mexico": "墨西哥", "Egypt": "埃及",
+             "Vietnam": "越南", "Indonesia": "印度尼西亚", "Venezuela": "委内瑞拉",
+             "Colombia": "哥伦比亚", "Middle East": "中东", "UAE": "阿联酋", "Spain": "西班牙"}
 BASIS_ZH = {"FOB": "离岸价 FOB", "CFR": "到岸价 CFR", "CIF": "到岸价 CIF",
             "CIF customs avg": "海关进口均价（CIF）", "FOB customs avg": "海关出口均价（FOB）",
             "Delivered": "送到价", "Ex-warehouse": "出库价", "Domestic": "国内价"}

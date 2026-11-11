@@ -50,7 +50,10 @@ STRICT RULES:
 - Give the date the PRICE refers to (assessment date / week), not today's date.
 - Skip prices older than 120 days, ranges you cannot attribute, and freight rates.
 - Price in USD per tonne. If the source gives another currency, skip it.
-- If you find nothing new and reliable, record an empty list. Do not guess."""
+- If you find nothing new and reliable, record an empty list. Do not guess.
+- For "market" use one of these names when it fits: US Gulf coast, US west coast, China,
+  India, West coast India, India east coast, Turkey, Brazil, ARA (Northwest Europe),
+  Saudi Arabia, Russia, Canada, Pakistan, Japan, Middle East."""
 
 TOOL = {
     "name": "record_prices",
