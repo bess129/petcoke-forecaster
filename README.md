@@ -185,3 +185,11 @@ dates). It also keeps a **live track record**: `build_forecasts.py` saves each n
 New news category **Environment & Weather (环保政策与天气)**: environmental inspections, pollution/emission
 limits, permit suspensions, hurricanes, floods, drought, typhoons, power rationing. Used in daily scoring
 (`signal_detector.py`), supply risk (`shock.py`), daily searches (`scraper.py`) and the shift analysis.
+
+## Investing.com links and widgets
+
+`investing_links.py` links each commodity to its Investing.com page (cn.investing.com in Chinese,
+www.investing.com in English) and embeds Investing.com's official free widgets (technical chart for
+crude oil / Brent / copper, and the economic calendar) on the Overview page, with the required credit.
+Investing.com has no official API and its terms forbid copying its data, so no prices are downloaded
+from it. It has no page for molybdenum, antimony, gallium/germanium or pet coke; related markets are linked.

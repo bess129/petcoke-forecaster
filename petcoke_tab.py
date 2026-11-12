@@ -118,6 +118,11 @@ def render(forecast_for):
     newest = lt.loc[lt["as_of"].idxmax()]
 
     st.markdown(t("pc_intro"))
+    try:
+        import investing_links
+        investing_links.show_links("Green Pet Coke (GPC)")
+    except Exception:
+        pass
     st.markdown(
         f"<div style='display:flex;flex-wrap:wrap;gap:8px 24px;margin:4px 0 8px;font-size:0.95rem'>"
         f"<span>{t('pc_count', n=len(lt))}</span>"

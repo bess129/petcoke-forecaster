@@ -707,3 +707,27 @@ TEXT.update({
 - **Warning headlines**: only those published before the move began (or within its first month); lead time = month the move began − headline date.
 - **Limitations**: this is hindsight analysis; the AI knows the move happened and may overstate how clear the warnings were; older years have less news; monthly prices are only precise to the month. Use it as experience-based patterns together with the live signals on the Supply Risk page."""),
 })
+
+TEXT.update({
+    "inv_title":        ("相关市场行情（Investing.com）", "Related market prices (Investing.com)"),
+    "inv_caption":      ("点击链接在 Investing.com 查看实时行情。Investing.com 的数据只在其网站和官方小工具中显示，"
+                         "本系统的预测不使用这些数据（其条款不允许下载复制）。",
+                         "Click a link to see live prices on Investing.com. Investing.com data is shown only on its "
+                         "website and official widgets; this system's forecasts do not use it (its terms do not allow "
+                         "copying the data)."),
+    "inv_direct":       ("同品种：", "Same product:"),
+    "inv_related":      ("相关市场：", "Related markets:"),
+    "inv_no_direct":    ("Investing.com 没有该品种本身的行情，这里列出的是影响其价格的相关市场。",
+                         "Investing.com has no quote for this product itself; these are related markets that drive its price."),
+    "inv_tab_chart":    ("行情走势图", "Price chart"),
+    "inv_tab_cal":      ("经济日历", "Economic calendar"),
+    "inv_pick":         ("选择品种", "Choose market"),
+    "inv_chart_credit": ("图表由以下网站提供：", "Chart provided by"),
+    "inv_cal_credit":   ("实时经济日历由以下网站提供：", "Real Time Economic Calendar provided by"),
+    "inv_cal_name":     ("经济日历", "economic calendar"),
+    "inv_cal_caption":  ("本周美国、中国、印度、欧元区等的重要经济数据公布时间（利率、通胀、制造业等），这些会影响原油和金属价格。",
+                         "This week's key economic releases (rates, inflation, manufacturing) for the US, China, India, "
+                         "euro area and others, which move oil and metal prices."),
+    "inv_fallback":     ("如果上方没有显示，请[点击这里在 Investing.com 打开{name} ↗]({url})。",
+                         "If nothing shows above, [open the {name} on Investing.com ↗]({url})."),
+})

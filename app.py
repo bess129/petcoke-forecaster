@@ -293,6 +293,11 @@ with tab_ov:
                        file_name=f"price_outlook_{today:%Y%m%d}.xlsx",
                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                        help=t("download_help"))
+    try:
+        import investing_links
+        investing_links.market_section()
+    except Exception as e:
+        st.caption(f"Investing.com: {e}")
 
 # ======================================================================
 # FORECAST (one commodity)
@@ -323,6 +328,11 @@ with tab_fc:
         value_html(t("kpi_signal"), f"{ICONS[light]}", "", badge(light, label)),
     ]), unsafe_allow_html=True)
     st.caption(t("data_delay", month=fmt_month(last_data), date=fmt_date(target)))
+    try:
+        import investing_links
+        investing_links.show_links(commodity)
+    except Exception:
+        pass
     if info["regime"] != "Normal":
         st.error(t("regime_alert", total=f"{info['total_shift_pct']:+.1%}",
                    sig=f"{info['signal_shift_pct']:+.1%}", man=f"{info['manual_shift_pct']:+.1%}"))
