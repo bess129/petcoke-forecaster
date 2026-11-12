@@ -1,0 +1,80 @@
+# Daily refresh: fetch Google News, score new headlines with Claude (English +
+# Chinese), write the supply-shortage outlook, import Argus/company price files,
+# search for newly published pet coke prices (every 3 days), pre-calculate all
+# forecasts, and save everything back to this repository. Streamlit Cloud
+# notices the change and the online dashboard shows the new data.
+name: Daily news & Claude signal refresh
+
+on:
+  schedule:
+    - cron: "17 23 * * *"     # 23:17 UTC = 07:17 Singapore time, every day
+  workflow_dispatch:          # adds a "Run workflow" button for manual runs
+
+permissions:
+  contents: write             # allow the job to save the updated CSVs
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install packages (incl. Prophet and LightGBM for the forecasts)
+        run: pip install -r requirements.txt
+
+      - name: Update gold prices and CFTC gold futures positions
+        continue-on-error: true
+        run: python gold_data.py
+
+      - name: Fetch news
+        run: python scraper.py
+
+      - name: Score new headlines with Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python signal_detector.py
+
+      - name: Write the Claude supply-shortage outlook
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python outlook.py
+
+      - name: Explain major past price shifts with news (only new shifts)
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python explain_shifts.py
+
+      - name: Import Argus / company price files from data/argus
+        continue-on-error: true
+        run: python import_argus.py
+
+      - name: Search for newly published pet coke prices (every 3 days)
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python price_watch.py
+
+      - name: Pre-calculate all forecasts (so the dashboard opens instantly)
+        run: python build_forecasts.py
+
+      - name: Save updated data back to the repository
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news.csv data/signals.csv data/outlook.json data/forecast_cache.pkl data/gpc_prices.csv
+          git add data/price_watch_state.json 2>/dev/null || true
+          git add data/forecast_log.csv 2>/dev/null || true
+          git add data/shift_events.json 2>/dev/null || true
+          git add data/gold_daily.csv data/gold.csv data/gold_cot.csv 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No new data today."
+          else
+            git commit -m "Daily news, signal and price refresh"
+            git push
+          fi
