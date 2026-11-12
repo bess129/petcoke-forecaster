@@ -18,6 +18,9 @@ from i18n import t, is_zh
 
 # (path on investing.com, Chinese label, English label)
 PAGES = {
+    "gold":      ("commodities/gold", "黄金期货", "Gold futures"),
+    "silver":    ("commodities/silver", "白银期货", "Silver futures"),
+    "dxy":       ("indices/usdollar", "美元指数", "US dollar index"),
     "crude":     ("commodities/crude-oil", "WTI 原油期货", "WTI crude oil futures"),
     "brent":     ("commodities/brent-oil", "布伦特原油期货", "Brent oil futures"),
     "coal":      ("commodities/newcastle-coal-futures", "纽卡斯尔煤炭期货", "Newcastle coal futures"),
@@ -38,6 +41,7 @@ COMMODITY_PAGES = {
     "Green Pet Coke (GPC)":          {"related": ["crude", "coal", "brent"]},
     "Calcined Pet Coke (CPC)":       {"related": ["aluminium", "crude"]},
     "Pet Coke PPI index (broad)":    {"related": ["crude", "coal"]},
+    "Gold":                          {"direct": ["gold"], "related": ["silver", "dxy"]},
     "Cobalt":                        {"direct": ["cobalt"]},
     "Lithium":                       {"direct": ["lithium"]},
     "Rare Earths":                   {"related": ["remx"]},
@@ -48,7 +52,7 @@ COMMODITY_PAGES = {
 }
 
 # Investing.com widget settings: instrument ids for the chart widget, language ids
-CHART_PAIRS = {"crude": 8849, "brent": 8833, "copper": 8831}
+CHART_PAIRS = {"gold": 8830, "crude": 8849, "brent": 8833, "copper": 8831}
 
 
 def base_url():

@@ -39,6 +39,7 @@ BASE = {
     "Green Pet Coke (GPC)": '("petroleum coke" OR petcoke)',
     "Calcined Pet Coke (CPC)": '("calcined petroleum coke" OR "calcined coke" OR "anode grade coke" OR petcoke)',
     "Pet Coke PPI index (broad)": '("petroleum coke" OR petcoke)',
+    "Gold": '("gold price" OR "gold prices" OR "gold futures")',
     "Cobalt": "cobalt",
     "Molybdenum": "molybdenum",
     "Lithium": "lithium",

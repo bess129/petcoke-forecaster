@@ -193,3 +193,13 @@ www.investing.com in English) and embeds Investing.com's official free widgets (
 crude oil / Brent / copper, and the economic calendar) on the Overview page, with the required credit.
 Investing.com has no official API and its terms forbid copying its data, so no prices are downloaded
 from it. It has no page for molybdenum, antimony, gallium/germanium or pet coke; related markets are linked.
+
+## Gold page (黄金)
+
+| File | What it does |
+|---|---|
+| `gold_data.py` | Daily COMEX gold futures (Yahoo Finance GC=F) → `data/gold_daily.csv` and complete-month averages → `data/gold.csv` (used by the forecast models); CFTC Disaggregated Futures-Only report for COMEX gold (code 088691) → `data/gold_cot.csv` |
+| `gold_tab.py` | Live price (~15 min delayed, refreshed every 10 min), history with 50/200-day averages, model forecast with range and reliability, futures analysis (trend, golden/death cross, volatility, managed-money positioning percentile, open interest), AI-scored gold news, Investing.com links and live chart widget |
+
+Gold is also a normal commodity in `forecaster.py` (proxies: US dollar index, silver), the news scraper
+(group "Gold", new category "Macro & Financial"), the accuracy page and the price-shift analysis.

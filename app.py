@@ -208,9 +208,9 @@ def summary_row(c):
 
 
 st.title(t("app_title"))
-tab_ov, tab_pc, tab_fc, tab_acc, tab_sh, tab_risk, tab_help = st.tabs(
-    [t("tab_overview"), t("tab_petcoke"), t("tab_forecast"), t("tab_accuracy"), t("tab_shifts"),
-     t("tab_risk"), t("tab_help")])
+tab_ov, tab_pc, tab_gold, tab_fc, tab_acc, tab_sh, tab_risk, tab_help = st.tabs(
+    [t("tab_overview"), t("tab_petcoke"), t("tab_gold"), t("tab_forecast"), t("tab_accuracy"),
+     t("tab_shifts"), t("tab_risk"), t("tab_help")])
 
 # ======================================================================
 # OVERVIEW
@@ -489,6 +489,17 @@ with tab_pc:
     try:
         import petcoke_tab
         petcoke_tab.render(forecast_for)
+    except Exception as e:
+        st.error(t("refresh_fail", err=e))
+
+# ======================================================================
+# GOLD (live price, history, forecast, futures analysis, news)
+# ======================================================================
+with tab_gold:
+    try:
+        import gold_tab
+        from shock import signals_for as _signals_for
+        gold_tab.render(forecast_for, signals, _signals_for, reliability_of)
     except Exception as e:
         st.error(t("refresh_fail", err=e))
 

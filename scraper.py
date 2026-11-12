@@ -46,6 +46,19 @@ SEARCHES = {
             "(flood OR drought)",
         ],
     },
+    "Gold": {
+        "subjects": '("gold price" OR "gold prices" OR "gold futures" OR 黄金)',
+        "keywords": [
+            "Federal Reserve",
+            "dollar",
+            "central bank buying",
+            "ETF",
+            "inflation",
+            "geopolitical",
+            "China demand",
+            "record high",
+        ],
+    },
     "Pet Coke": {
         "subjects": '("petroleum coke" OR petcoke OR coker)',
         "keywords": [

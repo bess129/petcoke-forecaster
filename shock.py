@@ -51,6 +51,10 @@ def signals_for(signals_df, commodity):
     if signals_df is None or signals_df.empty:
         return pd.DataFrame(columns=getattr(signals_df, "columns", []))
     s = signals_df.copy()
+    if commodity == "Gold":
+        out = s[s["commodity"] == "Gold"].copy()
+        out["applies_to"] = "Gold"
+        return out
     if "Pet Coke" in commodity or commodity not in METALS:
         out = s[s["commodity"] == "Pet Coke"].copy()
         out["applies_to"] = "Pet Coke"

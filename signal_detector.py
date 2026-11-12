@@ -59,7 +59,8 @@ BATCH_SIZE = 25
 TRANSLATE_PER_RUN = 200   # older headlines translated into Chinese per run
 
 CATEGORIES = ["Supply Outage", "Export Policy", "Host Metal Cut",
-              "Refinery Turnaround", "Environment & Weather", "Demand Shift", "Logistics", "Noise"]
+              "Refinery Turnaround", "Environment & Weather", "Demand Shift", "Logistics",
+              "Macro & Financial", "Noise"]
 
 SYSTEM_PROMPT = """You are a senior commodities supply-chain analyst covering minor metals \
 (gallium, germanium, antimony, cobalt, indium, molybdenum, lithium, rare earths, tin) \
@@ -72,6 +73,10 @@ China MOFCOM), cuts at host-metal producers (zinc, aluminum, copper) that yield 
 minor metals as byproducts, new semiconductor/defense subsidies.
 - Pet coke: refinery coker turnarounds, heavy/sour crude supply shifts, calciner \
 outages, cement/steel kiln fuel-switching rules, freight or barge bottlenecks.
+- Gold (headlines marked [Gold]): judge the effect on the GOLD price. Use "Macro & Financial" \
+for interest rates / Federal Reserve, US dollar, inflation, recession fears, geopolitical \
+safe-haven demand; "Demand Shift" for central-bank buying, ETF flows, jewellery or Chinese/Indian \
+demand; "Supply Outage" for mine disruptions. Positive price_direction = gold price up.
 - Environment & Weather (use this category): environmental inspections or pollution \
 controls that shut mines, smelters, calciners or kilns (e.g. China environmental \
 inspections, India petcoke import limits for air quality), emission/carbon rules, \
@@ -100,7 +105,7 @@ TOOL = {
                     "properties": {
                         "id": {"type": "integer", "description": "The headline's id number"},
                         "headline": {"type": "string"},
-                        "commodity": {"type": "string", "enum": ["Minor Metals", "Pet Coke"]},
+                        "commodity": {"type": "string", "enum": ["Minor Metals", "Pet Coke", "Gold"]},
                         "signal_category": {"type": "string", "enum": CATEGORIES},
                         "price_direction": {"type": "number", "minimum": -1, "maximum": 1},
                         "urgency_score": {"type": "integer", "minimum": 1, "maximum": 5},

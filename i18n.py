@@ -88,6 +88,7 @@ def pick(zh, en):
 
 # ---------------------------------------------------------------- names
 COMMODITY_NAMES = {
+    "Gold": ("黄金", "Gold"),
     "Green Pet Coke (GPC)":          ("生石油焦（GPC）", "Green Pet Coke (GPC)"),
     "Cobalt":                        ("钴", "Cobalt"),
     "Molybdenum":                    ("钼", "Molybdenum"),
@@ -107,6 +108,8 @@ UNITS = {  # (short unit zh, short unit en, long description zh, long descriptio
                                       "US export unit value (HS 271312, UN Comtrade)"),
     "Pet Coke PPI index (broad)":    ("指数", "index", "美国生产者价格指数（1984年12月=100，FRED）",
                                       "US producer price index (Dec 1984 = 100, FRED)"),
+    "Gold":                          ("美元/盎司", "USD/oz", "COMEX 黄金期货月均价（雅虎财经 GC=F）",
+                                      "COMEX gold futures, monthly average (Yahoo Finance GC=F)"),
     "Cobalt":                        ("美元/吨", "USD/t", "LME 钴 99.8%（国际货币基金组织）", "LME cobalt 99.8% (IMF)"),
     "Molybdenum":                    ("美元/吨", "USD/t", "焙烧钼精矿（国际货币基金组织）", "Roasted molybdenum concentrate (IMF)"),
     "Lithium":                       ("美元/吨", "USD/t", "电池级金属锂（国际货币基金组织）", "Battery-grade lithium metal (IMF)"),
@@ -347,16 +350,18 @@ TEXT = {
 - 只在相同计价方式（离岸价 FOB / 到岸价 CFR / 海关均价）之间比较价格。
 - 只有 62 天内的价格才给出 30 天预测，可靠性标为“较低”或“中等”。
 
-**3. 价格预测** —— 单个品种的详细图表：
+**3. 黄金** —— 黄金实时价格（约延迟 15 分钟）、历史走势、价格预测、期货市场分析（趋势、波动率、CFTC 基金持仓）和黄金新闻，并链接 Investing.com。
+
+**4. 价格预测** —— 单个品种的详细图表：
 - 蓝线是历史价格，红线是预测，浅红色区域是“可能区间”（过去约80%的情况下实际价格落在其中）。
 - **预测可靠性**：系统会用历史数据反复模拟测试多种预测方法，自动选择过去最准确的方法，并告诉您平均偏差有多大。
 - 三角形标记是相关新闻，绿色代表利多（供应趋紧），红色代表利空。
 
-**4. 预测准确度** —— 用历史数据检验每个品种的预测：提前 1 个月、3 个月平均偏差多少，是否比“价格不变”更准，涨跌方向猜对多少，以及上线后真实预测的追踪记录。
+**5. 预测准确度** —— 用历史数据检验每个品种的预测：提前 1 个月、3 个月平均偏差多少，是否比“价格不变”更准，涨跌方向猜对多少，以及上线后真实预测的追踪记录。
 
-**5. 价格大变动与事件** —— 历史上的价格大涨大跌是什么引起的（包括环保政策与天气），事前出现过哪些预警新闻，以及现在是否出现了类似的信号。
+**6. 价格大变动与事件** —— 历史上的价格大涨大跌是什么引起的（包括环保政策与天气），事前出现过哪些预警新闻，以及现在是否出现了类似的信号。
 
-**6. 供应风险** —— 所有品种按“供应短缺风险”排序，并附 AI 分析师的文字观点。
+**7. 供应风险** —— 所有品种按“供应短缺风险”排序，并附 AI 分析师的文字观点。
 
 ### 数据来源
 - **生石油焦（GPC）/煅烧石油焦**：联合国 Comtrade 美国出口单价（月度，用于模型预测）；分产地/分硫含量价格来自 Argus 公开报告、SMM（上海有色网）中国海关进口均价、ETI 能源周报等公开来源。
@@ -383,16 +388,18 @@ TEXT = {
 - Prices are only compared within the same basis (FOB / CFR / customs average).
 - A 30-day forecast is only given for prices up to 62 days old, labelled low or medium reliability.
 
-**3. Price Forecast**: detailed chart for one commodity:
+**3. Gold**: live gold price (about 15 min delayed), history, forecast, futures analysis (trend, volatility, CFTC fund positioning) and gold news, linked to Investing.com.
+
+**4. Price Forecast**: detailed chart for one commodity:
 - Blue = historical price, red = forecast, light-red area = likely range (the actual price fell inside it about 80% of the time in past tests).
 - **Reliability**: the system repeatedly tests several forecasting methods on past data, picks the most accurate automatically, and shows its average error.
 - Triangles are related headlines: green = bullish (tighter supply), red = bearish.
 
-**4. Forecast Accuracy**: each commodity's forecast tested on past data: average error 1 and 3 months ahead, whether it beats 'price stays the same', how often the direction was right, and a live track record since launch.
+**5. Forecast Accuracy**: each commodity's forecast tested on past data: average error 1 and 3 months ahead, whether it beats 'price stays the same', how often the direction was right, and a live track record since launch.
 
-**5. Price Shifts & Events**: what caused past big rises and falls (including environmental policy and weather), which warning headlines came first, and whether similar signs are appearing now.
+**6. Price Shifts & Events**: what caused past big rises and falls (including environmental policy and weather), which warning headlines came first, and whether similar signs are appearing now.
 
-**6. Supply Risk**: all commodities ranked by shortage risk, with a written AI analyst view.
+**7. Supply Risk**: all commodities ranked by shortage risk, with a written AI analyst view.
 
 ### Data sources
 - **Green / calcined pet coke**: UN Comtrade US export unit values (monthly, used for the model forecast); prices by origin/sulphur from Argus public reports, SMM China customs import averages, ETI weekly and other public sources.
@@ -730,4 +737,97 @@ TEXT.update({
                          "euro area and others, which move oil and metal prices."),
     "inv_fallback":     ("如果上方没有显示，请[点击这里在 Investing.com 打开{name} ↗]({url})。",
                          "If nothing shows above, [open the {name} on Investing.com ↗]({url})."),
+})
+
+TEXT.update({
+    "tab_gold":         ("黄金", "Gold"),
+    "gd_none":          ("黄金数据尚未下载。下次自动更新（或在 GitHub 手动 Run workflow）后会出现。",
+                         "Gold data not downloaded yet. It appears after the next automatic update (or a manual Run workflow)."),
+    "gd_intro":         ("**黄金（COMEX 黄金期货）**：实时价格、历史走势、价格预测、期货市场分析和相关新闻。",
+                         "**Gold (COMEX gold futures)**: live price, history, forecast, futures market analysis and news."),
+    "gd_price":         ("最新价格", "Latest price"),
+    "gd_sgt":           ("（新加坡时间）", " (Singapore time)"),
+    "gd_close":         ("（收盘价）", " (close)"),
+    "gd_today":         ("今日涨跌", "Today"),
+    "gd_prev":          ("昨收 {p}", "Prev. close {p}"),
+    "gd_1m":            ("近1个月", "1 month"),
+    "gd_ytd":           ("今年以来", "Year to date"),
+    "gd_1y":            ("近1年", "1 year"),
+    "gd_quote_note":    ("价格来源：雅虎财经（COMEX 黄金期货 GC=F），约延迟 15 分钟，每 10 分钟刷新。点击下方链接可在 Investing.com 查看实时行情。",
+                         "Source: Yahoo Finance (COMEX gold futures GC=F), about 15 minutes delayed, refreshed every 10 minutes. Use the links below for live Investing.com quotes."),
+    "gd_quote_note_close": ("暂时无法获取实时价格，显示的是最近一个交易日的收盘价（雅虎财经 GC=F）。实时行情请点击下方 Investing.com 链接。",
+                            "Live price unavailable right now; showing the latest daily close (Yahoo Finance GC=F). Use the Investing.com links below for live quotes."),
+    "gd_inv_chart":     ("查看 Investing.com 实时黄金走势图", "Show the Investing.com live gold chart"),
+    "gd_hist_title":    ("历史走势", "Price history"),
+    "gd_period":        ("时间范围", "Period"),
+    "gd_p_1m":          ("1个月", "1M"),
+    "gd_p_6m":          ("6个月", "6M"),
+    "gd_p_1y":          ("1年", "1Y"),
+    "gd_p_5y":          ("5年", "5Y"),
+    "gd_p_all":         ("全部", "All"),
+    "gd_close_line":    ("黄金价格", "Gold price"),
+    "gd_ma50":          ("50日均线", "50-day average"),
+    "gd_ma200":         ("200日均线", "200-day average"),
+    "gd_fc_title":      ("价格预测", "Price forecast"),
+    "gd_fc_intro":      ("以月均价为基础预测（最近完整月份 {month}：{last} 美元/盎司）。过去测试平均偏差 {err}，可靠性：**{rel}**。",
+                         "Forecast based on monthly averages (latest full month {month}: {last} USD/oz). Past-test average error {err}; reliability: **{rel}**."),
+    "gd_f_month":       ("月份", "Month"),
+    "gd_f_fc":          ("预测月均价（美元/盎司）", "Forecast monthly average (USD/oz)"),
+    "gd_f_range":       ("可能区间", "Likely range"),
+    "gd_f_chg":         ("与最近月份相比", "vs latest month"),
+    "gd_monthly_avg":   ("月均价", "Monthly average"),
+    "gd_fc_note":       ("预测由系统自动从多种模型中选择（详见“预测准确度”页）。黄金短期走势主要受利率、美元和避险情绪影响，请结合下方期货分析和新闻判断。",
+                         "The method is chosen automatically from several models (see the Forecast Accuracy page). Short-term gold moves are driven by rates, the dollar and safe-haven demand; read together with the futures analysis and news below."),
+    "gd_fc_none":       ("黄金预测暂不可用（{err}）。", "Gold forecast not available ({err})."),
+    "gd_fut_title":     ("期货市场分析", "Futures market analysis"),
+    "gd_trend_up":      ("**趋势向上**：金价在 200 日均线（{ma}）之上 {gap}，长期趋势偏强。",
+                         "**Uptrend**: price is {gap} above its 200-day average ({ma}); the long-term trend is firm."),
+    "gd_trend_down":    ("**趋势向下**：金价在 200 日均线（{ma}）之下 {gap}，长期趋势偏弱。",
+                         "**Downtrend**: price is {gap} vs its 200-day average ({ma}); the long-term trend is weak."),
+    "gd_cross_golden":  ("50 日均线在 {date} 上穿 200 日均线（“金叉”），通常视为偏多信号。",
+                         "The 50-day average crossed above the 200-day on {date} (a 'golden cross'), usually seen as bullish."),
+    "gd_cross_death":   ("50 日均线在 {date} 下穿 200 日均线（“死叉”），通常视为偏空信号。",
+                         "The 50-day average crossed below the 200-day on {date} (a 'death cross'), usually seen as bearish."),
+    "gd_from_high":     ("距 52 周最高价（{hi}）{gap}。", "{gap} from the 52-week high ({hi})."),
+    "gd_vol_high":      ("**波动加大**：近 20 日年化波动率 {v20}，高于近一年平均 {v1y}，价格可能大起大落。",
+                         "**Volatility rising**: 20-day annualised volatility {v20} vs {v1y} over the past year; expect bigger swings."),
+    "gd_vol_low":       ("**波动较小**：近 20 日年化波动率 {v20}，低于近一年平均 {v1y}。",
+                         "**Volatility low**: 20-day annualised volatility {v20} vs {v1y} over the past year."),
+    "gd_vol_normal":    ("波动正常：近 20 日年化波动率 {v20}（近一年平均 {v1y}）。",
+                         "Volatility normal: 20-day annualised {v20} (past year {v1y})."),
+    "gd_pos_now":       ("**基金持仓**（美国商品期货交易委员会 CFTC，{date}）：对冲基金等“管理基金”净多头 {net} 手，较上周 {chg} 手，处于近三年的 {pct} 分位。",
+                         "**Fund positioning** (US CFTC, {date}): managed money (hedge funds) net long {net} contracts, {chg} vs last week, at the {pct} percentile of the past 3 years."),
+    "gd_pos_high":      ("仓位已偏高：上涨动力强，但若出现利空，获利回吐可能导致快速下跌。",
+                         "Positioning is crowded: strong momentum, but bad news could trigger fast profit-taking."),
+    "gd_pos_low":       ("仓位偏低：市场情绪偏空，一旦出现利多，空头回补可能推动反弹。",
+                         "Positioning is light: sentiment is bearish, so good news could spark a short-covering rally."),
+    "gd_pos_mid":       ("仓位处于中间水平，没有明显过热或过冷。", "Positioning is mid-range: neither crowded nor washed out."),
+    "gd_oi":            ("未平仓合约 {oi} 手，近 4 周 {chg}（增加表示资金流入）。",
+                         "Open interest {oi} contracts, {chg} over 4 weeks (rising = money flowing in)."),
+    "gd_mm_net":        ("管理基金净多头（手）", "Managed money net long (contracts)"),
+    "gd_cot_chart":     ("基金净多头（柱）与金价（线），近三年，每周", "Fund net long (bars) and gold price (line), past 3 years, weekly"),
+    "gd_contracts":     ("合约（手）", "Contracts"),
+    "gd_cot_none":      ("CFTC 持仓数据尚未下载，下次自动更新后出现。", "CFTC positioning data not downloaded yet; it appears after the next update."),
+    "gd_fut_help_title":("如何理解这些期货指标？", "How to read these futures indicators"),
+    "gd_fut_help":      ("""- **200 日均线**：过去约 10 个月的平均价格。价格在其上方通常表示长期上涨趋势。
+- **金叉/死叉**：短期均线（50日）上穿/下穿长期均线（200日），是常用的趋势转折参考。
+- **波动率**：价格每天上下波动的幅度，换算成一年。波动越大，预测区间越宽、风险越高。
+- **CFTC 持仓报告**：美国商品期货交易委员会每周五公布（数据截至周二），显示 COMEX 黄金期货中各类交易者的持仓。“管理基金”主要是对冲基金，他们的净多头增加通常推动金价上涨；仓位过高时也容易反转。
+- **未平仓合约**：市场上尚未平仓的合约总数，增加说明有新资金进入。
+- 以上为市场参考信息，不构成投资建议。""",
+                         """- **200-day average**: average price over roughly 10 months. Price above it usually means a long-term uptrend.
+- **Golden/death cross**: the 50-day average crossing above/below the 200-day, a common trend-change reference.
+- **Volatility**: size of daily price swings, annualised. Higher volatility means wider forecast ranges and more risk.
+- **CFTC report**: published every Friday (data as of Tuesday) by the US futures regulator, showing positions in COMEX gold futures. 'Managed money' is mainly hedge funds; rising net longs usually push gold up, and very crowded positions can reverse.
+- **Open interest**: total contracts still open; rising means new money entering.
+- This is market reference information, not investment advice."""),
+    "gd_news_title":    ("黄金相关新闻（近 14 天）", "Gold news (last 14 days)"),
+    "gd_news_none":     ("暂无黄金新闻，下次自动更新后出现。", "No gold news yet; it appears after the next update."),
+    "gd_bull":          ("利多", "Bullish"),
+    "gd_bear":          ("利空", "Bearish"),
+    "gd_neutral":       ("中性", "Neutral"),
+    "gd_disclaimer":    ("数据来源：雅虎财经（COMEX 黄金期货 GC=F）、美国商品期货交易委员会（CFTC）持仓报告、Google 新闻（AI 分析）；"
+                         "实时行情链接与图表来自 Investing.com。仅供参考，不构成投资建议。",
+                         "Sources: Yahoo Finance (COMEX gold futures GC=F), US CFTC Commitments of Traders, Google News (AI-scored); "
+                         "live quote links and chart from Investing.com. For reference only, not investment advice."),
 })

@@ -35,6 +35,8 @@ DATA_DIR = Path(__file__).parent / "data"
 COMMODITIES = {
     # MAIN FOCUS: green (un-calcined) petroleum coke = HS 271311, US export unit value, USD/t
     "Green Pet Coke (GPC)":       {"file": "petcoke_fuel.csv",     "proxies": ["CL=F"]},
+    # Gold: COMEX gold futures monthly average (Yahoo Finance GC=F), USD/oz
+    "Gold":      {"file": "gold.csv",      "proxies": ["DX-Y.NYB", "SI=F"]},
     "Cobalt":    {"file": "cobalt.csv",    "proxies": ["HG=F", "ALI=F"]},
     "Molybdenum":  {"file": "molybdenum.csv",  "proxies": ["HG=F"]},     # by-product of copper mining
     "Lithium":     {"file": "lithium.csv",     "proxies": ["HG=F"]},
