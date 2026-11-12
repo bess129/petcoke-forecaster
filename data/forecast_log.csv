@@ -9,3 +9,4 @@ made_on,commodity,base_month,base_price,target_month,forecast,lo,hi,model
 2026-11-11,Gallium/Germanium (HS 811292),2026-08-01,347.95,2026-09-01,347.95,118.0804,577.8196,No-change
 2026-11-11,Calcined Pet Coke (CPC),2026-08-01,597.93,2026-09-01,560.132,513.0073,607.2567,Blend: LightGBM + No-change
 2026-11-11,Pet Coke PPI index (broad),2026-09-01,1229.464,2026-10-01,1242.6056,1122.1692,1363.042,Momentum (ridge)
+2026-11-12,Gold,2026-10-01,4121.15,2026-11-01,4121.15,3774.827,4467.473,No-change

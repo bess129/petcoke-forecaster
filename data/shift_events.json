@@ -3228,8 +3228,365 @@
     }
    ],
    "confidence": "low"
+  },
+  "Gold|2019-08": {
+   "commodity": "Gold",
+   "start": "2019-05-01",
+   "end": "2019-08-01",
+   "change": 0.17038733958250551,
+   "direction": "up",
+   "price_start": 1283.37,
+   "price_end": 1502.04,
+   "n_headlines": 49,
+   "cause_en": "Safe-haven surge on global tensions, recession fears and expected US rate cuts",
+   "cause_zh": "地缘紧张、衰退担忧及美联储降息预期推动避险买盘",
+   "explanation_en": "Gold rallied from May to a six-year high above $1,500 by August. Headlines cite global tensions (Iran–US), persistent growth headwinds, speculative inflows into GLD and anticipation of a US interest rate cut. In August, recession fears further boosted safe-haven demand.",
+   "explanation_zh": "金价自5月起一路上扬，8月突破1500美元，创六年新高。相关报道指出，伊朗与美国之间的地缘紧张、全球增长持续承压、GLD等投机资金流入，以及市场对美联储降息的预期共同推高金价；8月衰退担忧进一步强化避险需求。",
+   "lesson_en": "Watch for dovish central-bank expectations combined with rising geopolitical tension and growth worries, which tend to trigger sustained safe-haven gold rallies.",
+   "lesson_zh": "当央行转向宽松预期、地缘紧张和增长忧虑同时升温时，往往会引发黄金持续的避险上涨。",
+   "categories": [
+    "Macro & Financial",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "Why is gold price rising? 5 factors driving the precious metal",
+     "title_zh": "金价为何上涨：推动贵金属的5大因素",
+     "date": "2019-06-20",
+     "source": "Livemint",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNVFEcHlUTHpmZnNueGtVWkRJeHNpV0hnck1CSWVBWkRLUjRlVWthLTV5RXItSTJOaGk1NVdhYmtsTXdXNGcxaTYwUHJuc09lektJMkIxdGZNbEJxQjFab0RFSS1obTBVSEh5ZWFQSDUxNGFHVWZfazRyQ2ZzbkptSTV3VjV4ZlQxTHVvbm1aeGdmT0kzaVB5OUlGenJOdWZxbnZUbk1LR3BLRHBFRHR5MmN2NTJFQ3RYSXdNQ3hWbG1rZ9IBxwFBVV95cUxPSlJXN0Q5aXVKSHM5SmtOVjVDYlFWVVdEaTZUV2l4VW1MazRRRUJ5VEM3aWVhUVZHalc3N1ZFVVJITUhPRHFGNjFoeW5ZSHo5VV9xMDN0cjRENnVSVDdJR3Rsd251SXZXekNxa2J1dGlSbVhvRmNQTVQ0QlJGaE9MMjZrbVdsSjY2Y2xhWGxrR3BpOGtuVy13RWdGM0EyeW9KT3FQS2kxN21qOS1nNk1TekRscXB5LVFoUVdrMWN0M2FuOW1ZeENj?oc=5"
+    },
+    {
+     "title": "Why gold prices have climbed to their highest since 2013",
+     "title_zh": "金价为何升至2013年以来最高",
+     "date": "2019-06-21",
+     "source": "MarketWatch",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaEtFQmM4MUNNbERlWXFVeF9UdlhRM2xVXzRXRFo0Q3Rkd19IYXBiaUVza0V3OHN4N2d3Yk1hQ0VpMzBZX19ta3Y1a1doWDRHT04zN25TaS11UFhfOGI5TEtySlhFc1E5M0RaZ3gyMDdXclhOQWVrSE1DdnNFUkdRS2VuTmRXOUFZUV95MEppZ2x1QUhQc3dHVWRrTWwwMDFrQmpr?oc=5"
+    },
+    {
+     "title": "Gold Price Hits Fresh 6-Year Highs on Speculative Surge as GLD Expands, Iran Calls Trump 'Idiotic'",
+     "title_zh": "投机资金涌入、GLD扩张，金价创六年新高",
+     "date": "2019-06-25",
+     "source": "BullionVault",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOekdZTHZtb3dxRmVRLXBKMnpwTXY1UTdzdzlzRml0c1VSMGE4VWg5ZkttTlB0M05GMGstbWc4aFpvOU9BaUI5SzVNUmV5T1hiMm96VXhsZDAwRUJlQU5MOXl4QmtxeDlNS2Z0a2R5UmlUa0FzTEs1b2kwWXhNd1Zlc0lwaTlzVG4xMDEtcXRhRWwyUWo1UFloc1VaY2djLXg2SXhxUUNVZzM3WDYzaGw2c1MwWWxpMnJZNW1iR0tzY3NvelAyQm52a2VoVWRNcFZhTF8wQUZrM2puWHRoNndzTG5VSVdaQkZz?oc=5"
+    },
+    {
+     "title": "Gold price hits six-year high as investors await US interest rate cut",
+     "title_zh": "投资者等待美国降息，金价创六年高位",
+     "date": "2019-07-19",
+     "source": "The Guardian",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVU94M21Pa0h4Tk5yZG9henNGNWxWSVdHT0UwMUw1WVBIZEs3YVJEdG1RdHU3dEktVnZxa2ZJeG83VDdCczQzRXk3NEJMa0VqeEZ4MDZRWExVcl9MTGIyaTRMUXNPZXBpXzJrVjVSM005d2VKTGJfXzl2U3ppZVE4enNzZV80WlpxS1FxN3ZwQzlIWUlRcEh5SVhiMGIzSy1tMFY2ZGloanVKb1NBbkdMM2RmYTlISWUxY3c?oc=5"
+    },
+    {
+     "title": "Gold gains as global recession fears lift safe haven appeal",
+     "title_zh": "全球衰退担忧提振黄金避险需求",
+     "date": "2019-08-14",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYndmVjJqNGR1bVdpT1NtMlE1VzdnTl9rTVVuRmtSSGdYQzhWYU5YNXk4MDlkaWNNSHJPbnNPYXdzSE04UHVkbEI3SmJKWXF0NTVEQ3VIYVJGVk9oRTJvQVdnNDhXOWF6UzNnZDdmYVZveExhQmRQNkwtZmNSWUd2bHZnMy1zc294MmZlUDlR0gGTAUFVX3lxTFBzVGVCcjFnOVFUeVFvNnpSWC1fOWxvcTQtNmZZZ2lHTUJRZjNMNWtzZWt5S1BfM2pFYlRpZkVjSzdxWTVnX3VSTE4wN3pBeTd0TGI4OUNOQ2ZJQnEwNWkyUEJxcEJGZjE0RlRkSGlsbTZWSmk1Rk9PM08talJvcG9DWkVXQmN5M2YzTmwxZ2JSMHJwVQ?oc=5"
+    }
+   ],
+   "warnings": [],
+   "confidence": "high"
+  },
+  "Gold|2020-08": {
+   "commodity": "Gold",
+   "start": "2020-05-01",
+   "end": "2020-08-01",
+   "change": 0.15113729549908972,
+   "direction": "up",
+   "price_start": 1719.43,
+   "price_end": 1979.3,
+   "n_headlines": 6,
+   "cause_en": "Headlines show gold rising, but give little explanation of the drivers",
+   "cause_zh": "新闻仅显示金价上涨,几乎未解释具体原因",
+   "explanation_en": "The headlines cover only May 2020 and none reaches the August peak. [0] says RBC saw gold potentially surging to a record high even while stocks climbed, which hints at investor demand for gold as a hedge or store of value. [3] confirms gold prices were already rising in mid-May. No headline gives a concrete cause, so the explanation is weak.",
+   "explanation_zh": "这些新闻只覆盖2020年5月,没有一条涉及8月的高点。[0]提到加拿大皇家银行认为,即便股市上涨,金价仍可能飙升至历史新高,暗示投资者把黄金当作避险或保值资产。[3]证实5月中旬金价已在上涨。没有任何一条新闻给出具体原因,因此解释力有限。",
+   "lesson_en": "When analysts forecast a record gold price even as equities rally, check the macro and financial backdrop, such as rates and safe-haven demand, because it can drive a sustained rise.",
+   "lesson_zh": "当分析师预测金价将创新高,即使股市同时上涨,也要关注利率和避险需求等宏观金融背景,它们可能推动金价持续上行。",
+   "categories": [
+    "Macro & Financial"
+   ],
+   "drivers": [
+    {
+     "title": "How Gold Prices Could Surge to Record High, Even As Stocks Climb: RBC",
+     "title_zh": "RBC:即便股市上涨,金价仍可能飙升至历史新高",
+     "date": "2020-05-07",
+     "source": "Business Insider",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMXVTUGhpRUhTT0FtbVdUbXM5SDdqSnQ1cEpLV0N0MG1XcVVacG0xeXRYaDFaNHc3LU1rUXJ5UUZvVm8wempqcXY4QjJsUEtESmpsTjFDRDhtakRUcUViMW9UdGdnclJtVUswQUdpbkh1eE8wZzVOZXczMG85cERBaXNCUkFESDFfVHhaVVFINnlDc21IbGdKaA?oc=5"
+    },
+    {
+     "title": "ITH advances Livengood as gold prices rise",
+     "title_zh": "ITH因金价上涨推进Livengood项目",
+     "date": "2020-05-15",
+     "source": "North of 60 Mining News",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM250ZHVhZjBXU210NzdraUE2bTA2ZUp2S042dFRYSWpzc0cxakc0U3RYZXZaZW9JWDJyaUhvS0J6TzFCS1dFNzAzWjF4Ti1CQzVuV2NRU0k2ZS1OTVBZaHdvRFlVcndaQ0E0ZXZGOFM2blh1eVdDNzl4OUtoQWI2ZkU3M3dwQzlFdW5NMW9SdnZ0RXVhSmRmUUN1cVdjbWJWczJjM3daekhMdw?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "How Gold Prices Could Surge to Record High, Even As Stocks Climb: RBC",
+     "title_zh": "RBC:金价可能创出历史新高",
+     "date": "2020-05-07",
+     "source": "Business Insider",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMXVTUGhpRUhTT0FtbVdUbXM5SDdqSnQ1cEpLV0N0MG1XcVVacG0xeXRYaDFaNHc3LU1rUXJ5UUZvVm8wempqcXY4QjJsUEtESmpsTjFDRDhtakRUcUViMW9UdGdnclJtVUswQUdpbkh1eE8wZzVOZXczMG85cERBaXNCUkFESDFfVHhaVVFINnlDc21IbGdKaA?oc=5",
+     "lead_days": -7
+    }
+   ],
+   "confidence": "low"
+  },
+  "Gold|2024-04": {
+   "commodity": "Gold",
+   "start": "2024-01-01",
+   "end": "2024-04-01",
+   "change": 0.15612312689156282,
+   "direction": "up",
+   "price_start": 2032.05,
+   "price_end": 2349.3,
+   "n_headlines": 57,
+   "cause_en": "Fed rate-cut expectations, safe-haven and Chinese demand pushed gold to record highs.",
+   "cause_zh": "美联储降息预期、避险及中国需求推动金价屡创新高",
+   "explanation_en": "Gold had already broken records near $2,100 in early December 2023, and the rally resumed in March 2024 after the Fed signalled three rate cuts for the year [31], with fresh US data adding to cut expectations [36]. Strong Chinese demand [15][18] and geopolitical safe-haven buying [46][56] supported prices, taking gold to repeated record highs [27][48]. The headlines show only limited detail on the underlying drivers, but the pattern is clear: easing-rate expectations plus haven and Asian demand.",
+   "explanation_zh": "2023年12月初金价已触及约2100美元的纪录高位,2024年3月美联储暗示全年降息三次后涨势再起[31],美国最新数据进一步强化降息预期[36]。中国需求强劲[15][18],加上地缘政治避险买盘[46][56],金价多次刷新纪录[27][48]。标题对深层原因着墨有限,但总体逻辑是降息预期叠加避险与亚洲需求。",
+   "lesson_en": "Watch Fed rate-cut signals and Chinese and central-bank buying, which can lift gold even when Western ETF flows are weak.",
+   "lesson_zh": "关注美联储降息信号以及中国和央行购金需求,即使西方ETF资金流出,金价仍可能上涨。",
+   "categories": [
+    "Macro & Financial",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "Gold prices jump higher as Federal Reserve signals three rate cuts this year",
+     "title_zh": "美联储暗示今年降息三次,金价跳涨",
+     "date": "2024-03-20",
+     "source": "Kitco",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQzB3UlFpRmpfWGl0aHZqSlhsTi0wdmtCbzNSQmtFeUhxdlFzYks2b0RldmdjeFFNSXUwUkFRWm5yQlk3cU1RNnJvYmxpd2w4YzBUa1QzaUxTYkhDUmdSNGQ1eUJyMWNWRk8tc1pXdnM5ZHRwQkpFUTBtYWdsM1llU05XUUliRUF0Tl9YeW1JMXQtdG1NWGxlOUpob2VDLW5aVFBweUFpTzN5R1RTQzNXdTZVUU4?oc=5"
+    },
+    {
+     "title": "Gold prices hit another record high after fresh U.S. data spurs Fed cut expectations",
+     "title_zh": "美国新数据推升降息预期,金价再创新高",
+     "date": "2024-04-01",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUTBGYU1uV2RYVVZscFlLOXp2Qi10dG9CNlVENEFTTUtaQm9LemRFZ0VHelZYTmtmMk1mdmFyclJaQnQwUHVEYkwwZU1UVXlzemxydXlLWGxzUWZDRnRSNGlHWlRvY2lPQm1qZXJVbXhydmp5X2x4THhSWEM1aXRiLU0tRVBqMDZ2Q0RUUGdjYjV4QzE0b0RR0gGcAUFVX3lxTE1kUEM0allQaW9YYnRsWkpKdzRCM2lhMHFlQUhYLUZzMDdOUTlabFRHOHVoMU82NE5xLWZvQ0g1WEdDeWZpb3dYazRuTkZ1N3l1ZGdOemtxNDkxeV9KanhNSXI4LWhLQWE5Y1VtT3dCVWVyTEJaVUdab0E1aDA2Qk1lcFU1Z0ZNZkhDTVlpZWxlRk9NYjZLOGJCMFQwZg?oc=5"
+    },
+    {
+     "title": "Gold price surges to record high",
+     "title_zh": "金价飙升至纪录高位",
+     "date": "2024-03-05",
+     "source": "Financial Times",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSGdqTEg4TS1lemlIZ1Z0dWlIUWNnM0Q2elNJdGFQTGZWWEljek1WVlN1djhrbm9XUG05LWd5bEpaNzBlV2x0RWgzdlBjbDBUTmNkSWFab01TdXBzRkJVeEVXaEV2VkRMbnplLUQ2Nk1SYXBpMXNkRWdrMHJMX1hFV05xSFY?oc=5"
+    },
+    {
+     "title": "You asked, we answered: What’s behind gold’s March rally? | Post by Juan Carlos Artigas | Insights",
+     "title_zh": "世界黄金协会解读三月涨势",
+     "date": "2024-03-12",
+     "source": "World Gold Council",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVW1iX3BzS2NLRjhqS1JDNFdaMmx2enpVbjc5MzdOQVF1aDVfMGtzUTZyTFBaQXM0ajNSOGJMX2JwdG03MVUwNmlvTVZ1OC1pVV9vS0VjckJkUTNFY1B6T25rVFA0bHd1bkdRemlUWjRVUERrbHY4M09PZU92VG5yV0FoRy04S2VjT0gteDR2TU4yeFdWdlJfdzRTeHBVNU1lU2c?oc=5"
+    },
+    {
+     "title": "Gold Price Gains as Fed 'Hawks' Hit Western ETFs But China's Demand Jumps",
+     "title_zh": "中国需求大幅上升",
+     "date": "2024-02-07",
+     "source": "BullionVault",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVEx4R3h2bjY0eExyMFhFc2otcHk2TTN5ZGM2QmFMcTVJVFRPMmVkNFdFY1lpVmpOY09UZkhWV21uMmtHUXBMM0hDczlBeUpzbWhVRFo4RUdPRXRQZVp5TG5vNlRtUnZ0TVNUX1ItbGgyWkctT0dMWjVkM2ZZcmV6RTV2Tmg5MzE5ZGZoVWpYQlB3dDRzd084WUJSTnY4UEVkUEc0amc4NFctZHRiZEE?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Gold price hits $2,100 for record high — and analysts don't expect it to stop there",
+     "title_zh": "金价触及2100美元纪录,分析师预计涨势不止",
+     "date": "2023-12-03",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM3FMa1lZZzRONnhPWWFzcTJXYm1KRDFWSTNJZElteU9NelVqNXZvbnZ3ZHBsVGpfUEhTTjN6eUVFVU1UOVRia01sUTJwZTU0TDhFcGh1Q3JwTk85UzVmcFNFRFlvTjVlU3haNGg3UjJTREczR2gtblhIVFNiWWFwanhDQW16U0tTVHl1M0J0bkM0MkwyWEw0dHZjT2drTDhmWFlNOGdEYy0?oc=5",
+     "lead_days": 28
+    },
+    {
+     "title": "Gold prices may continue to remain elevated considering global macros and geopolitical factors, says Tapan Patel",
+     "title_zh": "宏观与地缘因素或使金价持续高位",
+     "date": "2024-01-05",
+     "source": "Livemint",
+     "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQc1B2QnFOZUZscE9TSzBBdGNXU0p0NmtsX2pzdk02R3hObkt5dEVZR0RRdTFVaFJFTlpwSndBcU5ab0NzVnRKcU1YN1BNTDVYVTROWjJ5NTZyU2FSdXpXZ1FBemlnOEY3Rm9jMXN3U2U2anhzOXdtMm9UZlJQYzktMExHeW9FbDlodTQxNlh5Y0Y1RmFkTWVmeHMyZ2R5Qm10MkY1QmR0T1FNVmxlSDA2V05iZmJQSWphV09NR1BJWGdaR1pxc0dnU01yOGRidkxVLTVfUWhhelUxMkJjTl9OMGdyYkNlMW02azBFUUN0dEtKNXViNDBHM3hBekZlcm1hcm9PWjVQbnpZZ1nSAZACQVVfeXFMTjZxOEYzRjdKQjhfZGlJNC1acFA2Rmp1YUFob0oydU1MSHAzb0pnby1abUtLcUV2WWZtdDMyTVdKenV3Z0tDMmhMVWlwSDBZcGFyMGFRWFJmc0NtNFYzMlJpMUVwV1Vja2xDYXAxZjJLZDF0bnVmczl5SUlrWUNYazR6d0FLVTJaeGFGNXVSUUpMa3RYVnhMamNTMGFCSnMyQTB1MzVlYnBKQkJWSnZTYThxeVpla0JLcHh3WkZ1ams5NTZKVjFMeGtMa3lQdVJXSFNYMTJnZkFPNnIxN0NEdWpfcG9hRU1QZUV2V3Nrek1zcmcteXAycVRJZ3RBc213N3l6YUxLZXNoUEFmaDBQb28?oc=5",
+     "lead_days": -5
+    }
+   ],
+   "confidence": "medium"
+  },
+  "Gold|2025-04": {
+   "commodity": "Gold",
+   "start": "2025-01-01",
+   "end": "2025-04-01",
+   "change": 0.18478623516514925,
+   "direction": "up",
+   "price_start": 2727.53,
+   "price_end": 3231.54,
+   "n_headlines": 63,
+   "cause_en": "Safe-haven demand amid Trump tariffs, trade war and economic uncertainty drove record highs",
+   "cause_zh": "特朗普关税与贸易战引发避险需求，金价屡创新高",
+   "explanation_en": "Gold climbed from about $2,700 to over $3,200 as Trump tariffs, inflation worries and geopolitical tension fuelled safe-haven buying, with records in February and the first break above $3,000 on 14 March. The rally extended in late March and April as the US-China trade war intensified and the dollar weakened, pushing gold to fresh records. Banks such as Goldman Sachs and BofA raised forecasts, reinforcing momentum.",
+   "explanation_zh": "金价从约2700美元升至3200美元以上，主要因特朗普关税、通胀担忧和地缘紧张推高避险买盘：2月创纪录，3月14日首破3000美元。3月底至4月，中美贸易战升级、美元走弱，金价再创新高。高盛、美银等机构上调预测，进一步强化了上涨动能。",
+   "lesson_en": "When tariff and trade-war escalation coincide with a weakening dollar, expect strong safe-haven inflows into gold and forecast upgrades.",
+   "lesson_zh": "当关税与贸易战升级叠加美元走弱时，要预期黄金避险资金大幅流入及机构上调预测。",
+   "categories": [
+    "Macro & Financial",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "Gold Prices Hit New Record As Trump Tariffs And Inflation Drive Surge",
+     "title_zh": "特朗普关税和通胀推动金价创纪录",
+     "date": "2025-02-10",
+     "source": "Forbes",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdml0S0laZmxDTDUtb2RySmE4ckpYemQyS1pwYjVuaW5TNFo2YnY0ejkxQjBfM0gtTnFoNnBLTjNoY2FEZFhobUNpSE01c3FRRXJ2VlY2czI1b0QxT09oZW1pb0pLRkdSSWFoOUs3T2luT3Z0azdhbUtzNGNTOVl4bUFDNU0ySVRfb0hvV19PUEhYeF9aZ0RlUHVWV0t4cGJaWWZVUjNnOG5kclRDZkZFNXhOSlU1eFhUeDQwWUNyT1JXcUU?oc=5"
+    },
+    {
+     "title": "Gold prices soar to record high fueled by safe-haven demand",
+     "title_zh": "避险需求推动金价升至历史新高",
+     "date": "2025-02-20",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOakg2T1MxOEJvbmlyT2ktaXJkVU4zNzhTc3Z2a3NNd3Y4VlQwYjE0YUstWURGQlVlaG9ZUjk2OGVLaE51VDdQeEdQSTV5TC0wbXFxb2pLZ3FmMWtaTUxZQXJTTXRSc3VxY0ViUVhuYUpiOS1PRkVvQTU4UGlOblMwQW05Nlh0dDJnTkpTUDl4MUszZVhHQ1BBeTBBZkQ5U2RfSzM1M0NB?oc=5"
+    },
+    {
+     "title": "Gold price hits $3,000 as trade tensions mount",
+     "title_zh": "贸易紧张推动金价突破3000美元",
+     "date": "2025-03-14",
+     "source": "BBC",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtX0V2V1R3c3VXaE1nWDVvQXlvRXJfNlJaY1hNRlh0ZHVCeDVmN2pVSFN6aHB3NmtpNUs3NFJhdTEyVjZwT0lMakRtLUY1eXExdmNvVkRPVl9vZw?oc=5"
+    },
+    {
+     "title": "Gold prices soar to all-time high over trade war concerns",
+     "title_zh": "贸易战担忧推动金价再创新高",
+     "date": "2025-03-28",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVjBBb3RrbWctY3ZvS1VPdjZSZFJvN2dZVzgyYllPTk1pdU5MTFhlVzBFd3ZVREFkd1lUU1pHdm1hRk5aR0I5Qnlqa1V6T3JPZXFfU3hLcEdUN0I3VHYybnI4cmNtdGpmWmJHMHhTeDVSN254OWR0TEtKMzVFQ296QmJ0OUlTdjVobHRnTFA4MkJUZUFRZW1qMlZaNUNjRDVkTU5ySWdrLWxMN0tXNXMyQ200MC1TVEF5aG5EalZuQ1Q?oc=5"
+    },
+    {
+     "title": "Gold hits record high as US-China trade war intensifies, dollar weakens",
+     "title_zh": "中美贸易战升级、美元走弱，金价创新高",
+     "date": "2025-04-10",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc0lUUUhlN1g3ZDVSb2Vhc0dILWE1UVc1NGJ2dHZnQ3N1TWloaWNHSzZLUmV3dUtYZjJVM2ZRM1Y4LWptXzd6RGdxYVR3Yy01S3dRZ3c2UDQxblR2cFRhT2JPaG1mVmpyU1Eya2otRWpiY2Z1SFpFWm9jQ0dTX1JOODBRMzRyN19TcnJWa3BYVHk1ZmF4SWpDc2dMRjZHQ1NsSlJac203TU5BQQ?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "​​Gold Price Outlook 2025: When will gold hit $3,000?",
+     "title_zh": "IG：金价何时触及3000美元",
+     "date": "2025-01-31",
+     "source": "IG",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSllkdE9MUkt3N29IV1BCcExuRlB2aDlSak9fZFRPUHNKUVVCZmVBU0paU01qZlpUUzdweWxNSy1Ga19aMmxBVnVwcTYwcVJEWEU3X3RiSlJ2ZXdVOU5QMm1GenhRVFk3MmRxRk83amxpSkQxQWVKV0hkUFZTeWc1QTRWOGVnMlJnV1V2VzJ2QlFRNkY4Nm9HSTdjVXhTOG9nbl9TNQ?oc=5",
+     "lead_days": -31
+    },
+    {
+     "title": "As gold prices surge, Ghana faces ‘looming crisis’ over illegal mining",
+     "title_zh": "金价飙升，加纳面临非法采矿危机",
+     "date": "2025-01-22",
+     "source": "Al Jazeera",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUkZpRDJzYVM5WW85QXlSR09lSnMwUFBwb0ltM1Y2X0gwS053TFZ3ZGxYNzQ0eE1GaVpfbTZGRzNnenU2OWx6Q21laHYtcVBYZGVHTXNmSk5kSXNqWEJuczJ1QmxVcm1ZX0daS24yWnVWTWJqbkdfdWQ2QUtvd3VDRi03X1UxTHdQNUlCS1pLUUkydUZkbEZNcU8wMkt6WTlFLWdlaF9QbUJxX1N6NU56QWp30gG3AUFVX3lxTE9qcEtLeUNhMGRGVEV6RHdRempBeHJ5MVRyMk5LTEx5d096NkdVckNxWUVNZXNfQ2VRODdKWDlUVWR6U18wN3EzQTFZZXdaWEhIM3AwVXVuNUZDSWNLMWhsT2ZuNy1kR1ZoOERyOXdOaFoxbGUwVnRKekFBX1J1YnFwZGhNbFlfSmhHTlA0TjNfNmVLSFdFQVZLcFZZeG5LYmZ3VjhaQUNOTUFSMlROUFI2dlY1WlRfYw?oc=5",
+     "lead_days": -22
+    }
+   ],
+   "confidence": "high"
+  },
+  "Gold|2026-02": {
+   "commodity": "Gold",
+   "start": "2025-11-01",
+   "end": "2026-02-01",
+   "change": 0.23092454887236413,
+   "direction": "up",
+   "price_start": 4090.86,
+   "price_end": 5035.54,
+   "n_headlines": 70,
+   "cause_en": "Safe-haven demand, Fed rate-cut bets and geopolitical tension pushed gold past $5,000",
+   "cause_zh": "避险需求、美联储降息预期与地缘紧张推动金价突破5000美元",
+   "explanation_en": "Gold extended a record run from Nov 2025 on bets for US rate cuts, safe-haven buying and worries over Fed independence and credit quality. Geopolitical shocks in January lifted it above $4,600, then above $5,000 and $5,500 by late January. A sharp one-day drop followed the Warsh Fed pick, but dip-buying brought prices back near $5,000 by February.",
+   "explanation_zh": "2025年11月起，金价延续创纪录行情，原因包括市场对美联储降息的押注、避险买盘，以及对美联储独立性和信用质量的担忧。1月地缘局势冲击推动金价升破4600美元，月底一度站上5000美元乃至5500美元。随后因沃什被提名为美联储主席而出现大幅单日下跌，但逢低买入使金价在2月回到5000美元附近。",
+   "lesson_en": "Watch Fed rate-cut expectations, Fed independence concerns and geopolitical flashpoints; after parabolic runs, policy news can trigger sharp one-day reversals.",
+   "lesson_zh": "关注美联储降息预期、美联储独立性和地缘风险；金价急涨后，政策消息可能引发单日大幅回落。",
+   "categories": [
+    "Macro & Financial",
+    "Demand Shift"
+   ],
+   "drivers": [
+    {
+     "title": "Gold clinches fourth straight monthly gain, closes in on record high as markets solidify rate cut bets",
+     "title_zh": "金价连续四个月上涨，降息预期增强",
+     "date": "2025-11-28",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNS2x6dG5aNEhCcnA5dXdqaTdQV0pDWHRBems0R3dOdl9XdXQ3QWw3ZGNHYkMtM3h6MG1SVGVpbTA5UWJqMTBFZ0xmdUJQb0dHSDA4c2xQLUJHd1lPckpPV2ItUkZja0JVMFJ2eTE1MDNpUDY2cUVKUDF0dS1uaUpncF94akFGWmNLWktGcWt0T1NDYVgzRVZBbEJ6V2VhZkhXc2haTEJJTzVWaXNyY09kZkVlMXU4SVRMTmhTUGwwaVJFRjMyZmloeWI5ZFAyOU8yMkZlVXhiTjVnSXRXeExzZQ?oc=5"
+    },
+    {
+     "title": "Gold prices hit record high on US interest rate cut bets",
+     "title_zh": "降息预期推动金价创历史新高",
+     "date": "2025-12-22",
+     "source": "Yahoo Finance UK",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSmZ6MDJlU1N5Uy1DdWZpWnNfVmlEcGNmcy16QlJZbUQ1MXp6NDNrc3h6Rk1XejRhb05sT01mb0VDMmxxaFFwd2tIaHFGcjl0MnEyZ1hQQ0k1U1FLYldUXy1Xek9hRUlNQ3VVcTN5Wm8zM1hURThlUTNOQ0FLNHg5b1R1bnFXRk1TckRscGRaRQ?oc=5"
+    },
+    {
+     "title": "Gold and silver hit records as investors hunt for safety",
+     "title_zh": "投资者避险，金银创新高",
+     "date": "2025-12-22",
+     "source": "BBC",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Ld3ZFRVd2ZVBaRWNTZXo1NHlFRXMxS0hNSGpWTmtnWjdIWXNvYll1S1hhSUdIRlJjb3pxTU9va3pCd1B4Z1VyLTRfNlQwaDZrbVB5N1MzY1Jwdw?oc=5"
+    },
+    {
+     "title": "Gold prices ride geopolitical shockwaves above $4,600, but real resistance lies at $4,770/oz – World Gold Council",
+     "title_zh": "地缘冲击推动金价升破4600美元",
+     "date": "2026-01-12",
+     "source": "Kitco",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOV0JKbnpZbUV3emFaZWJqRGF2V3NYUGlOejhCb3ktVDlCLVBtb28zVFdZNWgtWnN6SVpQZnhkd0tMaXp0cE9FdFhPX3RpR044bk1LYzBqcVp5WWNQWHgyZlFhbG9YcXctQ3M1Rzc1QzhydVZsUW44V3ZKRmJVbmMtWWxyUlR3U2tIbzR2c00za2tXeVZZOWZ3a0RIcXQzOTdDUmoxamVaRnp5VlhCdWdON3NKNlNRclhlN2c?oc=5"
+    },
+    {
+     "title": "Five Reasons Gold Prices Surged Above $5,000 an Ounce",
+     "title_zh": "金价升破5000美元的五大原因",
+     "date": "2026-01-26",
+     "source": "WSJ",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeU9OTElEaU55SnI1Zk5VbzM3d1VrTzBuRFhESlQyUXNjblBoWWZsX2d5WFNCVTZuZVZSY3RleUVxNWVObWtsY0NRSHpDcU9DMTRIYlpkbnNYbHdqOF94U0RkQU9kX2NoaVBxWVpDaGZsTEV4ZlpWNFczdXZ6enpfRUtpLVp4eWJQb1Vtcw?oc=5"
+    }
+   ],
+   "warnings": [
+    {
+     "title": "Gold price today, Friday, September 19, 2025: Gold up slightly with Fed’s independence in question",
+     "title_zh": "美联储独立性受质疑，金价上涨",
+     "date": "2025-09-19",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPV3lxYmRuV0laVXRhWVJIMEVrR2U4OTlMWGVzN1p3bDE5V1d6S19Lck1fN2s3VlIycnVjalFKSm56eG5sSGEwVGxEbWdxd0tiMXNhVW1HaHEtdnpoaVNsOWwwQmZSbkZzUWZERFNVcHdRM3d0dFAtSW9tOTJRcHJwTjBtZVZ2eGQ2eFZ2OS1zY0NRaU5aRkZIbV9STFpDMkphbHk2a3Vib21LYTJYNU5ET3duSnpRNkI0Z2hBYTF6QmVxOVctMHBUX3RHLUVaOFd0bkF5bThveVVoZ0M3RHpiRU1PTk8xbHN2bkYyQ1VsZkpHQnhYWFJhRW85QzYzZw?oc=5",
+     "lead_days": 42
+    },
+    {
+     "title": "Gold price today, Friday, October 17: Gold opens at record $4,348.10 as credit quality fears spread",
+     "title_zh": "信用质量担忧蔓延，金价创纪录",
+     "date": "2025-10-17",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNR0xkZndUNEFmQ0FLRy1FUVVQeHcyazBhZ1NDWGkxZ3d3Sl93SUFleU4yNGZvcThnS1pJSXFpZld2V25wS3NDZVY2eWY1YW9kMkYwV04zVVlEQzVoOVAwcXdVazY4QUZsYjJJU3BKNUxyUk5hdDZJeV9ZeW94NERKbmZxNjN3Q0VjMXdjNGNwcFBlOE5ybGxaWTdid284SloySlc3Mnl2VWV0YzZ3bXhsV0cyQ0pMOWV6NURWU1oxNHo5RGFHSVY3M21IWkEyRThUWTgxUGh5M25DeHc3NGJTRlQ0Q09YX1N2eEE1VW05bTl4bUNGa2gzMEk1WHJHdw?oc=5",
+     "lead_days": 14
+    },
+    {
+     "title": "What’s Behind Gold’s Record Rally?",
+     "title_zh": "摩根士丹利解析金价创纪录上涨",
+     "date": "2025-10-15",
+     "source": "Morgan Stanley",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWWFmTHR1T3V0ckROQnlXNXhsUHduVnRPY3ZwUTUyRVVCeWhWclVpNGNHMmJBdDdvN1pQMFFuVURrSTU3cVY5Z1BZbTdpTUpTY0U3bk5CSHZOREdaS2FZYVBiVDhtUnFfXzItazlXLVJXZXpZYkRUUFdjeEJUV3k0N0Z1dW4xX0hxSnVxTzAtbFhoUWUwZ2c?oc=5",
+     "lead_days": 16
+    },
+    {
+     "title": "Why Gold’s Rally Will Likely Go On",
+     "title_zh": "摩根士丹利：金价上涨势头可能延续",
+     "date": "2025-10-22",
+     "source": "Morgan Stanley",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQmRVd0Q2Y3ZZLTFGYTFYVml3RXQ2RTVwZnZvNzFpUVN0Zjd3b2tjMEk5U2R4NW5wSDYyVmxlakJqX2pkaEJZbW5MUDdpdXVWS0pwbHRCcVVlRnR2ZmJpOXBFLU5MbkJBMkg3WGpXVUliQ1NSN3VWUVI5U3l0aGpXdDNSZGY3aUV6LXVv?oc=5",
+     "lead_days": 9
+    },
+    {
+     "title": "Goldman Sachs sees gold prices surpassing $4,000 if investors ramp up buying",
+     "title_zh": "高盛预计资金涌入将推金价破4000美元",
+     "date": "2025-09-04",
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcGVKVHQ5N3Zad0tSLXBCaXc1Q1Q4QzdLWWN4a2lwQlB3UWlXeWtoUGJhUmIyZFpKTkp6enhjWVZTNDA2UVlSam5BbVpmTGhUVFR2MjZHaTR1NF9wMkpmNGNsRHdtN1M2am1WNXl4eXQ4T0cxcGw1SjZRRE5oUzdFM2ZDN3NDcHFZczF0VUJaVjM5OUJvSjd6SmdfcURfZVpqRVBBX2thYmpWRWllblJRTFBwV2pjdV9Fb1R3?oc=5",
+     "lead_days": 57
+    }
+   ],
+   "confidence": "medium"
   }
  },
- "generated_at": "2026-11-12T00:00+00:00",
+ "generated_at": "2026-11-12T09:10+00:00",
  "model": "claude-sonnet-5-5"
 }
