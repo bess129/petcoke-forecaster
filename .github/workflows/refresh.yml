@@ -16,7 +16,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -31,15 +31,28 @@ jobs:
         continue-on-error: true
         run: python gold_data.py
 
+      - name: Download shipping volumes (US ports, China/India by country)
+        continue-on-error: true
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+        run: python shipping.py
+
+      - name: Update official monthly prices (IMF, FRED, US Census)
+        continue-on-error: true
+        run: python update_monthly.py
+
       - name: Fetch news
+        continue-on-error: true
         run: python scraper.py
 
       - name: Score new headlines with Claude
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python signal_detector.py
 
       - name: Write the Claude supply-shortage outlook
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python outlook.py
@@ -54,6 +67,12 @@ jobs:
         continue-on-error: true
         run: python import_argus.py
 
+      - name: Search for recent minor-metal market prices (every 2 days)
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python market_quotes.py
+
       - name: Search for newly published pet coke prices (every 3 days)
         continue-on-error: true
         env:
@@ -61,9 +80,11 @@ jobs:
         run: python price_watch.py
 
       - name: Pre-calculate all forecasts (so the dashboard opens instantly)
+        continue-on-error: true
         run: python build_forecasts.py
 
       - name: Save updated data back to the repository
+        if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -72,9 +93,13 @@ jobs:
           git add data/forecast_log.csv 2>/dev/null || true
           git add data/shift_events.json 2>/dev/null || true
           git add data/gold_daily.csv data/gold.csv data/gold_cot.csv 2>/dev/null || true
+          git add data/shipping.csv data/market_quotes.csv data/market_quotes_state.json 2>/dev/null || true
+          git add data/cobalt.csv data/molybdenum.csv data/tin.csv data/lithium.csv data/rare_earths.csv 2>/dev/null || true
+          git add data/petcoke.csv data/petcoke_fuel.csv data/petcoke_calcined.csv data/antimony.csv data/gallium.csv 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No new data today."
           else
             git commit -m "Daily news, signal and price refresh"
+            git pull --rebase --autostash || true
             git push
           fi
