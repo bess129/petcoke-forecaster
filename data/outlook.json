@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T00:01+00:00",
+  "generated_at": "2026-11-21T23:54+00:00",
   "model": "claude-sonnet-5-5",
   "outlooks": [
     {
@@ -7,19 +7,19 @@
       "outlook": "Neutral",
       "confidence": "low",
       "drivers": [
-        "Gulf of Mexico shut-ins and Middle East refinery strikes",
-        "Petcoke rally narrowing discount to coal",
-        "Price down 16% in 3 months; some coker restarts"
+        "Houthi strikes on Saudi refineries and Ras Tanura terminal",
+        "Gulf of Mexico output shut in ahead of storm",
+        "Heavy oil glut in Americas due to freight squeeze"
       ],
-      "summary": "Supply headlines lean mildly bullish (Gulf shut-ins, Saudi attacks, US refinery outages), but the score is weak (+0.09) and restarts offset part of it. The price has already fallen 16% in three months, so the signal is unclear.",
-      "watch_next": "Watch how fast US Gulf output returns after the storm and whether the Saudi refinery and terminal disruptions last.",
-      "summary_zh": "供应类新闻略偏利多(墨西哥湾停产、沙特炼厂遭袭、美国炼厂故障),但综合得分仅+0.09,且部分焦化装置已重启,抵消了一部分影响。价格三个月已下跌16%,整体信号不明确。",
+      "summary": "Supply risks from Middle East attacks, US Gulf storm shut-ins and refinery outages are offset by a heavy-oil glut in the Americas. Price is down 16% in 3 months and the supply-pressure score is weak (+0.09).",
+      "watch_next": "Watch whether Ras Tanura and Rabigh outputs are restored and how fast US Gulf production restarts after the storm.",
+      "summary_zh": "中东袭击、美国墨西哥湾风暴停产和炼厂故障带来供应风险,但美洲重质原油供应过剩予以抵消。价格三个月下跌16%,供应压力得分偏弱(+0.09)。",
       "drivers_zh": [
-        "墨西哥湾停产及中东炼厂遭袭",
-        "石油焦价格上涨,与煤炭的价差收窄",
-        "三个月价格下跌16%,部分焦化装置重启"
+        "胡塞武装袭击沙特炼厂及拉斯塔努拉码头",
+        "风暴来临前美国墨西哥湾产量停产",
+        "运费飙升导致美洲重质油过剩"
       ],
-      "watch_next_zh": "关注风暴后美国墨西哥湾产量恢复速度,以及沙特炼厂和码头的中断是否持续。"
+      "watch_next_zh": "关注拉斯塔努拉和拉比格产能能否恢复,以及风暴过后美国墨西哥湾产量的恢复速度。"
     },
     {
       "commodity": "Gold",
@@ -27,94 +27,94 @@
       "confidence": "medium",
       "drivers": [
         "Fed rate hike fears and strong dollar",
-        "ETF outflows and fading central bank buying",
-        "Prices at 14-month low"
+        "14-month low with ETF outflows",
+        "No supply headlines"
       ],
-      "summary": "Gold is not a supply story. Headlines point to macro-driven selling, with no supply shortage that could lift prices. There are no supply headlines, so shortage-driven upside is unlikely.",
-      "watch_next": "Watch the next Fed policy signals and ETF flows.",
-      "summary_zh": "黄金并非供应驱动型品种。新闻显示价格受宏观因素压制抛售,没有可能推高价格的供应短缺,也没有供应类新闻,因此由短缺引发上涨的可能性较低。",
+      "summary": "Headlines are all about macro-driven selling, not supply. There is no supply-shortage upside risk; the pressure is on price from the dollar, yields and ETF outflows.",
+      "watch_next": "Watch the next Fed policy signals and ETF flow data.",
+      "summary_zh": "新闻均为宏观因素驱动的抛售,与供应无关。不存在供应短缺带来的上行风险,价格受美元、收益率和ETF资金流出的压力。",
       "drivers_zh": [
         "美联储加息担忧与美元走强",
-        "ETF资金流出,央行购金减弱",
-        "价格处于14个月低位"
+        "触及14个月低点,ETF资金流出",
+        "无供应相关新闻"
       ],
-      "watch_next_zh": "关注美联储下一步政策信号及ETF资金流向。"
+      "watch_next_zh": "关注美联储下一步政策信号及ETF资金流向数据。"
     },
     {
       "commodity": "Cobalt",
       "outlook": "Upside risk",
       "confidence": "medium",
       "drivers": [
-        "Congo export quotas halving Glencore output",
-        "Export controls tightening the market",
-        "Price already down 24% in 3 months"
+        "Congo export quotas halve Glencore output",
+        "Export controls tightening battery-metal supply",
+        "India black mass export ban"
       ],
-      "summary": "Congo quotas are cutting output sharply and the market is described as tightening. The price has dropped 24% in three months, so the shortage may not be fully priced in, though it is up 26% on the year.",
-      "watch_next": "Watch Congo quota allocations and export shipment volumes.",
-      "summary_zh": "刚果配额大幅削减产量,市场被描述为趋紧。价格三个月下跌24%,短缺可能尚未完全反映,但年内仍上涨26%。",
+      "summary": "Congo quotas are cutting output and other export curbs are tightening feedstock. Price is down 24% in 3 months, so some of the dip may reverse if quotas keep biting.",
+      "watch_next": "Watch Congo's quota adjustments and monthly export volumes.",
+      "summary_zh": "刚果配额削减产量,其他出口限制也在收紧原料供应。价格三个月下跌24%,若配额持续generating约束,部分跌幅可能回补。",
       "drivers_zh": [
-        "刚果出口配额使嘉能可产量减半",
-        "出口管制令市场趋紧",
-        "价格三个月已下跌24%"
+        "刚果配额使嘉能可钴产量减半",
+        "出口管制收紧电池金属供应",
+        "印度禁止黑粉出口"
       ],
-      "watch_next_zh": "关注刚果配额分配及出口发运量。"
+      "watch_next_zh": "关注刚果配额调整及月度出口量。"
     },
     {
       "commodity": "Molybdenum",
-      "outlook": "Neutral",
+      "outlook": "Upside risk",
       "confidence": "low",
       "drivers": [
         "Chile copper output near 23-year low",
-        "General export-policy and pollution headlines",
-        "Price up 18% in 3 months"
+        "Smelter cuts amid losses",
+        "China export policy moves"
       ],
-      "summary": "Headlines are mostly indirect (copper output weakness, general export rules) with no molybdenum-specific shortage news. The price has already risen 18% in three months, so more upside is unclear.",
-      "watch_next": "Watch Chilean copper mine output, since molybdenum is a by-product.",
-      "summary_zh": "新闻多为间接信息(铜产量疲弱、一般性出口政策),没有钼的专门短缺消息。价格三个月已上涨18%,进一步上行空间不明确。",
+      "summary": "Weak copper output in Chile, a key by-product source, and smelter cuts point to tighter supply. But the headlines are mostly indirect, and price is already up 18% in 3 months and 42% in a year.",
+      "watch_next": "Watch Chilean copper output data and Chinese export-control news.",
+      "summary_zh": "智利铜产量疲弱(钼为铜的副产品)及冶炼厂减产指向供应收紧。但新闻多为间接影响,且价格三个月已涨18%、一年涨42%。",
       "drivers_zh": [
         "智利铜产量接近23年低点",
-        "一般性出口政策与污染类新闻",
-        "价格三个月上涨18%"
+        "亏损导致冶炼厂减产",
+        "中国出口政策动向"
       ],
-      "watch_next_zh": "关注智利铜矿产量,因为钼为铜的副产品。"
+      "watch_next_zh": "关注智利铜产量数据及中国出口管制消息。"
     },
     {
       "commodity": "Lithium",
       "outlook": "Upside risk",
-      "confidence": "low",
+      "confidence": "medium",
       "drivers": [
-        "Zimbabwe export tax and 2027 export ban plans",
-        "Local sourcing mandates",
-        "Price up 71% in 12 months, down 13% in 3 months"
+        "Zimbabwe lithium export tax and local sourcing rules",
+        "Planned 2027 Zimbabwe export ban",
+        "India black mass export ban"
       ],
-      "summary": "Zimbabwe's policy tightening is mildly bullish, but the ban is for 2027 and miners are seeking a delay. The score is modest (+0.20) and the price is already high.",
-      "watch_next": "Watch whether Zimbabwe delays or confirms the 2027 export ban.",
-      "summary_zh": "津巴布韦政策收紧略偏利多,但禁令针对2027年,且矿商正寻求推迟。综合得分不高(+0.20),价格已处高位。",
+      "summary": "Zimbabwe's tighter export rules and planned 2027 ban threaten supply, though miners are lobbying for delay. Price is down 13% in 3 months but up 71% in a year.",
+      "watch_next": "Watch whether Zimbabwe finalises the tax rule and delays or confirms the 2027 export ban.",
+      "summary_zh": "津巴布韦收紧出口规则并计划2027年禁止出口,威胁供应,但矿商正游说推迟。价格三个月下跌13%,一年上涨71%。",
       "drivers_zh": [
-        "津巴布韦出口税及2027年出口禁令计划",
-        "本地采购要求",
-        "价格12个月上涨71%,三个月下跌13%"
+        "津巴布韦锂出口税及本地采购规定",
+        "津巴布韦计划2027年出口禁令",
+        "印度禁止黑粉出口"
       ],
-      "watch_next_zh": "关注津巴布韦是推迟还是确认2027年出口禁令。"
+      "watch_next_zh": "关注津巴布韦是否敲定税收规则,以及是推迟还是确认2027年出口禁令。"
     },
     {
       "commodity": "Rare Earths",
       "outlook": "Upside risk",
       "confidence": "medium",
       "drivers": [
-        "Yttrium supply stalled",
-        "Laos rare earth operations suspended after dam breach",
-        "China export controls suspended only to Jan 2027"
+        "Yttrium shortage and price surge in Japan",
+        "Laos dam breach halts rare earth operations",
+        "China expanded controls, but suspension extended to 2027"
       ],
-      "summary": "Yttrium shortages and the Laos suspension add to tightness, and Chinese controls could return after the suspension ends. The price is up only 4% in three months, so the risk is not fully priced in.",
-      "watch_next": "Watch the January 2027 expiry of China's export control suspension and Laos output.",
-      "summary_zh": "钇短缺和老挝停产加剧供应紧张,中国出口管制暂停期结束后可能恢复。价格三个月仅上涨4%,风险可能尚未充分反映。",
+      "summary": "Yttrium is acutely short and Laos operations are suspended, but China's extension of the control suspension eases broad risk. Price is up 36% in a year, so part of the tightness is priced in.",
+      "watch_next": "Watch yttrium availability and the restart of Laos operations.",
+      "summary_zh": "钇严重短缺,老挝的稀土作业被暂停,但中国延长管制暂停期缓解了整体风险。价格一年上涨36%,部分紧张已被计入价格。",
       "drivers_zh": [
-        "钇供应停滞",
-        "老挝溃坝后稀土作业被暂停",
-        "中国出口管制仅暂停至2027年1月"
+        "日本钇短缺且价格飙升",
+        "老挝溃坝导致稀土作业暂停",
+        "中国扩大管制,但暂停期延长至2027年"
       ],
-      "watch_next_zh": "关注2027年1月中国出口管制暂停到期及老挝产量。"
+      "watch_next_zh": "关注钇的供应情况及老挝作业的恢复。"
     },
     {
       "commodity": "Tin",
@@ -122,18 +122,18 @@
       "confidence": "medium",
       "drivers": [
         "Congo conflict and Indonesia cuts",
-        "Chip supply squeeze",
-        "Price up 56% in 12 months"
+        "Myanmar pollution and mining issues",
+        "Smelter cuts and weak Chile copper output"
       ],
-      "summary": "Congo conflict and Indonesian cuts are tightening supply, and the supply-pressure score is the highest of the group (+0.39). Price is up strongly over 12 months but flat over three, so some of the risk may be priced in.",
-      "watch_next": "Watch Indonesian export volumes and Congo mine disruptions.",
-      "summary_zh": "刚果冲突和印尼减产使供应趋紧,供应压力得分较高(+0.39)。价格12个月涨幅明显,但三个月持平,部分风险可能已被反映。",
+      "summary": "Congo conflict and Indonesian cuts keep supply tight. Price is up 56% in a year but flat over 3 months, so much is priced in; further upside needs new disruptions.",
+      "watch_next": "Watch Indonesian export volumes and Myanmar mine access.",
+      "summary_zh": "刚果冲突和印尼减产使供应维持紧张。价格一年上涨56%但三个月基本持平,大部分已被计入;进一步上涨需要新的供应中断。",
       "drivers_zh": [
         "刚果冲突与印尼减产",
-        "芯片供应紧张",
-        "价格12个月上涨56%"
+        "缅甸污染与矿山问题",
+        "冶炼厂减产及智利铜产量疲弱"
       ],
-      "watch_next_zh": "关注印尼出口量及刚果矿山中断情况。"
+      "watch_next_zh": "关注印尼出口量及缅甸矿区准入情况。"
     },
     {
       "commodity": "Antimony",
@@ -141,75 +141,75 @@
       "confidence": "medium",
       "drivers": [
         "Major Chinese antimony mine halts production",
-        "China's US export ban suspension nearing expiry",
-        "Price down 56% in 12 months"
+        "China's US export ban suspension nears expiry",
+        "Washington seeks alternative supply corridor"
       ],
-      "summary": "A major Chinese mine halt and the possible return of export bans point to tighter supply. The price is well below last year's level, leaving room for a rebound.",
-      "watch_next": "Watch for the expiry of China's export ban suspension and how long the mine stays shut.",
-      "summary_zh": "中国一座大型锑矿停产,且出口禁令可能恢复,供应面趋紧。价格远低于去年水平,存在反弹空间。",
+      "summary": "A major mine stoppage and the nearing expiry of China's export ban suspension point to tighter supply. Price is down 56% in a year, so there is room to rebound.",
+      "watch_next": "Watch whether China extends the export ban suspension and when the mine restarts.",
+      "summary_zh": "主要矿山停产以及中国对美出口禁令暂停期临近到期,指向供应收紧。价格一年下跌56%,有反弹空间。",
       "drivers_zh": [
-        "中国大型锑矿停产",
-        "中国对美出口禁令暂停即将到期",
-        "价格12个月下跌56%"
+        "中国一座大型锑矿停产",
+        "中国对美出口禁令暂停期临近到期",
+        "美国寻求替代供应通道"
       ],
-      "watch_next_zh": "关注中国出口禁令暂停到期情况及该矿停产时长。"
+      "watch_next_zh": "关注中国是否延长出口禁令暂停期以及该矿山何时复产。"
     },
     {
       "commodity": "Gallium/Germanium (HS 811292)",
       "outlook": "Upside risk",
       "confidence": "medium",
       "drivers": [
-        "China export controls biting",
+        "Export controls biting",
         "Governments funding ex-China supply",
-        "Price up 67% in 3 months"
+        "Corning germanium supply risk"
       ],
-      "summary": "Export controls keep supply tight and alternatives are still being funded, so shortages persist. However, the price has already jumped 67% in three months, so much of this may be priced in.",
-      "watch_next": "Watch for any change in Chinese export licensing and new ex-China projects.",
-      "summary_zh": "出口管制使供应持续紧张,非中国供应仍在筹资阶段,短缺将延续。但价格三个月已大涨67%,部分利多可能已被消化。",
+      "summary": "Export controls continue to constrain supply and ex-China alternatives will take time. Price is up 67% in 3 months, so much is priced in, but little new supply is near.",
+      "watch_next": "Watch China's licensing decisions and any ex-China project start-ups.",
+      "summary_zh": "出口管制继续限制供应,中国以外的替代产能需要时间。价格三个月上涨67%,大部分已被计入,但短期内几乎没有新增供应。",
       "drivers_zh": [
-        "中国出口管制产生影响",
-        "各国政府资助非中国供应",
-        "价格三个月上涨67%"
+        "出口管制持续generating影响",
+        "各国政府资助中国以外产能",
+        "康宁锗供应链风险"
       ],
-      "watch_next_zh": "关注中国出口许可变化及非中国新项目进展。"
+      "watch_next_zh": "关注中国许可审批决定及中国以外项目的投产情况。"
     },
     {
       "commodity": "Calcined Pet Coke (CPC)",
       "outlook": "Neutral",
       "confidence": "low",
       "drivers": [
-        "Gulf of Mexico shut-ins and Middle East refinery strikes",
-        "Petcoke rally narrowing discount to coal",
-        "Some coker restarts"
+        "Houthi strikes on Saudi refineries",
+        "Gulf of Mexico shut-ins ahead of storm",
+        "Petcoke rally narrows discount to coal"
       ],
-      "summary": "Supply headlines are mildly bullish but the score is weak (+0.09) and restarts offset part of it. Price is up 15% in three months, so some of the risk may be priced in.",
-      "watch_next": "Watch US Gulf output recovery and the duration of Saudi refinery disruptions.",
-      "summary_zh": "供应类新闻略偏利多,但得分较弱(+0.09),且装置重启抵消了部分影响。价格三个月上涨15%,部分风险可能已被反映。",
+      "summary": "Middle East and US Gulf disruptions support prices, but a heavy-oil glut in the Americas limits the squeeze. Price is up 15% already and the supply score is weak (+0.09).",
+      "watch_next": "Watch refinery restarts in Saudi Arabia and the US Gulf and the petcoke-to-coal spread.",
+      "summary_zh": "中东和美国墨西哥湾的中断支撑价格,但美洲重质油过剩限制了供应紧张程度。价格已上涨15%,供应得分偏弱(+0.09)。",
       "drivers_zh": [
-        "墨西哥湾停产及中东炼厂遭袭",
-        "石油焦价格上涨,与煤炭的价差收窄",
-        "部分焦化装置重启"
+        "胡塞武装袭击沙特炼厂",
+        "风暴来临前墨西哥湾停产",
+        "石油焦上涨使其与煤炭的折价收窄"
       ],
-      "watch_next_zh": "关注美国墨西哥湾产量恢复及沙特炼厂中断的持续时间。"
+      "watch_next_zh": "关注沙特和美国墨西哥湾炼厂复产情况以及石油焦与煤炭的价差。"
     },
     {
       "commodity": "Pet Coke PPI index (broad)",
       "outlook": "Neutral",
       "confidence": "low",
       "drivers": [
-        "Gulf of Mexico shut-ins and Middle East refinery strikes",
-        "Petcoke rally narrowing discount to coal",
-        "Refinery restarts"
+        "Middle East refinery attacks",
+        "US Gulf storm shut-ins",
+        "Heavy-oil glut in Americas"
       ],
-      "summary": "Headlines mix outages with restarts and the score is weak (+0.09). The index is down 5% in three months but up 46% on the year, so the signal is unclear.",
-      "watch_next": "Watch refinery restarts in the US Gulf and Middle East supply disruptions.",
-      "summary_zh": "新闻中既有停产也有重启,得分较弱(+0.09)。指数三个月下跌5%,但年内上涨46%,信号不明确。",
+      "summary": "Disruption risks are balanced by ample heavy oil in the Americas. The index is up 46% in a year but down 5% in 3 months, with a weak supply score (+0.09).",
+      "watch_next": "Watch Saudi refinery restarts and US Gulf recovery after the storm.",
+      "summary_zh": "供应中断风险被美洲充裕的重质油所抵消。该指数一年上涨46%,但三个月下跌5%,供应得分偏弱(+0.09)。",
       "drivers_zh": [
-        "墨西哥湾停产及中东炼厂遭袭",
-        "石油焦价格上涨,与煤炭的价差收窄",
-        "炼厂重启"
+        "中东炼厂遭袭",
+        "美国墨西哥湾风暴停产",
+        "美洲重质油过剩"
       ],
-      "watch_next_zh": "关注美国墨西哥湾炼厂重启及中东供应中断情况。"
+      "watch_next_zh": "关注沙特炼厂复产及风暴后美国墨西哥湾的恢复情况。"
     }
   ]
 }
